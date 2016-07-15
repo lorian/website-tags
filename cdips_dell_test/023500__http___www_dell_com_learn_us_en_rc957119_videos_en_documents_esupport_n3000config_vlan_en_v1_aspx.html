@@ -1,0 +1,2403 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+    <meta charset="utf-8">
+    <script type="text/javascript">document.domain = 'dell.com';</script>
+
+
+<title>Dell Networking N3000: Configuring VLAN routing (GUI) | Dell </title>
+            <meta name="author" content="Dell us"/>
+            <meta name="channel" content="http://www.dell.com/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx"/>
+            <meta name="cmsurl" content="http://cmscontent.dell.com/sites/content/videos/en/Documents/esupport-n3000config-vlan-en-v1.aspx"/>
+            <meta name="customerset" content="rc957119"/>
+            <meta name="description" content="How to configure for L3 VLAN routing "/>
+            <meta name="documentcountrycode" content="us"/>
+            <meta name="generator" content="Build: 4.3.3.0  Built On: 4/13/2012 11:04:48 AM"/>
+            <meta name="keywords" content=""/>
+            <meta name="language" content="en"/>
+            <meta name="mbox-to" content=""/>
+            <meta name="metricpath" content="rc957119"/>
+            <meta name="olr_store" content="N"/>
+            <meta name="profile_id" content=""/>
+            <meta name="s_account" content="dellglobalonline"/>
+            <meta name="segment" content="bsd"/>
+            <meta name="waaction" content="ByDocumentID"/>
+            <meta name="waapplicationname" content="Dell.UX.Mvc.Learn.UI"/>
+            <meta name="wacontroller" content="Document"/>
+            <meta name="servername" content="P21LEARN02"/>
+            <meta name="pagetemplate" content="Video"/>
+            <meta name="expires" content=""/>
+            <meta name="termid" content="TOPT:NAV_TOP-library"/>
+            <meta name="termname" content="Document Library"/>
+            <meta name="cmsurlqs" content="c=us&amp;l=en&amp;r=us&amp;s=bsd&amp;category=TOPT:NAV_TOP-library"/>
+            <meta name="lastmodifieddate" content="01/17/2014 12:11:00 PM"/>
+  
+
+
+
+
+<script type="text/javascript">
+  if (typeof Dell == 'undefined') var Dell = {};
+  if (!Dell.Global)
+      Dell.Global = {
+          Settings: {
+              mceLink: "http://cmscontent.dell.com/sites/content/_layouts/dell/viewmicrocontent.aspx ",
+              toolsPanelLinks: {
+                  toolsPanel: '/learn/us/en/rc957119/UIFramework/toolspanel ',
+                  combineCssJs: '/learn/us/en/rc957119/UIFramework/configurationmanagement/ToggleCombineSettings ',
+                  compressCssJs: '/learn/us/en/rc957119/UIFramework/configurationmanagement/ToggleCompressSettings ',
+                  configurationmgmt: '/learn/us/en/rc957119/UIFramework/configurationmanagement/SectionListing '
+              },
+              legacyLogout: 'https://www.dell.com/sts/passive/commercial/v1/compatibility/logout?ru=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2frc957119%2fvideos%7een%2fdocuments%7eesupport-n3000config-vlan-en-v1.aspx'
+          },
+          lwp: {
+              c: "us",
+              l: "en",
+              s: "bsd",
+              cs: "rc957119"
+          },
+          isPremier: "false" == "true",
+          isMigrated: "false" == "true"
+      };
+</script>
+
+<link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=core&type=framework&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=core%2fdocument&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=webparts%2fmediaPlayer&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnCore&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><script type="text/javascript" src="//nexus.ensighten.com/dell/Bootstrap.js"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=top&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=sharedcontrols%2fdialog&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnPrimary&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=masthead&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script>  
+    
+    
+
+
+<meta property="og:title" content="Document Library" />
+<meta property="og:url" content="http://www.dell.com/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx" />
+<meta property="og:site_name" content="Dell" />
+<meta property="fb:app_id" content="186850318029150" />
+<meta property="og:description" content="How to configure for L3 VLAN routing " />
+    <meta property="og:image" content="http://i.dell.com/sites/imagecontent/videos/en/PublishingImages/esupport-n3000config-vlan-en-v1.jpg" />
+<meta property="og:type" content="Document" />
+    <link rel="canonical" href="http://www.dell.com/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx" />
+    <link rel="alternate" href="http://www.dell.com/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx" hreflang="en-us"/>
+
+    <script type="text/javascript">
+
+        var MasterTmsUdo = {
+            "CJ": {
+                "CID": "",
+                "TYPE": "",
+                "DISCOUNT": "",
+                "OGID": "",
+                "CURRENCY": "",
+                "COUPON": "",
+                "CSEG": "rc957119",
+                "SEG": "bsd",
+                "PRODCAT": "",
+                "COUNTRY": "US",
+                "LANG": "EN",
+                "REVENUE": "",
+                "DEVICE": "D",
+                "PLATFORM": "learn",
+                "PROMOID": "",
+                "CATEGORY": "documents~esupport-n3000config-vlan-en-v1.aspx",
+                "DEALS": "",
+                "FAMILY": "",
+                "PRODUCT": "",
+                "ORDERCODE": "",
+                "ACCOUNTID": "",
+                "EMAILHASH": "",
+
+                "PRODUCTLIST": [
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    },
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    }
+                ]
+
+            }
+        };
+    </script>
+  <script>
+      /*DO NOT ALTER *** DELL Americas*/
+      (function (e) {
+          var t = "773", n = document, r, i, s = { http: "http://cdn.mplxtms.com/s/MasterTMS.min.js", https: "https://secure-cdn.mplxtms.com/s/MasterTMS.min.js" }, o = s[/\w+/.exec(window.location.protocol)[0]];
+          i = n.createElement("script"), i.type = "text/javascript", i.async = !0, i.src = o + "#" + t, r = n.getElementsByTagName("script")[0], r.parentNode.insertBefore(i, r), i.readyState ? i.onreadystatechange = function () { if (i.readyState === "loaded" || i.readyState === "complete") i.onreadystatechange = null } : i.onload = function () {
+              try {
+                  e()
+              } catch (t) {
+              }
+          }
+      })(function () { });
+     </script>
+
+    
+
+
+</head>
+<body class="ctry_us lang_en set_rc957119 ltr uif_bodyBannerRightRail uif_mhbodyDefault razor gsd_bodyCopyMedium">
+
+
+<script type="text/javascript">
+
+    var InfoItems = '[{"Name":"author","Content":"Dell us","HttpEquiv":null},{"Name":"channel","Content":"http://www.dell.com/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx","HttpEquiv":null},{"Name":"cmsurl","Content":"http://cmscontent.dell.com/sites/content/videos/en/Documents/esupport-n3000config-vlan-en-v1.aspx","HttpEquiv":null},{"Name":null,"Content":"text/html; charset=utf-8","HttpEquiv":"content-type"},{"Name":"customerset","Content":"rc957119","HttpEquiv":null},{"Name":"description","Content":"How to configure for L3 VLAN routing ","HttpEquiv":null},{"Name":"documentcountrycode","Content":"us","HttpEquiv":null},{"Name":"generator","Content":"Build: 4.3.3.0  Built On: 4/13/2012 11:04:48 AM","HttpEquiv":null},{"Name":"keywords","Content":"","HttpEquiv":null},{"Name":"language","Content":"en","HttpEquiv":null},{"Name":"mbox-to","Content":"","HttpEquiv":null},{"Name":"metricpath","Content":"rc957119","HttpEquiv":null},{"Name":"olr_store","Content":"N","HttpEquiv":null},{"Name":"persistence_id","Content":"d3bf7acc-bce9-4f44-9345-7607ec6ad623","HttpEquiv":null},{"Name":"premier_accessgroupid","Content":null,"HttpEquiv":null},{"Name":"premier_accessgroups","Content":null,"HttpEquiv":null},{"Name":"premier_roleid","Content":null,"HttpEquiv":null},{"Name":"premier_rolename","Content":null,"HttpEquiv":null},{"Name":"profile_id","Content":null,"HttpEquiv":null},{"Name":"s_account","Content":"dellglobalonline","HttpEquiv":null},{"Name":"segment","Content":"bsd","HttpEquiv":null},{"Name":"server","Content":"P21LEARN02","HttpEquiv":null},{"Name":"session_id","Content":"ml0nowlqndks1art5jcfg12v","HttpEquiv":null},{"Name":"waaction","Content":"ByDocumentID","HttpEquiv":null},{"Name":"waapplicationname","Content":"Dell.UX.Mvc.Learn.UI","HttpEquiv":null},{"Name":"wacontroller","Content":"Document","HttpEquiv":null},{"Name":"servername","Content":"P21LEARN02","HttpEquiv":null},{"Name":"pagetemplate","Content":"Video","HttpEquiv":null},{"Name":"expires","Content":"","HttpEquiv":null},{"Name":"termid","Content":"TOPT:NAV_TOP-library","HttpEquiv":null},{"Name":"termname","Content":"Document Library","HttpEquiv":null},{"Name":"cmsurlqs","Content":"c=us&l=en&r=us&s=bsd&category=TOPT:NAV_TOP-library","HttpEquiv":null},{"Name":"lastmodifieddate","Content":"01/17/2014 12:11:00 PM","HttpEquiv":null},{"Name":"hier1","Content":"root:NAV_ROOT_work/TOPT:NAV_TOP-library/documents~esupport-n3000config-vlan-en-v1.aspx","HttpEquiv":null},{"Name":"currentview","Content":"Video","HttpEquiv":null},{"Name":"frv","Content":"http://frr","HttpEquiv":null},{"Name":"waview","Content":"Video","HttpEquiv":null},{"Name":"pagename","Content":"us|en|bsd|rc957119|dell.ux.mvc.learn.ui|document|bydocumentid|video","HttpEquiv":null}]';
+
+    Dell.Metrics.PageMetadata.PageMetaInfoItems = JSON.parse(InfoItems); 
+   
+
+    </script>
+
+
+
+
+
+    <div id="mbox_default">
+    </div>
+    <script type="text/javascript">
+        mboxCreate(Dell.Global.lwp.l + Dell.Global.lwp.c + '_olr', // language+ country +'_olr'
+                      'r=' + Dell.Global.lwp.c, //country
+                      'c=' + Dell.Global.lwp.c, //country
+                      'l=' + Dell.Global.lwp.l, //language
+                      's=' + Dell.Global.lwp.s, //segment
+                      'cs=' + Dell.Global.lwp.cs, //customerset
+                      'pn=' + Dell.Metrics.PageMetadata.find("pagename").Content);  //pagename
+    </script>
+
+
+
+
+
+
+
+
+
+<header id="revidHeader" class="uif_mastheadWrap clearfix uif_mastHead_standard">
+    <div class="custHelp">
+        <div class="col12 cntrDiv clrFix">
+
+            <span class="help">
+
+Contact Us 1-866-210-4834            </span>
+
+
+            <span class="storename" id="storename">
+            </span>
+
+            <div id="flyoutoverlay" style="padding-left: 0px; margin-left: -20px">
+                <span class="uif_pbValue" style="margin-left: 10px; width: 40%; float: left"></span>
+                <span style="width: 20%"></span>
+                <span class="uif_pbValue" style="margin-left: 10px; width: 40%; float: right"></span></br>
+
+                <span class="uif_pbName gsd_accentColor2" style="margin-left: 10px; width: 40%; float: left"></span>
+                <span style="width: 20%"></span>
+                <span class="uif_pbName gsd_accentColor2" style="width: 40%; float: right"></span></br>
+
+
+                <span class="uif_pbValue" style="margin-left: 10px; width: 100%"></span><br />
+                <span class="uif_pbName gsd_accentColor2" style="margin-left: 10px; width: 100%"></span>
+
+            </div>
+            <script type='text/javascript'>
+
+
+                $(function () {
+                    $('#flyout').tooltip({
+                        tooltipContentID: 'flyoutoverlay',
+                        tooltipArrow: 'top',
+                        autoAdjust: false,
+                        tooltipWidth: 430,
+                        horizontalOffset: -24
+                    });
+                });
+
+
+            </script>
+
+            <span class="premier">
+
+
+<a class="uif_link gsd_links3" id="loginLinkPremier" href="/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx/afh.ashx?type=login&afhp=" title="" target="" >Premier Login</a>
+
+
+
+<a class="uif_link gsd_links3" id="loginLink" href="/learn/us/en/rc957119/videos~en/documents~esupport-n3000config-vlan-en-v1.aspx/afh.ashx?type=login&afhp=" title="" target="" >Sign In</a>
+
+            </span>
+                <span style="float: right; vertical-align: baseline; margin-top: 7px; margin-bottom: 7px; font-weight: bold;"> </span>
+
+        </div>
+
+    </div>
+
+    <nav class="mh">
+        <div class="col12 cntrDiv clrFix topNav">
+                <a class="mhLogo" href="http://www.dell.com/account/" title="Dell">
+                    <img id="imgmhbluelogo" src="https://si.cdn.dell.com/images/global/brand/ui/logo-wt-bl.png" alt="Dell Logo">
+                </a>
+
+            <div class="tierNav">
+                    <ul id="tr1" class="tier1">
+                        <li class="t1li noMarg">
+                            <ul class="t1Nav">
+                                    <li id="ShopMenu" class="t1li ">
+
+                                        <div class="tierLink">
+                                                <a class="mNav mNavt1" href="#" rel="productsMenu" target="_self">Shop</a>
+                                            <span></span>
+                                        </div>
+                                        <!-- BEGIN SUBNAV TIER2 -->
+                                            <div id="ShopMenu_sub" class="subNav">
+                                                <div class="col12 cntrDiv clrFix">
+                                                        <ul class="tier2">
+                                                                <li id="ShopMenu0" class="t2li">
+                                                                    <div class="tierLink">
+
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/list/index?~ck=mn" title="" target="" >Lists</a>
+
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+
+
+
+                                                                </li>
+                                                                <li id="ShopMenu1" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Desktops &amp; Workstations</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="ShopMenu1_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/optiplex-desktops?category=optiplex-desktops&~ck=mn" title="" target="" >OptiPlex</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/precision-desktops?category=precision-desktops&~ck=mn" title="" target="" >Precision Fixed Workstations</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/gateways-embedded-pcs?category=gateways-embedded-pcs&~ck=mn" title="" target="" >Gateways & Embedded PCs</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/chromebox?category=chromebox&~ck=mn" title="" target="" >Chromebox</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/cloud-client-computing?category=cloud-client-computing&~ck=mn" title="" target="" >Wyse Thin Clients and Software​</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/?~ck=mn"><span style="margin-left: 0px;">View All Shop</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/shop/us/en/rc957119/desktops-and-workstations?category=desktops-and-workstations&amp;~ck=mn"><span style="margin-left: 0px;">View All Desktops &amp; Workstations</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                                <li id="ShopMenu2" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Laptops, Tablets &amp; Mobile Workstations​</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="ShopMenu2_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/latitude-laptops?category=latitude-laptops&~ck=mn" title="" target="" >Latitude</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/precision-laptops?category=precision-laptops&~ck=mn" title="" target="" >Precision Mobile Workstations</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/tablet-pcs-mobile-devices?category=tablet-pcs-mobile-devices&~ck=mn" title="" target="" >Tablets</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/xps-laptops?category=xps-laptops&~ck=mn" title="" target="" >XPS</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/chromebook?category=chromebook&~ck=mn" title="" target="" >Dell Chromebooks</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/?~ck=mn"><span style="margin-left: 0px;">View All Shop</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/shop/us/en/rc957119/laptops-and-tablets?category=laptops-and-tablets&amp;~ck=mn"><span style="margin-left: 0px;">View All Laptops, Tablets &amp; Mobile Workstations​</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                                <li id="ShopMenu3" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Servers, Storage &amp; Networking</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="ShopMenu3_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/servers?category=servers&~ck=mn" title="" target="" >Servers</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/storage-products?category=storage-products&~ck=mn" title="" target="" >Storage</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/networking-products?category=networking-products&~ck=mn" title="" target="" >Network Hardware and Devices</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/security?category=security&~ck=mn" title="" target="" >Dell SonicWALL Network Security</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/shared-infrastructure-platforms?category=shared-infrastructure-platforms&~ck=mn" title="" target="" >Converged Platforms</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/rack-infrastructure?category=rack-infrastructure&~ck=mn" title="" target="" >Data Center Infrastructure</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/software?category=software&~ck=mn" title="" target="" >Dell Software</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/?~ck=mn"><span style="margin-left: 0px;">View All Shop</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/shop/us/en/rc957119/enterprise-products?category=enterprise-products&amp;~ck=mn"><span style="margin-left: 0px;">View All Servers, Storage &amp; Networking</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                                <li id="ShopMenu4" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Accessories &amp; Peripherals</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="ShopMenu4_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                <div>
+                                                                                                                    <a class="t3header" href="http://www.dell.com/Accessories/us/en/rc957119/Category/4009?~ck=mn" style="padding-bottom: 10px;"><strong>Monitors &amp; Monitor Accessories</strong></a>
+                                                                                                                    <ul>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/4009?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=~3~694%2C180161~0~12299381&amp;~ck=mn" style=" padding-bottom 10px;">21&quot; &amp; Below</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/4009?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=~3~694%2C180161~0~12299382&amp;~ck=mn" style=" padding-bottom 10px;">22&quot; - 24&quot;</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/4009?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=~3~694%2C180161~0~15646048&amp;~ck=mn" style=" padding-bottom 10px;">27&quot; &amp; Above</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5390?~ck=mn" style=" padding-bottom 10px;">Monitor Accessories</a>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                <div>
+                                                                                                                    <a class="t3header" href="http://www.dell.com/Accessories/us/en/rc957119/Category/5436?~ck=mn" style="padding-bottom: 10px;"><strong>PC Accessories</strong></a>
+                                                                                                                    <ul>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/6591?~ck=mn" style=" padding-bottom 10px;">Keyboards &amp; Mice</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Selectors/FamilySelectorStep/52/694/?~ck=mn" style=" padding-bottom 10px;">Battery and Adapter Selector</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Selectors/FamilySelectorStep/51/694/?~ck=mn" style=" padding-bottom 10px;">Memory Selector</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5496?~ck=mn" style=" padding-bottom 10px;">Security and Protection</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5487?~ck=mn" style=" padding-bottom 10px;">Carrying Cases</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5441?~ck=mn" style=" padding-bottom 10px;">Docks and Stands</a>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                <div>
+                                                                                                                    <a class="t3header" href="http://www.dell.com/Accessories/us/en/rc957119/Category/4014?~ck=mn" style="padding-bottom: 10px;"><strong>Printers, Ink &amp; Toner</strong></a>
+                                                                                                                    <ul>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5646?~ck=mn" style=" padding-bottom 10px;">Color Laser Printers - Single Function</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5844?~ck=mn" style=" padding-bottom 10px;">Monochrome Laser Printers - Single Function</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/Accessories/us/en/rc957119/Category/5845?~ck=mn" style=" padding-bottom 10px;">Monochrome Laser Printers - Multifunction</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Selectors/FamilySelectorStep/3/694/?~ck=mn" style=" padding-bottom 10px;">Ink and Toner Selector</a>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                <div>
+                                                                                                                    <a class="t3header" href="http://www.dell.com/Accessories/us/en/rc957119/Category/5188?~ck=mn" style="padding-bottom: 10px;"><strong>Projectors &amp; Projector Accessories</strong></a>
+                                                                                                                    <ul>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/5188?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=74959~0~1651877%2C210034~0~14047293&amp;~ck=mn" style=" padding-bottom 10px;">Standard Projectors</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/5188?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=74959~0~1651877%2C210034~0~14047294&amp;~ck=mn" style=" padding-bottom 10px;">Advance Projectors</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/5188?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=74959~0~1651877%2C210034~0~14047296&amp;~ck=mn" style=" padding-bottom 10px;">Short Throw Projectors</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Product/List/5188?Page=1&amp;PerPage=12&amp;Filter=rank&amp;Layout=List&amp;NavFilters=74959~0~1651877%2C210034~0~14047298&amp;~ck=mn" style=" padding-bottom 10px;">Wireless Projectors</a>
+                                                                                                                            </li>
+                                                                                                                            <li>
+                                                                                                                                <a href="http://www.dell.com/accessories/us/en/rc957119/Selectors/ModelSelectorStep/2/694/Dell%20Projectors?~ck=mn" style=" padding-bottom 10px;">Projector Lamp Selector</a>
+                                                                                                                            </li>
+                                                                                                                    </ul>
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/Accessories/us/en/rc957119/Category/4011?~ck=mn" title="" target="" >Networking</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/Accessories/us/en/rc957119/Category/4116?~ck=mn" title="" target="" >Power, Cooling & Data Center Infrastructure</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/Accessories/us/en/rc957119/Category/5683?~ck=mn" title="" target="" >Storage, Drives & Media</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/accessories/us/en/rc957119/Parts?~ck=mn" title="" target="" >Dell Parts & Upgrades Selector</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/Accessories/us/en/rc957119/Category/4327?~ck=mn" title="" target="" >Handhelds & Tablet PCs</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/accessories/us/en/rc957119/Brands/?~ck=mn" title="" target="" >Shop By Brand</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/?~ck=mn"><span style="margin-left: 0px;">View All Shop</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/accessories/us/en/rc957119/home?~ck=mn"><span style="margin-left: 0px;">View All Accessories &amp; Peripherals</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li id="Solutions & ServicesMenu" class="t1li ">
+
+                                        <div class="tierLink">
+                                                    <a class="mNav mNavt1" href="http://www.dell.com/learn/large-enterprise-solutions?c=us&l=en&cs=rc957119&~ck=mn" rel="productsMenu" target="_self">Solutions & Services</a>
+                                            <span></span>
+                                        </div>
+                                        <!-- BEGIN SUBNAV TIER2 -->
+                                            <div id="Solutions &amp; ServicesMenu_sub" class="subNav">
+                                                <div class="col12 cntrDiv clrFix">
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li id="AccountMenu" class="t1li ">
+
+                                        <div class="tierLink">
+                                                <a class="mNav mNavt1" href="#" rel="productsMenu" target="_self">Account</a>
+                                            <span></span>
+                                        </div>
+                                        <!-- BEGIN SUBNAV TIER2 -->
+                                            <div id="AccountMenu_sub" class="subNav">
+                                                <div class="col12 cntrDiv clrFix">
+                                                        <ul class="tier2">
+                                                                <li id="AccountMenu0" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Manage Profile</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="AccountMenu0_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_3801950850_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":440,"Id":"gen_3801950850_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/account\/EditPersonalInfo\/EditPersonalInfoModal?~ck=mn","Template":null,"Width":510});
+            });
+            
+            
+        </script>
+
+
+<a class="uif_link " id="gen_3801950850" href="javascript:Dell.SharedControls.Dialog.openDialog('gen_3801950850_dialog');" title="" target="" >Personal Information</a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_3801950850_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":440,"Id":"gen_3801950850_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/account\/EditPersonalInfo\/EditPersonalInfoModal?~ck=mn","Template":null,"Width":510});
+            });
+            
+            
+        </script>
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_203879082_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":390,"Id":"gen_203879082_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/sts\/passive\/commercial\/v1\/accountmanagement\/changepasswordmodal?~ck=mn","Template":null,"Width":620});
+            });
+            
+            
+        </script>
+
+
+<a class="uif_link " id="gen_203879082" href="javascript:Dell.SharedControls.Dialog.openDialog('gen_203879082_dialog');" title="" target="" >Change Password</a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_203879082_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":390,"Id":"gen_203879082_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/sts\/passive\/commercial\/v1\/accountmanagement\/changepasswordmodal?~ck=mn","Template":null,"Width":620});
+            });
+            
+            
+        </script>
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/options/?~ck=mn"><span style="margin-left: 0px;">View All Account</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/options/index?~ck=mn"><span style="margin-left: 0px;">View All Manage Profile</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                                <li id="AccountMenu1" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Manage Site</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="AccountMenu1_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/address/index?~ck=mn" title="" target="" >Address Book</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/UserManagement/Index?~ck=mn" title="" target="" >User Management</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/OST/ManageAccessGroups?~ck=mn" title="" target="" >Access Management</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/options/?~ck=mn"><span style="margin-left: 0px;">View All Account</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/options/index?~ck=mn"><span style="margin-left: 0px;">View All Manage Site</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                                <li id="AccountMenu2" class="t2li">
+                                                                    <div class="tierLink">
+                                                                            <a href="#" class="mNav mNavt2">Contacts</a>
+
+                                                                        <span></span>
+                                                                    </div>
+                                                                    <!-- BEGIN SUBNAV TIER3 -->
+                                                                        <div id="AccountMenu2_sub" class="subNav">
+                                                                            <div class="col12 cntrDiv clrFix">
+                                                                                <div>
+                                                                                    <ul>
+                                                                                        <li>
+                                                                                            <span></span>
+                                                                                            <div>
+                                                                                                <ul class="tier3 clrFix">
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/Contact/DellTeam?~ck=mn" title="" target="" >Dell Contacts</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                            <li class="t3li">
+                                                                                                                    <strong>
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/Contact/CompanyContact?~ck=mn" title="" target="" >Company Contacts</a>
+
+</strong>
+
+                                                                                                            </li>
+                                                                                                </ul>
+                                                                                            </div>
+                                                                                        </li>
+
+                                                                                    </ul>
+                                                                                </div>
+                                                                                <ul class="viewAll clrFix">
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/options/?~ck=mn"><span style="margin-left: 0px;">View All Account</span><span class="icon"></span></a></li>
+                                                                                    <li class="col3"><a href="http://www.dell.com/account/us/en/rc957119/options/index?~ck=mn"><span style="margin-left: 0px;">View All Contacts</span><span class="icon"></span></a></li>
+                                                                                    <li class="closeTier"><a href="#"><span>&nbsp;</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+
+
+
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                            </div>
+                                    </li>
+                            </ul>
+                        </li>
+                    </ul>
+            </div>
+            <div id="poptHead"><span></span></div>
+            <div class="crtSrch">
+                <span>
+
+        <div class="mhCart">
+            <a class="uif_link gsd_primaryLinks                                                       legacy
+" id="uif_mastheadCartLink" href="http://ecomm.dell.com/dellstore/basket.aspx">
+
+                    <span id="totalcartitems" class="" data-bind="html: count, css: { cartCount: (count > 0 && count < 10), cartCountLarger: count >= 10 }"></span>
+
+                
+                    <span class="uif_cart_count_outer" style="display: none;">
+        <span id="uif_mastheadCartCount"
+              class="uif_cart_count">100</span> <span class="uif_cart_count_right"></span>
+    </span>
+
+            </a>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#uif_mastheadCartCount').MastheadCartLink({
+                    url: 'http://www.dell.com/cart/us/en/rc957119/data/summary/count'
+                });
+            });
+
+        </script>
+
+                </span>
+                    <span>
+
+<script type="text/javascript">
+
+    $().ready(function() {
+
+        Dell.SearchBox.AutoSuggest.Register('input[id=searchinput]', '/SearchAPI/2/us/en/rc957119/olr_search/suggest?take=10&amp;category=');
+    });
+
+</script>
+
+<form class="mhSearch" id="mhsearch" method="get" name="search" action="http://www.dell.com/search/us/en/rc957119/results">
+    <div>
+    </div>
+    <input id="searchinput" type="text" value="" name="q" size="20" placeholder="Search">
+    <button type="submit">Search</button>
+</form>
+
+
+                    </span>
+                    <div id="mdaforprint" style="display:none">
+                        <span style="float: right; vertical-align: baseline; margin-top: 7px; margin-bottom: 7px; font-weight: bold; color:white;"> </span>
+                    </div>
+
+            </div>
+        </div>
+    </nav>
+        <div class="pgTools">
+
+
+            <ul class="col12 cntrDiv clrFix">
+
+                    <li>
+
+<a class="uif_link help help" id="" href="http://www.dell.com/learn/premier-help?c=us&l=en&s=bsd&cs=rc957119" title="" target="" >    <span class="uif_bluehelpIcon uif_blueicon"></span>
+    <span class="uif_toolCaption">Help</span>
+</a>
+
+</li>
+                    <li>
+
+<a class="uif_link quotetoorder quote_to_order" id="" href="http://www.dell.com/account/us/en/rc957119/equote" title="" target="" >    <span class="uif_bluequotetoorderIcon uif_blueicon"></span>
+    <span class="uif_toolCaption">Quotes</span>
+</a>
+
+</li>
+                    <li>
+
+<a class="uif_link orderstatus orderstatus" id="" href="http://www.dell.com/support/orderstatus/us/en/rc957119/" title="" target="" >    <span class="uif_blueorderstatusIcon uif_blueicon"></span>
+    <span class="uif_toolCaption">Order Status</span>
+</a>
+
+</li>
+                    <li>  
+<a class="uif_link idea idea" id="" href="javascript:void(0);" onclick="javascript:window.open('http://del.ly/IdeaStormP','Largepop','menubar=0,resizable=1,scrollbars=1,status=1,titlebar=1,toolbar=0,location=0,width=600,height=400');void(0)" title="" >    <span class="uif_blueideaIcon uif_blueicon"></span>
+    <span class="uif_toolCaption">Share Your Ideas</span>
+</a></li>
+
+            </ul>
+        </div>
+    <div class="uif_mastheadSubWrap">
+        
+    </div>
+
+
+<div class="breadCrumb">
+    <ul class="bCrumb cntrDiv col12 clrFix">
+         
+                <li class="home"><a href="http://www.dell.com/account/us/en/rc957119/"><span class="sep"></span></a></li>
+                <li>
+                    <span class="sep">&nbsp;</span>
+Document Library                </li>       
+    </ul>
+</div></header>
+
+    <div id="divTitleInMasthead" class="uif_mastheadSubWrap">
+
+        <div class="uif_mhFooterWrap clearfix">
+            <h1 class="gsd_pageTitle">
+Document Library            </h1>
+        </div>
+    </div>
+    
+    <div id="content" class="uif_bodyWrap" >
+        <div class="uif_bodySubWrap">
+                <div class="uif_layoutBodyWrap clearfix">
+                        <div class="uif_layoutSubBodyWrap">
+  <div class="uif_stdCornerBox uif_shadowOffset " 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix                                                       tbtsSpacer
+">
+                                              
+               
+                                <div class="uif_banner">
+                                    
+    
+
+
+                                </div>
+                                <div class="uif_maincontent">
+                                    
+
+
+
+
+
+<script type="text/javascript">
+
+    $('div.pgTools').find("a.print").unbind("click").bind("click", function () {
+        window.print();
+        return false;
+    });
+</script>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+<h2 class="articlePageTitle">Dell Networking N3000: Configuring VLAN routing (GUI)</h2>    
+
+
+
+           
+
+<ul class="articleUserTools">
+    <li class="articleTool">
+        <a class="emailIcon" href="#" name="mailtoLinkType">
+            <span id="emailSubjectText" class="dnvh">Check out this page on Dell.com!
+</span>
+            Email
+
+        </a>
+    </li>
+</ul>
+
+<div class="mediaPlayerContainer">
+            <script src="http://player.ooyala.com/v3/NzI5Mjk2NjM2MGZlN2E4NmUwNTRiNDNm?platform=html5-fallback&amp;namespace=dellvideoplayer" type="text/javascript"> </script>
+            <div id="8830" class="playerwrapper">
+
+            </div>
+            <script>
+                //hack to make masthead appear above video
+                $(".uif_maincontent").css("z-index", "1");
+
+                var captionsXml;
+                var currentCaption = "";
+                var lastCaption = "";
+                var captions = [];
+                var allCaptions = [];
+                var numCCLanguages = 0;
+                var languageList = [];
+                var captionsUrl = "";
+                var videoApiUrl = 'http://www.dell.com/learn/us/en/rc957119/vmd/captions?embedcode=xkaGdqaDo5lJghKN0o-B8fyctn97NOK4';
+                var idModel = 'e69921fe-453d-457d-b6a5-96d2fe6f5112';
+
+                // ***************************************************
+                // Ooyala READY FUNCTION
+                // ***************************************************
+                dellvideoplayer.ready(function () {
+                    var playerConfiguration = {
+                        width: "100%",
+                        height: "100%",
+                        wmode: 'transparent',
+                        autoplay: false,
+                        enableChannels: true,
+                        initialTime: 0,
+                        locale: "en_us",
+                        loop: false,
+                        flashParams: {
+                            "thruParam_omniture-dell-other[prop49]": "c=us&l=en&s=bsd"
+                        },
+                        prebuffering: false,
+                        useFirstVideoPlaylist: false,
+                        onCreate: window.createPlayer
+                    };
+
+                    dellvideoplayer.Player.create('8830', 'xkaGdqaDo5lJghKN0o-B8fyctn97NOK4', playerConfiguration);
+                });
+
+                function resizeVideo(obj) {
+                    var div = document.getElementById(obj.elementId);
+                    div.style.height = 360 + 'px';
+                    div.style.width = 640 + 'px';
+
+                }
+
+                // Find the correct current CC
+                function findCurrentCC(_locLanguage, _locCountry) {
+                    for (var _a = 0; _a < languageList.length; _a++) {
+                        var _listLang = languageList[_a].toLowerCase();
+                        var _locale = (_locCountry != undefined) ? (_locLanguage + "-" + _locCountry) : _locLanguage;
+                        // check for special cases
+                        if (_locale.toLowerCase() == "zh-cn") {
+                            _locale = "zh-hans";
+                        } else if (_locale.toLowerCase() == "zh-tw") {
+                            _locale = "zh-hant";
+                        }
+                        if (_listLang.toLowerCase() == _locale.toLowerCase()) {
+                            return allCaptions[_a];
+                        }
+                    }
+                    return [];
+                }
+
+                function parseRuntime(seconds) {
+                    sec_numb = parseInt(seconds);
+                    var hours = Math.floor(sec_numb / 3600);
+                    var minutes = Math.floor((sec_numb - (hours * 3600)) / 60);
+                    var seconds = sec_numb - (hours * 3600) - (minutes * 60);
+
+                    if (hours < 10) {
+                        hours = "0" + hours;
+                    }
+                    if (minutes < 10) {
+                        minutes = "0" + minutes;
+                    }
+                    if (seconds < 10) {
+                        seconds = "0" + seconds;
+                    }
+                    var time = hours + ':' + minutes + ':' + seconds;
+                    return time;
+                }
+
+                function getTime(time) {
+                    var time = time.split(":");
+                    var hours = parseInt(time[0], 10);
+                    var minutes = parseInt(time[1], 10);
+                    var seconds = parseInt(time[2], 10);
+                    return ((hours * 3600) + (minutes * 60) + seconds);
+                };
+
+
+                function createCaptionsCollection(d) {
+                    numCCLanguages = d.length;
+                    var _allCaptions = [];
+                    var _lastLanguage = "xx";
+                    var _currentLanguage = "";
+
+                    if (numCCLanguages > 0) {
+                        $('body').append('\
+                                <div id="ccLanguageModal" style="display:none;">\
+                                    <p style="margin-bottom:10px;">Captions : \
+                                        <a id="on-caption" href="javascript:void(0);" class="ooyala-caption" onClick="onCaptions();">On</a>\
+                                        <a id="off-caption" href="javascript:void(0);" class="disabled ooyala-caption" onClick="offCaptions();">Off</a>\
+                                    </p>\
+                                    <ul id="listLanguages"></ul>\
+                                </div>');
+
+                    }
+                    // create a quick array of language codes (assumes that these are in the same order)
+                    for (var _z = 0; _z < numCCLanguages; _z++) {
+                        var divElement = $(d[_z]);
+                        //languages
+                        var _langCode = divElement.attr("xml:lang");
+                        var _langName = mapLanguageCodes(_langCode);
+                        languageList.push(_langCode);
+                        // populate the language list modal
+                        $("#listLanguages").append("<li class=\"ccLanguage\" data=\"" + _langCode + "\" >" + _langName + "</li>");
+
+                        //process the captions
+                        var _caption = [];
+                        // grab the <p> element
+                        var _el = divElement.find("p");
+                        // spin through the <p>
+                        for (var _y = 0; _y < _el.length; _y++) {
+                            // get parent language
+                            _currentLanguage = _langCode;
+                            if (_currentLanguage != _lastLanguage) {
+                                _caption.push({ "begin": getTime($(_el[_y]).attr("begin")), "end": getTime($(_el[_y]).attr("end")), "text": $(_el[_y]).text() });
+                            }
+                        }
+                        _lastLanguage = _currentLanguage;
+                        _allCaptions.push(_caption);
+                    }
+                    // add event handler
+                    $(".ccLanguage").bind("click", this, changeCC);
+
+                    return _allCaptions;
+                }
+
+                function getClosedCaptions(language, country, elementId) {
+                    if (captionsUrl != "")
+                        getCaptionsFromOoyala(language, country);
+                    else {
+                        $.getJSON(videoApiUrl, null).done(function (data) {
+                            captionsUrl = data.captionsUrl;
+                            var error = data.error;
+                            if (!error && captionsUrl != "") {
+                                getCaptionsFromOoyala(language, country, elementId);
+                            }
+                        }).fail(function (data) {
+                            console.log("ajax call failed for captions url");
+                        });
+                    }
+                }
+
+                function getCaptionsFromOoyala(language, country, elementId) {
+                    $.ajax({
+                        url: captionsUrl,
+                        type: "GET",
+                        dataType: "xml"
+                    }).done(function (xmldata) {
+                        captionsXml = $(xmldata);
+                        allCaptions = createCaptionsCollection(captionsXml.find("div"));
+
+                        if (allCaptions.length > 0) {
+                            var playerRoot = $("#" + elementId);
+                            playerRoot.find('.oo_controls').append('\
+                            <div id="captionsContainer">\
+                              <div id="captionBackground">\
+                                &nbsp;\
+                              </div>\
+                              <div id="caption">\
+                              </div>\
+                            </div>\
+                            ');
+
+                            addCCButton(elementId);
+                            //languageList - spin through the language list and grab the current CC captions
+                            // first try full locale
+                            captions = findCurrentCC(language, country);
+                            if (captions.length == 0) {
+                                captions = findCurrentCC(language);
+                            }
+                        }
+
+                    }).fail(function (xmldata) {
+                        console.log("Did not get closed captions");
+                    });
+                }
+
+
+                // ***************************************************
+                // CREATE FUNCTION
+                // ***************************************************
+                function createPlayer(player) {
+                    // call the resize
+                    resizeVideo(player);
+
+                    // set global message bus - use the window.messageBus object outside of this function
+                    window.messageBus = player.mb;
+
+                    // subscribe to resize event to resize for responsiveness
+                    //player.subscribe(dellvideoplayer.EVENTS.SIZE_CHANGED, "myPage", function (eventName) {
+                    //    resizeVideo(player);
+                    //});
+
+                    // detect flash - if no Flash, subscribe to events
+                    var flashVideoPlayerObj = $("object[id*='OoFlash']");
+                    if (flashVideoPlayerObj.length == 0) {
+
+                        window.messageBus.subscribe(dellvideoplayer.EVENTS.PLAYER_CREATED, "myPage", function (eventName, elementId, params) {
+                            var flashVideoPlayerObj2 = $("object[id*='OoFlash']");
+                            if (flashVideoPlayerObj2.length == 0) {
+                                getClosedCaptions('en', 'us', elementId);
+                            }
+                        });
+
+                        window.messageBus.subscribe(dellvideoplayer.EVENTS.PLAYING, "myPage", function (eventName) {
+                            window.messageBus.unsubscribe(dellvideoplayer.EVENTS.PLAYING, "myPage");
+                            // event16 - start
+                            if (typeof (s_dell) != 'undefined') {
+                                s_dell.linkTrackVars = 'prop2,prop13,prop49,eVar24';
+                                s_dell.linkTrackEvents = 'event16';
+                                s_dell.events = s_dell.apl(s_dell.events, 'event16', ',', 2);
+                                s_dell.eVar24 = player.embedCode;
+                                s_dell.tl(true, 'o', player.embedCode);
+                            }
+                        });
+                        window.videoEightyPercent = false;
+                        window.videoComplete = false;
+                        window.messageBus.subscribe(dellvideoplayer.EVENTS.PLAYHEAD_TIME_CHANGED, "myPage", function (eventName, currentTime, totalTime) {
+                            var perc = currentTime / totalTime;
+
+                            if (typeof (s_dell) != 'undefined') {
+                                if (perc >= 0.8 && perc < 1 && !window.videoEightyPercent) {
+                                    window.videoEightyPercent = true;
+                                    s_dell.linkTrackVars = 'prop2,prop13,prop49,eVar24';
+                                    s_dell.linkTrackEvents = 'event33';
+                                    s_dell.events = s_dell.apl(s_dell.events, 'event33', ',', 2);
+                                    s_dell.eVar24 = player.embedCode;
+                                    s_dell.tl(true, 'o', player.embedCode);
+                                }
+                                else if (perc >= 1 && !window.videoComplete) {
+                                    window.videoComplete = true;
+                                    s_dell.linkTrackVars = 'prop2,prop13,prop49,eVar24';
+                                    s_dell.linkTrackEvents = 'event34';
+                                    s_dell.events = s_dell.apl(s_dell.events, 'event34', ',', 2);
+                                    s_dell.eVar24 = player.embedCode;
+                                    s_dell.tl(true, 'o', player.embedCode);
+                                }
+                            }
+
+                            onPlayheadTimeChanged(currentTime);
+                        });
+                    }
+
+                }
+
+                //allow full screen for modal videos
+                if (typeof (window.top.document) != 'undefined' && typeof ($(document) != 'undefined') && window.top.document != $(document)) {
+                    $(window.top.document).find('.uif_modal_iframe').attr('allowfullscreen', true);
+                    $(window.top.document).find('.uif_modal_iframe').attr('mozallowfullscreen', true);
+                    $(window.top.document).find('.uif_modal_iframe').attr('webkitallowfullscreen', true);
+
+                    //for browse modals
+                    $(window.top.document).find('.modalFrame').attr('allowfullscreen', true);
+                    $(window.top.document).find('.modalFrame').attr('mozallowfullscreen', true);
+                    $(window.top.document).find('.modalFrame').attr('webkitallowfullscreen', true);
+                }
+
+                /*
+        Get the localized language name for each locale code
+        e.g. "en-US" = "English (US)"
+    */
+                function mapLanguageCodes(localeCode) {
+                    switch (localeCode.toLowerCase()) {
+                        case "da":
+                            return "Dansk";
+                        case "de":
+                            return "Deutsch";
+                        case "en":
+                            return "English";
+                        case "en-us":
+                            return "English (US)";
+                        case "en-uk":
+                            return "English (UK)";
+                        case "es":
+                            return "Español";
+                        case "fr":
+                            return "Français";
+                        case "hi":
+                            return "हिन्दी";
+                        case "it":
+                            return "Italiano";
+                        case "ja":
+                            return '日本語';
+                        case "ko":
+                            return "조선말, 한국어";
+                        case "nl":
+                            return "Nederlands";
+                        case "pt":
+                        case "pt-pt":
+                            return "Português";
+                        case "pt-br":
+                            return "Português (Brasil)";
+                        case "zh-hans":
+                            return "简体中文";
+                        case "zh-hant":
+                            return "繁體中文";
+                        case "ar":
+                            return "Arabic";
+                        case "cs":
+                            return "Czech";
+                        case "el":
+                            return "Greek";
+                        case "fi":
+                            return "Finnish";
+                        case "fr-ca":
+                            return "Français (Canada)";
+                        case "he":
+                            return "Hebrew";
+                        case "hu":
+                            return "Hungarian";
+                        case "no":
+                            return "Norweigan";
+                        case "pl":
+                            return "Polish";
+                        case "ro":
+                            return "Romanian";
+                        case "ru":
+                            return "Russian";
+                        case "sv":
+                            return "Swedish";
+                        case "tr":
+                            return "Turkish";
+                    }
+                }
+
+                function changeCC(obj) {
+                    if ($(this).hasClass("ccLanguage-disabled") == false) {
+                        var _langStr = obj.target.attributes.data.nodeValue;
+                        captions = findCurrentCC(_langStr);
+                        $("#ccLanguageModal").trigger('reveal:close');
+                        $("#videoLanguage01").hide();
+                        $("#cc_icon").attr("lanHidden", "true");
+                    }
+                    window.messageBus.publish(dellvideoplayer.EVENTS.PLAY);
+                }
+
+                function onPlayheadTimeChanged(currentTime) {
+                    var _playheadTime = currentTime;
+                    var currentCaption;
+                    // determine the language
+                    for (var caption in captions) {
+                        var caption = captions[caption];
+                        if (_playheadTime > caption["begin"]) {
+                            if (_playheadTime <= caption["end"]) {
+                                currentCaption = caption;
+                            }
+                        }
+                        else if (currentCaption) {
+                            break;
+                        }
+                    };
+                    if (currentCaption && (currentCaption != "")) {
+                        $("#captionsContainer").css("opacity", "1");
+                        $("#caption")[0].innerHTML = currentCaption["text"];
+                    }
+                    else {
+                        $("#captionsContainer").css("opacity", "0");
+                    }
+                    if (lastCaption != currentCaption) {
+                        $("#captionsContainer").css("width", "100%");
+                        if (currentCaption != "") {
+                            resizeCaptions();
+                        }
+                    }
+                    lastCaption = currentCaption;
+                }
+
+                function ccButtonHandler() {
+
+                    if ($.trim($(this).attr("lanHidden")) == "true") {
+                        $("#videoLanguage01").show();
+                        $("#cc_icon").attr("lanHidden", "false");
+                        window.messageBus.publish(dellvideoplayer.EVENTS.PAUSE);
+                    } else {
+                        $("#videoLanguage01").hide();
+                        $("#cc_icon").attr("lanHidden", "true");
+                        window.messageBus.publish(dellvideoplayer.EVENTS.PLAY);
+                    }
+                }
+
+                function addCCButton(elementId) {
+                    $("#" + elementId).find(".vod").append("<div id=\"cc_icon\" class=\"oo_button oo_toolbar_item oo_cc\" lanHidden=\"true\"></div>");
+                    $("#cc_icon").bind("click", "", ccButtonHandler);
+                    var playerId = elementId;
+                    var playerObj = $("#" + playerId);
+                    var vodNode = playerObj.find(".vod");
+                    playerObj.find('.oo_controls').attr("cc", "cc");
+                    var ccPopupHtml = '<div id="videoLanguage01" style="position: absolute; z-index: 11000; right: 0px; /* top: -251px; */ border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgb(204, 204, 204) 2px 2px 2px; padding: 10px; border: 1px solid rgb(255, 255, 255); width: 418px; height: 191px; overflow-y: auto; display: block; background-color: rgb(255, 255, 255);bottom: 42px;"></div>';
+                    $(vodNode).append(ccPopupHtml);
+                    $("#videoLanguage01").append($("#ccLanguageModal"));
+                    $("#ccLanguageModal").show();
+                    $("#videoLanguage01").hide();
+                    $("#cc_icon").attr("lanHidden", "true");
+                }
+
+                function resizeCaptions() {
+                    $("#captionsContainer").css("height", $("#caption").height());
+                    $("#captionsContainer").css("top", (-$("#caption").height() - 10) + "px");
+                    $("#captionBackground").css("width", $("#caption").width());
+                    $("#captionBackground").css("left", (($("#captionsContainer").width() - $("#caption").width()) / 2) + "px");
+                    $("#captionBackground").css("height", $("#caption").height());
+                    $("#caption").css("left", $("#captionBackground").css("left"));
+                }
+
+                function offCaptions() {
+                    if ($("#off-caption").hasClass("disabled")) {
+                        $("#off-caption").removeClass("disabled");
+                        $("#on-caption").addClass("disabled");
+                        $("#captionsContainer").hide();
+                        $("#listLanguages").hide();
+                        $(".ccLanguage").addClass("ccLanguage-disabled");
+                        $("#videoLanguage01").hide();
+                        $("#cc_icon").attr("lanHidden", "true");
+                        window.messageBus.publish(dellvideoplayer.EVENTS.PLAY);
+                    }
+                }
+
+
+                function onCaptions() {
+                    if ($("#on-caption").hasClass("disabled")) {
+                        $("#on-caption").removeClass("disabled");
+                        $("#off-caption").addClass("disabled");
+                        $("#captionsContainer").show();
+                        $("#listLanguages").show();
+                        $(".ccLanguage").removeClass("ccLanguage-disabled");
+                    }
+                }
+
+            </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+<div class="articleBody inlineContent">
+
+    <div class="clearfix">
+        ﻿
+    </div>
+</div>
+
+</div>
+
+
+
+            <div class="eloqua hide hidden"></div>
+
+
+                                </div>
+                                <div class="uif_rightrail">
+                                    
+    
+    <!-- NEED A WAY TO ACCESS THE CURRENT CATEGORY -->
+
+
+
+          
+
+  <div class="uif_stdCornerBox uif_1pxBorder mediaCarousel container" 
+         style="width:232px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+
+<div id="b686c6a8-e9d8-4a69-bd1d-c48bd11178d4" class="mjCarouselWrap clearfix mjCarouselTopNav mjDualNav ">
+    <div class="mjCarouselHeader ">
+        <h3 class="gsd_sectionHeading">Related Videos
+
+        </h3>
+
+        
+        
+    </div>
+    <div class="mjPrevWrap">
+        <a class="mjPrev mjOff disableOmni">Previous</a>
+        <div class="uif_linkBlocker">
+        </div>
+    </div>
+
+<div class="mjViewPort">
+  <div class="mjSlideWrap">
+    <ul class="mjSlideUL clearfix">
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="d2d0a1c7-694d-494d-9183-82b9cf2b0fed" href="javascript:Dell.SharedControls.Dialog.openDialog('d2d0a1c7-694d-494d-9183-82b9cf2b0fed_dialog');" title="Inspiron 17R (5720): Remove the LCD Assembly" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/Dell_Inspiron_5720_US-EN_LCD_Assembly.jpg' alt='Dell_Inspiron_5720_US-EN_LCD_Assembly.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('d2d0a1c7-694d-494d-9183-82b9cf2b0fed_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"d2d0a1c7-694d-494d-9183-82b9cf2b0fed_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~Dell_Inspiron_5720_US-EN_LCD_Assembly.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="45d0b8ca-a4cc-4aa7-adf1-659d6b22a37c" href="javascript:Dell.SharedControls.Dialog.openDialog('45d0b8ca-a4cc-4aa7-adf1-659d6b22a37c_dialog');" title="Inspiron 17R (5720): Remove the LCD Assembly" target="" ><span class="title">Inspiron 17R (5720): Remove the LCD Assembly</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('45d0b8ca-a4cc-4aa7-adf1-659d6b22a37c_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"45d0b8ca-a4cc-4aa7-adf1-659d6b22a37c_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~Dell_Inspiron_5720_US-EN_LCD_Assembly.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">0:35</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="9137de73-6852-472f-bf37-56f2354d7662" href="javascript:Dell.SharedControls.Dialog.openDialog('9137de73-6852-472f-bf37-56f2354d7662_dialog');" title="Returning Service Parts to Dell" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-CRUPartsReturn-en-v1.jpg' alt='esupport-CRUPartsReturn-en-v1.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('9137de73-6852-472f-bf37-56f2354d7662_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"9137de73-6852-472f-bf37-56f2354d7662_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-CRUPartsReturn-en-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="73d07b7d-dccb-40b0-aa7d-861517f2cb7e" href="javascript:Dell.SharedControls.Dialog.openDialog('73d07b7d-dccb-40b0-aa7d-861517f2cb7e_dialog');" title="Returning Service Parts to Dell" target="" ><span class="title">Returning Service Parts to Dell</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('73d07b7d-dccb-40b0-aa7d-861517f2cb7e_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"73d07b7d-dccb-40b0-aa7d-861517f2cb7e_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-CRUPartsReturn-en-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:24</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="d41a8f44-d717-4941-8fc9-19deb577c986" href="javascript:Dell.SharedControls.Dialog.openDialog('d41a8f44-d717-4941-8fc9-19deb577c986_dialog');" title="Blank Screen after turning on your Desktop?" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-MonitorBlank-EN-v2.jpg' alt='esupport-MonitorBlank-EN-v2.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('d41a8f44-d717-4941-8fc9-19deb577c986_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"d41a8f44-d717-4941-8fc9-19deb577c986_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-MonitorBlank-EN-v2.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="536f9c0c-30e9-47f7-8fe4-a5a2bfc225be" href="javascript:Dell.SharedControls.Dialog.openDialog('536f9c0c-30e9-47f7-8fe4-a5a2bfc225be_dialog');" title="Blank Screen after turning on your Desktop?" target="" ><span class="title">Blank Screen after turning on your Desktop?</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('536f9c0c-30e9-47f7-8fe4-a5a2bfc225be_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"536f9c0c-30e9-47f7-8fe4-a5a2bfc225be_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-MonitorBlank-EN-v2.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:43</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="be669015-c0e7-4853-af45-3907bd7c6773" href="javascript:Dell.SharedControls.Dialog.openDialog('be669015-c0e7-4853-af45-3907bd7c6773_dialog');" title="Learn How to Enable SSH in VMWare" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-Lassoinstallvmware-US-EN.jpg' alt='esupport-Lassoinstallvmware-US-EN.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('be669015-c0e7-4853-af45-3907bd7c6773_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"be669015-c0e7-4853-af45-3907bd7c6773_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-Lassoinstallvmware-US-EN.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="f98bbb81-a51f-488b-b6c5-b75d3b8328ac" href="javascript:Dell.SharedControls.Dialog.openDialog('f98bbb81-a51f-488b-b6c5-b75d3b8328ac_dialog');" title="Learn How to Enable SSH in VMWare" target="" ><span class="title">Learn How to Enable SSH in VMWare</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('f98bbb81-a51f-488b-b6c5-b75d3b8328ac_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"f98bbb81-a51f-488b-b6c5-b75d3b8328ac_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-Lassoinstallvmware-US-EN.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:25</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="07056dad-1e52-43d4-8a34-1e72f947eb21" href="javascript:Dell.SharedControls.Dialog.openDialog('07056dad-1e52-43d4-8a34-1e72f947eb21_dialog');" title="Update your System Setup (BIOS)" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/eSupport_System_Setup_Update.jpg' alt='eSupport_System_Setup_Update.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('07056dad-1e52-43d4-8a34-1e72f947eb21_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"07056dad-1e52-43d4-8a34-1e72f947eb21_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~eSupport_System_Setup_Update.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="0942a7c4-e9ee-4815-a3a7-8b9fde7c36c0" href="javascript:Dell.SharedControls.Dialog.openDialog('0942a7c4-e9ee-4815-a3a7-8b9fde7c36c0_dialog');" title="Update your System Setup (BIOS)" target="" ><span class="title">Update your System Setup (BIOS)</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('0942a7c4-e9ee-4815-a3a7-8b9fde7c36c0_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"0942a7c4-e9ee-4815-a3a7-8b9fde7c36c0_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~eSupport_System_Setup_Update.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:31</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="5c0eec3c-94be-414b-9168-1fcd789e528d" href="javascript:Dell.SharedControls.Dialog.openDialog('5c0eec3c-94be-414b-9168-1fcd789e528d_dialog');" title="Dell Wyse Thin Clients and Cloud PCs Video" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/wyse-thin-client-cloud-pc-video.jpg' alt='wyse-thin-client-cloud-pc-video.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('5c0eec3c-94be-414b-9168-1fcd789e528d_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"5c0eec3c-94be-414b-9168-1fcd789e528d_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~wyse-thin-client-cloud-pc-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="9afb69c8-6717-43fe-b5e2-b8594a2ba034" href="javascript:Dell.SharedControls.Dialog.openDialog('9afb69c8-6717-43fe-b5e2-b8594a2ba034_dialog');" title="Dell Wyse Thin Clients and Cloud PCs Video" target="" ><span class="title">Dell Wyse Thin Clients and Cloud PCs Video</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('9afb69c8-6717-43fe-b5e2-b8594a2ba034_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"9afb69c8-6717-43fe-b5e2-b8594a2ba034_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~wyse-thin-client-cloud-pc-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">1:22</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="45f3433e-5ab6-4995-a7aa-fd389cb63055" href="javascript:Dell.SharedControls.Dialog.openDialog('45f3433e-5ab6-4995-a7aa-fd389cb63055_dialog');" title="Wyse WSM" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/wyse-wsm-overview.jpg' alt='wyse-wsm-overview.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('45f3433e-5ab6-4995-a7aa-fd389cb63055_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"45f3433e-5ab6-4995-a7aa-fd389cb63055_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~wyse-wsm-overview.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="6cace75c-3891-483f-b685-56cf8a31941c" href="javascript:Dell.SharedControls.Dialog.openDialog('6cace75c-3891-483f-b685-56cf8a31941c_dialog');" title="Wyse WSM" target="" ><span class="title">Wyse WSM</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('6cace75c-3891-483f-b685-56cf8a31941c_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"6cace75c-3891-483f-b685-56cf8a31941c_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~wyse-wsm-overview.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">1:14</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="e14bab4d-18f5-4697-8359-76cdc5794ddf" href="javascript:Dell.SharedControls.Dialog.openDialog('e14bab4d-18f5-4697-8359-76cdc5794ddf_dialog');" title="PowerEdge Rack Server Family" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/poweredge-rack-server-family-video.jpg' alt='poweredge-rack-server-family-video.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('e14bab4d-18f5-4697-8359-76cdc5794ddf_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"e14bab4d-18f5-4697-8359-76cdc5794ddf_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~poweredge-rack-server-family-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="ae0dd7f3-dbdb-46cd-a01c-522602d5e374" href="javascript:Dell.SharedControls.Dialog.openDialog('ae0dd7f3-dbdb-46cd-a01c-522602d5e374_dialog');" title="PowerEdge Rack Server Family" target="" ><span class="title">PowerEdge Rack Server Family</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('ae0dd7f3-dbdb-46cd-a01c-522602d5e374_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"ae0dd7f3-dbdb-46cd-a01c-522602d5e374_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~poweredge-rack-server-family-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">4:30</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="3102e00f-1770-4854-9b3c-97d2c5280dad" href="javascript:Dell.SharedControls.Dialog.openDialog('3102e00f-1770-4854-9b3c-97d2c5280dad_dialog');" title="My Dell in 99 Seconds: Reset your Windows 7 Password" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/RM036_Reset_Password.jpg' alt='RM036_Reset_Password.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('3102e00f-1770-4854-9b3c-97d2c5280dad_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"3102e00f-1770-4854-9b3c-97d2c5280dad_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~RM036_Reset_Password.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="b7102041-e0a5-418e-a9a6-4d1fefb93b62" href="javascript:Dell.SharedControls.Dialog.openDialog('b7102041-e0a5-418e-a9a6-4d1fefb93b62_dialog');" title="My Dell in 99 Seconds: Reset your Windows 7 Password" target="" ><span class="title">My Dell in 99 Seconds: Reset your Windows 7 Password</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('b7102041-e0a5-418e-a9a6-4d1fefb93b62_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"b7102041-e0a5-418e-a9a6-4d1fefb93b62_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~RM036_Reset_Password.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">1:46</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="65eadc10-a190-4e2c-98b0-4645551c8463" href="javascript:Dell.SharedControls.Dialog.openDialog('65eadc10-a190-4e2c-98b0-4645551c8463_dialog');" title="Learn How to Protect Your Dell from Malware" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-malware-EN-v1.jpg' alt='esupport-malware-EN-v1.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('65eadc10-a190-4e2c-98b0-4645551c8463_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"65eadc10-a190-4e2c-98b0-4645551c8463_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-malware-EN-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="5014e9d0-9eba-4b6e-9fc2-a71e6cbca343" href="javascript:Dell.SharedControls.Dialog.openDialog('5014e9d0-9eba-4b6e-9fc2-a71e6cbca343_dialog');" title="Learn How to Protect Your Dell from Malware" target="" ><span class="title">Learn How to Protect Your Dell from Malware</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('5014e9d0-9eba-4b6e-9fc2-a71e6cbca343_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"5014e9d0-9eba-4b6e-9fc2-a71e6cbca343_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/rc957119\/videos~en\/Documents~esupport-malware-EN-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:42</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+    </ul>
+  </div>
+</div>
+    <div class="mjNextWrap">
+        <a class="mjNext disableOmni">Next</a>
+        <div class="uif_linkBlocker">
+        </div>
+    </div>
+        <div class="mjCarouselFooter">
+                <span class="mjBottomNavWrap"></span>   
+                <span class="mjPagination gsd_bodyCopySmall gsd_accentColor1"></span>
+           
+           
+        </div>
+</div>
+<script>
+    $(document).ready(function () {
+        jQuery('#b686c6a8-e9d8-4a69-bd1d-c48bd11178d4')
+            .mjcarousel({ paginationBottom: true,dualNav: true,withVerticalStack: 2,itemsVisible: 1,scrollIncrement: 1,speed: 800,viewPortWidth: 212,paginationViewingText: 'Viewing',paginationOfText: 'of' }); });
+</script>
+
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+
+
+                                </div>
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+                        </div>
+                </div>
+        </div>
+
+    </div>
+    <script>
+
+        //function tempFixForTallTitles() {
+        //    var title = $(".uif_mhPageTitle").eq(0),
+        //        titleHeight = title.height(),
+        //        isSkinny = (($(".uif_mastHead_skinny").length > 0) || ($(".uif_mastHead_skinnyWP").length > 0)) ? true : false,
+        //        isSkinnyPartial = ($(".uif_mastHead_skinny_control").length > 0) ? true : false,
+        //        isBuilder = ($(".uif_mhbodyBuilder").length > 0) ? true : false;
+        //    if ((titleHeight > 30 && !isSkinny && !isBuilder) || (titleHeight > 60 && isSkinny)) {
+        //        if (isSkinny) {
+        //            $("html").eq(0).addClass("uif_altTitleSkinny");
+        //        } else if (isBuilder) {
+        //            $("html").eq(0).addClass("uif_altTitleBuilder");
+        //        } else {
+        //            $("html").eq(0).addClass("uif_altTitle");
+        //        }
+        //        title.hide();
+        //        if (isSkinny) {
+        //            $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        }
+        //        $(".uif_bodySubWrap").eq(0).prepend("<h1 class='uif_altPageTitle gsd_pageTitle'>" + title.html() + "</h1>");
+        //    }
+        //    if (isSkinnyPartial) {
+        //        $("html").eq(0).addClass("uif_altTitleSkinnyPartial");
+        //        $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        $(".uif_bodySubWrap").eq(0).prepend(title);
+        //    }            
+        //};
+        //tempFixForTallTitles();
+    
+    </script>
+
+<footer id="revidFooter">
+
+
+
+<div class="breadCrumb">
+    <ul class="bCrumb cntrDiv col12 clrFix">
+         
+                <li class="home"><a href="http://www.dell.com/account/us/en/rc957119/"><span class="sep"></span></a></li>
+                <li>
+                    <span class="sep">&nbsp;</span>
+Document Library                </li>       
+    </ul>
+</div>    <nav class="contextual">
+        <div class="cntxCtr col12 cntrDiv clrFix">
+                    <ul class="contextualFooter">
+                                                <li class="contextualFooterLinks5col first">
+                            <h2 class="contextualFooterLinkTitle">Your Products</h2>
+                            <ul class="contextualFooterLinks">
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/list/index" title="" target="" >Lists</a>
+
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/equote/index/" title="" target="" >Quotes</a>
+
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/Equote/Index" title="" target="" >Sales Quotes</a>
+
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/shop/us/en/rc957119/" title="" target="" >Systems</a>
+
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/accessories/us/en/rc957119/home" title="" target="" >Peripherals</a>
+
+
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="contextualFooterLinks5col first">
+                            <h2 class="contextualFooterLinkTitle">Account</h2>
+                            <ul class="contextualFooterLinks">
+                                    <li>
+                                            <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_4058338239_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":440,"Id":"gen_4058338239_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/account\/EditPersonalInfo\/EditPersonalInfoModal","Template":null,"Width":510});
+            });
+            
+            
+        </script>
+
+
+<a class="uif_link " id="gen_4058338239" href="javascript:Dell.SharedControls.Dialog.openDialog('gen_4058338239_dialog');" title="" target="" >Your Profile</a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_4058338239_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":440,"Id":"gen_4058338239_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/account\/EditPersonalInfo\/EditPersonalInfoModal","Template":null,"Width":510});
+            });
+            
+            
+        </script>
+
+                                    </li>
+                                    <li>
+                                            <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_359752620_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":390,"Id":"gen_359752620_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/sts\/passive\/commercial\/v1\/accountmanagement\/changepasswordmodal","Template":null,"Width":620});
+            });
+            
+            
+        </script>
+
+
+<a class="uif_link " id="gen_359752620" href="javascript:Dell.SharedControls.Dialog.openDialog('gen_359752620_dialog');" title="" target="" >Change Password</a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('gen_359752620_dialog', {"AnalyticsContent":null,"CacheContent":false,"Height":390,"Id":"gen_359752620_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"https:\/\/www.dell.com\/sts\/passive\/commercial\/v1\/accountmanagement\/changepasswordmodal","Template":null,"Width":620});
+            });
+            
+            
+        </script>
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/Contact/DellTeam" title="" target="" >Dell Contacts</a>
+
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/Contact/CompanyContact" title="" target="" >Company Contacts</a>
+
+
+                                    </li>
+                                    <li>
+                                        
+
+<a class="uif_link " id="" href="http://www.dell.com/account/us/en/rc957119/address/index" title="" target="" >Address Book</a>
+
+
+                                    </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+           
+<div class="ctrySel">
+    <img width="18" height="11" alt=" " src="http://i.dell.com/images/global/masthead/smlflags/us.gif" class="flag"/><br/>
+    <div class="ctry">
+        <span> United States</span>
+      
+       
+   
+
+</div>
+    <div class="lang_sel">
+    </div>    
+     
+    </div>
+
+        </div>
+
+
+    </nav>
+        <div class="uif_footerNavWrap gsd_bodyCopySmall gsd_accentColor1 clearfix">
+            <div class="uif_copyright">
+                &#169; 2016 Dell
+            </div>
+
+                <ul class="universalFooterLinks">
+                        <li>
+                            
+
+<a class="uif_link " id="" href="http://www.dell.com/learn/terms?s=corp" title="" target="" >Legal & Regulatory</a>
+
+
+                        </li>
+                        <li>
+                            
+
+<a class="uif_link " id="" href="http://www.dell.com/learn/terms-of-sale?s=corp" title="" target="" >Terms of Sale</a>
+
+
+                        </li>
+                        <li>
+                            
+
+<a class="uif_link " id="" href="http://www.dell.com/learn/policies-privacy?s=corp" title="" target="" >Privacy Statement</a>
+
+
+                        </li>
+                        <li>
+                            
+
+<a class="uif_link toolbar_feedback opinionlabhtml" id="" href="http://www.dell.com/feedback" title="" target="" >Feedback</a>
+
+
+                        </li>
+                </ul>
+        </div>
+
+    <script type="text/javascript">checkFooterBreadCrumbCollision();</script>
+
+    <div class="technotes cntxCtr col12 cntrDiv clrFix">
+        <div class="innerLegalDisclaimer uif_legalWrap">
+            
+<script type="text/javascript">    
+
+</script>
+
+                <p>Same day shipment subject to order size limitations, Dell standard shipping methods and payment via credit card, gift card or Dell Business Credit. Notification will be provided if there are payment delays which could impact shipping date. Electronics and accessories may ship separately.<br /><br />Smart Selection. Limited quantities. Only available for orders placed by 5:59 p.m. CT Mon.–Thurs. Systems shipped the next business day after an order is placed. Subject to order approval. Software and accessories not part of the configuration will be shipped separately and may arrive after your system. Please note that Smart Selection Configuration pricing cannot be combined with other pricing offers or discounts provided or agreed to by Dell. ** Orders with Custom Factory Integration might require additional processing time.<br /><br /><strong>^Dell Business Credit:</strong> OFFER VARIES BY CREDITWORTHINESS AS DETERMINED BY LENDER. Offered by WebBank to Small and Medium Business customers with approved credit. Taxes, shipping and other charges are extra and vary. Minimum monthly payments are the greater of $15 or 3% of account balance.<br /><br />**Payment solutions provided and serviced by Dell Financial Services L.L.C. or its affiliate or designee (“DFS”) to qualified customers. Offers may not be available or may vary in certain countries. Where available, offers may be changed without notice and are subject to product availability, credit approval, execution of documentation provided by and acceptable to DFS, and may be subject to minimum transaction size. Offers not available for personal, family or household use. Dell and the Dell logo are trademarks of Dell Inc. Restrictions and additional requirements may apply to transactions with governmental or public entities.<br /><br />¹Subject to applicable law and regulations.</p>
+        </div>
+    </div>
+    
+    <div class="pChat dnvh"><input type="hidden" id="pChatURL" value="https://channelspro.us.dell.com/netagent/proactive/proactive.aspx"></div>
+</footer>
+<script>
+    $(function () {
+        $(".universalFooterLinks").UniversalLinkAdjuster();
+    })
+</script>
+    
+<script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=bottom&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=ratings&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=articleTools&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=webparts%2fmediaPlayer&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnCore&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2fdemandbase&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2feloqua%2feloqua&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script>    <script type="text/javascript">
+        var dell_trackingLinks=[];
+    </script>
+    
+    
+  <div class="uif_stdCornerBox gsd_bodyCopySmall gsd_accentColor1 uif_validationTooltip uif_ContainerWithX " 
+         id="uifValidationMessageDefault" 
+         style="width:200px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+</body>
+</html>
