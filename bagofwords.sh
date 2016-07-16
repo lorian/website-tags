@@ -12,3 +12,5 @@ do
 done
 # combine count files
 awk '{ count[$2] += $1 } END { for(elem in count) print count[elem], elem }' *.w.txt | sort -nr > wordcount.txt
+# drop single-occurance words and stop words
+grep -v "^1 " wordcount.txt | grep -vf ../minimal-stop.txt > wordcount_clean.txt
