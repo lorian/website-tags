@@ -7,10 +7,10 @@ do
 	cat $FILE | lynx --stdin --dump > ${FILEBASE}.txt 
 	# gets the lines before References (the line number where References is comes from the grep command), 
 	# then converts all whitespace to spaces, removes duplicate spaces, removes everything containing a non-letter, inserts line returns between words, 
-	# lowercases everything, counts words, then saves output as text file
-	head -n $((`grep -nx 'References' ${FILEBASE}.txt | grep -Eo '^[^:]+'` -1)) ${FILEBASE}.txt | tr '[:space:]' ' ' |tr -c '[:alpha:] ' ' ' | tr -s ' '|  tr ' ' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c > ${FILEBASE}.w.txt
+	# lowercases everything, removes stop words, counts words, then saves output as text file
+	head -n $((`grep -nx 'References' ${FILEBASE}.txt | grep -Eo '^[^:]+'` -1)) ${FILEBASE}.txt | tr '[:space:]' ' ' |tr -c '[:alpha:] ' ' ' | tr -s ' '|  tr ' ' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | grep -vf ../minimal-stop.txt > ${FILEBASE}.w.txt
 done
 # combine count files
 awk '{ count[$2] += $1 } END { for(elem in count) print count[elem], elem }' *.w.txt | sort -nr > wordcount.txt
-# drop single-occurance words and stop words
-grep -v "^1 " wordcount.txt | grep -vf ../minimal-stop.txt > wordcount_clean.txt
+# drop single-occurance words
+grep -v "^1 " wordcount.txt > wordcount_clean.txt
