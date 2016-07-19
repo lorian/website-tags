@@ -17,7 +17,10 @@ parser.add_argument('num_clusters', help='How many clusters to group pages into'
 args = parser.parse_args()
 
 # Convert wordcount files to list of dictionaries for each page
-wordcounts_f = [f for f in os.listdir('.') if f.endswith('.w.txt')][0:int(args.num_pages)]
+wordcounts_f = [f for f in os.listdir('.') if f.endswith('.w.txt')]
+wordcounts_f.sort(reverse=True) # makes sure labeled pages are present by default
+wordcounts_f = wordcounts_f[0:int(args.num_pages)]
+
 wordcounts = []
 for fl in wordcounts_f:
 	wc_dict = dict()
@@ -29,7 +32,6 @@ for fl in wordcounts_f:
 
 # Use DictVectorizer to convert the dictionaries to a sparse array like sklearn wants
 word_features = DictVectorizer().fit_transform(wordcounts).toarray()
-#print word_features.get_feature_names()
 
 # k-means clustering
 clusters = KMeans(n_clusters=int(args.num_clusters)).fit_predict(word_features)
@@ -43,9 +45,9 @@ plt.show()
 
 # Display pages from a given cluster in the broswer (best with few pages!)
 target_cluster = ''
-while target_cluster != 'N':
-	target_cluster = input("Which cluster do you want to open pages of? (N for none):")
-	if target_cluster != 'N':
+while target_cluster != 'q':
+	target_cluster = raw_input("Which cluster do you want to open pages of? (q to quit):")
+	if target_cluster != 'q':
 		print ("Pages in cluster {}:".format(target_cluster))
 		for cl,page in clustered_pages:
 			if cl == target_cluster:
