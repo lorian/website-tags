@@ -3,13 +3,21 @@
 import pandas
 import os
 import pprint
+import argparse
 import matplotlib.pylab as plt
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.cluster import KMeans
+import webbrowser
+
+# script takes number of pages and number of clusters as arguments
+parser = argparse.ArgumentParser(description='Imports wordcounts from webpages and clusters them')
+parser.add_argument('num_pages', help='How many webpages to analyze and cluster (max of 500)')
+parser.add_argument('num_clusters', help='How many clusters to group pages into')
+args = parser.parse_args()
 
 # Convert wordcount files to list of dictionaries for each page
-wordcounts_f = [f for f in os.listdir('.') if f.endswith('.w.txt')]
+wordcounts_f = [f for f in os.listdir('.') if f.endswith('.w.txt')][0:int(args.num_pages)]
 wordcounts = []
 for fl in wordcounts_f:
 	wc_dict = dict()
@@ -24,9 +32,23 @@ word_features = DictVectorizer().fit_transform(wordcounts).toarray()
 #print word_features.get_feature_names()
 
 # k-means clustering
-clusters = KMeans(n_clusters=26).fit_predict(word_features)
-print clusters
+clusters = KMeans(n_clusters=int(args.num_clusters)).fit_predict(word_features)
+clustered_pages = zip(clusters,wordcounts_f)
+clustered_pages.sort(key=lambda x: x[0])
+pprint.pprint(clustered_pages)
 
 # Plot clusters
 plt.scatter(range(1,len(clusters)+1), clusters)
 plt.show()
+
+# Display pages from a given cluster in the broswer (best with few pages!)
+target_cluster = ''
+while target_cluster != 'N':
+	target_cluster = input("Which cluster do you want to open pages of? (N for none):")
+	if target_cluster != 'N':
+		print ("Pages in cluster {}:".format(target_cluster))
+		for cl,page in clustered_pages:
+			if cl == target_cluster:
+				print page.partition('.')[0]+'.html'
+				webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
+
