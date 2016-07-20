@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+    <meta charset="utf-8">
+    <script type="text/javascript">document.domain = 'dell.com';</script>
+
+
+<title>PowerEdge PCIe Express Flash SSD - Fast IOPS Performance | Dell </title>
+            <meta name="author" content="Dell us"/>
+            <meta name="channel" content="http://www.dell.com/learn/us/en/04/campaigns/poweredge-express-flash?c=us&amp;l=en&amp;s=bsd&amp;cs=04&amp;delphi:gr=true"/>
+            <meta name="cmsurl" content="http://cmscontent.dell.com/sites/content/shared-content/campaigns/en/Pages/poweredge-express-flash.aspx"/>
+            <meta name="customerset" content="04"/>
+            <meta name="description" content="Narrow the gap between server and storage performance with Dell™ PowerEdge™ Express Flash PCIe solid-state storage device (SSD)."/>
+            <meta name="documentcountrycode" content="us"/>
+            <meta name="generator" content="Build: 4.3.3.0  Built On: 4/13/2012 11:04:47 AM"/>
+            <meta name="keywords" content=""/>
+            <meta name="language" content="en"/>
+            <meta name="mbox-to" content=""/>
+            <meta name="metricpath" content="04"/>
+            <meta name="olr_store" content="N"/>
+            <meta name="profile_id" content=""/>
+            <meta name="s_account" content="dellglobalonline"/>
+            <meta name="segment" content="bsd"/>
+            <meta name="waaction" content="ByDocumentID"/>
+            <meta name="waapplicationname" content="Dell.UX.Mvc.Learn.UI"/>
+            <meta name="wacontroller" content="Document"/>
+            <meta name="servername" content="P20LEARN01"/>
+            <meta name="pagetemplate" content="campaign-tabs"/>
+            <meta name="expires" content=""/>
+            <meta name="termid" content="TOPT:NAV_TOPT_campaigns"/>
+            <meta name="termname" content="Campaigns"/>
+            <meta name="cmsurlqs" content="c=us&amp;l=en&amp;r=us&amp;s=bsd&amp;category=TOPT:NAV_TOPT_campaigns"/>
+            <meta name="lastmodifieddate" content="04/25/2016 03:56:00 AM"/>
+  
+
+
+
+
+<script type="text/javascript">
+  if (typeof Dell == 'undefined') var Dell = {};
+  if (!Dell.Global)
+      Dell.Global = {
+          Settings: {
+              mceLink: "http://cmscontent.dell.com/sites/content/_layouts/dell/viewmicrocontent.aspx ",
+              toolsPanelLinks: {
+                  toolsPanel: '/learn/us/en/04/UIFramework/toolspanel ',
+                  combineCssJs: '/learn/us/en/04/UIFramework/configurationmanagement/ToggleCombineSettings ',
+                  compressCssJs: '/learn/us/en/04/UIFramework/configurationmanagement/ToggleCompressSettings ',
+                  configurationmgmt: '/learn/us/en/04/UIFramework/configurationmanagement/SectionListing '
+              },
+              legacyLogout: 'https://www.dell.com/sts/passive/commercial/v1/compatibility/logout?ru=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fcampaigns%2fpoweredge-express-flash%3fc%3dus%26l%3den%26s%3dbsd%26cs%3d04%26delphi%3agr%3dtrue'
+          },
+          lwp: {
+              c: "us",
+              l: "en",
+              s: "bsd",
+              cs: "04"
+          },
+          isPremier: "false" == "true",
+          isMigrated: "false" == "true"
+      };
+</script>
+
+<link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=core&type=framework&ver=636012973206800915&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=mainContent&type=application&ver=636012973206800915&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=modules%2fCampaignTabs&type=application&ver=636012973206800915&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnCore&type=application&ver=636012973206800915&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=legacyMasthead&type=framework&ver=636012973206800915&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnMastHeadCss&type=application&ver=636012973206800915&compress=True" type="text/css" media="all" /><script type="text/javascript" src="//nexus.ensighten.com/dell/Bootstrap.js"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=top_legacy&type=framework&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=sharedcontrols%2fdialog&type=framework&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnPrimary&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=masthead&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=stormMasthead&type=framework&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=legacyMasthead&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script>  
+    
+    
+
+
+<meta property="og:title" content="PowerEdge PCIe Express Flash SSD" />
+<meta property="og:url" content="http://www.dell.com/learn/us/en/04/campaigns/poweredge-express-flash?c=us&l=en&s=bsd&cs=04&delphi:gr=true" />
+<meta property="og:site_name" content="Dell" />
+<meta property="fb:app_id" content="186850318029150" />
+<meta property="og:description" content="Narrow the gap between server and storage performance with Dell™ PowerEdge™ Express Flash PCIe solid-state storage device (SSD)." />
+    <meta property="og:image" content="http://i.dell.com/images/global/brand/ui/storm80/logo80.png" />
+<meta property="og:type" content="Document" />
+    <link rel="canonical" href="http://www.dell.com/learn/us/en/04/campaigns/poweredge-express-flash" />
+    <link rel="alternate" href="http://www.dell.com/learn/us/en/04/campaigns/poweredge-express-flash" hreflang="en-us"/>
+
+    <script type="text/javascript">
+
+        var MasterTmsUdo = {
+            "CJ": {
+                "CID": "",
+                "TYPE": "",
+                "DISCOUNT": "",
+                "OGID": "",
+                "CURRENCY": "",
+                "COUPON": "",
+                "CSEG": "04",
+                "SEG": "bsd",
+                "PRODCAT": "",
+                "COUNTRY": "US",
+                "LANG": "EN",
+                "REVENUE": "",
+                "DEVICE": "D",
+                "PLATFORM": "learn",
+                "PROMOID": "",
+                "CATEGORY": "poweredge-express-flash",
+                "DEALS": "",
+                "FAMILY": "",
+                "PRODUCT": "",
+                "ORDERCODE": "",
+                "ACCOUNTID": "",
+                "EMAILHASH": "",
+
+                "PRODUCTLIST": [
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    },
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    }
+                ]
+
+            }
+        };
+    </script>
+  <script>
+      /*DO NOT ALTER *** DELL Americas*/
+      (function (e) {
+          var t = "773", n = document, r, i, s = { http: "http://cdn.mplxtms.com/s/MasterTMS.min.js", https: "https://secure-cdn.mplxtms.com/s/MasterTMS.min.js" }, o = s[/\w+/.exec(window.location.protocol)[0]];
+          i = n.createElement("script"), i.type = "text/javascript", i.async = !0, i.src = o + "#" + t, r = n.getElementsByTagName("script")[0], r.parentNode.insertBefore(i, r), i.readyState ? i.onreadystatechange = function () { if (i.readyState === "loaded" || i.readyState === "complete") i.onreadystatechange = null } : i.onload = function () {
+              try {
+                  e()
+              } catch (t) {
+              }
+          }
+      })(function () { });
+     </script>
+
+    
+
+
+</head>
+<body class="ctry_us lang_en set_04 ltr uif_bodyBannerRightRailSecondaryContent uif_mhbodyDefault razor gsd_bodyCopyMedium">
+
+
+<script type="text/javascript">
+
+    var InfoItems = '[{"Name":"author","Content":"Dell us","HttpEquiv":null},{"Name":"channel","Content":"http://www.dell.com/learn/us/en/04/campaigns/poweredge-express-flash?c=us&l=en&s=bsd&cs=04&delphi:gr=true","HttpEquiv":null},{"Name":"cmsurl","Content":"http://cmscontent.dell.com/sites/content/shared-content/campaigns/en/Pages/poweredge-express-flash.aspx","HttpEquiv":null},{"Name":null,"Content":"text/html; charset=utf-8","HttpEquiv":"content-type"},{"Name":"customerset","Content":"04","HttpEquiv":null},{"Name":"description","Content":"Narrow the gap between server and storage performance with Dell™ PowerEdge™ Express Flash PCIe solid-state storage device (SSD).","HttpEquiv":null},{"Name":"documentcountrycode","Content":"us","HttpEquiv":null},{"Name":"generator","Content":"Build: 4.3.3.0  Built On: 4/13/2012 11:04:47 AM","HttpEquiv":null},{"Name":"keywords","Content":"","HttpEquiv":null},{"Name":"language","Content":"en","HttpEquiv":null},{"Name":"mbox-to","Content":"","HttpEquiv":null},{"Name":"metricpath","Content":"04","HttpEquiv":null},{"Name":"olr_store","Content":"N","HttpEquiv":null},{"Name":"persistence_id","Content":"1e52c738-aa37-4338-8772-7d634d802fe7","HttpEquiv":null},{"Name":"premier_accessgroupid","Content":null,"HttpEquiv":null},{"Name":"premier_accessgroups","Content":null,"HttpEquiv":null},{"Name":"premier_roleid","Content":null,"HttpEquiv":null},{"Name":"premier_rolename","Content":null,"HttpEquiv":null},{"Name":"profile_id","Content":null,"HttpEquiv":null},{"Name":"s_account","Content":"dellglobalonline","HttpEquiv":null},{"Name":"segment","Content":"bsd","HttpEquiv":null},{"Name":"server","Content":"P20LEARN01","HttpEquiv":null},{"Name":"session_id","Content":"pn0ehj4giboe21ui40x1b5yu","HttpEquiv":null},{"Name":"waaction","Content":"ByDocumentID","HttpEquiv":null},{"Name":"waapplicationname","Content":"Dell.UX.Mvc.Learn.UI","HttpEquiv":null},{"Name":"wacontroller","Content":"Document","HttpEquiv":null},{"Name":"servername","Content":"P20LEARN01","HttpEquiv":null},{"Name":"pagetemplate","Content":"campaign-tabs","HttpEquiv":null},{"Name":"expires","Content":"","HttpEquiv":null},{"Name":"termid","Content":"TOPT:NAV_TOPT_campaigns","HttpEquiv":null},{"Name":"termname","Content":"Campaigns","HttpEquiv":null},{"Name":"cmsurlqs","Content":"c=us&l=en&r=us&s=bsd&category=TOPT:NAV_TOPT_campaigns","HttpEquiv":null},{"Name":"lastmodifieddate","Content":"04/25/2016 03:56:00 AM","HttpEquiv":null},{"Name":"pagename","Content":"us|en|bsd|04|learnux|document|campaigns|poweredge-express-flash","HttpEquiv":null},{"Name":"hier1","Content":"root:NAV_ROOT_work/TOPT:NAV_TOPT_campaigns/poweredge-express-flash","HttpEquiv":null},{"Name":"currentview","Content":"campaign-tabs","HttpEquiv":null},{"Name":"frv","Content":"http://frr","HttpEquiv":null}]';
+
+    Dell.Metrics.PageMetadata.PageMetaInfoItems = JSON.parse(InfoItems); 
+   
+
+    </script>
+
+
+
+
+
+    <div id="mbox_default">
+    </div>
+    <script type="text/javascript">
+        mboxCreate(Dell.Global.lwp.l + Dell.Global.lwp.c + '_olr', // language+ country +'_olr'
+                      'r=' + Dell.Global.lwp.c, //country
+                      'c=' + Dell.Global.lwp.c, //country
+                      'l=' + Dell.Global.lwp.l, //language
+                      's=' + Dell.Global.lwp.s, //segment
+                      'cs=' + Dell.Global.lwp.cs, //customerset
+                      'pn=' + Dell.Metrics.PageMetadata.find("pagename").Content);  //pagename
+    </script>
+
+<input type='hidden' id='urlOverride' name='masthead_logo_override' value='http://www.dell.com'/><script type="text/javascript" src="http://www-cdn.dell.com/content/public/menu.aspx?c=us&l=en&cs=04"></script>
+<script type="text/javascript">
+    var m_searchText = 'Search';
+    var m_ctry = 'us';
+    var m_csval = '04';
+    var m_langval = 'en';
+    var m_segval = 'bsd';
+
+                   
+    retRenderToolBox();
+
+            
+
+    var m_processingcaption = "Processing";
+    var m_LoadingCaption = 'Loading...';
+    var m_imgPfx = "http://i.dell.com";
+    var m_pbarPfx = "http://pbar.us.dell.com";
+    var _curAuthLevel = "Unknown";
+    var _curAuthEmailID = ""; 
+    m_pageTab = "0"; 
+    var m_pbarTabTitle = 'My Account';
+    var estaraInit = false;
+    var isAuthenticated = 'False';
+    var isPremier = 'False';
+   
+        var m_IsAuthPremier = false; var m_ensightenLink = new EnsightenLink(); var m_pbarCart = new PbarCartStrip('Cart','xdb.ashx?global:apps2:ecomm:mycart','item','Loading...',0,true);var m_pbarMA= new PbarMAStrip("Hello, {fname} ({clearuser})", "Hello, {fname} ({clearuser})", "Sign In", "not {fname}?", false, true, "", "", "Loading...", true, "", "/learn/us/en/04/campaigns/poweredge-express-flash/afh.ashx?type=logout&afhp=%3fc%3dus%26l%3den%26s%3dbsd%26cs%3d04%26delphi%3agr%3dtrue", "https://www.dell.com/identity/v2/discovery?wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.dell.com&whr=urn:transaction&wreply=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fcampaigns%2fpoweredge-express-flash%3fc%3dus%26l%3den%26s%3dbsd%26cs%3d04%26delphi%3agr%3dtrue");
+   
+    m_mda = '&nbsp;';
+    var m_myAccountLink = 'https://www.dell.com/identity/v2/discovery?wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.dell.com&whr=urn:transaction&wreply=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fcampaigns%2fpoweredge-express-flash%3fc%3dus%26l%3den%26s%3dbsd%26cs%3d04%26delphi%3agr%3dtrue';
+    m_curUrl = 'http://www.dell.com/content/default.aspx?c=us&amp;cs=04&amp;l=en&amp;s=bsd';
+    m_autocomplete = "/ac/ac.aspx";
+    m_isRtl = false;
+    m_isCenter = true;
+    m_isSegHome = true;
+    m_seglink = null;
+    var hoverovertime = 1300;
+    var m_containerTimeout = 500;
+    var m_navPage = null;
+    var m_regionDomain = "http://www.dell.com";
+    var logoUrlOverride = 'http://www.dell.com';
+    //LiveLOOK
+    var llJsHost = window.location.protocol + "//www.easymeeting.com";
+
+    if (m_segval == "gen") {
+        var m_skipMenuDef = true;
+    }
+    
+            writeMH( null,'<a href="http://www.dell.com/learn/campaigns/us-business-chat-splitter-reactive?s=bsd">Click to Chat</a> or <a href="http://www.dell.com/learn/campaigns/contact-us-phone-number?s=bsd">Call Us 1-800-456-3355</a>', null, null, false, true, 'Hello, {fname} ({clearuser})  &lt;span class=\"para_small\">&lt;b>not {UserName}? &lt;a href=\"javascript:RemoveName();location.href="http://membership.dell.com/dellportal/signoff.aspx?mode=deletecookie&amp;c=us&amp;l=en&amp;s=bsd&amp;cs=04";\" style=\"font-weight:normal;\" >&lt;/a>&lt;/b>)&lt;/span>' );
+</script>
+<noscript>
+<div id="mastheadWrap">
+<div id="masthead">
+<ul id="mastheadControls">
+<li class="signin"><a href="/_layouts/xdb.ashx?global:apps2:myaccount:main"><span>Sign In</span></a></li><li class="phonenumber"><a href="http://www.dell.com/learn/campaigns/us-business-chat-splitter-reactive?s=bsd">Click to Chat</a> or <a href="http://www.dell.com/learn/campaigns/contact-us-phone-number?s=bsd">Call Us 1-800-456-3355</a></li>	</ul><p class="gl" id="mhLogo"><a href="/_layouts/xdb.ashx?global:nav:logo"><img src='http://i.dell.com/images/global/brand/ui/storm80/logo80.gif' /></a></p><ul id="mastheadLinks"><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:shop" title="Shop">Shop</a> </li><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:apps2:sdc:home" title="Support">Support</a> </li><li><a href="http://en.community.dell.com/" title="Community">Community</a> </li></ul><div id="mastheadTools">
+<form id="mastheadSearchForm" method="get" action="http://search.dell.com/results.aspx">
+<fieldset>
+<input type='hidden' name='s' value='bsd'/><input type='hidden' name='c' value='us'/><input type='hidden' name='l' value='en'/><input type='hidden' name='cs' value='04'/><input type='hidden' name='cat' value='all'/><input type='text' name='k' id='mh_searchinput' title='Keyword Search'/><input class='button' type='image' alt='' src='http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/Image?path=masthead%2fgeneric_btn.gif&type=framework'/>	</fieldset>	</form>	</div>	</div>	</div></noscript>
+
+
+<header id="revidHeader" data-bind="attr: { 'class': css }">
+    <div class="custHelp" data-bind="'if': !isPopup">
+    <div class="col12 cntrDiv clrFix">
+        <span class="help" data-bind="html: contactUs"></span>
+        <span data-bind="css: { premier: true, noMda: !(mda.length > 0), nonEmpty: (premier.showTitle || premier.storeTitle || premier.linkTxt || privacy.showSettings) }">
+            <span class="storeNm" data-bind="'if': premier.showTitle, text: premier.storeTitle"></span>
+            <a data-bind="text: premier.linkTxt, attr: { href: premier.linkUrl }"></a>
+            <span data-bind="'if': premier.linkTxt && privacy.showSettings, css: { mhSep: premier.linkTxt && privacy.showSettings }">|</span>
+            <a href="#" data-bind="'if': privacy.showSettings, text: privacy.caption, css: { privacysettingslink: privacy.showSettings }, event: { click: privacy.onClick }"></a>
+        </span>
+        <span class="osRec" data-bind="html: mda.length > 0 ? mda : '', css: { osRec: mda.length > 0 }"></span>
+    </div>
+</div>
+<nav class="mh" data-bind="template: { afterRender: bindEvents }">
+    <div class="col12 cntrDiv clrFix topNav">
+       <a href="http://www.dell.com/" class="mhLogo" data-bind="if: !isHome, attr: { title: logoLink, href: logoLink }"><img alt="Dell" src="//i.dell.com/images/global/brand/ui/logo-wt-bl.png" data-bind="    attr: { src: imageDomain + '/images/global/brand/ui/logo-wt-bl.png' }"/></a>
+        <div class="tierNav" data-bind="'if': navigation.length > 0">
+            <ul id="tr1" class="tier1">
+                <li class="t1li noMarg">
+                    <ul class="t1Nav" data-bind="foreach: navigation">
+                        <li data-bind="attr: { id: containerId }, css: { t1li: true, curSel: isActive }">
+                            <div data-bind="attr: { 'class': cssClass }">
+                                <a href="#" class="mNav" data-bind="html: caption, attr: { rel: containerId, href: url, target: target }"></a>
+                                <span></span>
+                            </div>
+                            <!-- BEGIN SUBNAV TIER2 -->
+                            <div class="subNav" data-bind="attr: { id: containerId + '_sub' }">
+                                <div class="col12 cntrDiv clrFix">
+                                    <ul class="tier2" data-bind="foreach: subNavigation">
+                                        <li class="t2li" data-bind="attr: { id: containerId }">
+                                            <div class="tierLink" data-bind="attr: { 'class': cssClass }">
+                                                <a href="#" class="mNav" data-bind="html: caption, attr: { rel: containerId, href: url, target: target }"></a>
+                                                <span></span>
+                                            </div>
+                                            <!-- BEGIN SUBNAV TIER3 -->
+                                            <div class="subNav" data-bind="attr: { id: containerId + '_sub' }">
+                                                <div class="col12 cntrDiv clrFix">
+                                                    <ul class="viewAll clrFix">
+                                                        <li class="col3" data-bind="template: { name: 'viewAll-template', data: $parent }"></li>
+                                                        <li class="col3" data-bind="template: { name: 'viewAll-template', 'if': subNavigation.length > 0 }"></li>
+                                                        <li class="closeTier"><a href="#" data-bind="attr: { title: $root.closeLabel }"><span></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="login t1li" data-bind="'if': pbar.showMA">
+                    <div class="tierLogin" data-bind="template: { name: function () { return pbar.showAuthMsg ? 'pbar-showAuthMsg-template' : 'pbar-noShowAuthMsg-template' }, data: pbar }"></div>
+                </li>
+            </ul>
+        </div>
+        <div data-bind="'if': isPopup, css: { osRec: mda.length > 0 }"><span data-bind="    html: mda.length > 0 ? mda : ''"></span></div>
+        <div class="crtSrch" data-bind="'if': !isPopup">
+            <span data-bind="template: { name: 'showCart-template', 'if': cart.showCart }"></span>
+            <span data-bind="template: { name: 'showSearch-template', 'if': search.showSearch }"></span>
+        </div>
+    </div>
+</nav>
+    <div class="col12 cntrDiv clrFix">
+        
+<div class="pageTools">
+<ul id="mastheadToolsLinks"><li class="mastheadToolFinance"><a href="http://www.dell.com/learn/dell-financial-services?s=bsd">Financing</a> </li><li class="mastheadToolCustomerSupport"><a href="http://www.dell.com/learn/campaigns/chat-splitter-usbusiness">Live Chat or Call</a> </li><li class="mastheadToolGuide"><a href="http://www.dell.com/learn/campaigns/contract-purchases?s=slg" target="_blank">Available Contracts</a> </li><li class="mastheadToolCoupon"><a href="http://www.dell.com/learn/campaigns/dell-coupon-codes-us-smb?s=bsd">Coupons</a> </li><li class="mastheadToolStar"><a href="http://www.dell.com/learn/campaigns/advantage-us-bsd?s=bsd">Join Dell Advantage Rewards</a> </li><li class="mastheadToolQ2O"><a href="http://www.dell.com/learn/campaigns/price-match-guarantee-ussmb?s=bsd">Price Match</a> </li></ul></div>
+
+
+
+        
+
+    </div>
+
+    <div class="uif_mastheadSubWrap" style="height: 0px;">
+        <div class="uif_mhMainFoot clearfix clearBoth">
+            <div class="uif_mhFooterWrap clearfix">
+                <h1 class="uif_mhPageTitle gsd_pageTitle">PowerEdge PCIe Express Flash SSD</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+    <div id="content" class="uif_bodyWrap" >
+        <div class="uif_bodySubWrap">
+                <div class="uif_layoutBodyWrap clearfix">
+                        <div class="uif_layoutSubBodyWrap">
+  <div class="uif_stdCornerBox uif_shadowOffset " 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix                                                       tbtsSpacer
+">
+                                              
+               
+                                <div class="uif_banner">
+                                    
+    
+
+             
+
+<div class="static clearfix">
+
+<div class="staticBanner noindex">
+        <img alt="PowerEdge Express Flash Server" src="http://i.dell.com/sites/imagecontent/merchandizing/PublishingImages/2811.jpg" />
+
+
+</div>
+</div>
+
+<script type="text/javascript">  
+$(function () {  
+
+
+ });
+</script>
+
+        
+
+
+                                </div>
+                                <div class="uif_maincontent">
+                                    
+
+
+
+
+
+<script type="text/javascript">
+
+    $('div.pgTools').find("a.print").unbind("click").bind("click", function () {
+        window.print();
+        return false;
+    });
+</script>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container inlineContent ">
+Narrow the gap between server and storage performance with Dell™ PowerEdge™ Express Flash PCIe solid-state storage device (SSD). Avoiding the mechanical limitations of a hard disk drive, Dell’s PowerEdge Express Flash PCIe-SSD can help break through I/O (input/output) bottlenecks for latency-sensitive applications.<br /><br />Dell Express Flash technology is currently available for purchase on performance 2-socket and 4-socket PowerEdge server platforms, including the <a href="http://www.dell.com/us/business/p/poweredge-r630/pd?c=us&amp;l=en&amp;s=bsd&amp;fl=c" target="_blank">R630</a>, <a href="http://www.dell.com/us/business/p/poweredge-r730xd/pd?c=us&amp;l=en&amp;s=bsd&amp;fl=c" target="_blank">R730xd</a>,  <a href="http://www.dell.com/us/business/p/poweredge-r920/pd?c=us&amp;l=en&amp;s=bsd&amp;fl=c" target="_blank">R920</a>, <a href="http://www.dell.com/us/business/p/poweredge-r820/pd?c=us&amp;l=en&amp;s=bsd&amp;fl=c" target="_blank">R820</a>, <a href="http://www.dell.com/us/business/p/poweredge-t630/pd?c=us&amp;l=en&amp;s=bsd&amp;fl=c" target="_blank">T630</a> and <a href="http://www.dell.com/us/business/p/poweredge-m820/pd?c=us&amp;l=en&amp;s=bsd&amp;fl=c" target="_blank">M820</a>.<br /></div>           
+
+    <div class="nodeIntroText inlineContent gsd_bodyCopyMedium">
+        
+    </div>
+
+
+<div id="campaignTabs">
+    <ul>
+
+            <li><a href="#campaignTabs-0" data-analyticscontent="">
+Overview            </a></li>
+            
+
+            <li><a href="#campaignTabs-1" data-analyticscontent="">
+Standards            </a></li>
+            
+
+            <li><a href="#campaignTabs-2" data-analyticscontent="">
+Performance            </a></li>
+            
+
+            <li><a href="#campaignTabs-3" data-analyticscontent="">
+White Papers            </a></li>
+            
+    </ul>
+        <div id="campaignTabs-0">
+
+
+
+
+<div class="container inlineContent ">
+<table style="height: 735px; width: 643px;"><tbody><tr><td style="vertical-align: top; text-align: left;"><img style="height:362px;width:294px;border:0px solid" alt="PowerEdge Express Flash PCIe-SSD - Flash Technology" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/27d7a106-1b79-d303-d158-6b7f078f66dc/1/OriginalJPG?id=Dell/Product_Images/Dell_Enterprise_Products/Enterprise_Systems/PowerEdge/PowerEdge_Express+Flash/overview/express-flash-landing-pg-overview-tab-design1.jpg" /></td><td style="vertical-align: top; text-align: left;"><span style="font-size: 13px;"><strong>Flash technology<br /></strong>Solid-state drives (SSDs) use solid-state NAND flash memory to store data rather than the rotating magnetic recording media of hard disk drives (HDDs). Even the latest HDDs are performance-limited by the spindle speed of the disk (15K rpm). Solid-state technology does not suffer from the mechanical constraints of HDDs because it has no moving parts, providing reliable, ultra-fast, low-power and cost-effective storage devices. Nonvolatile NAND flash replace mechanical drives in solid-state storage solutions, designed to provide fast, reliable, low-power and cost-effective storage devices. Two types of non-volatile NAND types flash are in use today:</span> <ul><li><span style="font-size: 13px;">Single-level cell (SLC) NAND — SLC contains 1 bit per cell and is best suited for performance-intensive applications where high-write endurance is required, and cost is not a factor.</span> </li><li><span style="font-size: 13px;">Multilevel cell (MLC) NAND — MLC contains 2 bits per cell, and is used for applications having high-capacity requirements and/or minimal need for write endurance, and provides a lower cost alternative to SLC-based solutions.</span></li></ul></td></tr><tr><td colspan="2"><span style="font-size: 13px;"><strong><br />SSD formats</strong><br />SAS/SATA SSDs are similar to HDDs in that they use the same interface and therefore are accessed by the system through the same OS driver stack. While SAS/SATA solid-state storage devices offer significantly better performance over standard rotating-media HDDs, their performance can be limited by the latency and bottlenecks inherent in the driver stack. A single Express Flash drive can achieve up to 10.5x more database transactions per second than HDD storage.<br /><br /></span><p><span style="font-size: 13px;">PCIe solid-state storage (SSS), on the other hand, is directly connected to the PCIe bus. The bus provides a direct connection between the PCIe-SSS and the CPU, as well as system memory. This tightly coupled connection provides a storage environment that has lower latency than a SAS/SATA SSD.<br /></span></p></td></tr><tr><td style="vertical-align: middle; text-align: left;"><span style="font-size: 13px;"><strong>Dell PowerEdge Express Flash PCIe-SSD<br /></strong>The PowerEdge Express Flash PCIe-SSD is a high-performance storage device built with enterprise-class NAND flash designed for solutions requiring low latency, high input/output operations per second (IOPS) and enterprise-class storage reliability and serviceability. The Express Flash PCIe-SSD is a PCIe Gen2/Gen3-compliant device (depending on server type) that can be configured as storage cache or as a primary storage device in demanding enterprise environments, such as enterprise blade and rack servers, video-on-demand servers, web accelerators and virtualization appliances.</span></td><td><img style="height:212px;width:277px;border:0px solid" alt="Dell PowerEdge Express Flash PCIe-SSD" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/a9fd5e30-05fc-00eb-e4a5-c8367007ac2b/1/OriginalJPG?id=Dell/Product_Images/Dell_Enterprise_Products/Enterprise_Systems/PowerEdge/PowerEdge_Express+Flash/overview/express-flash-landing-pg-overview-tab-design2.jpg" /></td></tr></tbody></table></div>        </div>
+        <div id="campaignTabs-1">
+
+
+
+
+<div class="container inlineContent ">
+<table><tbody><tr><td><p><span style="font-size: 13px;"><span style="font-size: 13px;"><strong>Standards-based development</strong><br />Today, PCIe-SSDs are standardized as half-height/half-length (low-profile), full-height/half-length and full-height/full-length PCIe cards. While performance is impressive, the cards do not facilitate fast, cost-effective serviceability. To counter this limitation, Dell was a founding member of the SSD Form Factor Workgroup (SSD FF WG) driving the specification and standards for the 2.5" form factor and the 2.5" PCIe-SSD connector, which facilitates a device package that enables a serviceability model equivalent to today's hard disk drives (HDDs).<br /><br /></span></span></p><p><span style="font-size: 13px;">Dell also is a founding member of the Non Volatile Memory Express (NVM Express) consortium helping drive a standardized high-performance host controller interface for PCIe SSDs designed for current and next-generation non-volatile memory.<br /><br />By providing standards-based PCIe-SSD technology and enabling high availability, serviceability, ease of integration and enhanced scalability, the end customer will have a wider choice of options, can limit expensive customization and can plan for the future more efficiently.<br /></span></p></td></tr><tr><td><span style="font-size: 13px;"><span style="font-size: 13px;"><strong>Drive form factor</strong><br />The SSD FF WG is working toward a specification that leverages the current 2.5" HDD form factor standard. The aim is to enable enclosure flexibility while supporting the new connector definition and expanding the power envelope to support higher performance.<br /><br /><img style="border:0px solid" alt="PowerEdge Express Flash PCIe-SSD - Drive form factor" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/1cba71ad-0ff1-986f-a488-2841b59f7d32/1/OriginalJPG?id=Dell/Product_Images/Dell_Enterprise_Products/Enterprise_Systems/PowerEdge/PowerEdge_Express+Flash/overview/express-flash-landing-pg-standards-tab-design1.jpg" /><br />On your latest generation PowerEdge™ server enabled for PCIe-SSD, the PowerEdge Express Flash 2.5" PCIe-SSD form factor allows it to be plugged into a device bay. Up to four Express Flash devices can be connected, depending on your server.<br /><br /><img alt="PowerEdge Server" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/e31653eb-73fa-6db3-ef5c-b7e59b5d9b36/1/OriginalJPG?id=Dell/Product_Images/Dell_Enterprise_Products/Enterprise_Systems/PowerEdge/PowerEdge_Express+Flash/overview/express-flash-landing-pg-standards-tab-design2.jpg" /><br /><br /></span></span></td></tr><tr><td><p><span style="font-size: 13px;"><span style="font-size: 13px;"><strong>Hot-swap behavior<br /></strong>Dell has implemented hot-swap features and capabilities in the Express Flash PCIe-SSDs that are already employed by today’s hard disk drives. The intention is to help make serviceability and system scaling as quick and easy as possible. Dell is enabling the reliability and serviceability features that customers expect with standard HDDs to be a reality with PCIe-SSDs.<br /><br />The Dell PowerEdge™ Express Flash PCIe-SSD is the industry’s first hot-swappable PCIe SSD, supporting such hot-swap functions as:</span></span></p></td></tr><tr><td><ul><li>Orderly insertion, which enables you to insert a drive into a running system where a similar device has not been previously inserted from the time it was last booted. Dell systems that support PCIe SSDs are correctly configured to handle PCIe resource balancing in the event of a hot insertion. </li><li>Orderly removal, which allows you to remove a device from a running system. Before physically removing the device, you must notify the system that the device is about to be removed. </li><li>Orderly swap, which lets you remove a device from the system and replace it with an identical supported device.</li></ul></td></tr></tbody></table></div>        </div>
+        <div id="campaignTabs-2">
+
+
+
+
+<div class="container inlineContent ">
+<table style="height: 636px; width: 99.24%;"><tbody><tr><td><img style="height:283px;width:310px;border:0px solid" alt="PowerEdge Express Flash PCIe-SSD - High performance" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/33a30552-bdbc-c32e-c13d-e8a74df24252/1/OriginalJPG?id=Dell/Product_Images/Dell_Enterprise_Products/Enterprise_Systems/PowerEdge/PowerEdge_Express+Flash/overview/express-flash-landing-pg-performance-tab-design1.jpg" /></td><td style="width: 50%; vertical-align: top; text-align: left;"><p><span style="font-size: 13px;"><strong>High performance</strong><br />The Dell PowerEdge Express Flash PCIe-SSD enables outstanding IOPS performance. Dell Express Flash technology can deliver up to 1000x improvement in IOPS over traditional HDDs.Our first generation SLC based product delivered sequential throughput on reads and writes of up to 1.8/1.2GBps. Our second generation NVMe Express Flash devices are designed to deliver 3.0/1.4GBps at PCIe Gen3. In addition, the Dell PowerEdge Express Flash PCIe-SSD does not burden the server’s CPU and memory with NAND flash management overhead. Flash management is provided by the device controller running firmware on a high-performance ASIC that resides within the PCIe-SSD. This architecture offers superb IOPS and throughput performance without "borrowing" server resources.<br /><br /></span></p><p><span style="font-size: 13px;"><strong>Durability</strong><br />Since NAND SSDs have a finite number of program and erase cycles, Dell warrants the PowerEdge Express Flash PCIe-SSD to a maximum amount of data written to the SSD in total bytes written. The SSD monitors these cycles and Dell software management applications notify you when the warranty limits are reached</span>.</p></td></tr><tr><td style="vertical-align: top; text-align: left;"><p><span style="font-size: 13px;"><strong><br />Flexibility</strong><br />You can apply Express Flash PCIe-SSD technology to a number of applications, including: <br />•Online transactional processing (OLTP) <br />•Online analytical processing (OLAP) <br />•Collaborative (SharePoint) environments <br />•Virtualization (Hyper-V)<br /><br /></span></p><p><span style="font-size: 13px;">Express Flash PCIe-SSDs integrate with servers at the system bus and kernel level, creating a new flash storage cache/tier that can be used as a second-level database buffer cache for frequently read blocks or to store database objects, which requires low latency and high IO rates.</span></p></td><td><img style="height:305px;width:295px;border:0px solid" alt="PowerEdge Express Flash PCIe-SSD - Flexibility" src="http://i.dell.com/das/xa.ashx/global-site-design%20WEB/d3dc29b5-7da8-b2ed-c0a2-eab67004e22d/1/OriginalJPG?id=Dell/Product_Images/Dell_Enterprise_Products/Enterprise_Systems/PowerEdge/PowerEdge_Express+Flash/overview/express-flash-landing-pg-performance-tab-design2.jpg" /></td></tr></tbody></table></div>        </div>
+        <div id="campaignTabs-3">
+
+
+
+
+<div class="container inlineContent ">
+<span style="font-size: 13px;"><br />Turn your data into insights with Dell Express Flash PCIe technology. Explore our Reference Architectures to drive faster results for your business application.<br /><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Demartek_Dell_Samsung_Aerospike_Fraud_Prevention_Evaluation_2015-12.pdf">Dell PowerEdge R730xd Servers with Samsung SM1715 NVMe Drives Powers the Aerospike Fraud Prevention Benchmark</a><br /><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Microsoft_Dynamics_CRM_Performance_on_PowerEdge_R920_White_Paper.pdf" target="_blank">Microsoft Dynamics CRM 2013 Performance and Scalability on Dell PowerEdge R920 Servers with the Intel® Xeon® processor E7 v2 family and Solid State Drives</a><br /><br /><a href="http://i.dell.com/sites/content/shared-content/data-sheets/en/Documents/Express-Flash-Reference-Architecture.pdf" target="_blank">Express Flash SQL Reference Architecture<br /></a><br /><a href="http://i.dell.com/sites/content/shared-content/data-sheets/en/Documents/optimizing-sql-server-storage-performance-poweredge-r720.pdf" target="_blank">Optimizing SQL Server Storage Performance White Paper<br /></a><br /><a href="http://i.dell.com/sites/content/shared-content/data-sheets/en/Documents/Fine-Grained-Linux-IO-Subsystem-Enhancements-to-solid-state-storage.pdf" target="_blank">Fine Grained Linux I/O Subsystem Enhancements to Harness Solid-state Storage</a><br /><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/PCIe_serviceability_0512.pdf" target="_blank">Serviceability Comparison: Dell PCIe Express Flash SSDs VS. HP IO Accelerators<br /></a><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/PCIe_SSD_for_oracle_database_performance.pdf" target="_blank">Oracle DB Performance With Express Flash</a><br /><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Using-the-R720-with-Express-Flash-to-accelerate-the-performance-of-multiple-virtualized-SQL-2012-database.pdf" target="_blank">Using the R720 With Express Flash to Accelerate the Performance of Multiple virtualized SQL 2012 Database</a><br /><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Using-the-R820-with-Express-Flash-to-accelerate-the-performance-of-a-large-SQL-2012-database.pdf" target="_blank">Using the R820 With Express Flash to Accelerate the Performance of a Large SQL 2012 Database</a><br /><br /><a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Improving.pdf" target="_blank"><span style="font-size:13px">Improving NFS Performance on HPC Clusters with Dell Fluid Cache for DAS</span></a><br /></span></div>        </div>
+</div>
+
+<script type="text/javascript">
+
+    (function () {
+        $("#campaignTabs").tabs({
+            select: function (event, ui) {
+                Dell.WebAnalytics.tabPageView($.trim($(ui.tab).text()), $(ui.tab).data("analyticscontent"));
+            }
+        });
+        var firstTab = $("#campaignTabs").find("ul.ui-tabs-nav li.ui-state-default");
+        uif_tabs.start(firstTab);
+    })()
+    
+</script>
+
+
+
+
+            <div class="eloqua hide hidden"></div>
+
+
+                                </div>
+                                <div class="uif_rightrail">
+                                    
+    
+
+  <div class="uif_stdCornerBox uif_1pxBorder container relatedContent mLinks" 
+         style="width:232px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+    <div class="headingWrap">
+        <h5>Related Links
+</h5>
+    </div>
+    <ul>
+        <li>
+            <a href="http://www.dell.com/learn/us/en/04/shared-content~data-sheets~en/documents~dell-poweredge-express-flash-nvme-mixed-use-pcie-ssd.pdf?c=us&amp;l=en&amp;s=bsd" target=_blank>Express Flash NVMe “Mixed Use” PCIe-SSD Datasheet</a>
+        </li>
+        <li>
+            <a href="http://www.dell.com/learn/us/en/04/shared-content~data-sheets~en/documents~dell_poweredge_express_flash_nvme_pcie_ssd_spec_sheet.pdf?c=us&amp;l=en&amp;s=bsd" target=_blank>Express Flash NVMe “Performance” PCIe-SSD Datasheet</a>
+        </li>
+        <li>
+            <a href="http://www.dell.com/poweredge" target=_blank>Learn More About Dell PowerEdge Servers</a>
+        </li>
+        <li>
+            <a href="http://i.dell.com/sites/doccontent/shared-content/data-sheets/en/Documents/Micron-SSD-RAIN-brief.pdf" target=_blank>Micron R.A.I.N. SSD Technical Brief</a>
+        </li>
+    </ul>
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+              
+
+
+                                </div>
+                                <div class="uif_secondarycontent">
+                                    
+    
+
+                                </div>
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+                        </div>
+                </div>
+        </div>
+
+    </div>
+    <script>
+
+        //function tempFixForTallTitles() {
+        //    var title = $(".uif_mhPageTitle").eq(0),
+        //        titleHeight = title.height(),
+        //        isSkinny = (($(".uif_mastHead_skinny").length > 0) || ($(".uif_mastHead_skinnyWP").length > 0)) ? true : false,
+        //        isSkinnyPartial = ($(".uif_mastHead_skinny_control").length > 0) ? true : false,
+        //        isBuilder = ($(".uif_mhbodyBuilder").length > 0) ? true : false;
+        //    if ((titleHeight > 30 && !isSkinny && !isBuilder) || (titleHeight > 60 && isSkinny)) {
+        //        if (isSkinny) {
+        //            $("html").eq(0).addClass("uif_altTitleSkinny");
+        //        } else if (isBuilder) {
+        //            $("html").eq(0).addClass("uif_altTitleBuilder");
+        //        } else {
+        //            $("html").eq(0).addClass("uif_altTitle");
+        //        }
+        //        title.hide();
+        //        if (isSkinny) {
+        //            $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        }
+        //        $(".uif_bodySubWrap").eq(0).prepend("<h1 class='uif_altPageTitle gsd_pageTitle'>" + title.html() + "</h1>");
+        //    }
+        //    if (isSkinnyPartial) {
+        //        $("html").eq(0).addClass("uif_altTitleSkinnyPartial");
+        //        $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        $(".uif_bodySubWrap").eq(0).prepend(title);
+        //    }            
+        //};
+        //tempFixForTallTitles();
+    
+    </script>
+
+
+
+<footer id="revidFooter">
+    <nav class="contextual">
+
+        <div class="cntxCtr col12 cntrDiv clrFix">
+            <div class="footerlinkscontainer">
+                <div id="footer" class="disclaimers"></div>
+<ul class="contextualFooter"><li class="contextualFooterLinks5col first"><div class="contextualFooterLinkTitle">Do more with Dell</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/campaigns/segmentor-usmpp?s=eep">Employee and Student Discounts</a> </li><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:partners">PartnerDirect</a> </li><li><a href="http://www.dell.com/thepowertodomore">The power to do more</a> </li><li><a href="http://www.dell.com/learn/us/en/22/campaigns/outlet">Dell Outlet</a> </li><li><a href="http://en.community.dell.com/techcenter/default.aspx">TechCenter</a> </li><li><a href="https://dfs.dell.com/Pages/DFSHomePage.aspx">Make a Payment</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">About Dell</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/about-dell-investor?s=corp">Investors</a> </li><li><a href="http://www.dell.com/learn/about-dell?s=corp">Company Information</a> </li><li><a href="http://www.dell.com/learn/cr?s=corp">Corporate Social Responsibility</a> </li><li><a href="http://www.dell.com/learn/customer-engagement?s=corp">Customer Engagement</a> </li><li><a href="http://www.dell.com/learn/careers?s=corp">Careers</a> </li><li><a href="http://www.dell.com/learn/about-dell-newsroom?s=corp">Newsroom</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">Legal</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/policies-ads-and-emails?s=corp">Ads &amp; Emails</a> </li><li><a href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy Statement</a> </li><li><a href="http://www.dell.com/learn/terms?s=corp">Legal &amp; Regulatory</a> </li><li><a href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a> </li><li><a href="http://www.dell.com/learn/trademarks?s=corp">Trademarks</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">Community</div><ul class="contextualFooterLinks"><li><a href="http://en.community.dell.com/">The Dell Community</a> </li><li><a href="http://en.community.dell.com/dell-blogs/direct2dell/b/direct2dell/default.aspx">Read Our Blog</a> </li><li><a href="http://en.community.dell.com/support-forums/default.aspx">Support Forums</a> </li><li><a href="http://events.dell.com/?lang=en">Events</a> </li></ul></li></ul>            </div>
+            <script type="text/javascript">
+                renderCountrySelector();
+            </script>
+      
+            </div>
+
+    </nav>
+
+    <div id="legal">
+        <div class="col12 cntrDiv clrFix">
+            <div class="universalFooter center universalFooterDropdown ">
+                 
+                
+                <div class="universalFooter center"><ul class="universalFooterLinks"><li class="first"><a href="http://www.dell.com/learn/site-terms-of-use-copyright?s=corp">© 2016 Dell</a> </li><li><a href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a> </li><li><a href="http://www.dell.com/support/incidents/CareForms/ProvideInfo/CareUnresolved">Unresolved Issues</a> </li><li><a href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy</a> </li><li><a href="http://www.dell.com/learn/policies-ads-and-emails?s=corp">Ads &amp; Emails</a> </li><li><a href="http://www.dell.com/support/Contents/category/Contact-Information">Contact</a> </li><li><a href="http://www.dell.com/sitemap">Site Map</a> </li><li><a class="opinionlabhtml">Feedback</a> </li></ul></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="technotes col12 cntrDiv clrFix">
+        <div class="innerLegalDisclaimer">
+Ultrabook, Celeron, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, Xeon Phi, and Xeon Inside are trademarks of Intel Corporation in the U.S. and/or other countries.<br /><br />*Rewards are provided in the form of a promotional code. Up to 10% back in rewards valid only on purchases using Dell Business Credit (DBC) and Dell Advantage Loyalty Program. 5% back in rewards valid on all other Dell Advantage purchases. Bose products only eligible for 5% rewards with Dell Advantage [rewards]. Rewards arrive separately from purchase, typically in 10-20 days from ship date via email; expires in 90 days (except where prohibited by law). Any balance remaining on your purchase after Dell Advantage rewards are applied may not be paid with DBC and instead a separate form of payment must be used. Refurbished and or used purchases do not qualify for rewards. Terms and conditions apply. Dell.com/rewardterms.<br /><br />​^<strong>Dell Business Credit:</strong> Offered to Small and Medium Business customers by WebBank who determines qualifications for and terms of credit. Taxes, shipping and other charges are extra and vary. Minimum monthly payments are the greater of $15 or 3% of the new balance shown on the monthly billing statement. Dell and the Dell logo are trademarks of Dell Inc.        </div>
+    </div>
+</footer>
+
+<script>
+    var kAjax = {
+        contextID: ''
+        , action: ''
+    };
+    var klabel = {
+        labelName: 'Keyword Search',
+        labelType: 'inside',
+        keywordSearched: ''
+    };
+    Dell.SharedControls.SearchBox.Create("http://search.dell.com/results.aspx", klabel, 'k', "", "", kAjax);
+    renderFooterDropdown();
+</script>
+    
+<script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=bottom&type=framework&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnCore&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=articleTools&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2fdemandbase&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2feloqua%2feloqua&type=application&ver=636012973206800915&compress=True&fwv=4.3.3.0"></script>    <script type="text/javascript">
+        var dell_trackingLinks=[{"EventNames":"event23","Events":["event23"],"LinkName":"AdClick","LinkTagID":"3fb1793f-9560-4ae4-8669-f62fd29d0e37","VariableNames":"eVar6,events","Variables":[{"Key":"eVar6","Value":"53F2A661"}]}];
+    </script>
+    
+    
+  <div class="uif_stdCornerBox gsd_bodyCopySmall gsd_accentColor1 uif_validationTooltip uif_ContainerWithX " 
+         id="uifValidationMessageDefault" 
+         style="width:200px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+</body>
+</html>
