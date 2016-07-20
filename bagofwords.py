@@ -50,7 +50,7 @@ while target_cluster != 'q':
 	if target_cluster != 'q':
 		print ("Pages in cluster {}:".format(target_cluster))
 		for cl,page in clustered_pages:
-			if cl == target_cluster:
+			if cl == int(target_cluster):
 				print page.partition('.')[0]+'.html'
 				webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
 
