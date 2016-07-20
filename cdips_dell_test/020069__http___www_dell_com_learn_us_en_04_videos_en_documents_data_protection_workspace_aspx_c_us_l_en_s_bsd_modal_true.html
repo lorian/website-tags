@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+    <meta charset="utf-8">
+    <script type="text/javascript">document.domain = 'dell.com';</script>
+
+
+<title>Dell Data Protection | Protected Workspace | Dell </title>
+            <meta name="author" content="Dell us"/>
+            <meta name="channel" content="http://www.dell.com/learn/us/en/04/videos~en/documents~data-protection-workspace.aspx?c=us&amp;l=en&amp;s=bsd&amp;modal=true"/>
+            <meta name="cmsurl" content="http://cmscontent.dell.com/sites/content/videos/en/Documents/data-protection-workspace.aspx"/>
+            <meta name="customerset" content="04"/>
+            <meta name="description" content="DDP | Protected Workspace malware prevention software protects highly targeted applications against spear-fishing, watering hole attacks and drive-by downloads. It contains, detects and prevents Advanced Persistent Threats (APTs) and zero-day attacks."/>
+            <meta name="documentcountrycode" content="us"/>
+            <meta name="generator" content="Build: 4.3.3.0  Built On: 4/13/2012 11:04:50 AM"/>
+            <meta name="keywords" content=""/>
+            <meta name="language" content="en"/>
+            <meta name="mbox-to" content=""/>
+            <meta name="metricpath" content="04"/>
+            <meta name="olr_store" content="N"/>
+            <meta name="profile_id" content=""/>
+            <meta name="s_account" content="dellglobalonline"/>
+            <meta name="segment" content="bsd"/>
+            <meta name="waaction" content="ByDocumentID"/>
+            <meta name="waapplicationname" content="Dell.UX.Mvc.Learn.UI"/>
+            <meta name="wacontroller" content="Document"/>
+            <meta name="servername" content="P60LEARN02"/>
+            <meta name="pagetemplate" content="Video"/>
+            <meta name="expires" content=""/>
+            <meta name="termid" content="TOPT:NAV_TOP-library"/>
+            <meta name="termname" content="Document Library"/>
+            <meta name="cmsurlqs" content="c=us&amp;l=en&amp;r=us&amp;s=bsd&amp;category=TOPT:NAV_TOP-library"/>
+            <meta name="lastmodifieddate" content="04/28/2016 02:01:00 PM"/>
+  
+
+
+
+
+<script type="text/javascript">
+  if (typeof Dell == 'undefined') var Dell = {};
+  if (!Dell.Global)
+      Dell.Global = {
+          Settings: {
+              mceLink: "http://cmscontent.dell.com/sites/content/_layouts/dell/viewmicrocontent.aspx ",
+              toolsPanelLinks: {
+                  toolsPanel: '/learn/us/en/04/UIFramework/toolspanel ',
+                  combineCssJs: '/learn/us/en/04/UIFramework/configurationmanagement/ToggleCombineSettings ',
+                  compressCssJs: '/learn/us/en/04/UIFramework/configurationmanagement/ToggleCompressSettings ',
+                  configurationmgmt: '/learn/us/en/04/UIFramework/configurationmanagement/SectionListing '
+              },
+              legacyLogout: 'https://www.dell.com/sts/passive/commercial/v1/compatibility/logout?ru=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fvideos%7een%2fdocuments%7edata-protection-workspace.aspx%3fc%3dus%26l%3den%26s%3dbsd%26modal%3dtrue'
+          },
+          lwp: {
+              c: "us",
+              l: "en",
+              s: "bsd",
+              cs: "04"
+          },
+          isPremier: "false" == "true",
+          isMigrated: "false" == "true"
+      };
+</script>
+
+<link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=core&type=framework&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=core%2fdocument&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=webparts%2fmediaPlayer&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnCore&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=legacyMasthead&type=framework&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnMastHeadCss&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><script type="text/javascript" src="//nexus.ensighten.com/dell/Bootstrap.js"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=top_legacy&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=sharedcontrols%2fdialog&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnPrimary&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=masthead&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=stormMasthead&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=legacyMasthead&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script>  
+    
+    
+
+
+<meta property="og:title" content="Document Library" />
+<meta property="og:url" content="http://www.dell.com/learn/us/en/04/videos~en/documents~data-protection-workspace.aspx?c=us&l=en&s=bsd&modal=true" />
+<meta property="og:site_name" content="Dell" />
+<meta property="fb:app_id" content="186850318029150" />
+<meta property="og:description" content="DDP | Protected Workspace malware prevention software protects highly targeted applications against spear-fishing, watering hole attacks and drive-by downloads. It contains, detects and prevents Advanced Persistent Threats (APTs) and zero-day attacks." />
+    <meta property="og:image" content="http://i.dell.com/sites/imagecontent/videos/en/PublishingImages/data-protection-workspace.jpg" />
+<meta property="og:type" content="Document" />
+    <link rel="canonical" href="http://www.dell.com/learn/us/en/04/videos~en/documents~data-protection-workspace.aspx" />
+    <link rel="alternate" href="http://www.dell.com/learn/us/en/04/videos~en/documents~data-protection-workspace.aspx" hreflang="en-us"/>
+
+    <script type="text/javascript">
+
+        var MasterTmsUdo = {
+            "CJ": {
+                "CID": "",
+                "TYPE": "",
+                "DISCOUNT": "",
+                "OGID": "",
+                "CURRENCY": "",
+                "COUPON": "",
+                "CSEG": "04",
+                "SEG": "bsd",
+                "PRODCAT": "",
+                "COUNTRY": "US",
+                "LANG": "EN",
+                "REVENUE": "",
+                "DEVICE": "D",
+                "PLATFORM": "learn",
+                "PROMOID": "",
+                "CATEGORY": "documents~data-protection-workspace.aspx",
+                "DEALS": "",
+                "FAMILY": "",
+                "PRODUCT": "",
+                "ORDERCODE": "",
+                "ACCOUNTID": "",
+                "EMAILHASH": "",
+
+                "PRODUCTLIST": [
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    },
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    }
+                ]
+
+            }
+        };
+    </script>
+  <script>
+      /*DO NOT ALTER *** DELL Americas*/
+      (function (e) {
+          var t = "773", n = document, r, i, s = { http: "http://cdn.mplxtms.com/s/MasterTMS.min.js", https: "https://secure-cdn.mplxtms.com/s/MasterTMS.min.js" }, o = s[/\w+/.exec(window.location.protocol)[0]];
+          i = n.createElement("script"), i.type = "text/javascript", i.async = !0, i.src = o + "#" + t, r = n.getElementsByTagName("script")[0], r.parentNode.insertBefore(i, r), i.readyState ? i.onreadystatechange = function () { if (i.readyState === "loaded" || i.readyState === "complete") i.onreadystatechange = null } : i.onload = function () {
+              try {
+                  e()
+              } catch (t) {
+              }
+          }
+      })(function () { });
+     </script>
+
+    
+
+
+</head>
+<body class="ctry_us lang_en set_04 ltr uif_bodyBannerRightRail uif_mhbodyDefault razor gsd_bodyCopyMedium">
+
+
+<script type="text/javascript">
+
+    var InfoItems = '[{"Name":"author","Content":"Dell us","HttpEquiv":null},{"Name":"channel","Content":"http://www.dell.com/learn/us/en/04/videos~en/documents~data-protection-workspace.aspx?c=us&l=en&s=bsd&modal=true","HttpEquiv":null},{"Name":"cmsurl","Content":"http://cmscontent.dell.com/sites/content/videos/en/Documents/data-protection-workspace.aspx","HttpEquiv":null},{"Name":null,"Content":"text/html; charset=utf-8","HttpEquiv":"content-type"},{"Name":"customerset","Content":"04","HttpEquiv":null},{"Name":"description","Content":"DDP | Protected Workspace malware prevention software protects highly targeted applications against spear-fishing, watering hole attacks and drive-by downloads. It contains, detects and prevents Advanced Persistent Threats (APTs) and zero-day attacks.","HttpEquiv":null},{"Name":"documentcountrycode","Content":"us","HttpEquiv":null},{"Name":"generator","Content":"Build: 4.3.3.0  Built On: 4/13/2012 11:04:50 AM","HttpEquiv":null},{"Name":"keywords","Content":"","HttpEquiv":null},{"Name":"language","Content":"en","HttpEquiv":null},{"Name":"mbox-to","Content":"","HttpEquiv":null},{"Name":"metricpath","Content":"04","HttpEquiv":null},{"Name":"olr_store","Content":"N","HttpEquiv":null},{"Name":"persistence_id","Content":"4418e1aa-9497-4ea6-928e-aa62f17d0706","HttpEquiv":null},{"Name":"premier_accessgroupid","Content":null,"HttpEquiv":null},{"Name":"premier_accessgroups","Content":null,"HttpEquiv":null},{"Name":"premier_roleid","Content":null,"HttpEquiv":null},{"Name":"premier_rolename","Content":null,"HttpEquiv":null},{"Name":"profile_id","Content":null,"HttpEquiv":null},{"Name":"s_account","Content":"dellglobalonline","HttpEquiv":null},{"Name":"segment","Content":"bsd","HttpEquiv":null},{"Name":"server","Content":"P60LEARN02","HttpEquiv":null},{"Name":"session_id","Content":"zinzzdrl2ioixwsr2zzcriyu","HttpEquiv":null},{"Name":"waaction","Content":"ByDocumentID","HttpEquiv":null},{"Name":"waapplicationname","Content":"Dell.UX.Mvc.Learn.UI","HttpEquiv":null},{"Name":"wacontroller","Content":"Document","HttpEquiv":null},{"Name":"servername","Content":"P60LEARN02","HttpEquiv":null},{"Name":"pagetemplate","Content":"Video","HttpEquiv":null},{"Name":"expires","Content":"","HttpEquiv":null},{"Name":"termid","Content":"TOPT:NAV_TOP-library","HttpEquiv":null},{"Name":"termname","Content":"Document Library","HttpEquiv":null},{"Name":"cmsurlqs","Content":"c=us&l=en&r=us&s=bsd&category=TOPT:NAV_TOP-library","HttpEquiv":null},{"Name":"lastmodifieddate","Content":"04/28/2016 02:01:00 PM","HttpEquiv":null},{"Name":"hier1","Content":"root:NAV_ROOT_work/TOPT:NAV_TOP-library/documents~data-protection-workspace.aspx","HttpEquiv":null},{"Name":"currentview","Content":"Video","HttpEquiv":null},{"Name":"frv","Content":"http://frr","HttpEquiv":null},{"Name":"waview","Content":"Video","HttpEquiv":null},{"Name":"pagename","Content":"us|en|bsd|04|dell.ux.mvc.learn.ui|document|bydocumentid|video","HttpEquiv":null}]';
+
+    Dell.Metrics.PageMetadata.PageMetaInfoItems = JSON.parse(InfoItems); 
+   
+
+    </script>
+
+
+
+
+
+    <div id="mbox_default">
+    </div>
+    <script type="text/javascript">
+        mboxCreate(Dell.Global.lwp.l + Dell.Global.lwp.c + '_olr', // language+ country +'_olr'
+                      'r=' + Dell.Global.lwp.c, //country
+                      'c=' + Dell.Global.lwp.c, //country
+                      'l=' + Dell.Global.lwp.l, //language
+                      's=' + Dell.Global.lwp.s, //segment
+                      'cs=' + Dell.Global.lwp.cs, //customerset
+                      'pn=' + Dell.Metrics.PageMetadata.find("pagename").Content);  //pagename
+    </script>
+
+<input type='hidden' id='urlOverride' name='masthead_logo_override' value='http://www.dell.com'/><script type="text/javascript" src="http://www-cdn.dell.com/content/public/menu.aspx?c=us&l=en&cs=04"></script>
+<script type="text/javascript">
+    var m_searchText = 'Search';
+    var m_ctry = 'us';
+    var m_csval = '04';
+    var m_langval = 'en';
+    var m_segval = 'bsd';
+
+                   
+    retRenderToolBox();
+
+            
+
+    var m_processingcaption = "Processing";
+    var m_LoadingCaption = 'Loading...';
+    var m_imgPfx = "http://i.dell.com";
+    var m_pbarPfx = "http://pbar.us.dell.com";
+    var _curAuthLevel = "Unknown";
+    var _curAuthEmailID = ""; 
+    m_pageTab = "0"; 
+    var m_pbarTabTitle = 'My Account';
+    var estaraInit = false;
+    var isAuthenticated = 'False';
+    var isPremier = 'False';
+   
+        var m_IsAuthPremier = false; var m_ensightenLink = new EnsightenLink(); var m_pbarCart = new PbarCartStrip('Cart','xdb.ashx?global:apps2:ecomm:mycart','item','Loading...',0,true);var m_pbarMA= new PbarMAStrip("Hello, {fname} ({clearuser})", "Hello, {fname} ({clearuser})", "Sign In", "not {fname}?", false, true, "", "", "Loading...", true, "", "/learn/us/en/04/videos~en/documents~data-protection-workspace.aspx/afh.ashx?type=logout&afhp=%3fc%3dus%26l%3den%26s%3dbsd%26modal%3dtrue", "https://www.dell.com/identity/v2/discovery?wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.dell.com&whr=urn:transaction&wreply=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fvideos%7een%2fdocuments%7edata-protection-workspace.aspx%3fc%3dus%26l%3den%26s%3dbsd%26modal%3dtrue");
+   
+    m_mda = '';
+    var m_myAccountLink = 'https://www.dell.com/identity/v2/discovery?wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.dell.com&whr=urn:transaction&wreply=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fvideos%7een%2fdocuments%7edata-protection-workspace.aspx%3fc%3dus%26l%3den%26s%3dbsd%26modal%3dtrue';
+    m_curUrl = 'http://www.dell.com/content/default.aspx?c=us&amp;cs=04&amp;l=en&amp;s=bsd';
+    m_autocomplete = "/ac/ac.aspx";
+    m_isRtl = false;
+    m_isCenter = true;
+    m_isSegHome = true;
+    m_seglink = null;
+    var hoverovertime = 1300;
+    var m_containerTimeout = 500;
+    var m_navPage = null;
+    var m_regionDomain = "http://www.dell.com";
+    var logoUrlOverride = 'http://www.dell.com';
+    //LiveLOOK
+    var llJsHost = window.location.protocol + "//www.easymeeting.com";
+
+    if (m_segval == "gen") {
+        var m_skipMenuDef = true;
+    }
+    
+            writeMH( null,'<a href="http://www.dell.com/learn/campaigns/us-business-chat-splitter-reactive?s=bsd">Click to Chat</a> or <a href="http://www.dell.com/learn/campaigns/contact-us-phone-number?s=bsd">Call Us 1-800-456-3355</a>', null, null, false, true, 'Hello, {fname} ({clearuser})  &lt;span class=\"para_small\">&lt;b>not {UserName}? &lt;a href=\"javascript:RemoveName();location.href="http://membership.dell.com/dellportal/signoff.aspx?mode=deletecookie&amp;c=us&amp;l=en&amp;s=bsd&amp;cs=04";\" style=\"font-weight:normal;\" >&lt;/a>&lt;/b>)&lt;/span>' );
+</script>
+<noscript>
+<div id="mastheadWrap">
+<div id="masthead">
+<ul id="mastheadControls">
+<li class="signin"><a href="/_layouts/xdb.ashx?global:apps2:myaccount:main"><span>Sign In</span></a></li><li class="phonenumber"><a href="http://www.dell.com/learn/campaigns/us-business-chat-splitter-reactive?s=bsd">Click to Chat</a> or <a href="http://www.dell.com/learn/campaigns/contact-us-phone-number?s=bsd">Call Us 1-800-456-3355</a></li>	</ul><p class="gl" id="mhLogo"><a href="/_layouts/xdb.ashx?global:nav:logo"><img src='http://i.dell.com/images/global/brand/ui/storm80/logo80.gif' /></a></p><ul id="mastheadLinks"><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:shop" title="Shop">Shop</a> </li><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:apps2:sdc:home" title="Support">Support</a> </li><li><a href="http://en.community.dell.com/" title="Community">Community</a> </li></ul><div id="mastheadTools">
+<form id="mastheadSearchForm" method="get" action="http://search.dell.com/results.aspx">
+<fieldset>
+<input type='hidden' name='s' value='bsd'/><input type='hidden' name='c' value='us'/><input type='hidden' name='l' value='en'/><input type='hidden' name='cs' value='04'/><input type='hidden' name='cat' value='all'/><input type='text' name='k' id='mh_searchinput' title='Keyword Search'/><input class='button' type='image' alt='' src='http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/Image?path=masthead%2fgeneric_btn.gif&type=framework'/>	</fieldset>	</form>	</div>	</div>	</div></noscript>
+
+
+<header id="revidHeader" data-bind="attr: { 'class': css }">
+    <div class="custHelp" data-bind="'if': !isPopup">
+    <div class="col12 cntrDiv clrFix">
+        <span class="help" data-bind="html: contactUs"></span>
+        <span data-bind="css: { premier: true, noMda: !(mda.length > 0), nonEmpty: (premier.showTitle || premier.storeTitle || premier.linkTxt || privacy.showSettings) }">
+            <span class="storeNm" data-bind="'if': premier.showTitle, text: premier.storeTitle"></span>
+            <a data-bind="text: premier.linkTxt, attr: { href: premier.linkUrl }"></a>
+            <span data-bind="'if': premier.linkTxt && privacy.showSettings, css: { mhSep: premier.linkTxt && privacy.showSettings }">|</span>
+            <a href="#" data-bind="'if': privacy.showSettings, text: privacy.caption, css: { privacysettingslink: privacy.showSettings }, event: { click: privacy.onClick }"></a>
+        </span>
+        <span class="osRec" data-bind="html: mda.length > 0 ? mda : '', css: { osRec: mda.length > 0 }"></span>
+    </div>
+</div>
+<nav class="mh" data-bind="template: { afterRender: bindEvents }">
+    <div class="col12 cntrDiv clrFix topNav">
+       <a href="http://www.dell.com/" class="mhLogo" data-bind="if: !isHome, attr: { title: logoLink, href: logoLink }"><img alt="Dell" src="//i.dell.com/images/global/brand/ui/logo-wt-bl.png" data-bind="    attr: { src: imageDomain + '/images/global/brand/ui/logo-wt-bl.png' }"/></a>
+        <div class="tierNav" data-bind="'if': navigation.length > 0">
+            <ul id="tr1" class="tier1">
+                <li class="t1li noMarg">
+                    <ul class="t1Nav" data-bind="foreach: navigation">
+                        <li data-bind="attr: { id: containerId }, css: { t1li: true, curSel: isActive }">
+                            <div data-bind="attr: { 'class': cssClass }">
+                                <a href="#" class="mNav" data-bind="html: caption, attr: { rel: containerId, href: url, target: target }"></a>
+                                <span></span>
+                            </div>
+                            <!-- BEGIN SUBNAV TIER2 -->
+                            <div class="subNav" data-bind="attr: { id: containerId + '_sub' }">
+                                <div class="col12 cntrDiv clrFix">
+                                    <ul class="tier2" data-bind="foreach: subNavigation">
+                                        <li class="t2li" data-bind="attr: { id: containerId }">
+                                            <div class="tierLink" data-bind="attr: { 'class': cssClass }">
+                                                <a href="#" class="mNav" data-bind="html: caption, attr: { rel: containerId, href: url, target: target }"></a>
+                                                <span></span>
+                                            </div>
+                                            <!-- BEGIN SUBNAV TIER3 -->
+                                            <div class="subNav" data-bind="attr: { id: containerId + '_sub' }">
+                                                <div class="col12 cntrDiv clrFix">
+                                                    <ul class="viewAll clrFix">
+                                                        <li class="col3" data-bind="template: { name: 'viewAll-template', data: $parent }"></li>
+                                                        <li class="col3" data-bind="template: { name: 'viewAll-template', 'if': subNavigation.length > 0 }"></li>
+                                                        <li class="closeTier"><a href="#" data-bind="attr: { title: $root.closeLabel }"><span></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="login t1li" data-bind="'if': pbar.showMA">
+                    <div class="tierLogin" data-bind="template: { name: function () { return pbar.showAuthMsg ? 'pbar-showAuthMsg-template' : 'pbar-noShowAuthMsg-template' }, data: pbar }"></div>
+                </li>
+            </ul>
+        </div>
+        <div data-bind="'if': isPopup, css: { osRec: mda.length > 0 }"><span data-bind="    html: mda.length > 0 ? mda : ''"></span></div>
+        <div class="crtSrch" data-bind="'if': !isPopup">
+            <span data-bind="template: { name: 'showCart-template', 'if': cart.showCart }"></span>
+            <span data-bind="template: { name: 'showSearch-template', 'if': search.showSearch }"></span>
+        </div>
+    </div>
+</nav>
+    <div class="col12 cntrDiv clrFix">
+        
+<div class="pageTools">
+<ul id="mastheadToolsLinks"><li class="mastheadToolFinance"><a href="http://www.dell.com/learn/dell-financial-services?s=bsd">Financing</a> </li><li class="mastheadToolCustomerSupport"><a href="http://www.dell.com/learn/campaigns/chat-splitter-usbusiness">Live Chat or Call</a> </li><li class="mastheadToolGuide"><a href="http://www.dell.com/learn/campaigns/contract-purchases?s=slg" target="_blank">Available Contracts</a> </li><li class="mastheadToolCoupon"><a href="http://www.dell.com/learn/campaigns/dell-coupon-codes-us-smb?s=bsd">Coupons</a> </li><li class="mastheadToolStar"><a href="http://www.dell.com/learn/campaigns/advantage-us-bsd?s=bsd">Join Dell Advantage Rewards</a> </li><li class="mastheadToolQ2O"><a href="http://www.dell.com/learn/campaigns/price-match-guarantee-ussmb?s=bsd">Price Match</a> </li></ul></div>
+
+
+
+        
+<div class="breadCrumb">
+    <ul class="bCrumb cntrDiv col12 clrFix">
+                    <li class="home"><a href="#"><span class="sep"></span></a></li>
+                    <li>
+                        <span class="sep">&nbsp;</span>
+                            <a href="/learn/us/en/04/document-library">Document Library</a>
+                    </li>
+    </ul>
+</div>
+
+    </div>
+
+    <div class="uif_mastheadSubWrap" style="height: 0px;">
+        <div class="uif_mhMainFoot clearfix clearBoth">
+            <div class="uif_mhFooterWrap clearfix">
+                <h1 class="uif_mhPageTitle gsd_pageTitle">Document Library</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+    <div id="content" class="uif_bodyWrap" >
+        <div class="uif_bodySubWrap">
+                <div class="uif_layoutBodyWrap clearfix">
+                        <div class="uif_layoutSubBodyWrap">
+  <div class="uif_stdCornerBox uif_shadowOffset " 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix                                                       tbtsSpacer
+">
+                                              
+               
+                                <div class="uif_banner">
+                                    
+    
+
+
+                                </div>
+                                <div class="uif_maincontent">
+                                    
+
+
+
+
+
+<script type="text/javascript">
+
+    $('div.pgTools').find("a.print").unbind("click").bind("click", function () {
+        window.print();
+        return false;
+    });
+</script>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+<h2 class="articlePageTitle">Dell Data Protection | Protected Workspace</h2>    
+
+
+
+           
+
+<ul class="articleUserTools">
+    <li class="articleTool">
+        <a class="emailIcon" href="#" name="mailtoLinkType">
+            <span id="emailSubjectText" class="dnvh">Check out this page on Dell.com!
+</span>
+            Email
+
+        </a>
+    </li>
+</ul>
+
+<div class="mediaPlayerContainer">
+            <script src="http://player.ooyala.com/v3/NzI5Mjk2NjM2MGZlN2E4NmUwNTRiNDNm?platform=html5-fallback&amp;namespace=dellvideoplayer" type="text/javascript"> </script>
+            <div id="7630" class="playerwrapper">
+
+            </div>
+            <script>
+                //hack to make masthead appear above video
+                $(".uif_maincontent").css("z-index", "1");
+
+                var captionsXml;
+                var currentCaption = "";
+                var lastCaption = "";
+                var captions = [];
+                var allCaptions = [];
+                var numCCLanguages = 0;
+                var languageList = [];
+                var captionsUrl = "";
+                var videoApiUrl = 'http://www.dell.com/learn/us/en/04/vmd/captions?embedcode=QxMTJuZDoN7se2V4FHfCvOEK7f27l7s8';
+                var idModel = '83bc82df-ed70-4677-b05d-9acc5028a43e';
+
+                // ***************************************************
+                // Ooyala READY FUNCTION
+                // ***************************************************
+                dellvideoplayer.ready(function () {
+                    var playerConfiguration = {
+                        width: "100%",
+                        height: "100%",
+                        wmode: 'transparent',
+                        autoplay: false,
+                        enableChannels: true,
+                        initialTime: 0,
+                        locale: "en_us",
+                        loop: false,
+                        flashParams: {
+                            "thruParam_omniture-dell-other[prop49]": "c=us&l=en&s=bsd"
+                        },
+                        prebuffering: false,
+                        useFirstVideoPlaylist: false,
+                        onCreate: window.createPlayer
+                    };
+
+                    dellvideoplayer.Player.create('7630', 'QxMTJuZDoN7se2V4FHfCvOEK7f27l7s8', playerConfiguration);
+                });
+
+                function resizeVideo(obj) {
+                    var div = document.getElementById(obj.elementId);
+                    div.style.height = 360 + 'px';
+                    div.style.width = 640 + 'px';
+
+                }
+
+                // Find the correct current CC
+                function findCurrentCC(_locLanguage, _locCountry) {
+                    for (var _a = 0; _a < languageList.length; _a++) {
+                        var _listLang = languageList[_a].toLowerCase();
+                        var _locale = (_locCountry != undefined) ? (_locLanguage + "-" + _locCountry) : _locLanguage;
+                        // check for special cases
+                        if (_locale.toLowerCase() == "zh-cn") {
+                            _locale = "zh-hans";
+                        } else if (_locale.toLowerCase() == "zh-tw") {
+                            _locale = "zh-hant";
+                        }
+                        if (_listLang.toLowerCase() == _locale.toLowerCase()) {
+                            return allCaptions[_a];
+                        }
+                    }
+                    return [];
+                }
+
+                function parseRuntime(seconds) {
+                    sec_numb = parseInt(seconds);
+                    var hours = Math.floor(sec_numb / 3600);
+                    var minutes = Math.floor((sec_numb - (hours * 3600)) / 60);
+                    var seconds = sec_numb - (hours * 3600) - (minutes * 60);
+
+                    if (hours < 10) {
+                        hours = "0" + hours;
+                    }
+                    if (minutes < 10) {
+                        minutes = "0" + minutes;
+                    }
+                    if (seconds < 10) {
+                        seconds = "0" + seconds;
+                    }
+                    var time = hours + ':' + minutes + ':' + seconds;
+                    return time;
+                }
+
+                function getTime(time) {
+                    var time = time.split(":");
+                    var hours = parseInt(time[0], 10);
+                    var minutes = parseInt(time[1], 10);
+                    var seconds = parseInt(time[2], 10);
+                    return ((hours * 3600) + (minutes * 60) + seconds);
+                };
+
+
+                function createCaptionsCollection(d) {
+                    numCCLanguages = d.length;
+                    var _allCaptions = [];
+                    var _lastLanguage = "xx";
+                    var _currentLanguage = "";
+
+                    if (numCCLanguages > 0) {
+                        $('body').append('\
+                                <div id="ccLanguageModal" style="display:none;">\
+                                    <p style="margin-bottom:10px;">Captions : \
+                                        <a id="on-caption" href="javascript:void(0);" class="ooyala-caption" onClick="onCaptions();">On</a>\
+                                        <a id="off-caption" href="javascript:void(0);" class="disabled ooyala-caption" onClick="offCaptions();">Off</a>\
+                                    </p>\
+                                    <ul id="listLanguages"></ul>\
+                                </div>');
+
+                    }
+                    // create a quick array of language codes (assumes that these are in the same order)
+                    for (var _z = 0; _z < numCCLanguages; _z++) {
+                        var divElement = $(d[_z]);
+                        //languages
+                        var _langCode = divElement.attr("xml:lang");
+                        var _langName = mapLanguageCodes(_langCode);
+                        languageList.push(_langCode);
+                        // populate the language list modal
+                        $("#listLanguages").append("<li class=\"ccLanguage\" data=\"" + _langCode + "\" >" + _langName + "</li>");
+
+                        //process the captions
+                        var _caption = [];
+                        // grab the <p> element
+                        var _el = divElement.find("p");
+                        // spin through the <p>
+                        for (var _y = 0; _y < _el.length; _y++) {
+                            // get parent language
+                            _currentLanguage = _langCode;
+                            if (_currentLanguage != _lastLanguage) {
+                                _caption.push({ "begin": getTime($(_el[_y]).attr("begin")), "end": getTime($(_el[_y]).attr("end")), "text": $(_el[_y]).text() });
+                            }
+                        }
+                        _lastLanguage = _currentLanguage;
+                        _allCaptions.push(_caption);
+                    }
+                    // add event handler
+                    $(".ccLanguage").bind("click", this, changeCC);
+
+                    return _allCaptions;
+                }
+
+                function getClosedCaptions(language, country, elementId) {
+                    if (captionsUrl != "")
+                        getCaptionsFromOoyala(language, country);
+                    else {
+                        $.getJSON(videoApiUrl, null).done(function (data) {
+                            captionsUrl = data.captionsUrl;
+                            var error = data.error;
+                            if (!error && captionsUrl != "") {
+                                getCaptionsFromOoyala(language, country, elementId);
+                            }
+                        }).fail(function (data) {
+                            console.log("ajax call failed for captions url");
+                        });
+                    }
+                }
+
+                function getCaptionsFromOoyala(language, country, elementId) {
+                    $.ajax({
+                        url: captionsUrl,
+                        type: "GET",
+                        dataType: "xml"
+                    }).done(function (xmldata) {
+                        captionsXml = $(xmldata);
+                        allCaptions = createCaptionsCollection(captionsXml.find("div"));
+
+                        if (allCaptions.length > 0) {
+                            var playerRoot = $("#" + elementId);
+                            playerRoot.find('.oo_controls').append('\
+                            <div id="captionsContainer">\
+                              <div id="captionBackground">\
+                                &nbsp;\
+                              </div>\
+                              <div id="caption">\
+                              </div>\
+                            </div>\
+                            ');
+
+                            addCCButton(elementId);
+                            //languageList - spin through the language list and grab the current CC captions
+                            // first try full locale
+                            captions = findCurrentCC(language, country);
+                            if (captions.length == 0) {
+                                captions = findCurrentCC(language);
+                            }
+                        }
+
+                    }).fail(function (xmldata) {
+                        console.log("Did not get closed captions");
+                    });
+                }
+
+
+                // ***************************************************
+                // CREATE FUNCTION
+                // ***************************************************
+                function createPlayer(player) {
+                    // call the resize
+                    resizeVideo(player);
+
+                    // set global message bus - use the window.messageBus object outside of this function
+                    window.messageBus = player.mb;
+
+                    // subscribe to resize event to resize for responsiveness
+                    //player.subscribe(dellvideoplayer.EVENTS.SIZE_CHANGED, "myPage", function (eventName) {
+                    //    resizeVideo(player);
+                    //});
+
+                    // detect flash - if no Flash, subscribe to events
+                    var flashVideoPlayerObj = $("object[id*='OoFlash']");
+                    if (flashVideoPlayerObj.length == 0) {
+
+                        window.messageBus.subscribe(dellvideoplayer.EVENTS.PLAYER_CREATED, "myPage", function (eventName, elementId, params) {
+                            var flashVideoPlayerObj2 = $("object[id*='OoFlash']");
+                            if (flashVideoPlayerObj2.length == 0) {
+                                getClosedCaptions('en', 'us', elementId);
+                            }
+                        });
+
+                        window.messageBus.subscribe(dellvideoplayer.EVENTS.PLAYING, "myPage", function (eventName) {
+                            window.messageBus.unsubscribe(dellvideoplayer.EVENTS.PLAYING, "myPage");
+                            // event16 - start
+                            if (typeof (s_dell) != 'undefined') {
+                                s_dell.linkTrackVars = 'prop2,prop13,prop49,eVar24';
+                                s_dell.linkTrackEvents = 'event16';
+                                s_dell.events = s_dell.apl(s_dell.events, 'event16', ',', 2);
+                                s_dell.eVar24 = player.embedCode;
+                                s_dell.tl(true, 'o', player.embedCode);
+                            }
+                        });
+                        window.videoEightyPercent = false;
+                        window.videoComplete = false;
+                        window.messageBus.subscribe(dellvideoplayer.EVENTS.PLAYHEAD_TIME_CHANGED, "myPage", function (eventName, currentTime, totalTime) {
+                            var perc = currentTime / totalTime;
+
+                            if (typeof (s_dell) != 'undefined') {
+                                if (perc >= 0.8 && perc < 1 && !window.videoEightyPercent) {
+                                    window.videoEightyPercent = true;
+                                    s_dell.linkTrackVars = 'prop2,prop13,prop49,eVar24';
+                                    s_dell.linkTrackEvents = 'event33';
+                                    s_dell.events = s_dell.apl(s_dell.events, 'event33', ',', 2);
+                                    s_dell.eVar24 = player.embedCode;
+                                    s_dell.tl(true, 'o', player.embedCode);
+                                }
+                                else if (perc >= 1 && !window.videoComplete) {
+                                    window.videoComplete = true;
+                                    s_dell.linkTrackVars = 'prop2,prop13,prop49,eVar24';
+                                    s_dell.linkTrackEvents = 'event34';
+                                    s_dell.events = s_dell.apl(s_dell.events, 'event34', ',', 2);
+                                    s_dell.eVar24 = player.embedCode;
+                                    s_dell.tl(true, 'o', player.embedCode);
+                                }
+                            }
+
+                            onPlayheadTimeChanged(currentTime);
+                        });
+                    }
+
+                }
+
+                //allow full screen for modal videos
+                if (typeof (window.top.document) != 'undefined' && typeof ($(document) != 'undefined') && window.top.document != $(document)) {
+                    $(window.top.document).find('.uif_modal_iframe').attr('allowfullscreen', true);
+                    $(window.top.document).find('.uif_modal_iframe').attr('mozallowfullscreen', true);
+                    $(window.top.document).find('.uif_modal_iframe').attr('webkitallowfullscreen', true);
+
+                    //for browse modals
+                    $(window.top.document).find('.modalFrame').attr('allowfullscreen', true);
+                    $(window.top.document).find('.modalFrame').attr('mozallowfullscreen', true);
+                    $(window.top.document).find('.modalFrame').attr('webkitallowfullscreen', true);
+                }
+
+                /*
+        Get the localized language name for each locale code
+        e.g. "en-US" = "English (US)"
+    */
+                function mapLanguageCodes(localeCode) {
+                    switch (localeCode.toLowerCase()) {
+                        case "da":
+                            return "Dansk";
+                        case "de":
+                            return "Deutsch";
+                        case "en":
+                            return "English";
+                        case "en-us":
+                            return "English (US)";
+                        case "en-uk":
+                            return "English (UK)";
+                        case "es":
+                            return "Español";
+                        case "fr":
+                            return "Français";
+                        case "hi":
+                            return "हिन्दी";
+                        case "it":
+                            return "Italiano";
+                        case "ja":
+                            return '日本語';
+                        case "ko":
+                            return "조선말, 한국어";
+                        case "nl":
+                            return "Nederlands";
+                        case "pt":
+                        case "pt-pt":
+                            return "Português";
+                        case "pt-br":
+                            return "Português (Brasil)";
+                        case "zh-hans":
+                            return "简体中文";
+                        case "zh-hant":
+                            return "繁體中文";
+                        case "ar":
+                            return "Arabic";
+                        case "cs":
+                            return "Czech";
+                        case "el":
+                            return "Greek";
+                        case "fi":
+                            return "Finnish";
+                        case "fr-ca":
+                            return "Français (Canada)";
+                        case "he":
+                            return "Hebrew";
+                        case "hu":
+                            return "Hungarian";
+                        case "no":
+                            return "Norweigan";
+                        case "pl":
+                            return "Polish";
+                        case "ro":
+                            return "Romanian";
+                        case "ru":
+                            return "Russian";
+                        case "sv":
+                            return "Swedish";
+                        case "tr":
+                            return "Turkish";
+                    }
+                }
+
+                function changeCC(obj) {
+                    if ($(this).hasClass("ccLanguage-disabled") == false) {
+                        var _langStr = obj.target.attributes.data.nodeValue;
+                        captions = findCurrentCC(_langStr);
+                        $("#ccLanguageModal").trigger('reveal:close');
+                        $("#videoLanguage01").hide();
+                        $("#cc_icon").attr("lanHidden", "true");
+                    }
+                    window.messageBus.publish(dellvideoplayer.EVENTS.PLAY);
+                }
+
+                function onPlayheadTimeChanged(currentTime) {
+                    var _playheadTime = currentTime;
+                    var currentCaption;
+                    // determine the language
+                    for (var caption in captions) {
+                        var caption = captions[caption];
+                        if (_playheadTime > caption["begin"]) {
+                            if (_playheadTime <= caption["end"]) {
+                                currentCaption = caption;
+                            }
+                        }
+                        else if (currentCaption) {
+                            break;
+                        }
+                    };
+                    if (currentCaption && (currentCaption != "")) {
+                        $("#captionsContainer").css("opacity", "1");
+                        $("#caption")[0].innerHTML = currentCaption["text"];
+                    }
+                    else {
+                        $("#captionsContainer").css("opacity", "0");
+                    }
+                    if (lastCaption != currentCaption) {
+                        $("#captionsContainer").css("width", "100%");
+                        if (currentCaption != "") {
+                            resizeCaptions();
+                        }
+                    }
+                    lastCaption = currentCaption;
+                }
+
+                function ccButtonHandler() {
+
+                    if ($.trim($(this).attr("lanHidden")) == "true") {
+                        $("#videoLanguage01").show();
+                        $("#cc_icon").attr("lanHidden", "false");
+                        window.messageBus.publish(dellvideoplayer.EVENTS.PAUSE);
+                    } else {
+                        $("#videoLanguage01").hide();
+                        $("#cc_icon").attr("lanHidden", "true");
+                        window.messageBus.publish(dellvideoplayer.EVENTS.PLAY);
+                    }
+                }
+
+                function addCCButton(elementId) {
+                    $("#" + elementId).find(".vod").append("<div id=\"cc_icon\" class=\"oo_button oo_toolbar_item oo_cc\" lanHidden=\"true\"></div>");
+                    $("#cc_icon").bind("click", "", ccButtonHandler);
+                    var playerId = elementId;
+                    var playerObj = $("#" + playerId);
+                    var vodNode = playerObj.find(".vod");
+                    playerObj.find('.oo_controls').attr("cc", "cc");
+                    var ccPopupHtml = '<div id="videoLanguage01" style="position: absolute; z-index: 11000; right: 0px; /* top: -251px; */ border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgb(204, 204, 204) 2px 2px 2px; padding: 10px; border: 1px solid rgb(255, 255, 255); width: 418px; height: 191px; overflow-y: auto; display: block; background-color: rgb(255, 255, 255);bottom: 42px;"></div>';
+                    $(vodNode).append(ccPopupHtml);
+                    $("#videoLanguage01").append($("#ccLanguageModal"));
+                    $("#ccLanguageModal").show();
+                    $("#videoLanguage01").hide();
+                    $("#cc_icon").attr("lanHidden", "true");
+                }
+
+                function resizeCaptions() {
+                    $("#captionsContainer").css("height", $("#caption").height());
+                    $("#captionsContainer").css("top", (-$("#caption").height() - 10) + "px");
+                    $("#captionBackground").css("width", $("#caption").width());
+                    $("#captionBackground").css("left", (($("#captionsContainer").width() - $("#caption").width()) / 2) + "px");
+                    $("#captionBackground").css("height", $("#caption").height());
+                    $("#caption").css("left", $("#captionBackground").css("left"));
+                }
+
+                function offCaptions() {
+                    if ($("#off-caption").hasClass("disabled")) {
+                        $("#off-caption").removeClass("disabled");
+                        $("#on-caption").addClass("disabled");
+                        $("#captionsContainer").hide();
+                        $("#listLanguages").hide();
+                        $(".ccLanguage").addClass("ccLanguage-disabled");
+                        $("#videoLanguage01").hide();
+                        $("#cc_icon").attr("lanHidden", "true");
+                        window.messageBus.publish(dellvideoplayer.EVENTS.PLAY);
+                    }
+                }
+
+
+                function onCaptions() {
+                    if ($("#on-caption").hasClass("disabled")) {
+                        $("#on-caption").removeClass("disabled");
+                        $("#off-caption").addClass("disabled");
+                        $("#captionsContainer").show();
+                        $("#listLanguages").show();
+                        $(".ccLanguage").removeClass("ccLanguage-disabled");
+                    }
+                }
+
+            </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+<div class="articleBody inlineContent">
+
+    <div class="clearfix">
+        DDP | Protected Workspace malware prevention software protects highly targeted applications against spear-fishing, watering hole attacks and drive-by downloads. It contains, detects and prevents Advanced Persistent Threats (APTs) and zero-day attacks.
+    </div>
+</div>
+
+</div>
+
+
+
+            <div class="eloqua hide hidden"></div>
+
+
+                                </div>
+                                <div class="uif_rightrail">
+                                    
+    
+    <!-- NEED A WAY TO ACCESS THE CURRENT CATEGORY -->
+
+
+
+          
+
+  <div class="uif_stdCornerBox uif_1pxBorder mediaCarousel container" 
+         style="width:232px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+
+<div id="16ea9ec5-7e80-4bf6-bd6f-1fb6ec57b69a" class="mjCarouselWrap clearfix mjCarouselTopNav mjDualNav ">
+    <div class="mjCarouselHeader ">
+        <h3 class="gsd_sectionHeading">Related Videos
+
+        </h3>
+
+        
+        
+    </div>
+    <div class="mjPrevWrap">
+        <a class="mjPrev mjOff disableOmni">Previous</a>
+        <div class="uif_linkBlocker">
+        </div>
+    </div>
+
+<div class="mjViewPort">
+  <div class="mjSlideWrap">
+    <ul class="mjSlideUL clearfix">
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="f7602ea4-803c-4072-b07e-7c06d9a38e5b" href="javascript:Dell.SharedControls.Dialog.openDialog('f7602ea4-803c-4072-b07e-7c06d9a38e5b_dialog');" title="Inspiron 17R (5720): Remove the LCD Assembly" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/Dell_Inspiron_5720_US-EN_LCD_Assembly.jpg' alt='Dell_Inspiron_5720_US-EN_LCD_Assembly.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('f7602ea4-803c-4072-b07e-7c06d9a38e5b_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"f7602ea4-803c-4072-b07e-7c06d9a38e5b_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~Dell_Inspiron_5720_US-EN_LCD_Assembly.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="3099e38e-7ee1-4028-8f63-b8ed9664d8a1" href="javascript:Dell.SharedControls.Dialog.openDialog('3099e38e-7ee1-4028-8f63-b8ed9664d8a1_dialog');" title="Inspiron 17R (5720): Remove the LCD Assembly" target="" ><span class="title">Inspiron 17R (5720): Remove the LCD Assembly</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('3099e38e-7ee1-4028-8f63-b8ed9664d8a1_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"3099e38e-7ee1-4028-8f63-b8ed9664d8a1_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~Dell_Inspiron_5720_US-EN_LCD_Assembly.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">0:35</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="e975e9a0-e376-4a7a-8e7d-644b3b029571" href="javascript:Dell.SharedControls.Dialog.openDialog('e975e9a0-e376-4a7a-8e7d-644b3b029571_dialog');" title="Returning Service Parts to Dell" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-CRUPartsReturn-en-v1.jpg' alt='esupport-CRUPartsReturn-en-v1.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('e975e9a0-e376-4a7a-8e7d-644b3b029571_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"e975e9a0-e376-4a7a-8e7d-644b3b029571_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-CRUPartsReturn-en-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="11a4e295-cf1d-4cb0-8597-ec4a6b223b80" href="javascript:Dell.SharedControls.Dialog.openDialog('11a4e295-cf1d-4cb0-8597-ec4a6b223b80_dialog');" title="Returning Service Parts to Dell" target="" ><span class="title">Returning Service Parts to Dell</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('11a4e295-cf1d-4cb0-8597-ec4a6b223b80_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"11a4e295-cf1d-4cb0-8597-ec4a6b223b80_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-CRUPartsReturn-en-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:24</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="e1628e28-e0fd-4823-b1b0-87bb16ec63fa" href="javascript:Dell.SharedControls.Dialog.openDialog('e1628e28-e0fd-4823-b1b0-87bb16ec63fa_dialog');" title="Blank Screen after turning on your Desktop?" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-MonitorBlank-EN-v2.jpg' alt='esupport-MonitorBlank-EN-v2.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('e1628e28-e0fd-4823-b1b0-87bb16ec63fa_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"e1628e28-e0fd-4823-b1b0-87bb16ec63fa_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-MonitorBlank-EN-v2.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="2426b88a-b7de-46f0-8aec-c42c2a4693b9" href="javascript:Dell.SharedControls.Dialog.openDialog('2426b88a-b7de-46f0-8aec-c42c2a4693b9_dialog');" title="Blank Screen after turning on your Desktop?" target="" ><span class="title">Blank Screen after turning on your Desktop?</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('2426b88a-b7de-46f0-8aec-c42c2a4693b9_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"2426b88a-b7de-46f0-8aec-c42c2a4693b9_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-MonitorBlank-EN-v2.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:43</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="81258cb1-ac61-406a-8c9f-94200e669ffa" href="javascript:Dell.SharedControls.Dialog.openDialog('81258cb1-ac61-406a-8c9f-94200e669ffa_dialog');" title="Learn How to Enable SSH in VMWare" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-Lassoinstallvmware-US-EN.jpg' alt='esupport-Lassoinstallvmware-US-EN.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('81258cb1-ac61-406a-8c9f-94200e669ffa_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"81258cb1-ac61-406a-8c9f-94200e669ffa_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-Lassoinstallvmware-US-EN.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="0f392999-2bde-4300-b5f2-8e5bb69a79ab" href="javascript:Dell.SharedControls.Dialog.openDialog('0f392999-2bde-4300-b5f2-8e5bb69a79ab_dialog');" title="Learn How to Enable SSH in VMWare" target="" ><span class="title">Learn How to Enable SSH in VMWare</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('0f392999-2bde-4300-b5f2-8e5bb69a79ab_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"0f392999-2bde-4300-b5f2-8e5bb69a79ab_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-Lassoinstallvmware-US-EN.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:25</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="74fa0a68-1c37-4a31-ba75-70970c3386db" href="javascript:Dell.SharedControls.Dialog.openDialog('74fa0a68-1c37-4a31-ba75-70970c3386db_dialog');" title="Update your System Setup (BIOS)" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/eSupport_System_Setup_Update.jpg' alt='eSupport_System_Setup_Update.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('74fa0a68-1c37-4a31-ba75-70970c3386db_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"74fa0a68-1c37-4a31-ba75-70970c3386db_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~eSupport_System_Setup_Update.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="c33e1319-3de3-4304-86d4-1fc5f731cccf" href="javascript:Dell.SharedControls.Dialog.openDialog('c33e1319-3de3-4304-86d4-1fc5f731cccf_dialog');" title="Update your System Setup (BIOS)" target="" ><span class="title">Update your System Setup (BIOS)</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('c33e1319-3de3-4304-86d4-1fc5f731cccf_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"c33e1319-3de3-4304-86d4-1fc5f731cccf_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~eSupport_System_Setup_Update.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:31</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="e300f89e-d79c-4902-a609-e6cacffdd33b" href="javascript:Dell.SharedControls.Dialog.openDialog('e300f89e-d79c-4902-a609-e6cacffdd33b_dialog');" title="Dell Wyse Thin Clients and Cloud PCs Video" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/wyse-thin-client-cloud-pc-video.jpg' alt='wyse-thin-client-cloud-pc-video.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('e300f89e-d79c-4902-a609-e6cacffdd33b_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"e300f89e-d79c-4902-a609-e6cacffdd33b_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~wyse-thin-client-cloud-pc-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="5fdc2ec2-97ff-4dc7-8998-6434100b0791" href="javascript:Dell.SharedControls.Dialog.openDialog('5fdc2ec2-97ff-4dc7-8998-6434100b0791_dialog');" title="Dell Wyse Thin Clients and Cloud PCs Video" target="" ><span class="title">Dell Wyse Thin Clients and Cloud PCs Video</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('5fdc2ec2-97ff-4dc7-8998-6434100b0791_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"5fdc2ec2-97ff-4dc7-8998-6434100b0791_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~wyse-thin-client-cloud-pc-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">1:22</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="5e8ce0cc-6950-4402-8cd2-815b1a384073" href="javascript:Dell.SharedControls.Dialog.openDialog('5e8ce0cc-6950-4402-8cd2-815b1a384073_dialog');" title="Wyse WSM" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/wyse-wsm-overview.jpg' alt='wyse-wsm-overview.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('5e8ce0cc-6950-4402-8cd2-815b1a384073_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"5e8ce0cc-6950-4402-8cd2-815b1a384073_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~wyse-wsm-overview.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="57092ab7-a9bd-4d49-bde0-1b80901c2074" href="javascript:Dell.SharedControls.Dialog.openDialog('57092ab7-a9bd-4d49-bde0-1b80901c2074_dialog');" title="Wyse WSM" target="" ><span class="title">Wyse WSM</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('57092ab7-a9bd-4d49-bde0-1b80901c2074_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"57092ab7-a9bd-4d49-bde0-1b80901c2074_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~wyse-wsm-overview.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">1:14</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="b509cfd6-6f7f-4cf5-829f-88643d009c60" href="javascript:Dell.SharedControls.Dialog.openDialog('b509cfd6-6f7f-4cf5-829f-88643d009c60_dialog');" title="PowerEdge Rack Server Family" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/poweredge-rack-server-family-video.jpg' alt='poweredge-rack-server-family-video.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('b509cfd6-6f7f-4cf5-829f-88643d009c60_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"b509cfd6-6f7f-4cf5-829f-88643d009c60_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~poweredge-rack-server-family-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="60e8bc2a-e5bd-4e4e-b18c-6396236f5bdc" href="javascript:Dell.SharedControls.Dialog.openDialog('60e8bc2a-e5bd-4e4e-b18c-6396236f5bdc_dialog');" title="PowerEdge Rack Server Family" target="" ><span class="title">PowerEdge Rack Server Family</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('60e8bc2a-e5bd-4e4e-b18c-6396236f5bdc_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"60e8bc2a-e5bd-4e4e-b18c-6396236f5bdc_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~poweredge-rack-server-family-video.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">4:30</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+                <li class="mjSlideLI">
+                <div class="uif_padder_med mjSlideLIContent">
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="c898e2ca-2032-4fd0-8d8c-2c69858616a7" href="javascript:Dell.SharedControls.Dialog.openDialog('c898e2ca-2032-4fd0-8d8c-2c69858616a7_dialog');" title="My Dell in 99 Seconds: Reset your Windows 7 Password" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/RM036_Reset_Password.jpg' alt='RM036_Reset_Password.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('c898e2ca-2032-4fd0-8d8c-2c69858616a7_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"c898e2ca-2032-4fd0-8d8c-2c69858616a7_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~RM036_Reset_Password.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="5c709213-6389-44db-a75f-1e0ba7f115d5" href="javascript:Dell.SharedControls.Dialog.openDialog('5c709213-6389-44db-a75f-1e0ba7f115d5_dialog');" title="My Dell in 99 Seconds: Reset your Windows 7 Password" target="" ><span class="title">My Dell in 99 Seconds: Reset your Windows 7 Password</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('5c709213-6389-44db-a75f-1e0ba7f115d5_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"5c709213-6389-44db-a75f-1e0ba7f115d5_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~RM036_Reset_Password.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">1:46</div></div>
+
+
+                        </div>
+                        <div class="uifCarouselItemIndex">
+                        <a class="uif_pcRemoveLink disableOmni"><span class="uif_icon uif_icon_remove"></span><span class="gsd_bodyCopyMedium gsd_accentColor2">Remove</span></a>
+                            
+
+
+
+<a class="uif_link " id="84662555-a834-43d3-9d87-ee8c5d7da4fc" href="javascript:Dell.SharedControls.Dialog.openDialog('84662555-a834-43d3-9d87-ee8c5d7da4fc_dialog');" title="Learn How to Protect Your Dell from Malware" target="" ><img width='80' class='thumbnail' src='http://i.dell.com/das/dih.ashx/video_thumb_80x50//sites/imagecontent/videos/en/PublishingImages/esupport-malware-EN-v1.jpg' alt='esupport-malware-EN-v1.jpg'/></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('84662555-a834-43d3-9d87-ee8c5d7da4fc_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"84662555-a834-43d3-9d87-ee8c5d7da4fc_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-malware-EN-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+<div class="info">
+    
+
+<a class="uif_link " id="e2bc3486-3ec9-4dbc-b834-c3858ae43f46" href="javascript:Dell.SharedControls.Dialog.openDialog('e2bc3486-3ec9-4dbc-b834-c3858ae43f46_dialog');" title="Learn How to Protect Your Dell from Malware" target="" ><span class="title">Learn How to Protect Your Dell from Malware</span></a>
+
+    <script type="text/javascript">
+            $(document).ready(function() {
+                
+                Dell.SharedControls.Dialog.createDialog('e2bc3486-3ec9-4dbc-b834-c3858ae43f46_dialog', {"AnalyticsContent":null,"CacheContent":true,"Height":490,"Id":"e2bc3486-3ec9-4dbc-b834-c3858ae43f46_dialog","IsIframe":true,"IsModal":true,"LinkMode":null,"LoadingText":"Loading...","ShouldPreloadContent":false,"Size":3,"Src":"\/learn\/us\/en\/04\/videos~en\/Documents~esupport-malware-EN-v1.aspx?layout=Widget","Template":null,"Width":720});
+            });
+            
+            
+        </script>
+
+
+    <div class="source">(Dell)
+</div>
+<div class="duration">2:42</div></div>
+
+
+                        </div>
+                </div>
+                </li>
+    </ul>
+  </div>
+</div>
+    <div class="mjNextWrap">
+        <a class="mjNext disableOmni">Next</a>
+        <div class="uif_linkBlocker">
+        </div>
+    </div>
+        <div class="mjCarouselFooter">
+                <span class="mjBottomNavWrap"></span>   
+                <span class="mjPagination gsd_bodyCopySmall gsd_accentColor1"></span>
+           
+           
+        </div>
+</div>
+<script>
+    $(document).ready(function () {
+        jQuery('#16ea9ec5-7e80-4bf6-bd6f-1fb6ec57b69a')
+            .mjcarousel({ paginationBottom: true,dualNav: true,withVerticalStack: 2,itemsVisible: 1,scrollIncrement: 1,speed: 800,viewPortWidth: 212,paginationViewingText: 'Viewing',paginationOfText: 'of' }); });
+</script>
+
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+
+
+                                </div>
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+                        </div>
+                </div>
+        </div>
+
+    </div>
+    <script>
+
+        //function tempFixForTallTitles() {
+        //    var title = $(".uif_mhPageTitle").eq(0),
+        //        titleHeight = title.height(),
+        //        isSkinny = (($(".uif_mastHead_skinny").length > 0) || ($(".uif_mastHead_skinnyWP").length > 0)) ? true : false,
+        //        isSkinnyPartial = ($(".uif_mastHead_skinny_control").length > 0) ? true : false,
+        //        isBuilder = ($(".uif_mhbodyBuilder").length > 0) ? true : false;
+        //    if ((titleHeight > 30 && !isSkinny && !isBuilder) || (titleHeight > 60 && isSkinny)) {
+        //        if (isSkinny) {
+        //            $("html").eq(0).addClass("uif_altTitleSkinny");
+        //        } else if (isBuilder) {
+        //            $("html").eq(0).addClass("uif_altTitleBuilder");
+        //        } else {
+        //            $("html").eq(0).addClass("uif_altTitle");
+        //        }
+        //        title.hide();
+        //        if (isSkinny) {
+        //            $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        }
+        //        $(".uif_bodySubWrap").eq(0).prepend("<h1 class='uif_altPageTitle gsd_pageTitle'>" + title.html() + "</h1>");
+        //    }
+        //    if (isSkinnyPartial) {
+        //        $("html").eq(0).addClass("uif_altTitleSkinnyPartial");
+        //        $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        $(".uif_bodySubWrap").eq(0).prepend(title);
+        //    }            
+        //};
+        //tempFixForTallTitles();
+    
+    </script>
+
+
+
+<footer id="revidFooter">
+    <nav class="contextual">
+
+        <div class="cntxCtr col12 cntrDiv clrFix">
+            <div class="footerlinkscontainer">
+                <div id="footer" class="disclaimers"></div>
+<ul class="contextualFooter"><li class="contextualFooterLinks5col first"><div class="contextualFooterLinkTitle">Do more with Dell</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/campaigns/segmentor-usmpp?s=eep">Employee and Student Discounts</a> </li><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:partners">PartnerDirect</a> </li><li><a href="http://www.dell.com/thepowertodomore">The power to do more</a> </li><li><a href="http://www.dell.com/learn/us/en/22/campaigns/outlet">Dell Outlet</a> </li><li><a href="http://en.community.dell.com/techcenter/default.aspx">TechCenter</a> </li><li><a href="https://dfs.dell.com/Pages/DFSHomePage.aspx">Make a Payment</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">About Dell</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/about-dell-investor?s=corp">Investors</a> </li><li><a href="http://www.dell.com/learn/about-dell?s=corp">Company Information</a> </li><li><a href="http://www.dell.com/learn/cr?s=corp">Corporate Social Responsibility</a> </li><li><a href="http://www.dell.com/learn/customer-engagement?s=corp">Customer Engagement</a> </li><li><a href="http://www.dell.com/learn/careers?s=corp">Careers</a> </li><li><a href="http://www.dell.com/learn/about-dell-newsroom?s=corp">Newsroom</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">Legal</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/policies-ads-and-emails?s=corp">Ads &amp; Emails</a> </li><li><a href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy Statement</a> </li><li><a href="http://www.dell.com/learn/terms?s=corp">Legal &amp; Regulatory</a> </li><li><a href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a> </li><li><a href="http://www.dell.com/learn/trademarks?s=corp">Trademarks</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">Community</div><ul class="contextualFooterLinks"><li><a href="http://en.community.dell.com/">The Dell Community</a> </li><li><a href="http://en.community.dell.com/dell-blogs/direct2dell/b/direct2dell/default.aspx">Read Our Blog</a> </li><li><a href="http://en.community.dell.com/support-forums/default.aspx">Support Forums</a> </li><li><a href="http://events.dell.com/?lang=en">Events</a> </li></ul></li></ul>            </div>
+            <script type="text/javascript">
+                renderCountrySelector();
+            </script>
+      
+            </div>
+
+    </nav>
+
+    <div id="legal">
+        <div class="col12 cntrDiv clrFix">
+            <div class="universalFooter center universalFooterDropdown ">
+                 
+                
+                <div class="universalFooter center"><ul class="universalFooterLinks"><li class="first"><a href="http://www.dell.com/learn/site-terms-of-use-copyright?s=corp">© 2016 Dell</a> </li><li><a href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a> </li><li><a href="http://www.dell.com/support/incidents/CareForms/ProvideInfo/CareUnresolved">Unresolved Issues</a> </li><li><a href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy</a> </li><li><a href="http://www.dell.com/learn/policies-ads-and-emails?s=corp">Ads &amp; Emails</a> </li><li><a href="http://www.dell.com/support/Contents/category/Contact-Information">Contact</a> </li><li><a href="http://www.dell.com/sitemap">Site Map</a> </li><li><a class="opinionlabhtml">Feedback</a> </li></ul></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="technotes col12 cntrDiv clrFix">
+        <div class="innerLegalDisclaimer">
+Ultrabook, Celeron, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, Xeon Phi, and Xeon Inside are trademarks of Intel Corporation in the U.S. and/or other countries.<br /><br />*Rewards are provided in the form of a promotional code. Up to 10% back in rewards valid only on purchases using Dell Business Credit (DBC) and Dell Advantage Loyalty Program. 5% back in rewards valid on all other Dell Advantage purchases. Bose products only eligible for 5% rewards with Dell Advantage [rewards]. Rewards arrive separately from purchase, typically in 10-20 days from ship date via email; expires in 90 days (except where prohibited by law). Any balance remaining on your purchase after Dell Advantage rewards are applied may not be paid with DBC and instead a separate form of payment must be used. Refurbished and or used purchases do not qualify for rewards. Terms and conditions apply. Dell.com/rewardterms.<br /><br />​^<strong>Dell Business Credit:</strong> Offered to Small and Medium Business customers by WebBank who determines qualifications for and terms of credit. Taxes, shipping and other charges are extra and vary. Minimum monthly payments are the greater of $15 or 3% of the new balance shown on the monthly billing statement. Dell and the Dell logo are trademarks of Dell Inc.        </div>
+    </div>
+</footer>
+
+<script>
+    var kAjax = {
+        contextID: ''
+        , action: ''
+    };
+    var klabel = {
+        labelName: 'Keyword Search',
+        labelType: 'inside',
+        keywordSearched: ''
+    };
+    Dell.SharedControls.SearchBox.Create("http://search.dell.com/results.aspx", klabel, 'k', "", "", kAjax);
+    renderFooterDropdown();
+</script>
+    
+<script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=bottom&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=ratings&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=articleTools&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=webparts%2fmediaPlayer&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnCore&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2fdemandbase&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2feloqua%2feloqua&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script>    <script type="text/javascript">
+        var dell_trackingLinks=[];
+    </script>
+    
+    
+  <div class="uif_stdCornerBox gsd_bodyCopySmall gsd_accentColor1 uif_validationTooltip uif_ContainerWithX " 
+         id="uifValidationMessageDefault" 
+         style="width:200px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+</body>
+</html>

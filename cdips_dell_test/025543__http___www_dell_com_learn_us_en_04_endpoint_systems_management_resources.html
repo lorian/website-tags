@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1,requiresActiveX=true">
+    <meta charset="utf-8">
+    <script type="text/javascript">document.domain = 'dell.com';</script>
+
+
+<title>Endpoint Systems Management Resource Library | Dell </title>
+            <meta name="author" content="Dell us"/>
+            <meta name="channel" content="http://www.dell.com/learn/us/en/04/endpoint-systems-management-resources"/>
+            <meta name="cmsurl" content="http://cmscontent.dell.com/sites/content/business/large-business/en/Pages/end-user-systems-management-resources.aspx"/>
+            <meta name="customerset" content="04"/>
+            <meta name="description" content="The Endpoint Systems Management Resource Library helps you learn more about Dell endpoint protection, security and the KACE Systems Management Appliances. "/>
+            <meta name="documentcountrycode" content="us"/>
+            <meta name="generator" content="Build: 4.3.3.0  Built On: 4/13/2012 11:04:50 AM"/>
+            <meta name="keywords" content=""/>
+            <meta name="language" content="en"/>
+            <meta name="mbox-to" content=""/>
+            <meta name="metricpath" content="04"/>
+            <meta name="olr_store" content="N"/>
+            <meta name="profile_id" content=""/>
+            <meta name="s_account" content="dellglobalonline"/>
+            <meta name="segment" content="bsd"/>
+            <meta name="waaction" content="ByCategoryID"/>
+            <meta name="waapplicationname" content="Dell.UX.Mvc.Learn.UI"/>
+            <meta name="wacontroller" content="Document"/>
+            <meta name="servername" content="P61LEARN02"/>
+            <meta name="pagetemplate" content="category-tabs"/>
+            <meta name="expires" content=""/>
+            <meta name="termid" content="NAVH:NAV_SOLN_L4_client-sys-mgmt-resources"/>
+            <meta name="termname" content="Resource Library"/>
+            <meta name="cmsurlqs" content="c=us&amp;l=en&amp;r=us&amp;s=bsd&amp;category=NAVH:NAV_SOLN_L4_client-sys-mgmt-resources"/>
+            <meta name="lastmodifieddate" content="05/24/2016 01:02:00 PM"/>
+  
+
+
+
+
+<script type="text/javascript">
+  if (typeof Dell == 'undefined') var Dell = {};
+  if (!Dell.Global)
+      Dell.Global = {
+          Settings: {
+              mceLink: "http://cmscontent.dell.com/sites/content/_layouts/dell/viewmicrocontent.aspx ",
+              toolsPanelLinks: {
+                  toolsPanel: '/learn/us/en/04/UIFramework/toolspanel ',
+                  combineCssJs: '/learn/us/en/04/UIFramework/configurationmanagement/ToggleCombineSettings ',
+                  compressCssJs: '/learn/us/en/04/UIFramework/configurationmanagement/ToggleCompressSettings ',
+                  configurationmgmt: '/learn/us/en/04/UIFramework/configurationmanagement/SectionListing '
+              },
+              legacyLogout: 'https://www.dell.com/sts/passive/commercial/v1/compatibility/logout?ru=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fendpoint-systems-management-resources'
+          },
+          lwp: {
+              c: "us",
+              l: "en",
+              s: "bsd",
+              cs: "04"
+          },
+          isPremier: "false" == "true",
+          isMigrated: "false" == "true"
+      };
+</script>
+
+<link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=core&type=framework&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=mainContent&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=modules%2fCampaignTabs&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/Css?path=webparts%2fFeaturedArticle&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnCore&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=legacyMasthead&type=framework&ver=622859708620000000&compress=True" type="text/css" media="all" /><link rel="stylesheet" href="http://afcs.dell.com/learn/us/en/_/UIFramework/4.3.3.0/res/CssSet?id=learnMastHeadCss&type=application&ver=622859708620000000&compress=True" type="text/css" media="all" /><script type="text/javascript" src="//nexus.ensighten.com/dell/Bootstrap.js"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=top_legacy&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=sharedcontrols&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=sharedcontrols%2fdialog&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnPrimary&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=masthead&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/js?path=stormMasthead&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=legacyMasthead&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script>  
+    
+    
+
+
+<meta property="og:title" content="Endpoint Systems Management Resource Library" />
+<meta property="og:url" content="http://www.dell.com/learn/us/en/04/endpoint-systems-management-resources" />
+<meta property="og:site_name" content="Dell" />
+<meta property="fb:app_id" content="186850318029150" />
+<meta property="og:description" content="The Endpoint Systems Management Resource Library helps you learn more about Dell endpoint protection, security and the KACE Systems Management Appliances. " />
+    <meta property="og:image" content="http://i.dell.com/images/global/brand/ui/storm80/logo80.png" />
+<meta property="og:type" content="Document" />
+    <link rel="canonical" href="http://www.dell.com/learn/us/en/04/endpoint-systems-management-resources" />
+    <link rel="alternate" href="http://www.dell.com/learn/us/en/04/endpoint-systems-management-resources" hreflang="en-us"/>
+
+    <script type="text/javascript">
+
+        var MasterTmsUdo = {
+            "CJ": {
+                "CID": "",
+                "TYPE": "",
+                "DISCOUNT": "",
+                "OGID": "",
+                "CURRENCY": "",
+                "COUPON": "",
+                "CSEG": "04",
+                "SEG": "bsd",
+                "PRODCAT": "",
+                "COUNTRY": "US",
+                "LANG": "EN",
+                "REVENUE": "",
+                "DEVICE": "D",
+                "PLATFORM": "learn",
+                "PROMOID": "",
+                "CATEGORY": "endpoint-systems-management-resources",
+                "DEALS": "",
+                "FAMILY": "",
+                "PRODUCT": "",
+                "ORDERCODE": "",
+                "ACCOUNTID": "",
+                "EMAILHASH": "",
+
+                "PRODUCTLIST": [
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    },
+                    {
+                        "ITEM": "",
+                        "AMT": "",
+                        "QTY": ""
+                    }
+                ]
+
+            }
+        };
+    </script>
+  <script>
+      /*DO NOT ALTER *** DELL Americas*/
+      (function (e) {
+          var t = "773", n = document, r, i, s = { http: "http://cdn.mplxtms.com/s/MasterTMS.min.js", https: "https://secure-cdn.mplxtms.com/s/MasterTMS.min.js" }, o = s[/\w+/.exec(window.location.protocol)[0]];
+          i = n.createElement("script"), i.type = "text/javascript", i.async = !0, i.src = o + "#" + t, r = n.getElementsByTagName("script")[0], r.parentNode.insertBefore(i, r), i.readyState ? i.onreadystatechange = function () { if (i.readyState === "loaded" || i.readyState === "complete") i.onreadystatechange = null } : i.onload = function () {
+              try {
+                  e()
+              } catch (t) {
+              }
+          }
+      })(function () { });
+     </script>
+
+    
+
+
+</head>
+<body class="ctry_us lang_en set_04 ltr uif_bodyBannerLeftNav uif_mhbodyDefault razor gsd_bodyCopyMedium">
+
+
+<script type="text/javascript">
+
+    var InfoItems = '[{"Name":"author","Content":"Dell us","HttpEquiv":null},{"Name":"channel","Content":"http://www.dell.com/learn/us/en/04/endpoint-systems-management-resources","HttpEquiv":null},{"Name":"cmsurl","Content":"http://cmscontent.dell.com/sites/content/business/large-business/en/Pages/end-user-systems-management-resources.aspx","HttpEquiv":null},{"Name":null,"Content":"text/html; charset=utf-8","HttpEquiv":"content-type"},{"Name":"customerset","Content":"04","HttpEquiv":null},{"Name":"description","Content":"The Endpoint Systems Management Resource Library helps you learn more about Dell endpoint protection, security and the KACE Systems Management Appliances. ","HttpEquiv":null},{"Name":"documentcountrycode","Content":"us","HttpEquiv":null},{"Name":"generator","Content":"Build: 4.3.3.0  Built On: 4/13/2012 11:04:50 AM","HttpEquiv":null},{"Name":"keywords","Content":"","HttpEquiv":null},{"Name":"language","Content":"en","HttpEquiv":null},{"Name":"mbox-to","Content":"","HttpEquiv":null},{"Name":"metricpath","Content":"04","HttpEquiv":null},{"Name":"olr_store","Content":"N","HttpEquiv":null},{"Name":"persistence_id","Content":"e93e12f7-ac41-4a51-8e3a-80a1f5baf4bd","HttpEquiv":null},{"Name":"premier_accessgroupid","Content":null,"HttpEquiv":null},{"Name":"premier_accessgroups","Content":null,"HttpEquiv":null},{"Name":"premier_roleid","Content":null,"HttpEquiv":null},{"Name":"premier_rolename","Content":null,"HttpEquiv":null},{"Name":"profile_id","Content":null,"HttpEquiv":null},{"Name":"s_account","Content":"dellglobalonline","HttpEquiv":null},{"Name":"segment","Content":"bsd","HttpEquiv":null},{"Name":"server","Content":"P61LEARN02","HttpEquiv":null},{"Name":"session_id","Content":"pw3pwrecud0mr3d1kse2xrnn","HttpEquiv":null},{"Name":"waaction","Content":"ByCategoryID","HttpEquiv":null},{"Name":"waapplicationname","Content":"Dell.UX.Mvc.Learn.UI","HttpEquiv":null},{"Name":"wacontroller","Content":"Document","HttpEquiv":null},{"Name":"servername","Content":"P61LEARN02","HttpEquiv":null},{"Name":"pagetemplate","Content":"category-tabs","HttpEquiv":null},{"Name":"expires","Content":"","HttpEquiv":null},{"Name":"termid","Content":"NAVH:NAV_SOLN_L4_client-sys-mgmt-resources","HttpEquiv":null},{"Name":"termname","Content":"Resource Library","HttpEquiv":null},{"Name":"cmsurlqs","Content":"c=us&l=en&r=us&s=bsd&category=NAVH:NAV_SOLN_L4_client-sys-mgmt-resources","HttpEquiv":null},{"Name":"lastmodifieddate","Content":"05/24/2016 01:02:00 PM","HttpEquiv":null},{"Name":"pagename","Content":"us|en|bsd|04|learnux|category|endpoint-systems-management-resources","HttpEquiv":null},{"Name":"hier1","Content":"root:NAV_ROOT_work/topt:NAV_TOP-solution-service/topt:NAV_TOP_technologies/soln:SOLN_client-sys-mgmt/NAVH:NAV_SOLN_L4_client-sys-mgmt-resources/documents~dell_client_integration_pack_sccm_0912.pdf","HttpEquiv":null},{"Name":"currentview","Content":"category-tabs","HttpEquiv":null},{"Name":"frv","Content":"http://frr","HttpEquiv":null}]';
+
+    Dell.Metrics.PageMetadata.PageMetaInfoItems = JSON.parse(InfoItems); 
+   
+
+    </script>
+
+
+
+
+
+    <div id="mbox_default">
+    </div>
+    <script type="text/javascript">
+        mboxCreate(Dell.Global.lwp.l + Dell.Global.lwp.c + '_olr', // language+ country +'_olr'
+                      'r=' + Dell.Global.lwp.c, //country
+                      'c=' + Dell.Global.lwp.c, //country
+                      'l=' + Dell.Global.lwp.l, //language
+                      's=' + Dell.Global.lwp.s, //segment
+                      'cs=' + Dell.Global.lwp.cs, //customerset
+                      'pn=' + Dell.Metrics.PageMetadata.find("pagename").Content);  //pagename
+    </script>
+
+<input type='hidden' id='urlOverride' name='masthead_logo_override' value='http://www.dell.com'/><script type="text/javascript" src="http://www-cdn.dell.com/content/public/menu.aspx?c=us&l=en&cs=04"></script>
+<script type="text/javascript">
+    var m_searchText = 'Search';
+    var m_ctry = 'us';
+    var m_csval = '04';
+    var m_langval = 'en';
+    var m_segval = 'bsd';
+
+                   
+    retRenderToolBox();
+
+            
+
+    var m_processingcaption = "Processing";
+    var m_LoadingCaption = 'Loading...';
+    var m_imgPfx = "http://i.dell.com";
+    var m_pbarPfx = "http://pbar.us.dell.com";
+    var _curAuthLevel = "Unknown";
+    var _curAuthEmailID = ""; 
+    m_pageTab = "0"; 
+    var m_pbarTabTitle = 'My Account';
+    var estaraInit = false;
+    var isAuthenticated = 'False';
+    var isPremier = 'False';
+   
+        var m_IsAuthPremier = false; var m_ensightenLink = new EnsightenLink(); var m_pbarCart = new PbarCartStrip('Cart','xdb.ashx?global:apps2:ecomm:mycart','item','Loading...',0,true);var m_pbarMA= new PbarMAStrip("Hello, {fname} ({clearuser})", "Hello, {fname} ({clearuser})", "Sign In", "not {fname}?", false, true, "", "", "Loading...", true, "", "/learn/us/en/04/endpoint-systems-management-resources/afh.ashx?type=logout&afhp=", "https://www.dell.com/identity/v2/discovery?wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.dell.com&whr=urn:transaction&wreply=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fendpoint-systems-management-resources");
+   
+    m_mda = '';
+    var m_myAccountLink = 'https://www.dell.com/identity/v2/discovery?wa=wsignin1.0&wtrealm=http%3a%2f%2fwww.dell.com&whr=urn:transaction&wreply=http%3a%2f%2fwww.dell.com%2flearn%2fus%2fen%2f04%2fendpoint-systems-management-resources';
+    m_curUrl = 'http://www.dell.com/content/default.aspx?c=us&amp;cs=04&amp;l=en&amp;s=bsd';
+    m_autocomplete = "/ac/ac.aspx";
+    m_isRtl = false;
+    m_isCenter = true;
+    m_isSegHome = true;
+    m_seglink = null;
+    var hoverovertime = 1300;
+    var m_containerTimeout = 500;
+    var m_navPage = null;
+    var m_regionDomain = "http://www.dell.com";
+    var logoUrlOverride = 'http://www.dell.com';
+    //LiveLOOK
+    var llJsHost = window.location.protocol + "//www.easymeeting.com";
+
+    if (m_segval == "gen") {
+        var m_skipMenuDef = true;
+    }
+    
+            writeMH( null,'<a href="http://www.dell.com/learn/campaigns/us-business-chat-splitter-reactive?s=bsd">Click to Chat</a> or <a href="http://www.dell.com/learn/campaigns/contact-us-phone-number?s=bsd">Call Us 1-800-456-3355</a>', null, null, false, true, 'Hello, {fname} ({clearuser})  &lt;span class=\"para_small\">&lt;b>not {UserName}? &lt;a href=\"javascript:RemoveName();location.href="http://membership.dell.com/dellportal/signoff.aspx?mode=deletecookie&amp;c=us&amp;l=en&amp;s=bsd&amp;cs=04";\" style=\"font-weight:normal;\" >&lt;/a>&lt;/b>)&lt;/span>' );
+</script>
+<noscript>
+<div id="mastheadWrap">
+<div id="masthead">
+<ul id="mastheadControls">
+<li class="signin"><a href="/_layouts/xdb.ashx?global:apps2:myaccount:main"><span>Sign In</span></a></li><li class="phonenumber"><a href="http://www.dell.com/learn/campaigns/us-business-chat-splitter-reactive?s=bsd">Click to Chat</a> or <a href="http://www.dell.com/learn/campaigns/contact-us-phone-number?s=bsd">Call Us 1-800-456-3355</a></li>	</ul><p class="gl" id="mhLogo"><a href="/_layouts/xdb.ashx?global:nav:logo"><img src='http://i.dell.com/images/global/brand/ui/storm80/logo80.gif' /></a></p><ul id="mastheadLinks"><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:shop" title="Shop">Shop</a> </li><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:apps2:sdc:home" title="Support">Support</a> </li><li><a href="http://en.community.dell.com/" title="Community">Community</a> </li></ul><div id="mastheadTools">
+<form id="mastheadSearchForm" method="get" action="http://search.dell.com/results.aspx">
+<fieldset>
+<input type='hidden' name='s' value='bsd'/><input type='hidden' name='c' value='us'/><input type='hidden' name='l' value='en'/><input type='hidden' name='cs' value='04'/><input type='hidden' name='cat' value='all'/><input type='text' name='k' id='mh_searchinput' title='Keyword Search'/><input class='button' type='image' alt='' src='http://fcs.dell.com/fcs/us/en/_/UIFramework/4.3.3.0/res/Image?path=masthead%2fgeneric_btn.gif&type=framework'/>	</fieldset>	</form>	</div>	</div>	</div></noscript>
+
+
+<header id="revidHeader" data-bind="attr: { 'class': css }">
+    <div class="custHelp" data-bind="'if': !isPopup">
+    <div class="col12 cntrDiv clrFix">
+        <span class="help" data-bind="html: contactUs"></span>
+        <span data-bind="css: { premier: true, noMda: !(mda.length > 0), nonEmpty: (premier.showTitle || premier.storeTitle || premier.linkTxt || privacy.showSettings) }">
+            <span class="storeNm" data-bind="'if': premier.showTitle, text: premier.storeTitle"></span>
+            <a data-bind="text: premier.linkTxt, attr: { href: premier.linkUrl }"></a>
+            <span data-bind="'if': premier.linkTxt && privacy.showSettings, css: { mhSep: premier.linkTxt && privacy.showSettings }">|</span>
+            <a href="#" data-bind="'if': privacy.showSettings, text: privacy.caption, css: { privacysettingslink: privacy.showSettings }, event: { click: privacy.onClick }"></a>
+        </span>
+        <span class="osRec" data-bind="html: mda.length > 0 ? mda : '', css: { osRec: mda.length > 0 }"></span>
+    </div>
+</div>
+<nav class="mh" data-bind="template: { afterRender: bindEvents }">
+    <div class="col12 cntrDiv clrFix topNav">
+       <a href="http://www.dell.com/" class="mhLogo" data-bind="if: !isHome, attr: { title: logoLink, href: logoLink }"><img alt="Dell" src="//i.dell.com/images/global/brand/ui/logo-wt-bl.png" data-bind="    attr: { src: imageDomain + '/images/global/brand/ui/logo-wt-bl.png' }"/></a>
+        <div class="tierNav" data-bind="'if': navigation.length > 0">
+            <ul id="tr1" class="tier1">
+                <li class="t1li noMarg">
+                    <ul class="t1Nav" data-bind="foreach: navigation">
+                        <li data-bind="attr: { id: containerId }, css: { t1li: true, curSel: isActive }">
+                            <div data-bind="attr: { 'class': cssClass }">
+                                <a href="#" class="mNav" data-bind="html: caption, attr: { rel: containerId, href: url, target: target }"></a>
+                                <span></span>
+                            </div>
+                            <!-- BEGIN SUBNAV TIER2 -->
+                            <div class="subNav" data-bind="attr: { id: containerId + '_sub' }">
+                                <div class="col12 cntrDiv clrFix">
+                                    <ul class="tier2" data-bind="foreach: subNavigation">
+                                        <li class="t2li" data-bind="attr: { id: containerId }">
+                                            <div class="tierLink" data-bind="attr: { 'class': cssClass }">
+                                                <a href="#" class="mNav" data-bind="html: caption, attr: { rel: containerId, href: url, target: target }"></a>
+                                                <span></span>
+                                            </div>
+                                            <!-- BEGIN SUBNAV TIER3 -->
+                                            <div class="subNav" data-bind="attr: { id: containerId + '_sub' }">
+                                                <div class="col12 cntrDiv clrFix">
+                                                    <ul class="viewAll clrFix">
+                                                        <li class="col3" data-bind="template: { name: 'viewAll-template', data: $parent }"></li>
+                                                        <li class="col3" data-bind="template: { name: 'viewAll-template', 'if': subNavigation.length > 0 }"></li>
+                                                        <li class="closeTier"><a href="#" data-bind="attr: { title: $root.closeLabel }"><span></span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="login t1li" data-bind="'if': pbar.showMA">
+                    <div class="tierLogin" data-bind="template: { name: function () { return pbar.showAuthMsg ? 'pbar-showAuthMsg-template' : 'pbar-noShowAuthMsg-template' }, data: pbar }"></div>
+                </li>
+            </ul>
+        </div>
+        <div data-bind="'if': isPopup, css: { osRec: mda.length > 0 }"><span data-bind="    html: mda.length > 0 ? mda : ''"></span></div>
+        <div class="crtSrch" data-bind="'if': !isPopup">
+            <span data-bind="template: { name: 'showCart-template', 'if': cart.showCart }"></span>
+            <span data-bind="template: { name: 'showSearch-template', 'if': search.showSearch }"></span>
+        </div>
+    </div>
+</nav>
+    <div class="col12 cntrDiv clrFix">
+        
+<div class="pageTools">
+<ul id="mastheadToolsLinks"><li class="mastheadToolFinance"><a href="http://www.dell.com/learn/dell-financial-services?s=bsd">Financing</a> </li><li class="mastheadToolCustomerSupport"><a href="http://www.dell.com/learn/campaigns/chat-splitter-usbusiness">Live Chat or Call</a> </li><li class="mastheadToolGuide"><a href="http://www.dell.com/learn/campaigns/contract-purchases?s=slg" target="_blank">Available Contracts</a> </li><li class="mastheadToolCoupon"><a href="http://www.dell.com/learn/campaigns/dell-coupon-codes-us-smb?s=bsd">Coupons</a> </li><li class="mastheadToolStar"><a href="http://www.dell.com/learn/campaigns/advantage-us-bsd?s=bsd">Join Dell Advantage Rewards</a> </li><li class="mastheadToolQ2O"><a href="http://www.dell.com/learn/campaigns/price-match-guarantee-ussmb?s=bsd">Price Match</a> </li></ul></div>
+
+
+
+        
+<div class="breadCrumb">
+    <ul class="bCrumb cntrDiv col12 clrFix">
+                    <li class="home"><a href="#"><span class="sep"></span></a></li>
+                    <li>
+                        <span class="sep">&nbsp;</span>
+                            <a href="/learn/us/en/04/large-enterprise-solutions">Solutions &amp; Services</a>
+                    </li>
+                    <li>
+                        <span class="sep">&nbsp;</span>
+                            <a href="/learn/us/en/04/by-technology">Technologies</a>
+                    </li>
+                    <li>
+                        <span class="sep">&nbsp;</span>
+                            <a href="/learn/us/en/04/endpoint-systems-management">Endpoint Systems Management</a>
+                    </li>
+                    <li>
+                        <span class="sep">&nbsp;</span>
+Resource Library                    </li>
+    </ul>
+</div>
+
+    </div>
+
+    <div class="uif_mastheadSubWrap" style="height: 0px;">
+        <div class="uif_mhMainFoot clearfix clearBoth">
+            <div class="uif_mhFooterWrap clearfix">
+                <h1 class="uif_mhPageTitle gsd_pageTitle">Endpoint Systems Management Resource Library</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+    
+    <div id="content" class="uif_bodyWrap" >
+        <div class="uif_bodySubWrap">
+                <div class="uif_layoutBodyWrap clearfix">
+                        <nav class="uif_leftnav">
+                            
+        
+
+           
+
+<div class="uif_leftnav_inner">
+<div class="skip-link">
+    <a class="assistive-text" title="Skip to primary content" href="#content">Skip to primary content</a>
+</div>
+    <div class="uif_aNav_bookWrap">            
+        
+
+
+
+
+          <span class="uif_lineBreakTop"></span>                       
+
+
+<a class="uif_link gsd_bodyCopyLarge gsd_links1" id="" href="/learn/us/en/04/endpoint-systems-management" title="" target="" >Endpoint Systems Management</a>
+
+     <span class="uif_lineBreak"></span>              
+<ul class="uif_navLvl1UL">
+            <li class="uif_nav_Lv1">
+    
+
+<a class="uif_link gsd_bodyCopyLarge gsd_links1" id="" href="/learn/us/en/04/endpoint-systems-management-advantage" title="Dell Advantage" target="" >Dell Advantage</a>
+
+
+    </li>
+
+            <li class="uif_nav_Lv1">
+    
+
+<a class="uif_link gsd_bodyCopyLarge gsd_links1" id="" href="/learn/us/en/04/endpoint-systems-management-products-services" title="Products &amp; Services" target="" >Products & Services</a>
+
+
+    </li>
+
+            <li class="uif_nav_Lv1">
+    
+
+<a class="uif_link gsd_bodyCopyLarge gsd_links1" id="" href="/learn/us/en/04/endpoint-systems-management-resources" title="Resource Library" target="" >Resource Library</a>
+
+
+    </li>
+
+</ul>
+    
+    </div>
+</div>
+
+<div class="uif_leftnav_inner">
+<div class="skip-link">
+    <a class="assistive-text" title="Skip to primary content" href="#content">Skip to primary content</a>
+</div>
+    <div class="uif_aNav_facetedWrap">            
+        
+
+
+    <h2 class="uif_nav_subHead">Search Within
+</h2>
+    <span class="uif_lineBreak"></span>
+<div class="uif_aNav_facetedWrap">
+    <ul class="uif_navLvl1UL" id="facetsbf23d5ba-8cb3-4b43-ab1f-68106c2660a0">
+        <li class="uif_nav_Lv1" id="keywordsnavigator">
+            <a href="javascript:;" class="uif_fnLevel1Link gsd_bodyCopyLarge gsd_links1">
+	            <span class="uif_icon         uif_icon_fnMinus
+"></span>
+	            <span class="uif_segLink">Keyword Search
+</span>
+            </a>
+            
+
+<div class="uif_facets" id="uifFacetSearch514596ca-b171-448a-89f9-7fefd4964fcb" style="display:         block
+">
+    <a href="javascript:;" class="uif_fnClear gsd_bodyCopySmall gsd_links3">Clear
+</a>
+    <div class="uif_marginTopMed">
+        <input type="text" value="Enter Keyword
+" class="uif_searchInput gsd_bodyCopyMedium gsd_accentColor1 uif_facetSearch">
+    </div>
+    <div class="uif_fCurrentSearch">
+        <p class="uif_microHeading">Currently searching
+</p>
+        <ul class="uif_navLvl2UL uif_paddingLeftSmall gsd_bodyCopyMedium" id="currentlySearching">
+        </ul>
+    </div>
+    
+    <script id="uif_liInputTemplate" type="text/x-uif-tmpl">
+      
+<li class="uif_facets clearfix " data-display="[Name]">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="[Name]" name="_Name_" type="checkbox" value="[Value]" /><input name="_Name_" type="hidden" value="false" />
+ [Name]
+    </label>
+</li>
+
+    </script>
+    <script>
+        $('#uifFacetSearch514596ca-b171-448a-89f9-7fefd4964fcb').facets('search', {listItemTemplateSelector: '#uif_liInputTemplate' });
+    </script>
+</div>            
+        </li>
+        <li class="uif_nav_Lv1" id="technologytypes-dt">
+            <a href="javascript:;" class="uif_fnLevel1Link gsd_bodyCopyLarge gsd_links1">
+	            <span class="uif_icon         uif_icon_fnMinus
+"></span>
+	            <span class="uif_segLink">Solution</span>
+            </a>
+            
+<div class="uif_facets" style="display:         block
+">
+    <a href="javascript:;" class="uif_fnClear gsd_bodyCopySmall gsd_links3"></a>
+	<ul class="uif_navLvl2UL gsd_bodyCopyMedium">		
+
+<li class="uif_facets clearfix " data-display="Endpoint Systems Management">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="Endpoint Systems Management" id="Endpoint_Systems_Management" name="Endpoint_Systems_Management" type="checkbox" value="technology-type-client-systems-management" /><input name="Endpoint_Systems_Management" type="hidden" value="false" />
+ Endpoint Systems Management
+    </label>
+</li>
+	</ul>
+</div>            
+        </li>
+        <li class="uif_nav_Lv1" id="businesscontenttype-dt">
+            <a href="javascript:;" class="uif_fnLevel1Link gsd_bodyCopyLarge gsd_links1">
+	            <span class="uif_icon         uif_icon_fnMinus
+"></span>
+	            <span class="uif_segLink">Content Type</span>
+            </a>
+            
+<div class="uif_facets" style="display:         block
+">
+    <a href="javascript:;" class="uif_fnClear gsd_bodyCopySmall gsd_links3"></a>
+	<ul class="uif_navLvl2UL gsd_bodyCopyMedium">		
+
+<li class="uif_facets clearfix " data-display="White Paper">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="White Paper" id="White_Paper" name="White_Paper" type="checkbox" value="businesscontenttype-white-paper" /><input name="White_Paper" type="hidden" value="false" />
+ White Paper
+    </label>
+</li>
+
+<li class="uif_facets clearfix " data-display="Case Study">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="Case Study" id="Case_Study" name="Case_Study" type="checkbox" value="businesscontenttype-case-study" /><input name="Case_Study" type="hidden" value="false" />
+ Case Study
+    </label>
+</li>
+
+<li class="uif_facets clearfix " data-display="Article">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="Article" id="Article" name="Article" type="checkbox" value="businesscontenttype-article" /><input name="Article" type="hidden" value="false" />
+ Article
+    </label>
+</li>
+
+<li class="uif_facets clearfix " data-display="Analyst Report">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="Analyst Report" id="Analyst_Report" name="Analyst_Report" type="checkbox" value="businesscontenttype-analyst-report" /><input name="Analyst_Report" type="hidden" value="false" />
+ Analyst Report
+    </label>
+</li>
+
+<li class="uif_facets clearfix " data-display="Data Sheet">
+    <label class="uif_fnCheckBoxLabel  ">
+        <input class="uif_fnChbx" data-display="Data Sheet" id="Data_Sheet" name="Data_Sheet" type="checkbox" value="businesscontenttype-data-sheet" /><input name="Data_Sheet" type="hidden" value="false" />
+ Data Sheet
+    </label>
+</li>
+	</ul>
+</div>            
+        </li>
+    </ul>
+    <script>
+        $('#facetsbf23d5ba-8cb3-4b43-ab1f-68106c2660a0').facets({
+            url: '#',
+            contentElementId: 'content',
+            parameterNames: {"keywordsnavigator":"keywordsnavigator","technologytypes-dt":"technologytypes-dt","businesscontenttype-dt":"businesscontenttype-dt"}
+        });
+    </script>
+</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var returnedErrorShowMessage = 'Sorry, an error occurred while processing your request.';
+    var defaultCategoryFacetedNavSearch = 'endpoint-systems-management-resources' || "about-dell";
+    
+    $("a.uif_fnLevel1RLink").each(function () {
+        var hrefVal = $.trim($(this).parent().find("input[type=radio]").attr("value"));
+        if (hrefVal != undefined && hrefVal.length > 0) {
+            $(this).attr("href", hrefVal);
+        }
+    });
+
+</script>
+
+
+
+
+                        </nav>
+                        <div class="uif_layoutSubBodyWrap">
+  <div class="uif_stdCornerBox uif_shadowOffset " 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix                                                       tbtsSpacer
+">
+                                              
+               
+                                <div class="uif_banner">
+                                    
+    
+
+
+        
+
+       
+
+
+                                </div>
+                                <div class="uif_maincontent">
+                                    
+
+
+
+
+
+<script type="text/javascript">
+
+    $('div.pgTools').find("a.print").unbind("click").bind("click", function () {
+        window.print();
+        return false;
+    });
+</script>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+    <div class="nodeIntroText inlineContent gsd_bodyCopyMedium">
+        Welcome to the <b>Dell Endpoint Systems Management Resource Library</b>. Use the dropdown boxes at left to filter this library by technology or content type. You also can <a href="http://marketing.dell.com/endpoint-systems-management" target="_blank">contact a Dell expert</a> for information about faster deployment, better monitoring and easier updates with Dell endpoint management solutions and KACE Systems Management Appliances.<br /><br />Browse these resources to learn more about Dell Endpoint <a></a>Systems Management.<br /><br /><br />
+    </div>
+
+
+
+<div id="campaignTabs">
+    <ul>
+
+            <li><a href="#campaignTabs-0" data-analyticscontent="">
+Featured Videos            </a></li>
+            
+
+            <li><a href="#campaignTabs-1" data-analyticscontent="">
+Case Studies            </a></li>
+            
+
+            <li><a href="#campaignTabs-2" data-analyticscontent="">
+White Papers            </a></li>
+            
+
+            <li><a href="#campaignTabs-3" data-analyticscontent="">
+Data Sheets & Others            </a></li>
+            
+
+            <li><a href="#campaignTabs-4" data-analyticscontent="">
+Community            </a></li>
+            
+    </ul>
+        <div id="campaignTabs-0">
+
+
+
+              
+<div class="featuredArticles" id="viewAllResults">
+<div class="searchResults">
+<ol class="results">
+<li class="hasThumb last"><a class="thumbnail" href="/learn/us/en/04/large-business/customer-story-videos-for-dell-kace" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/videos/en/PublishingImages/case_customer_video_thumb.jpg" alt="Customer Story Videos for Dell KACE" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/large-business/customer-story-videos-for-dell-kace" target="_self">Customer Story Videos for Dell KACE</a>	</h3><p><span class="date">6/18/2014</span></p><p class="teaser"><div>See how Dell KACE customers are getting value from their systems management appliances.</div></p>	</div></li>	</ol>	</div>	</div>        </div>
+        <div id="campaignTabs-1">
+
+
+
+              
+<div class="featuredArticles" id="viewAllResults">
+<div class="searchResults">
+<ol class="results">
+<li class="hasThumb last"><a class="thumbnail" href="/learn/us/en/04/large-business/systems-management-case-studies" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/large-business/en/PublishingImages/Case%20study%20thumbnail.jpg" alt="Dell TechCenter Systems Management Wikis" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/large-business/systems-management-case-studies" target="_self">Systems Management Case Studies</a>	</h3><p><span class="date">9/21/2014</span></p><p class="teaser">Learn about Dell customer case studies, Dell customer testimonials and Dell customer </p>	</div></li>	</ol>	</div>	</div>        </div>
+        <div id="campaignTabs-2">
+
+
+
+              
+<div class="featuredArticles" id="viewAllResults">
+<div class="searchResults">
+<ol class="results">
+<li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/shared-content~solutions~en/Documents~Dell-Client-Management-Whitepaper.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/shared-content/solutions/en/PublishingImages/data-client.jpg" alt="Dell Client Systems Management" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/shared-content~solutions~en/Documents~Dell-Client-Management-Whitepaper.pdf" target="_self">Dell Client Systems Management Study for Microsoft Systems Center Configuration Manager 2012 optimizing DCIP (Dell Client Integration Pack)</a>	</h3><p><span class="date">8/4/2014</span></p><p class="teaser">An independent study summarizing the testing of Dell Client Integration Pack with Microsoft Systems Center which details how Dell allows easier, faster manageability for your IT environment. Dell was found to have 77% fewer steps to import drivers, 55% fewer steps to import WinPE drivers and 46% fewer steps to task sequences.</p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~en/Documents~vpro-dcip-0614-v2.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/en/PublishingImages/vpro-dcip-0614-v2_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~en/Documents~vpro-dcip-0614-v2.pdf" target="_self">Faster, More Complete Management with Dell vPro Extensions Supporting Intel vPro Technology</a>	</h3><p><span class="date">7/1/2014</span></p><p class="teaser">Remote Notebook Management: Dell Extensions Supporting Intel vPro Technology and Dell Integration Pack 3.1. Notebooks offer convenience and mobility for your employees, for IT staff and administration however, remotely managing employee notebooks can be a challenge. Read how Dell can help with our unique vPro capabilities for out-of-band management.</p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~brochures~en/Documents~8-ways-better-software-deployment-and-management-can-save-you-money-whitepaper-13522.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/brochures/en/PublishingImages/8-ways-better-software-deployment-and-management-can-save-you-money-whitepaper-13522_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~brochures~en/Documents~8-ways-better-software-deployment-and-management-can-save-you-money-whitepaper-13522.pdf" target="_self">Eight Ways Better Software Deployment and Management Can Save You Money</a>	</h3><p><span class="date">6/1/2014</span></p><p class="teaser">Learn eight ways that software life cycle management can reduce overhead and improve your business. Saving money and improving productivity are just a start to the benefits you'll achieve.  </p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~en/Documents~vpro-dcip-0614-v2.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/en/PublishingImages/vpro-dcip-0614-v2_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~en/Documents~vpro-dcip-0614-v2.pdf" target="_self">Faster, More Complete Management with Dell vPro Extensions Supporting Intel vPro Technology</a>	</h3><p><span class="date">7/1/2014</span></p><p class="teaser">Remote Notebook Management: Dell Extensions Supporting Intel vPro Technology and Dell Integration Pack 3.1. Notebooks offer convenience and mobility for your employees, for IT staff and administration however, remotely managing employee notebooks can be a challenge. Read how Dell can help with our unique vPro capabilities for out-of-band management.</p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~brochures~en/Documents~5-steps-for-easier-it-inventorying-whitepaper-13521.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/brochures/en/PublishingImages/5-steps-for-easier-it-inventorying-whitepaper-13521_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~brochures~en/Documents~5-steps-for-easier-it-inventorying-whitepaper-13521.pdf" target="_self">Five Steps for Easier—and More Effective—IT Inventorying</a>	</h3><p><span class="date">6/1/2014</span></p><p class="teaser">Learn key strategies that will make inventorying easier, more effective and more accurate and help ensure that your inventory information provides useful information that benefits your organization. </p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~brochures~en/Documents~8-ways-better-software-deployment-and-management-can-save-you-money-whitepaper-13522.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/brochures/en/PublishingImages/8-ways-better-software-deployment-and-management-can-save-you-money-whitepaper-13522_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~brochures~en/Documents~8-ways-better-software-deployment-and-management-can-save-you-money-whitepaper-13522.pdf" target="_self">Eight Ways Better Software Deployment and Management Can Save You Money</a>	</h3><p><span class="date">6/1/2014</span></p><p class="teaser">Learn eight ways that software life cycle management can reduce overhead and improve your business. Saving money and improving productivity are just a start to the benefits you'll achieve.  </p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~large-business~en/Documents~Dell_Client_Integration_Pack_SCCM_0912.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/large-business/en/PublishingImages/managing_clients.jpg" alt="End-User Systems Management" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~large-business~en/Documents~Dell_Client_Integration_Pack_SCCM_0912.pdf" target="_self">Enterprise Client Management with Dell Client Integration Pack</a>	</h3><p><span class="date">10/23/2013</span></p><p class="teaser">With so many workstations and notebooks assigned to employees for work, enterprises seek an effective management solution to keep these client systems secure, up to date, and compliant with IT policy – no matter where employees take them. </p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~brochures~en/Documents~five-easy-steps-to-smarter-systems-imaging-whitepaper-13870.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/brochures/en/PublishingImages/five-easy-steps-to-smarter-systems-imaging-whitepaper-13870_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~brochures~en/Documents~five-easy-steps-to-smarter-systems-imaging-whitepaper-13870.pdf" target="_self">5 Easy Steps to Smarter Systems Imaging</a>	</h3><p><span class="date">11/13/2013</span></p><p class="teaser">A smarter approach to systems imaging is to layer atop the core image a set of unique drivers, updates, applications, configurations and user personality—turning a basic systems image into a viable user experience. This white paper explains how to get there in five easy steps.</p>	</div></li><li class="hasThumb last"><a class="thumbnail" href="/learn/us/en/04/business~solutions~brochures~en/Documents~nine-simple-but-critical-tips-for-effective-patch-management-whitepaper-13513.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/brochures/en/PublishingImages/nine-simple-but-critical-tips-for-effective-patch-management-whitepaper-13513_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~brochures~en/Documents~nine-simple-but-critical-tips-for-effective-patch-management-whitepaper-13513.pdf" target="_self">Nine Simple (but Critical) Tips for Effective Patch Management</a>	</h3><p><span class="date">10/1/2013</span></p><p class="teaser">In today’s IT environments, traditional methods for imaging are simply unworkable. A smarter approach to systems imaging is to layer atop the core image a set of unique drivers, updates, applications, configurations and user personality. This white paper explains how to get there in five easy steps. </p>	</div></li>	</ol>	</div>	</div>        </div>
+        <div id="campaignTabs-3">
+
+
+
+              
+<div class="featuredArticles" id="viewAllResults">
+<div class="searchResults">
+<ol class="results">
+<li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~en/Documents~tw-1403254-dell-kace-tech-brief-final.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/en/PublishingImages/tw-1403254-dell-kace-tech-brief-final_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~en/Documents~tw-1403254-dell-kace-tech-brief-final.pdf" target="_self">Tablet Management Simplified </a>	</h3><p><span class="date">4/9/2014</span></p><p class="teaser">Systems management and deployment appliances can make enterprise tablet support easier. This white paper describes how the right appliance, paired with complementary tablet devices, can reduce costs, enhance security, and free staff to concentrate on strategic projects.</p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/shared-content~data-sheets~en/Documents~dell-kace-k1000-systems-management-appliance-datasheet-27453.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/shared-content/data-sheets/en/PublishingImages/dell-kace-k1000-systems-management-appliance-datasheet-27453_pdf.jpg" alt="Click here to read PDF" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/shared-content~data-sheets~en/Documents~dell-kace-k1000-systems-management-appliance-datasheet-27453.pdf" target="_self">Dell KACE K1000 Series Management Appliances</a>	</h3><p><span class="date">7/14/2014</span></p><p class="teaser">The KACE K1000 Series Management Appliances offer all-inclusive, secure appliances that makes it easy and affordable for IT professionals to manage networked computers including desktops, servers, notebooks, switches, routers and more.</p>	</div></li><li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/business~solutions~brochures~en/Documents~printer-ompm-us-final-brochure.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/solutions/brochures/en/PublishingImages/printer-ompm-us-final-brochure_pdf.jpg" alt="Dell OpenManage Printer Manager v2" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~solutions~brochures~en/Documents~printer-ompm-us-final-brochure.pdf" target="_self">Dell OpenManage Printer Manager v2</a>	</h3><p><span class="date">9/26/2011</span></p><p class="teaser">Learn about the Dell OpenManage™ Printer Manager v2 (Dell OMPMv2), a powerful web-based printer fleet management tool that helps you simplify printer management in a complex environment. </p>	</div></li><li class="hasThumb last"><a class="thumbnail" href="/learn/us/en/04/business~large-business~en/Documents~Dell_Client_Integration_Pack_SCCM_0912.pdf" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/large-business/en/PublishingImages/managing_clients.jpg" alt="End-User Systems Management" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/business~large-business~en/Documents~Dell_Client_Integration_Pack_SCCM_0912.pdf" target="_self">Enterprise Client Management with Dell Client Integration Pack</a>	</h3><p><span class="date">10/23/2013</span></p><p class="teaser">With so many workstations and notebooks assigned to employees for work, enterprises seek an effective management solution to keep these client systems secure, up to date, and compliant with IT policy – no matter where employees take them. </p>	</div></li>	</ol>	</div>	</div>        </div>
+        <div id="campaignTabs-4">
+
+
+
+              
+<div class="featuredArticles" id="viewAllResults">
+<div class="searchResults">
+<ol class="results">
+<li class="hasThumb"><a class="thumbnail" href="/learn/us/en/04/large-business/dell-techcenter-systems-management-wikis" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/business/large-business/en/PublishingImages/TechCenter-Wiki-Thumbnail.jpg" alt="Dell TechCenter Systems Management Wikis" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/large-business/dell-techcenter-systems-management-wikis" target="_self">Dell TechCenter Systems Management Wikis</a>	</h3><p><span class="date">9/21/2014</span></p><p class="teaser">Join your community to learn more about Dell’s comprehensive range of software-based, hardware-based and appliance-based server systems management products.</p>	</div></li><li class="hasThumb last"><a class="thumbnail" href="/learn/us/en/04/solutions/intel-and-dell" target="_self">                                <img src="http://i.dell.com/das/dih.ashx/106x106tc//sites/imagecontent/shared-content/solutions/en/PublishingImages/intel-120x130.jpg" alt="intel logo" />
+</a><div class="resultDetails">
+<h3>
+<a href="/learn/us/en/04/solutions/intel-and-dell" target="_self">Dell and Intel</a>	</h3><p><span class="date">8/25/2014</span></p><p class="teaser">Our high-performance solutions enable professionals across a wide array of industries to accelerate their innovation.</p>	</div></li>	</ol>	</div>	</div>        </div>
+</div>
+
+<script type="text/javascript">
+
+    (function () {
+        $("#campaignTabs").tabs({
+            select: function (event, ui) {
+                Dell.WebAnalytics.tabPageView($.trim($(ui.tab).text()), $(ui.tab).data("analyticscontent"));
+            }
+        });
+        var firstTab = $("#campaignTabs").find("ul.ui-tabs-nav li.ui-state-default");
+        uif_tabs.start(firstTab);
+    })()
+    
+</script>
+
+
+
+
+            <div class="eloqua hide hidden"></div>
+
+
+                                </div>
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+                        </div>
+                </div>
+        </div>
+
+    </div>
+    <script>
+
+        //function tempFixForTallTitles() {
+        //    var title = $(".uif_mhPageTitle").eq(0),
+        //        titleHeight = title.height(),
+        //        isSkinny = (($(".uif_mastHead_skinny").length > 0) || ($(".uif_mastHead_skinnyWP").length > 0)) ? true : false,
+        //        isSkinnyPartial = ($(".uif_mastHead_skinny_control").length > 0) ? true : false,
+        //        isBuilder = ($(".uif_mhbodyBuilder").length > 0) ? true : false;
+        //    if ((titleHeight > 30 && !isSkinny && !isBuilder) || (titleHeight > 60 && isSkinny)) {
+        //        if (isSkinny) {
+        //            $("html").eq(0).addClass("uif_altTitleSkinny");
+        //        } else if (isBuilder) {
+        //            $("html").eq(0).addClass("uif_altTitleBuilder");
+        //        } else {
+        //            $("html").eq(0).addClass("uif_altTitle");
+        //        }
+        //        title.hide();
+        //        if (isSkinny) {
+        //            $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        }
+        //        $(".uif_bodySubWrap").eq(0).prepend("<h1 class='uif_altPageTitle gsd_pageTitle'>" + title.html() + "</h1>");
+        //    }
+        //    if (isSkinnyPartial) {
+        //        $("html").eq(0).addClass("uif_altTitleSkinnyPartial");
+        //        $(".uif_bodySubWrap").eq(0).prepend("<div class='uif_altMainFoot clearfix'>" + $(".uif_mhMainFoot").eq(0).hide().html() + "</div>");
+        //        $(".uif_bodySubWrap").eq(0).prepend(title);
+        //    }            
+        //};
+        //tempFixForTallTitles();
+    
+    </script>
+
+
+
+<footer id="revidFooter">
+    <nav class="contextual">
+
+        <div class="cntxCtr col12 cntrDiv clrFix">
+            <div class="footerlinkscontainer">
+                <div id="footer" class="disclaimers"></div>
+<ul class="contextualFooter"><li class="contextualFooterLinks5col first"><div class="contextualFooterLinkTitle">Do more with Dell</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/campaigns/segmentor-usmpp?s=eep">Employee and Student Discounts</a> </li><li><a href="http://www.dell.com/content/public/xdbredirect.aspx?link=global:nav:partners">PartnerDirect</a> </li><li><a href="http://www.dell.com/thepowertodomore">The power to do more</a> </li><li><a href="http://www.dell.com/learn/us/en/22/campaigns/outlet">Dell Outlet</a> </li><li><a href="http://en.community.dell.com/techcenter/default.aspx">TechCenter</a> </li><li><a href="https://dfs.dell.com/Pages/DFSHomePage.aspx">Make a Payment</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">About Dell</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/about-dell-investor?s=corp">Investors</a> </li><li><a href="http://www.dell.com/learn/about-dell?s=corp">Company Information</a> </li><li><a href="http://www.dell.com/learn/cr?s=corp">Corporate Social Responsibility</a> </li><li><a href="http://www.dell.com/learn/customer-engagement?s=corp">Customer Engagement</a> </li><li><a href="http://www.dell.com/learn/careers?s=corp">Careers</a> </li><li><a href="http://www.dell.com/learn/about-dell-newsroom?s=corp">Newsroom</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">Legal</div><ul class="contextualFooterLinks"><li><a href="http://www.dell.com/learn/policies-ads-and-emails?s=corp">Ads &amp; Emails</a> </li><li><a href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy Statement</a> </li><li><a href="http://www.dell.com/learn/terms?s=corp">Legal &amp; Regulatory</a> </li><li><a href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a> </li><li><a href="http://www.dell.com/learn/trademarks?s=corp">Trademarks</a> </li></ul></li><li class="contextualFooterLinks5col"><div class="contextualFooterLinkTitle">Community</div><ul class="contextualFooterLinks"><li><a href="http://en.community.dell.com/">The Dell Community</a> </li><li><a href="http://en.community.dell.com/dell-blogs/direct2dell/b/direct2dell/default.aspx">Read Our Blog</a> </li><li><a href="http://en.community.dell.com/support-forums/default.aspx">Support Forums</a> </li><li><a href="http://events.dell.com/?lang=en">Events</a> </li></ul></li></ul>            </div>
+            <script type="text/javascript">
+                renderCountrySelector();
+            </script>
+      
+            </div>
+
+    </nav>
+
+    <div id="legal">
+        <div class="col12 cntrDiv clrFix">
+            <div class="universalFooter center universalFooterDropdown ">
+                 
+                
+                <div class="universalFooter center"><ul class="universalFooterLinks"><li class="first"><a href="http://www.dell.com/learn/site-terms-of-use-copyright?s=corp">© 2016 Dell</a> </li><li><a href="http://www.dell.com/learn/terms-of-sale?s=corp">Terms of Sale</a> </li><li><a href="http://www.dell.com/support/incidents/CareForms/ProvideInfo/CareUnresolved">Unresolved Issues</a> </li><li><a href="http://www.dell.com/learn/policies-privacy?s=corp">Privacy</a> </li><li><a href="http://www.dell.com/learn/policies-ads-and-emails?s=corp">Ads &amp; Emails</a> </li><li><a href="http://www.dell.com/support/Contents/category/Contact-Information">Contact</a> </li><li><a href="http://www.dell.com/sitemap">Site Map</a> </li><li><a class="opinionlabhtml">Feedback</a> </li></ul></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="technotes col12 cntrDiv clrFix">
+        <div class="innerLegalDisclaimer">
+Ultrabook, Celeron, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom Inside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, Itanium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, Xeon Phi, and Xeon Inside are trademarks of Intel Corporation in the U.S. and/or other countries.<br /><br />*Rewards are provided in the form of a promotional code. Up to 10% back in rewards valid only on purchases using Dell Business Credit (DBC) and Dell Advantage Loyalty Program. 5% back in rewards valid on all other Dell Advantage purchases. Bose products only eligible for 5% rewards with Dell Advantage [rewards]. Rewards arrive separately from purchase, typically in 10-20 days from ship date via email; expires in 90 days (except where prohibited by law). Any balance remaining on your purchase after Dell Advantage rewards are applied may not be paid with DBC and instead a separate form of payment must be used. Refurbished and or used purchases do not qualify for rewards. Terms and conditions apply. Dell.com/rewardterms.<br /><br />​^<strong>Dell Business Credit:</strong> Offered to Small and Medium Business customers by WebBank who determines qualifications for and terms of credit. Taxes, shipping and other charges are extra and vary. Minimum monthly payments are the greater of $15 or 3% of the new balance shown on the monthly billing statement. Dell and the Dell logo are trademarks of Dell Inc.        </div>
+    </div>
+</footer>
+
+<script>
+    var kAjax = {
+        contextID: ''
+        , action: ''
+    };
+    var klabel = {
+        labelName: 'Keyword Search',
+        labelType: 'inside',
+        keywordSearched: ''
+    };
+    Dell.SharedControls.SearchBox.Create("http://search.dell.com/results.aspx", klabel, 'k', "", "", kAjax);
+    renderFooterDropdown();
+</script>
+    
+<script type="text/javascript" src="http://fcs.dell.com/fcs/us/en/_/UIFramework/res/JsSet?id=bottom&type=framework&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/JsSet?id=learnCore&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=articleTools&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2fdemandbase&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=third-party%2feloqua%2feloqua&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=webparts%2frssReader&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script><script type="text/javascript" src="http://afcs.dell.com/learn/us/en/_/UIFramework/res/js?path=carousel&type=application&ver=622859708620000000&compress=True&fwv=4.3.3.0"></script>    <script type="text/javascript">
+        var dell_trackingLinks=[];
+    </script>
+    
+    
+  <div class="uif_stdCornerBox gsd_bodyCopySmall gsd_accentColor1 uif_validationTooltip uif_ContainerWithX " 
+         id="uifValidationMessageDefault" 
+         style="width:200px" 
+      >
+          <div class="dbtsBodyWrap">
+            <div class="tbtsTopWrap">
+                <div class="tbtsUL">
+                </div>
+                <div class="tbtsUM">
+                    <div class="tbtsUMTriangle"></div>
+                </div>
+                <div class="tbtsUR">
+                </div>
+            </div>
+          <div class="tbtsCenterWrap">
+            <div class="tbtsClose"></div>
+                <div class="tbtsBodyTriangle"></div>
+  
+                <div class="tbtsBody clearfix ">
+                                              
+               
+</div>
+            </div>
+            <div class="tbtsBottomWrap">
+                <div class="tbtsLL">
+                </div>
+                <div class="tbtsLM">
+                    <div class="tbtsLMTriangle"></div>
+                </div>
+                <div class="tbtsLR">
+                </div>
+            </div>
+        </div>
+
+    <!-- ie6 & 7 fix for gradient box -->
+    <!--[if IE 6]>
+    <script>
+    if ($(".uif_gradBox").length > 0) {
+    var cc = 0;
+        $(function(){
+            if( cc== 0) {
+                $(".uif_gradBox .tbtsCenterWrap").each(function(){  
+                     var thisWidth = $(this).width() - 2;
+                    $(this).css("margin-left", 0).width(thisWidth);
+                })
+            }
+            cc=1;
+         })
+   }
+    </script>
+    <![endif]-->
+    </div>
+
+</body>
+</html>
