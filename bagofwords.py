@@ -17,6 +17,7 @@ parser = argparse.ArgumentParser(description='Imports wordcounts from webpages a
 parser.add_argument('num_pages', help='How many webpages to analyze and cluster (max of 500)')
 parser.add_argument('num_clusters', help='How many clusters to group pages into')
 parser.add_argument('--investigate', default='plot', help='Examine clusters by [browser], [plot] or [title]')
+parser.add_argument('--file-output', action='store_true', help="Flag will output cluster details to a file. Currently assumes --investigate title.")
 args = parser.parse_args()
 
 # Convert wordcount files to list of dictionaries for each page
@@ -40,7 +41,40 @@ word_features = DictVectorizer().fit_transform(wordcounts).toarray()
 clusters = KMeans(n_clusters=int(args.num_clusters)).fit_predict(word_features)
 clustered_pages = zip(clusters,wordcounts_f)
 clustered_pages.sort(key=lambda x: x[0])
-pprint.pprint(clustered_pages)
+
+# print cluster counts
+if args.file_output:
+	with open('../clusters.txt','w') as f:
+		cluster_counts = collections.Counter(clusters)
+		f.write("\tCluster overview:\n")
+		for k,v in cluster_counts.most_common():
+			f.write("{} {}\n".format(k,v))
+		
+		# get titles from all pages per cluster
+		for c in cluster_counts.keys():
+			cluster_metadata = []
+			f.write("\n\tCluster {} ({} pages):\n".format(c,cluster_counts[c]))
+			for cl,page in clustered_pages:
+				if cl == int(c):
+					webpage = page.partition('.')[0]+'.html'
+					# List page titles from metadata
+					title = subprocess.Popen('grep "og:title" {}'.format(webpage), shell=True, stdout=subprocess.PIPE)
+					# gets only content, removes "Dell" tag on the end of some, then removes quotes and spaces at ends
+					cluster_metadata.append(title.communicate()[0].partition('content=')[2].partition('/>')[0].partition('| Dell')[0].strip().strip('"').strip())
+			if len(cluster_metadata) < 10:
+				for ttl in cluster_metadata:
+					f.write(ttl+'\n')
+			else:
+				all_words = " ".join(cluster_metadata).split(" ")
+				# count words; drop words with a frequency of 1 or symbols/numbers
+				bag_words = collections.Counter({k: c for k, c in collections.Counter(all_words).items() if (c > 1 and k.isalpha())}) 
+				for k,v in bag_words.most_common():
+					f.write("{} {}\n".format(k,v))
+
+	raise SystemExit(0) # quit rest of script
+else:
+	for k,v in collections.Counter(clusters).most_common():
+		print k, v
 
 # look at specific clusters
 if args.investigate in ['browser','title']:

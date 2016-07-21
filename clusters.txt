@@ -1,0 +1,307 @@
+	Cluster overview:
+11 216
+1 123
+6 63
+8 21
+22 12
+16 10
+13 9
+0 6
+21 6
+18 5
+25 5
+24 4
+5 2
+10 2
+14 2
+15 2
+23 2
+2 1
+3 1
+4 1
+7 1
+9 1
+12 1
+17 1
+19 1
+20 1
+
+	Cluster 0 (6 pages):
+PowerVault MD3 10Gb iSCSI Array Series
+Fibre Channel Storage Area Networks
+PowerVault MD3 10Gb iSCSI Array Series
+PowerVault MD3 Fibre Channel Storage Array Series
+PowerVault MD3 10Gb iSCSI Array Series
+PowerVault MD3 Fibre Channel Storage Array Series
+
+	Cluster 1 (123 pages):
+for 21
+Dell 21
+to 17
+Premier 17
+Business 15
+and 15
+Welcome 15
+Library 14
+Work 12
+Solutions 12
+PowerVault 11
+Shop 10
+PCs 10
+Storage 9
+Series 9
+Document 7
+Precision 7
+Wyse 7
+Workstations 6
+Mobile 5
+PowerEdge 4
+Management 4
+Tape 4
+Alone 4
+Stand 4
+Servers 4
+Thin 4
+Laptops 3
+Services 3
+Blade 3
+Switch 3
+Backup 3
+Networking 3
+Clients 3
+Resource 3
+Cloud 3
+Fibre 2
+Desktop 2
+Access 2
+XPS 2
+Systems 2
+Dense 2
+Resources 2
+VMware 2
+OpenManage 2
+Client 2
+Small 2
+Fixed 2
+Endpoint 2
+Software 2
+Computing 2
+EqualLogic 2
+Edition 2
+Enclosure 2
+Network 2
+Federal 2
+System 2
+Virtual 2
+Clinical 2
+New 2
+Channel 2
+Brocade 2
+Solution 2
+Us 2
+Server 2
+Integration 2
+Inspiron 2
+
+	Cluster 2 (1 pages):
+Inspiron Small Desktop
+
+	Cluster 3 (1 pages):
+OptiPlex Desktop 3000 Series (3040)
+
+	Cluster 4 (1 pages):
+Latitude 15 5000 Series
+
+	Cluster 5 (2 pages):
+OptiPlex 3020 Desktop
+OptiPlex (9020) Business-class Desktop
+
+	Cluster 6 (63 pages):
+Series 25
+OptiPlex 16
+Inspiron 13
+Latitude 12
+Purchase 11
+Member 11
+Desktop 10
+Laptop 9
+New 7
+Precision 7
+Small 7
+XPS 6
+Tower 5
+Factor 4
+Edition 4
+Form 4
+with 4
+Touch 4
+Mini 3
+Screen 3
+Special 3
+Pro 2
+optional 2
+Business 2
+Micro 2
+PC 2
+Solutions 2
+Developer 2
+
+	Cluster 7 (1 pages):
+Product Safety, EMC and Environmental Datasheets
+
+	Cluster 8 (21 pages):
+PowerEdge 18
+Server 13
+Dell 10
+Blade 8
+Rack 6
+server 5
+rack 3
+Power 2
+Edge 2
+tower 2
+
+	Cluster 9 (1 pages):
+New OptiPlex 7040 Series Desktops
+
+	Cluster 10 (2 pages):
+Inspiron Desktop
+Inspiron 15 5000 Series (Intel)
+
+	Cluster 11 (216 pages):
+Help 42
+Center 38
+Member 23
+Services 23
+Purchase 22
+Solutions 20
+Dell 18
+Workstation 17
+Desktop 16
+Program 16
+Welcome 15
+to 15
+Deals 15
+OptiPlex 12
+Series 10
+Server 9
+Storage 7
+Latitude 7
+Precision 7
+Resource 7
+Library 7
+Electronics 6
+and 5
+Choose 5
+Me 5
+Us 5
+Software 5
+for 5
+Laptop 5
+Information 4
+Management 4
+Work 4
+Tower 4
+Wyse 4
+Vostro 4
+Company 3
+PowerEdge 3
+with 3
+Rack 3
+Inspiron 3
+Servers 3
+Partners 2
+Teradici 2
+Remote 2
+Business 2
+desktop 2
+Contact 2
+Mobile 2
+Alliance 2
+Global 2
+Switches 2
+Touch 2
+
+	Cluster 12 (1 pages):
+Help Me Choose
+
+	Cluster 13 (9 pages):
+Latitude 12 7000 Series (E7250)
+Latitude 14 5000 Series (E5450)
+Latitude 14 7000 Series (E7450)
+OptiPlex 9030 All-in-One Desktop with Optional Touch Screen
+Latitude 14 5000 Series (E5450)
+Latitude 13 Education Series (3340)
+Latitude 14 5000 Series (E5450)
+Latitude 14 5000 Series (E5450)
+Latitude 15 5000 Series (E5550)
+
+	Cluster 14 (2 pages):
+Latitude 14 7000 Series
+New Latitude 13 7000 Series
+
+	Cluster 15 (2 pages):
+Wyse 5000 Series Thin Clients
+Wyse 7000 Series Thin Clients | High-Performance Virtual Desktop
+
+	Cluster 16 (10 pages):
+Series 8
+OptiPlex 4
+Desktops 3
+New 3
+Precision 2
+Desktop 2
+PC 2
+Inspiron 2
+
+	Cluster 17 (1 pages):
+Member Purchase | Inspiron 15 5000
+
+	Cluster 18 (5 pages):
+Member Purchase | Inspiron 11 3000
+Member Purchase | Alienware X51 Gaming Desktop
+Member Purchase | Inspiron 24 3000 All-in-One (AMD)
+Alienware Area-51 Gaming Desktop
+Member Purchase | Inspiron 15 Gaming
+
+	Cluster 19 (1 pages):
+Warranties
+
+	Cluster 20 (1 pages):
+Dell Chromebook 13
+
+	Cluster 21 (6 pages):
+Dell Networking N1548P Switch
+Dell Networking N4000 Series 10GbE Layer 3 Switches
+Dell Networking N1524P Switch
+Dell Networking C7000 chassis-based switches
+Dell Networking N2048 Switch
+Dell Networking N4000 Series 10GbE Layer 3 Switches
+
+	Cluster 22 (12 pages):
+Purchase 5
+Laptop 5
+Computers 5
+Member 5
+PCs 5
+Inspiron 4
+Series 3
+Laptops 3
+Desktop 3
+
+	Cluster 23 (2 pages):
+Dell SonicWALL TZ500
+Dell SonicWALL TZ Series
+
+	Cluster 24 (4 pages):
+FX converged architecture components
+PowerEdge FM120x4
+PowerEdge FC830
+Dell XC Web-Scale Converged Appliance
+
+	Cluster 25 (5 pages):
+Dell Storage Center OS and Software
+Dell Storage PS4210 Array Series
+Dell Storage SC4020 All-In-One Array
+SC Series Storage Solutions
+Dell EqualLogic PS-M4110 Blade Array
