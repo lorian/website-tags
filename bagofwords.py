@@ -10,6 +10,7 @@ from sklearn.feature_extraction import DictVectorizer
 from sklearn.cluster import KMeans
 import webbrowser
 import subprocess
+import collections
 
 # script takes number of pages and number of clusters as arguments
 parser = argparse.ArgumentParser(description='Imports wordcounts from webpages and clusters them')
@@ -45,9 +46,10 @@ pprint.pprint(clustered_pages)
 if args.investigate in ['browser','title']:
 	target_cluster = ''
 	while target_cluster != 'q':
+		cluster_metadata = []
 		target_cluster = raw_input("Which cluster do you want to examine? (q to quit):")
 		if target_cluster != 'q':
-			print ("Pages in cluster {}:".format(target_cluster))
+			print ("\tPages in cluster {}:".format(target_cluster))
 			for cl,page in clustered_pages:
 				if cl == int(target_cluster):
 					webpage = page.partition('.')[0]+'.html'
@@ -57,7 +59,17 @@ if args.investigate in ['browser','title']:
 						webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
 					elif args.investigate == 'title':
 						# List page titles from metadata
-						subprocess.call('grep "og:title" {}'.format(webpage), shell=True)
+						title = subprocess.Popen('grep "og:title" {}'.format(webpage), shell=True, stdout=subprocess.PIPE)
+						# gets only content, removes "Dell" tag on the end of some, then removes quotes and spaces at ends
+						cluster_metadata.append(title.communicate()[0].partition('content=')[2].partition('/>')[0].partition('| Dell')[0].strip().strip('"').strip())
+		if len(cluster_metadata) < 10:
+			pprint.pprint(cluster_metadata)
+		else:
+			all_words = " ".join(cluster_metadata).split(" ")
+			# count words; drop words with a frequency of 1 or symbols/numbers
+			bag_words = collections.Counter({k: c for k, c in collections.Counter(all_words).items() if (c > 1 and k.isalpha())}) 
+			for k,v in bag_words.most_common():
+				print k, v
 
 else:
 	# Plot clusters
