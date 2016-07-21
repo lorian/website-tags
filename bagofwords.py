@@ -9,11 +9,13 @@ from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.cluster import KMeans
 import webbrowser
+import subprocess
 
 # script takes number of pages and number of clusters as arguments
 parser = argparse.ArgumentParser(description='Imports wordcounts from webpages and clusters them')
 parser.add_argument('num_pages', help='How many webpages to analyze and cluster (max of 500)')
 parser.add_argument('num_clusters', help='How many clusters to group pages into')
+parser.add_argument('--investigate', default='plot', help='Examine clusters by [browser], [plot] or [title]')
 args = parser.parse_args()
 
 # Convert wordcount files to list of dictionaries for each page
@@ -39,18 +41,26 @@ clustered_pages = zip(clusters,wordcounts_f)
 clustered_pages.sort(key=lambda x: x[0])
 pprint.pprint(clustered_pages)
 
-# Plot clusters
-plt.scatter(range(1,len(clusters)+1), clusters)
-plt.show()
+# look at specific clusters
+if args.investigate in ['browser','title']:
+	target_cluster = ''
+	while target_cluster != 'q':
+		target_cluster = raw_input("Which cluster do you want to examine? (q to quit):")
+		if target_cluster != 'q':
+			print ("Pages in cluster {}:".format(target_cluster))
+			for cl,page in clustered_pages:
+				if cl == int(target_cluster):
+					webpage = page.partition('.')[0]+'.html'
+					print webpage
+					if args.investigate == 'browser':
+						# Display pages from a given cluster in the broswer (best with few pages!)
+						webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
+					elif args.investigate == 'title':
+						# List page titles from metadata
+						subprocess.call('grep "og:title" {}'.format(webpage), shell=True)
 
-# Display pages from a given cluster in the broswer (best with few pages!)
-target_cluster = ''
-while target_cluster != 'q':
-	target_cluster = raw_input("Which cluster do you want to open pages of? (q to quit):")
-	if target_cluster != 'q':
-		print ("Pages in cluster {}:".format(target_cluster))
-		for cl,page in clustered_pages:
-			if cl == int(target_cluster):
-				print page.partition('.')[0]+'.html'
-				webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
+else:
+	# Plot clusters
+	plt.scatter(range(1,len(clusters)+1), clusters)
+	plt.show()
 
