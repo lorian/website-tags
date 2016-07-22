@@ -29,9 +29,9 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 001953_,product,product,franchise,us,en,product_franchise,1
 001961_,product,product,franchise,us,en,product_franchise,1
 002077_,category,category,config_category,us,en,category_config_category,0
-002089_,document, , , ,en, _ ,5
+002089_,document, , , ,en,document_ ,5
 002139_,product,product,franchise,us,en,product_franchise,1
-002198_,document, , , ,en, _ ,5
+002198_,document, , , ,en,document_ ,5
 002269_,category,category,franchise,us,en,category_franchise,4
 002316_,category,category,franchise,us,en,category_franchise,4
 002380_,product,product,franchise,us,en,product_franchise,1
@@ -42,7 +42,7 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 002872_,product,product,franchise,us,en,product_franchise,1
 002905_,product,product,franchise,us,en,product_franchise,1
 002951_,product,product,franchise,us,en,product_franchise,1
-003354_,document, , , ,en, _ ,5
+003354_,document, , , ,en,document_ ,5
 003650_,product,product,franchise,us,en,product_franchise,1
 003776_,product,product,parent_product_category,us,en,product_parent_product_category,6
 003819_,category,category,franchise,us,en,category_franchise,4
@@ -50,15 +50,15 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 004094_,product,product,parent_product_category,us,en,product_parent_product_category,6
 004145_,product,product,franchise,us,en,product_franchise,1
 004261_,category,category,parent_product_category,us,en,category_parent_product_category,2
-004271_,document, , , ,en, _ ,5
+004271_,document, , , ,en,document_ ,5
 004279_,product,product,franchise,us,en,product_franchise,1
 004401_,product,product,franchise,us,en,product_franchise,1
-004436_,document, , , ,en, _ ,5
-004613_,document, , , ,en, _ ,5
+004436_,document, , , ,en,document_ ,5
+004613_,document, , , ,en,document_ ,5
 004627_,product,product,franchise,us,en,product_franchise,1
 004634_,product,product,franchise,us,en,product_franchise,1
 004638_,product,product,franchise,us,en,product_franchise,1
-004653_,document, , , ,en, _ ,5
+004653_,document, , , ,en,document_ ,5
 004670_,product,product,franchise,us,en,product_franchise,1
 004732_,product,product,franchise,us,en,product_franchise,1
 004812_,category,category,config_category,us,en,category_config_category,0
@@ -69,30 +69,30 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 004965_,product,product,franchise,us,en,product_franchise,1
 004998_,product,product,franchise,us,en,product_franchise,1
 005059_,product,product,franchise,us,en,product_franchise,1
-005381_,document, , , ,en, _ ,5
+005381_,document, , , ,en,document_ ,5
 005692_,product,product,franchise,us,en,product_franchise,1
 005700_,product,product,franchise,us,en,product_franchise,1
 005730_,product,product,franchise,us,en,product_franchise,1
 005792_,category,category,product_category,us,en,category_product_category,3
 006063_,category,category,product_category,us,en,category_product_category,3
 006067_,product,product,franchise,us,en,product_franchise,1
-006212_,document, , , ,en, _ ,5
-006456_,document, , , ,en, _ ,5
-006467_, , , , ,en, _ ,5
+006212_,document, , , ,en,document_ ,5
+006456_,document, , , ,en,document_ ,5
+006467_, , , , ,en, _ ,7
 006572_,product,product,franchise,us,en,product_franchise,1
-006600_, , , , ,en, _ ,5
+006600_, , , , ,en, _ ,7
 006634_,product,product,franchise,us,en,product_franchise,1
 006635_,category,category,parent_product_category,us,en,category_parent_product_category,2
 006825_,product,product,franchise,us,en,product_franchise,1
-006828_,document, , , ,en, _ ,5
-006931_,document, , , ,en, _ ,5
+006828_,document, , , ,en,document_ ,5
+006931_,document, , , ,en,document_ ,5
 007212_,category,category,config_category,us,en,category_config_category,0
 007265_,category,category,parent_product_category,us,en,category_parent_product_category,2
-007350_,document, , , ,en, _ ,5
+007350_,document, , , ,en,document_ ,5
 007407_,product,product,franchise,us,en,product_franchise,1
 007632_,product,product,franchise,us,en,product_franchise,1
 007715_,category,category,parent_product_category,us,en,category_parent_product_category,2
-007716_,document, , , ,en, _ ,5
+007716_,document, , , ,en,document_ ,5
 007884_,product,product,franchise,us,en,product_franchise,1
 007931_,category,category,franchise,us,en,category_franchise,4
 008078_,product,product,franchise,us,en,product_franchise,1
@@ -102,66 +102,66 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 008490_,category,category,product_category,us,en,category_product_category,3
 008545_,category,category,franchise,us,en,category_franchise,4
 008577_,product,product,franchise,us,en,product_franchise,1
-008735_,document, , , ,en, _ ,5
+008735_,document, , , ,en,document_ ,5
 008911_,product,product,parent_product_category,us,en,product_parent_product_category,6
-008978_,document, , , ,en, _ ,5
+008978_,document, , , ,en,document_ ,5
 009003_,product,product,franchise,us,en,product_franchise,1
-009007_,document, , , ,en, _ ,5
-009047_,document, , , ,en, _ ,5
+009007_,document, , , ,en,document_ ,5
+009047_,document, , , ,en,document_ ,5
 009063_,product,product,franchise,us,en,product_franchise,1
 009076_,product,product,franchise,us,en,product_franchise,1
-009258_,document, , , ,en, _ ,5
-009265_,document, , , ,en, _ ,5
-009326_,document, , , ,en, _ ,5
-009363_,document, , , ,en, _ ,5
-009368_,document, , , ,en, _ ,5
+009258_,document, , , ,en,document_ ,5
+009265_,document, , , ,en,document_ ,5
+009326_,document, , , ,en,document_ ,5
+009363_,document, , , ,en,document_ ,5
+009368_,document, , , ,en,document_ ,5
 009449_,category,category,parent_product_category,us,en,category_parent_product_category,2
 009506_,product,product,franchise,us,en,product_franchise,1
-009535_,document, , , ,en, _ ,5
-009585_,document, , , ,en, _ ,5
-009601_,document, , , ,en, _ ,5
+009535_,document, , , ,en,document_ ,5
+009585_,document, , , ,en,document_ ,5
+009601_,document, , , ,en,document_ ,5
 009619_,product,product,franchise,us,en,product_franchise,1
-009769_,document, , , ,en, _ ,5
+009769_,document, , , ,en,document_ ,5
 010020_,product,product,franchise,us,en,product_franchise,1
 010034_,product,product,franchise,us,en,product_franchise,1
-010098_,document, , , ,en, _ ,5
+010098_,document, , , ,en,document_ ,5
 010141_,category,category,parent_product_category,us,en,category_parent_product_category,2
-010192_,document, , , ,en, _ ,5
+010192_,document, , , ,en,document_ ,5
 010241_,product,product,franchise,us,en,product_franchise,1
-010292_,document, , , ,en, _ ,5
-010324_, , , , ,en, _ ,5
-010431_,document, , , ,en, _ ,5
+010292_,document, , , ,en,document_ ,5
+010324_, , , , ,en, _ ,7
+010431_,document, , , ,en,document_ ,5
 010524_,product,product,franchise,us,en,product_franchise,1
 010595_,product,product,franchise,us,en,product_franchise,1
-010655_,document, , , ,en, _ ,5
+010655_,document, , , ,en,document_ ,5
 010797_,category,category,franchise,us,en,category_franchise,4
 010826_,product,product,franchise,us,en,product_franchise,1
-010865_, , , , ,en, _ ,5
-010877_,document, , , ,en, _ ,5
-010939_,document, , , ,en, _ ,5
+010865_, , , , ,en, _ ,7
+010877_,document, , , ,en,document_ ,5
+010939_,document, , , ,en,document_ ,5
 010942_,category,category,parent_product_category,us,en,category_parent_product_category,2
 011348_,product,product,franchise,us,en,product_franchise,1
 011369_,product,product,parent_product_category,us,en,product_parent_product_category,6
 011479_,category,category,franchise,us,en,category_franchise,4
-011568_,document, , , ,en, _ ,5
+011568_,document, , , ,en,document_ ,5
 011668_,category,category,product_category,us,en,category_product_category,3
 011687_,product,product,franchise,us,en,product_franchise,1
 011688_,product,product,franchise,us,en,product_franchise,1
 011713_,product,product,franchise,us,en,product_franchise,1
 011750_,product,product,franchise,us,en,product_franchise,1
-011818_, , , , ,en, _ ,5
-012031_,document, , , ,en, _ ,5
-012199_, , , , ,en, _ ,5
-012283_, , , , , , _ ,5
+011818_, , , , ,en, _ ,7
+012031_,document, , , ,en,document_ ,5
+012199_, , , , ,en, _ ,7
+012283_, , , , , , _ ,7
 012624_,category,category,config_category,us,en,category_config_category,0
 012634_,product,product,franchise,us,en,product_franchise,1
-012742_, , , , ,en, _ ,5
+012742_, , , , ,en, _ ,7
 012745_,category,category,config_category,us,en,category_config_category,0
-012759_,document, , , ,en, _ ,5
+012759_,document, , , ,en,document_ ,5
 012790_,product,product,franchise,us,en,product_franchise,1
-012919_,document, , , ,en, _ ,5
+012919_,document, , , ,en,document_ ,5
 012945_,product,product,franchise,us,en,product_franchise,1
-012952_, , , , ,en, _ ,5
+012952_, , , , ,en, _ ,7
 012965_,product,product,franchise,us,en,product_franchise,1
 012968_,product,product,franchise,us,en,product_franchise,1
 013101_,product,product,franchise,us,en,product_franchise,1
@@ -169,17 +169,17 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 013156_,category,category,config_category,us,en,category_config_category,0
 013202_,product,product,franchise,us,en,product_franchise,1
 013274_,product,product,franchise,us,en,product_franchise,1
-013503_,document, , , ,en, _ ,5
+013503_,document, , , ,en,document_ ,5
 013588_,category,category,parent_product_category,us,en,category_parent_product_category,2
 013607_,product,product,franchise,us,en,product_franchise,1
-013624_,document, , , ,en, _ ,5
+013624_,document, , , ,en,document_ ,5
 013679_,product,product,franchise,us,en,product_franchise,1
 013684_,product,product,franchise,us,en,product_franchise,1
-013776_,document, , , ,en, _ ,5
+013776_,document, , , ,en,document_ ,5
 013803_,category,category,franchise,us,en,category_franchise,4
-013804_,document, , , ,en, _ ,5
+013804_,document, , , ,en,document_ ,5
 013806_,product,product,franchise,us,en,product_franchise,1
-013825_,document, , , ,en, _ ,5
+013825_,document, , , ,en,document_ ,5
 013854_,product,product,franchise,us,en,product_franchise,1
 013862_,product,product,franchise,us,en,product_franchise,1
 014008_,product,product,franchise,us,en,product_franchise,1
@@ -191,84 +191,84 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 014578_,product,product,franchise,us,en,product_franchise,1
 014610_,product,product,franchise,us,en,product_franchise,1
 014683_,product,product,franchise,us,en,product_franchise,1
-014846_,document, , , ,en, _ ,5
+014846_,document, , , ,en,document_ ,5
 014964_,product,product,franchise,us,en,product_franchise,1
 015179_,product,product,franchise,us,en,product_franchise,1
-015244_,document, , , ,en, _ ,5
+015244_,document, , , ,en,document_ ,5
 015279_,product,product,franchise,us,en,product_franchise,1
 015354_,product,product,franchise,us,en,product_franchise,1
 015405_,product,product,franchise,us,en,product_franchise,1
 015429_,product,product,franchise,us,en,product_franchise,1
 015542_,product,product,franchise,us,en,product_franchise,1
-015655_,document, , , ,en, _ ,5
-015660_, , , , ,en, _ ,5
+015655_,document, , , ,en,document_ ,5
+015660_, , , , ,en, _ ,7
 015825_,category,category,franchise,us,en,category_franchise,4
-015828_,document, , , ,en, _ ,5
+015828_,document, , , ,en,document_ ,5
 016110_,category,category,parent_product_category,us,en,category_parent_product_category,2
 016111_,product,product,franchise,us,en,product_franchise,1
 016464_,product,product,franchise,us,en,product_franchise,1
-016570_,document, , , ,en, _ ,5
-016601_,document, , , ,en, _ ,5
+016570_,document, , , ,en,document_ ,5
+016601_,document, , , ,en,document_ ,5
 016720_,product,product,franchise,us,en,product_franchise,1
-016724_,document, , , ,en, _ ,5
+016724_,document, , , ,en,document_ ,5
 016727_,product,product,franchise,us,en,product_franchise,1
 016796_,category,category,product_category,us,en,category_product_category,3
 016919_,product,product,franchise,us,en,product_franchise,1
-016938_,document, , , ,en, _ ,5
+016938_,document, , , ,en,document_ ,5
 016993_,product,product,franchise,us,en,product_franchise,1
-017044_,document, , , ,en, _ ,5
+017044_,document, , , ,en,document_ ,5
 017078_,product,product,franchise,us,en,product_franchise,1
-017106_,document, , , ,en, _ ,5
+017106_,document, , , ,en,document_ ,5
 017154_,category,category,parent_product_category,us,en,category_parent_product_category,2
 017467_,product,product,franchise,us,en,product_franchise,1
 017523_,product,product,franchise,us,en,product_franchise,1
-017630_,document, , , ,en, _ ,5
+017630_,document, , , ,en,document_ ,5
 017695_,category,category,parent_product_category,us,en,category_parent_product_category,2
-017746_,document, , , ,en, _ ,5
-017900_,document, , , ,en, _ ,5
+017746_,document, , , ,en,document_ ,5
+017900_,document, , , ,en,document_ ,5
 017976_,product,product,franchise,us,en,product_franchise,1
-018123_,document, , , ,en, _ ,5
+018123_,document, , , ,en,document_ ,5
 018139_,product,product,franchise,us,en,product_franchise,1
-018284_,document, , , ,en, _ ,5
-018287_,document, , , ,en, _ ,5
-018350_,document, , , ,en, _ ,5
+018284_,document, , , ,en,document_ ,5
+018287_,document, , , ,en,document_ ,5
+018350_,document, , , ,en,document_ ,5
 018358_,product,product,franchise,us,en,product_franchise,1
 018472_,category,category,franchise,us,en,category_franchise,4
-018535_,document, , , ,en, _ ,5
-018595_,document, , , ,en, _ ,5
+018535_,document, , , ,en,document_ ,5
+018595_,document, , , ,en,document_ ,5
 018680_,product,product,franchise,us,en,product_franchise,1
-018691_,document, , , ,en, _ ,5
+018691_,document, , , ,en,document_ ,5
 018876_,product,product,franchise,us,en,product_franchise,1
-019040_,document, , , ,en, _ ,5
-019155_,document, , , ,en, _ ,5
+019040_,document, , , ,en,document_ ,5
+019155_,document, , , ,en,document_ ,5
 019228_,product,product,franchise,us,en,product_franchise,1
-019447_,document, , , ,en, _ ,5
+019447_,document, , , ,en,document_ ,5
 019465_,product,product,franchise,us,en,product_franchise,1
 019602_,product,product,franchise,us,en,product_franchise,1
 019689_,product,product,franchise,us,en,product_franchise,1
 019698_,category,category,franchise,us,en,category_franchise,4
 019706_,product,product,franchise,us,en,product_franchise,1
 019728_,product,product,franchise,us,en,product_franchise,1
-019736_,document, , , ,en, _ ,5
+019736_,document, , , ,en,document_ ,5
 019769_,product,product,franchise,us,en,product_franchise,1
-019995_,document, , , ,en, _ ,5
-020059_, , , , ,en, _ ,5
-020069_,document, , , ,en, _ ,5
+019995_,document, , , ,en,document_ ,5
+020059_, , , , ,en, _ ,7
+020069_,document, , , ,en,document_ ,5
 020112_,category,category,franchise,us,en,category_franchise,4
-020278_,document, , , ,en, _ ,5
+020278_,document, , , ,en,document_ ,5
 020394_,product,product,franchise,us,en,product_franchise,1
-020624_,document, , , ,en, _ ,5
-020668_, , , , ,en, _ ,5
-020686_,document, , , ,en, _ ,5
-020695_,document, , , ,en, _ ,5
-020703_,document, , , ,en, _ ,5
+020624_,document, , , ,en,document_ ,5
+020668_, , , , ,en, _ ,7
+020686_,document, , , ,en,document_ ,5
+020695_,document, , , ,en,document_ ,5
+020703_,document, , , ,en,document_ ,5
 020818_,product,product,franchise,us,en,product_franchise,1
 020913_,product,product,franchise,us,en,product_franchise,1
 021101_,product,product,franchise,us,en,product_franchise,1
-021273_,document, , , ,en, _ ,5
+021273_,document, , , ,en,document_ ,5
 021385_,product,product,franchise,us,en,product_franchise,1
 021435_,product,product,franchise,us,en,product_franchise,1
-021481_,document, , , ,en, _ ,5
+021481_,document, , , ,en,document_ ,5
 021700_,product,product,franchise,us,en,product_franchise,1
 021915_,product,product,franchise,us,en,product_franchise,1
 021946_,product,product,franchise,us,en,product_franchise,1
@@ -276,222 +276,222 @@ webpageID,og:type,pagetype,salestype,country,language,og:type_salestype,label
 022090_,product,product,franchise,us,en,product_franchise,1
 022464_,product,product,franchise,us,en,product_franchise,1
 022616_,product,product,franchise,us,en,product_franchise,1
-022718_,document, , , ,ko, _ ,5
+022718_,document, , , ,ko,document_ ,5
 022875_,category,category,franchise,us,en,category_franchise,4
 022878_,product,product,franchise,us,en,product_franchise,1
 022892_,product,product,franchise,us,en,product_franchise,1
 023104_,product,product,franchise,us,en,product_franchise,1
 023213_,category,category,franchise,us,en,category_franchise,4
-023274_,document, , , ,en, _ ,5
+023274_,document, , , ,en,document_ ,5
 023306_,product,product,franchise,us,en,product_franchise,1
 023480_,product,product,franchise,us,en,product_franchise,1
-023558_,document, , , ,en, _ ,5
-023578_,document, , , ,en, _ ,5
+023558_,document, , , ,en,document_ ,5
+023578_,document, , , ,en,document_ ,5
 023625_,product,product,franchise,us,en,product_franchise,1
 023659_,product,product,franchise,us,en,product_franchise,1
-023688_,document, , , ,en, _ ,5
-023799_,document, , , ,en, _ ,5
+023688_,document, , , ,en,document_ ,5
+023799_,document, , , ,en,document_ ,5
 023872_,product,product,franchise,us,en,product_franchise,1
-023935_,document, , , ,en, _ ,5
-024179_,document, , , ,en, _ ,5
+023935_,document, , , ,en,document_ ,5
+024179_,document, , , ,en,document_ ,5
 024347_,product,product,franchise,us,en,product_franchise,1
 024581_,product,product,franchise,us,en,product_franchise,1
 024670_,category,category,franchise,us,en,category_franchise,4
 024684_,category,category,parent_product_category,us,en,category_parent_product_category,2
 024826_,category,category,parent_product_category,us,en,category_parent_product_category,2
-024885_,document, , , ,en, _ ,5
-024887_,document, , , ,en, _ ,5
-025041_,document, , , ,en, _ ,5
+024885_,document, , , ,en,document_ ,5
+024887_,document, , , ,en,document_ ,5
+025041_,document, , , ,en,document_ ,5
 025485_,product,product,franchise,us,en,product_franchise,1
-025531_,document, , , ,en, _ ,5
-025543_,document, , , ,en, _ ,5
+025531_,document, , , ,en,document_ ,5
+025543_,document, , , ,en,document_ ,5
 025667_,category,category,parent_product_category,us,en,category_parent_product_category,2
-025983_, , , , , , _ ,5
-026007_,document, , , ,en, _ ,5
+025983_, , , , , , _ ,7
+026007_,document, , , ,en,document_ ,5
 026072_,product,product,franchise,us,en,product_franchise,1
 026262_,product,product,franchise,us,en,product_franchise,1
-026352_,document, , , ,en, _ ,5
+026352_,document, , , ,en,document_ ,5
 026474_,product,product,franchise,us,en,product_franchise,1
-026511_,document, , , ,en, _ ,5
-026647_,document, , , ,en, _ ,5
+026511_,document, , , ,en,document_ ,5
+026647_,document, , , ,en,document_ ,5
 026709_,category,category,franchise,us,en,category_franchise,4
 026716_,product,product,franchise,us,en,product_franchise,1
-026828_,document, , , ,en, _ ,5
-026862_, , , , ,en, _ ,5
-026871_,document, , , ,en, _ ,5
+026828_,document, , , ,en,document_ ,5
+026862_, , , , ,en, _ ,7
+026871_,document, , , ,en,document_ ,5
 027092_,product,product,franchise,us,en,product_franchise,1
 027168_,product,product,franchise,us,en,product_franchise,1
-027438_,document, , , ,en, _ ,5
-027520_,product,product,product_category,us,en,product_product_category,7
-027528_,document, , , ,en, _ ,5
+027438_,document, , , ,en,document_ ,5
+027520_,product,product,product_category,us,en,product_product_category,8
+027528_,document, , , ,en,document_ ,5
 027582_,product,product,franchise,us,en,product_franchise,1
 027603_,category,category,franchise,us,en,category_franchise,4
 027743_,product,product,franchise,us,en,product_franchise,1
-028101_, , , , ,en, _ ,5
-028253_,document, , , ,en, _ ,5
-028264_,document, , , ,en, _ ,5
-028298_,document, , , ,en, _ ,5
+028101_, , , , ,en, _ ,7
+028253_,document, , , ,en,document_ ,5
+028264_,document, , , ,en,document_ ,5
+028298_,document, , , ,en,document_ ,5
 028649_,product,product,franchise,us,en,product_franchise,1
-028713_, , , , ,en, _ ,5
+028713_, , , , ,en, _ ,7
 028837_,product,product,franchise,us,en,product_franchise,1
 029123_,product,product,franchise,us,en,product_franchise,1
 029236_,category,category,product_category,us,en,category_product_category,3
 029395_,category,category,product_category,us,en,category_product_category,3
 029420_,product,product,franchise,us,en,product_franchise,1
 029423_,product,product,franchise,us,en,product_franchise,1
-029882_, , , , ,en, _ ,5
+029882_, , , , ,en, _ ,7
 029909_,category,category,config_category,us,en,category_config_category,0
 029946_,category,category,franchise,us,en,category_franchise,4
-030152_,document, , , ,en, _ ,5
-030416_,document, , , ,en, _ ,5
-030702_,document, , , ,en, _ ,5
-030761_, , , , ,en, _ ,5
+030152_,document, , , ,en,document_ ,5
+030416_,document, , , ,en,document_ ,5
+030702_,document, , , ,en,document_ ,5
+030761_, , , , ,en, _ ,7
 030824_,category,category,franchise,us,en,category_franchise,4
 030927_,product,product,franchise,us,en,product_franchise,1
 031071_,product,product,franchise,us,en,product_franchise,1
 031157_,product,product,franchise,us,en,product_franchise,1
-031295_,document, , , ,en, _ ,5
+031295_,document, , , ,en,document_ ,5
 031297_,product,product,franchise,us,en,product_franchise,1
 031371_,product,product,franchise,us,en,product_franchise,1
-031584_,document, , , ,en, _ ,5
+031584_,document, , , ,en,document_ ,5
 031588_,product,product,franchise,us,en,product_franchise,1
-031682_,document, , , ,en, _ ,5
-031699_,document, , , ,en, _ ,5
-031848_,document, , , ,en, _ ,5
+031682_,document, , , ,en,document_ ,5
+031699_,document, , , ,en,document_ ,5
+031848_,document, , , ,en,document_ ,5
 031977_,product,product,franchise,us,en,product_franchise,1
 032031_,product,product,franchise,us,en,product_franchise,1
-032054_,document, , , ,en, _ ,5
+032054_,document, , , ,en,document_ ,5
 032143_,category,category,config_category,us,en,category_config_category,0
-032187_,document, , , ,en, _ ,5
-032199_,document, , , ,en, _ ,5
+032187_,document, , , ,en,document_ ,5
+032199_,document, , , ,en,document_ ,5
 032313_,product,product,franchise,us,en,product_franchise,1
 032554_,product,product,franchise,us,en,product_franchise,1
 032594_,product,product,franchise,us,en,product_franchise,1
-032706_,document, , , ,en, _ ,5
+032706_,document, , , ,en,document_ ,5
 032759_,product,product,franchise,us,en,product_franchise,1
-032788_,document, , , ,en, _ ,5
-032859_,document, , , ,en, _ ,5
+032788_,document, , , ,en,document_ ,5
+032859_,document, , , ,en,document_ ,5
 032954_,product,product,franchise,us,en,product_franchise,1
 032960_,product,product,franchise,us,en,product_franchise,1
 033004_,product,product,franchise,us,en,product_franchise,1
 033144_,product,product,franchise,us,en,product_franchise,1
 033166_,product,product,parent_product_category,us,en,product_parent_product_category,6
-033177_,document, , , ,en, _ ,5
+033177_,document, , , ,en,document_ ,5
 033267_,category,category,config_category,us,en,category_config_category,0
-033276_,document, , , ,en, _ ,5
+033276_,document, , , ,en,document_ ,5
 033291_,category,category,product_category,us,en,category_product_category,3
-033322_,document, , , ,en, _ ,5
+033322_,document, , , ,en,document_ ,5
 033355_,product,product,franchise,us,en,product_franchise,1
 033446_,category,category,franchise,us,en,category_franchise,4
 033479_,product,product,franchise,us,en,product_franchise,1
 033630_,category,category,franchise,us,en,category_franchise,4
 033932_,product,product,franchise,us,en,product_franchise,1
 034061_,product,product,franchise,us,en,product_franchise,1
-034175_,document, , , ,en, _ ,5
-034253_, , , , ,en, _ ,5
-034500_,document, , , ,en, _ ,5
+034175_,document, , , ,en,document_ ,5
+034253_, , , , ,en, _ ,7
+034500_,document, , , ,en,document_ ,5
 034568_,product,product,franchise,us,en,product_franchise,1
-034628_,document, , , ,en, _ ,5
-034792_, , , , ,en, _ ,5
+034628_,document, , , ,en,document_ ,5
+034792_, , , , ,en, _ ,7
 035072_,product,product,franchise,us,en,product_franchise,1
 035102_,category,category,parent_product_category,us,en,category_parent_product_category,2
 035138_,product,product,franchise,us,en,product_franchise,1
 035214_,product,product,franchise,us,en,product_franchise,1
-035503_,document, , , ,en, _ ,5
-035717_,document, , , ,en, _ ,5
+035503_,document, , , ,en,document_ ,5
+035717_,document, , , ,en,document_ ,5
 035775_,category,category,franchise,us,en,category_franchise,4
-035784_,document, , , ,en, _ ,5
+035784_,document, , , ,en,document_ ,5
 035981_,product,product,franchise,us,en,product_franchise,1
-035984_,document, , , ,en, _ ,5
-036028_,document, , , ,en, _ ,5
+035984_,document, , , ,en,document_ ,5
+036028_,document, , , ,en,document_ ,5
 036040_,product,product,franchise,us,en,product_franchise,1
-036207_,document, , , ,en, _ ,5
+036207_,document, , , ,en,document_ ,5
 036318_,product,product,franchise,us,en,product_franchise,1
 036454_,product,product,franchise,us,en,product_franchise,1
-036842_,document, , , ,en, _ ,5
-037077_,document, , , ,en, _ ,5
-037090_,document, , , ,en, _ ,5
+036842_,document, , , ,en,document_ ,5
+037077_,document, , , ,en,document_ ,5
+037090_,document, , , ,en,document_ ,5
 037212_,product,product,franchise,us,en,product_franchise,1
-037329_,document, , , ,en, _ ,5
+037329_,document, , , ,en,document_ ,5
 037548_,category,category,parent_product_category,us,en,category_parent_product_category,2
 037581_,product,product,franchise,us,en,product_franchise,1
 037705_,product,product,franchise,us,en,product_franchise,1
-037740_, , , , ,en, _ ,5
+037740_, , , , ,en, _ ,7
 037795_,category,category,product_category,us,en,category_product_category,3
 037818_,product,product,franchise,us,en,product_franchise,1
-037867_,document, , , ,en, _ ,5
-037869_,document, , , ,en, _ ,5
+037867_,document, , , ,en,document_ ,5
+037869_,document, , , ,en,document_ ,5
 037952_,category,category,product_category,us,en,category_product_category,3
 038000_,product,product,parent_product_category,us,en,product_parent_product_category,6
 038024_,product,product,franchise,us,en,product_franchise,1
 038080_,product,product,franchise,us,en,product_franchise,1
 038138_,category,category,config_category,us,en,category_config_category,0
 038149_,category,category,product_category,us,en,category_product_category,3
-038187_, , , , ,en, _ ,5
+038187_, , , , ,en, _ ,7
 038230_,product,product,franchise,us,en,product_franchise,1
-038251_,document, , , ,en, _ ,5
+038251_,document, , , ,en,document_ ,5
 038286_,product,product,franchise,us,en,product_franchise,1
 038301_,product,product,franchise,us,en,product_franchise,1
-038323_,document, , , ,en, _ ,5
-038446_,document, , , ,en, _ ,5
+038323_,document, , , ,en,document_ ,5
+038446_,document, , , ,en,document_ ,5
 038462_,product,product,franchise,us,en,product_franchise,1
-038533_,document, , , ,en, _ ,5
+038533_,document, , , ,en,document_ ,5
 038594_,product,product,franchise,us,en,product_franchise,1
-038727_, , , , ,en, _ ,5
-038873_,document, , , ,en, _ ,5
-038910_,document, , , ,en, _ ,5
+038727_, , , , ,en, _ ,7
+038873_,document, , , ,en,document_ ,5
+038910_,document, , , ,en,document_ ,5
 039057_,product,product,franchise,us,en,product_franchise,1
 039267_,category,category,parent_product_category,us,en,category_parent_product_category,2
-039391_,document, , , ,en, _ ,5
+039391_,document, , , ,en,document_ ,5
 039504_,category,category,config_category,us,en,category_config_category,0
 039516_,category,category,parent_product_category,us,en,category_parent_product_category,2
-039676_,document, , , ,en, _ ,5
-040081_,document, , , ,en, _ ,5
-040148_,document, , , ,en, _ ,5
-040170_,document, , , ,en, _ ,5
-040291_,document, , , ,en, _ ,5
+039676_,document, , , ,en,document_ ,5
+040081_,document, , , ,en,document_ ,5
+040148_,document, , , ,en,document_ ,5
+040170_,document, , , ,en,document_ ,5
+040291_,document, , , ,en,document_ ,5
 040464_,product,product,franchise,us,en,product_franchise,1
 040472_,category,category,product_category,us,en,category_product_category,3
 040482_,product,product,franchise,us,en,product_franchise,1
-040575_,document, , , ,en, _ ,5
-040577_, , , , ,en, _ ,5
-040925_, , , , ,en, _ ,5
-041116_, , , , , , _ ,5
-041128_,document, , , ,en, _ ,5
+040575_,document, , , ,en,document_ ,5
+040577_, , , , ,en, _ ,7
+040925_, , , , ,en, _ ,7
+041116_, , , , , , _ ,7
+041128_,document, , , ,en,document_ ,5
 041181_,product,product,franchise,us,en,product_franchise,1
-041285_,document, , , ,en, _ ,5
-041504_,document, , , ,en, _ ,5
+041285_,document, , , ,en,document_ ,5
+041504_,document, , , ,en,document_ ,5
 041591_,category,category,config_category,us,en,category_config_category,0
 041719_,product,product,franchise,us,en,product_franchise,1
 041736_,category,category,franchise,us,en,category_franchise,4
 041820_,product,product,franchise,us,en,product_franchise,1
-041841_,document, , , ,en, _ ,5
-041929_,document, , , ,en, _ ,5
-041992_,document, , , ,en, _ ,5
+041841_,document, , , ,en,document_ ,5
+041929_,document, , , ,en,document_ ,5
+041992_,document, , , ,en,document_ ,5
 042021_,category,category,parent_product_category,us,en,category_parent_product_category,2
 042049_,product,product,franchise,us,en,product_franchise,1
 042060_,product,product,franchise,us,en,product_franchise,1
 042081_,product,product,franchise,us,en,product_franchise,1
-042124_,document, , , ,de, _ ,5
-042217_,documentsearch, , , ,en, _ ,5
+042124_,document, , , ,de,document_ ,5
+042217_,documentsearch, , , ,en,documentsearch_ ,9
 042228_,product,product,franchise,us,en,product_franchise,1
 042430_,category,category,parent_product_category,us,en,category_parent_product_category,2
-042432_,document, , , ,en, _ ,5
+042432_,document, , , ,en,document_ ,5
 042453_,product,product,franchise,us,en,product_franchise,1
 042486_,product,product,franchise,us,en,product_franchise,1
-042538_,document, , , ,en, _ ,5
+042538_,document, , , ,en,document_ ,5
 042769_,product,product,franchise,us,en,product_franchise,1
-042797_,document, , , ,en, _ ,5
-042810_,document, , , ,en, _ ,5
+042797_,document, , , ,en,document_ ,5
+042810_,document, , , ,en,document_ ,5
 042891_,product,product,franchise,us,en,product_franchise,1
 042894_,product,product,franchise,us,en,product_franchise,1
 043047_,category,category,config_category,us,en,category_config_category,0
-043100_,document, , , ,en, _ ,5
-043232_,document, , , ,en, _ ,5
-043592_,document, , , ,en, _ ,5
+043100_,document, , , ,en,document_ ,5
+043232_,document, , , ,en,document_ ,5
+043592_,document, , , ,en,document_ ,5
 043894_,product,product,franchise,us,en,product_franchise,1
 043972_,category,category,product_category,us,en,category_product_category,3
-044130_,document, , , ,en, _ ,5
+044130_,document, , , ,en,document_ ,5
 044195_,product,product,franchise,us,en,product_franchise,1
 044390_,product,product,franchise,us,en,product_franchise,1
 044414_,product,product,franchise,us,en,product_franchise,1
