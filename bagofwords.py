@@ -12,6 +12,8 @@ import webbrowser
 import subprocess
 import collections
 import string
+import re
+import itertools
 
 # Script takes number of pages and number of clusters as arguments, has optional flags for ways to look at clusters
 parser = argparse.ArgumentParser(description='Imports wordcounts from webpages and clusters them')
@@ -72,17 +74,20 @@ if args.meta:
 				title = subprocess.Popen('grep "{}" {}'.format(args.meta, webpage), shell=True, stdout=subprocess.PIPE)
 				# gets only content, removes "Dell" tag on the end of some, then removes quotes and spaces at ends
 				cluster_metadata.append(title.communicate()[0].partition('content=')[2].partition('/>')[0].partition('| Dell')[0].strip().strip('"').strip().lower())
-			
+		
 		# check how many pages had metadata of this type
 		has_content = collections.Counter(cluster_metadata)
 		if has_content['']:
 			display("\tPages without this metadata: {}".format(has_content['']))
 		
 		# count words; drop words with a frequency of 1 or symbols/numbers
-		all_words = " ".join(cluster_metadata).translate(string.maketrans("",""), string.punctuation).split(" ")
+		if args.meta == 'CategoryPath': # special format
+			cluster_metadata = [item for sublist in [w.split('/') for w in cluster_metadata] for item in sublist]
+		all_words = " ".join(cluster_metadata).translate(string.maketrans("",""), string.punctuation).split(' ')
 		bag_words = collections.Counter({k: c for k, c in collections.Counter(all_words).items() if k.isalpha()})
+
 		for k,v in bag_words.most_common():
-			if cluster_counts[cl] >1 and v <2 and args.meta in ['Title', 'Description', 'Keywords']: # filter out words that appear only once
+			if cluster_counts[cl] >1 and v <2 and args.meta in ['Title', 'Description', 'Keywords', 'CategoryPath']: # filter out words that appear only once
 				pass;
 			else:
 				display("{} {}".format(k,v))
@@ -104,13 +109,14 @@ if args.output == 'browser':
 			print ("\tPages in cluster {}:".format(target_cluster))
 			
 			for c,page in clustered_pages:
-				if c == int(target_cluster):
+				dont_drown_browser = 0
+				if c == int(target_cluster) and dont_drown_browser < 10:
+					dont_drown_browser+=1
 					webpage = page.partition('.')[0]+'.html'
 					print webpage
-					
-					if args.investigate == 'browser':
-						# Display pages from a given cluster in the broswer (best with few pages!)
-						webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
+
+					# Display pages from a given cluster in the broswer (best with few pages!)
+					webbrowser.open(page.partition('.')[0]+'.html', new=2) #open in new tab
 
 elif args.output == 'plot':
 	# Plot clusters
