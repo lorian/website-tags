@@ -5,7 +5,8 @@ import os
 import numpy
 import pprint
 import argparse
-import matplotlib.pylab as plt
+import matplotlib.pylab as pyp
+import matplotlib
 import matplotlib.cm as cm
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction import DictVectorizer
@@ -45,7 +46,7 @@ for fl in wordcounts_f:
 word_features = DictVectorizer().fit_transform(wordcounts).toarray()
 
 # K-means clustering
-raw_clusters = KMeans(n_clusters=int(args.num_clusters), n_init=30).fit(word_features)
+raw_clusters = KMeans(n_clusters=int(args.num_clusters), n_init=10).fit(word_features)
 clusters = raw_clusters.labels_
 clustered_pages = zip(clusters,wordcounts_f)
 clustered_pages.sort(key=lambda x: x[0])
@@ -67,35 +68,53 @@ if args.meta:
 	for k,v in cluster_counts.most_common():
 		display("{} {}".format(k,v))
 	
-	# get titles from all pages per cluster
+	# get metadata from all pages
+	metadata = []
+	for f in wordcounts_f:
+		webpage = f.partition('.')[0]+'.html'
+		# List page content from metadata
+		title = subprocess.Popen('grep "{}" {}'.format(args.meta, webpage), shell=True, stdout=subprocess.PIPE)
+		# gets only content, removes "Dell" tag on the end of some, then removes quotes and spaces at ends
+		metadata.append(title.communicate()[0].partition('content=')[2].partition('/>')[0].partition('| Dell')[0].strip().strip('"').strip().lower())
+
+	cluster_metadata = zip(clusters,metadata)
 	for cl in cluster_counts.keys():
-		cluster_metadata = []
+		current_metadata = []
 		display("\n\tCluster {} ({} pages):".format(cl,cluster_counts[cl]))
 
-		for c,page in clustered_pages:
+		for c,data in cluster_metadata:
 			if cl == int(c):
-				webpage = page.partition('.')[0]+'.html'
-				# List page content from metadata
-				title = subprocess.Popen('grep "{}" {}'.format(args.meta, webpage), shell=True, stdout=subprocess.PIPE)
-				# gets only content, removes "Dell" tag on the end of some, then removes quotes and spaces at ends
-				cluster_metadata.append(title.communicate()[0].partition('content=')[2].partition('/>')[0].partition('| Dell')[0].strip().strip('"').strip().lower())
-		
+				current_metadata.append(data)
 		# check how many pages had metadata of this type
-		has_content = collections.Counter(cluster_metadata)
+		has_content = collections.Counter(current_metadata)
 		if has_content['']:
 			display("\tPages without this metadata: {}".format(has_content['']))
 		
 		# count words; drop words with a frequency of 1 or symbols/numbers
 		if args.meta == 'CategoryPath': # special format
-			cluster_metadata = [item for sublist in [w.split('/') for w in cluster_metadata] for item in sublist]
-		all_words = " ".join(cluster_metadata).translate(string.maketrans("",""), string.punctuation).split(' ')
-		bag_words = collections.Counter({k: c for k, c in collections.Counter(all_words).items() if k.isalpha()})
+			#all_words = [item for sublist in [w.split('/') for w in cluster_metadata] for item in sublist] # get full list of categories
+			print current_metadata
+			all_words = [w.rpartition('/')[2].split('-') for w in ccurrent_metadata] # grab only last category
+			print all_words
+		else:
+			all_words = [w for w in " ".join(current_metadata).translate(string.maketrans("",""), string.punctuation).split(' ') if w.isalpha()]
+		bag_words = collections.Counter({k: c for k, c in collections.Counter(all_words).items() if k})
 
 		for k,v in bag_words.most_common():
 			if cluster_counts[cl] >1 and v <2 and args.meta in ['Title', 'Description', 'Keywords', 'CategoryPath']: # filter out words that appear only once
 				pass;
 			else:
 				display("{} {}".format(k,v))
+		
+	# Plot clusters versus metadata
+	meta_to_int = {v:k for k,v in enumerate(set(metadata))}
+	meta_int = [meta_to_int[m] for m in metadata]
+	pyp.scatter(clusters, meta_int) 
+	pyp.yticks(meta_to_int.values(), meta_to_int.keys())
+	pyp.xticks(xrange(0,args.num_clusters))
+	pyp.ylabel(args.meta,rotation=90)
+	pyp.xlabel('Cluster')
+	pyp.show()
 	
 	if args.file_output:
 		f.close()
@@ -109,7 +128,7 @@ else:
 	print order_centroids
 	
 if args.output == 'sil':
-		fig, ax1 = plt.subplots(1, 1)
+		fig, ax1 = pyp.subplots(1, 1)
 
 		ax1.set_xlim([-.3, 1])
 		# The (n_clusters+1)*10 is for inserting blank space between silhouette
@@ -156,13 +175,13 @@ if args.output == 'sil':
 		ax1.axvline(x=silhouette_avg, color="red", linestyle="--")
 
 		ax1.set_yticks([])  # Clear the yaxis labels / ticks
-		plt.show()
+		pyp.show()
 
 elif args.output == 'all':
 	# Show silhouette scores and plots for clusters +/- 5 around the target number given:
 	for n_clusters in xrange(args.num_clusters-5,args.num_clusters+5):
 		# Create a subplot
-		fig, ax1 = plt.subplots(1, 1)
+		fig, ax1 = pyp.subplots(1, 1)
 
 		ax1.set_xlim([-.3, 1])
 		# The (n_clusters+1)*10 is for inserting blank space between silhouette
@@ -211,7 +230,7 @@ elif args.output == 'all':
 		ax1.axvline(x=silhouette_avg, color="red", linestyle="--")
 
 		ax1.set_yticks([])  # Clear the yaxis labels / ticks
-		plt.show()
+		pyp.show()
 
 # Look at specific clusters interactively
 elif args.output == 'browser':
@@ -234,6 +253,6 @@ elif args.output == 'browser':
 
 elif args.output == 'plot':
 	# Plot clusters
-	plt.scatter(range(1,len(clusters)+1), clusters)
-	plt.show()
+	pyp.scatter(range(1,len(clusters)+1), clusters)
+	pyp.show()
 
