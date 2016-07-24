@@ -2,12 +2,15 @@
 
 import pandas
 import os
+import numpy
 import pprint
 import argparse
 import matplotlib.pylab as plt
+import matplotlib.cm as cm
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.cluster import KMeans
+from sklearn import metrics
 import webbrowser
 import subprocess
 import collections
@@ -19,10 +22,11 @@ import itertools
 parser = argparse.ArgumentParser(description='Imports wordcounts from webpages and clusters them')
 parser.add_argument('num_pages', help='How many webpages to analyze and cluster (max of 500)')
 parser.add_argument('num_clusters', help='How many clusters to group pages into')
-parser.add_argument('--output', help='Display clusters as [plot] or see webpages in [browser]')
+parser.add_argument('--output', help='Display clusters as [plot], see webpages in [browser], get [sil]houette plot for current cluster number, or get [all] silhouette scores and plots for a range of cluster numbers.')
 parser.add_argument('--meta', help="Which meta tag to judge clusters by. Interesting options include og:title, Description, Keywords, og:type, CategoryPath, PageType, SalesType.")
 parser.add_argument('--file-output', action='store_true', help="Flag will output cluster details to a file. Requires --meta to be set.")
 args = parser.parse_args()
+args.num_clusters = int(args.num_clusters)
 
 # Convert wordcount files to list of dictionaries for each page
 wordcounts_f = [f for f in os.listdir('.') if f.endswith('.w.txt')]
@@ -41,7 +45,8 @@ for fl in wordcounts_f:
 word_features = DictVectorizer().fit_transform(wordcounts).toarray()
 
 # K-means clustering
-clusters = KMeans(n_clusters=int(args.num_clusters)).fit_predict(word_features)
+raw_clusters = KMeans(n_clusters=int(args.num_clusters), n_init=30).fit(word_features)
+clusters = raw_clusters.labels_
 clustered_pages = zip(clusters,wordcounts_f)
 clustered_pages.sort(key=lambda x: x[0])
 
@@ -61,7 +66,7 @@ if args.meta:
 	display("\tCluster overview:")
 	for k,v in cluster_counts.most_common():
 		display("{} {}".format(k,v))
-		
+	
 	# get titles from all pages per cluster
 	for cl in cluster_counts.keys():
 		cluster_metadata = []
@@ -98,9 +103,118 @@ if args.meta:
 else:
 	for k,v in cluster_counts.most_common():
 		print k, v
+	
+	print 'Average silhouette score: {}'.format(metrics.silhouette_score(word_features, clusters, metric='euclidean'))
+	order_centroids = raw_clusters.cluster_centers_.argsort()[:, ::-1]
+	print order_centroids
+	
+if args.output == 'sil':
+		fig, ax1 = plt.subplots(1, 1)
+
+		ax1.set_xlim([-.3, 1])
+		# The (n_clusters+1)*10 is for inserting blank space between silhouette
+		# plots of individual cluster_labels, to demarcate them clearly.
+		ax1.set_ylim([0, len(word_features) + (args.num_clusters + 1) * 10])
+
+		# The silhouette_score gives the average value for all the samples.
+		# This gives a perspective into the density and separation of the formed
+		# cluster_labels
+		silhouette_avg = metrics.silhouette_score(word_features, clusters)
+		print "For {} cluster_labels, average silhouette score is {}".format(args.num_clusters, silhouette_avg)
+
+		# Compute the silhouette scores for each sample
+		sample_silhouette_values = metrics.silhouette_samples(word_features, clusters)
+
+		y_lower = 10
+		for i in range(args.num_clusters):
+			# Aggregate the silhouette scores for samples belonging to
+			# cluster i, and sort them
+			ith_cluster_silhouette_values = \
+				sample_silhouette_values[clusters == i]
+
+			ith_cluster_silhouette_values.sort()
+
+			size_cluster_i = ith_cluster_silhouette_values.shape[0]
+			y_upper = y_lower + size_cluster_i
+
+			color = cm.spectral(float(i) / args.num_clusters)
+			ax1.fill_betweenx(numpy.arange(y_lower, y_upper),
+							  0, ith_cluster_silhouette_values,
+							  facecolor=color, edgecolor=color, alpha=0.7)
+
+			# Label the silhouette plots with their cluster numbers at the middle
+			ax1.text(-0.05, y_lower + 0.5 * size_cluster_i, str(i))
+
+			# Compute the new y_lower for next plot
+			y_lower = y_upper + 10  # 10 for the 0 samples
+
+		ax1.set_title("The silhouette plot for {} clusters".format(args.num_clusters))
+		ax1.set_xlabel("Silhouette coefficient values")
+		ax1.set_ylabel("Cluster")
+
+		# The vertical line for average silhoutte score of all the values
+		ax1.axvline(x=silhouette_avg, color="red", linestyle="--")
+
+		ax1.set_yticks([])  # Clear the yaxis labels / ticks
+		plt.show()
+
+elif args.output == 'all':
+	# Show silhouette scores and plots for clusters +/- 5 around the target number given:
+	for n_clusters in xrange(args.num_clusters-5,args.num_clusters+5):
+		# Create a subplot
+		fig, ax1 = plt.subplots(1, 1)
+
+		ax1.set_xlim([-.3, 1])
+		# The (n_clusters+1)*10 is for inserting blank space between silhouette
+		# plots of individual cluster_labels, to demarcate them clearly.
+		ax1.set_ylim([0, len(word_features) + (n_clusters + 1) * 10])
+
+		clusterer = KMeans(n_clusters=n_clusters, random_state=10)
+		cluster_labels = clusterer.fit_predict(word_features)
+		# The silhouette_score gives the average value for all the samples.
+		# This gives a perspective into the density and separation of the formed
+		# cluster_labels
+		silhouette_avg = metrics.silhouette_score(word_features, cluster_labels)
+		print "For {} cluster_labels, average silhouette score is {}".format(n_clusters, silhouette_avg)
+
+		# Compute the silhouette scores for each sample
+		sample_silhouette_values = metrics.silhouette_samples(word_features, cluster_labels)
+
+		y_lower = 10
+		for i in range(n_clusters):
+			# Aggregate the silhouette scores for samples belonging to
+			# cluster i, and sort them
+			ith_cluster_silhouette_values = \
+				sample_silhouette_values[cluster_labels == i]
+
+			ith_cluster_silhouette_values.sort()
+
+			size_cluster_i = ith_cluster_silhouette_values.shape[0]
+			y_upper = y_lower + size_cluster_i
+
+			color = cm.spectral(float(i) / n_clusters)
+			ax1.fill_betweenx(numpy.arange(y_lower, y_upper),
+							  0, ith_cluster_silhouette_values,
+							  facecolor=color, edgecolor=color, alpha=0.7)
+
+			# Label the silhouette plots with their cluster numbers at the middle
+			ax1.text(-0.05, y_lower + 0.5 * size_cluster_i, str(i))
+
+			# Compute the new y_lower for next plot
+			y_lower = y_upper + 10  # 10 for the 0 samples
+
+		ax1.set_title("The silhouette plot for {} clusters".format(n_clusters))
+		ax1.set_xlabel("Silhouette coefficient values")
+		ax1.set_ylabel("Cluster")
+
+		# The vertical line for average silhoutte score of all the values
+		ax1.axvline(x=silhouette_avg, color="red", linestyle="--")
+
+		ax1.set_yticks([])  # Clear the yaxis labels / ticks
+		plt.show()
 
 # Look at specific clusters interactively
-if args.output == 'browser':
+elif args.output == 'browser':
 	target_cluster = ''
 	while target_cluster != 'q':
 		cluster_metadata = []
