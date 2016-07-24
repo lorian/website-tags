@@ -93,9 +93,9 @@ if args.meta:
 		# count words; drop words with a frequency of 1 or symbols/numbers
 		if args.meta == 'CategoryPath': # special format
 			#all_words = [item for sublist in [w.split('/') for w in cluster_metadata] for item in sublist] # get full list of categories
-			print current_metadata
-			all_words = [w.rpartition('/')[2].split('-') for w in ccurrent_metadata] # grab only last category
-			print all_words
+			all_words = [w.rpartition('/')[2].split('-') for w in current_metadata] # grab only last category
+			#remove parts of categories that are numeric (to simplify the category space)
+			all_words = map(lambda x: "-".join([w for w in x if w.isalpha()]), all_words)
 		else:
 			all_words = [w for w in " ".join(current_metadata).translate(string.maketrans("",""), string.punctuation).split(' ') if w.isalpha()]
 		bag_words = collections.Counter({k: c for k, c in collections.Counter(all_words).items() if k})
@@ -111,9 +111,11 @@ if args.meta:
 	meta_int = [meta_to_int[m] for m in metadata]
 	pyp.scatter(clusters, meta_int) 
 	pyp.yticks(meta_to_int.values(), meta_to_int.keys())
-	pyp.xticks(xrange(0,args.num_clusters))
 	pyp.ylabel(args.meta,rotation=90)
+	pyp.ylim([0,len(meta_to_int.keys())])
+	pyp.xticks(xrange(0,args.num_clusters))
 	pyp.xlabel('Cluster')
+	pyp.xlim([-1,args.num_clusters])
 	pyp.show()
 	
 	if args.file_output:
