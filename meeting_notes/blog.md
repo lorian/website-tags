@@ -1,4 +1,21 @@
 
+# Sun Jul 24 19:06:46 PDT 2016
+
+Henrik:
+supervised learning. got categorise  from ‘CategoryPath’ meta-tag and if it’s empty, use og:type
+classification, feature importance
+tried tfidf and porter stemmer on and off.
+
+
+
+ideas:
+extract all og
+dimensionality reduction and cluster visualisation with tsne
+
+
+for Kim:
+looked at the pages that have a high count of gif and see if you can see the difference between different categories
+
 # Tue Jul 19 18:29:17 PDT 2016
 
 
