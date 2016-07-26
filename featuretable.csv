@@ -1,500 +1,2001 @@
-webpageID,og:type,pagetype,salestype,categorypath,country,language,label
-000051_,category,category,config_category,deals,us,en,0.0
-000075_,product,product,franchise,desktops,us,en,1.0
-000087_,category,category,parent_product_category,all-products,us,en,2.0
-000131_,product,product,franchise,laptops,us,en,3.0
-000154_,product,product,franchise,enterprise-products,us,en,4.0
-000165_,product,product,franchise,enterprise-products,us,en,4.0
-000174_,product,product,franchise,laptops,us,en,3.0
-000206_,category,category,parent_product_category,all-products,us,en,2.0
-000229_,category,category,product_category,laptops,us,en,3.0
-000254_,product,product,franchise,laptops,us,en,3.0
-000479_,product,product,franchise,enterprise-products,us,en,4.0
-000484_,category,category,product_category,desktops,us,en,1.0
-000499_,category,category,config_category,member-exclusive,us,en,5.0
-000611_,product,product,franchise,enterprise-products,us,en,4.0
-000720_,product,product,franchise,enterprise-products,us,en,4.0
-000759_,product,product,franchise,desktops,us,en,1.0
-000801_,product,product,franchise,enterprise-products,us,en,4.0
-000802_,product,product,franchise,laptops,us,en,3.0
-000852_,product,product,franchise,cloud-client-computing,us,en,6.0
-000854_,product,product,franchise,enterprise-products,us,en,4.0
-001020_,product,product,franchise,enterprise-products,us,en,4.0
-001477_,product,product,franchise,laptops,us,en,3.0
-001522_,category,category,product_category,enterprise-products,us,en,4.0
-001566_,category,category,product_category,desktops,us,en,1.0
-001637_,category,category,franchise,laptops,us,en,3.0
-001652_,category,category,franchise,enterprise-products,us,en,4.0
-001869_,category,category,parent_product_category,all-products,us,en,2.0
-001953_,product,product,franchise,laptops,us,en,3.0
-001961_,product,product,franchise,laptops,us,en,3.0
-002077_,category,category,config_category,deals,us,en,0.0
-002089_,document, , ,document_, ,en,7.0
-002139_,product,product,franchise,enterprise-products,us,en,4.0
-002198_,document, , ,document_, ,en,7.0
-002269_,category,category,franchise,enterprise-products,us,en,4.0
-002316_,category,category,franchise,server-storage-solutions,us,en,8.0
-002380_,product,product,franchise,cloud-client-computing,us,en,6.0
-002455_,product,product,franchise,cloud-client-computing,us,en,6.0
-002636_,category,category,franchise,enterprise-products,us,en,4.0
-002645_,category,category,parent_product_category,all-products,us,en,2.0
-002740_,product,product,franchise,laptops,us,en,3.0
-002872_,product,product,franchise,laptops,us,en,3.0
-002905_,product,product,franchise,laptops,us,en,3.0
-002951_,product,product,franchise,enterprise-products,us,en,4.0
-003354_,document, , ,document_, ,en,7.0
-003650_,product,product,franchise,laptops,us,en,3.0
-003776_,product,product,parent_product_category,dell-kvm-2161ad,us,en,9.0
-003819_,category,category,franchise,server-storage-solutions,us,en,8.0
-003943_,category,category,franchise,server-storage-solutions,us,en,8.0
-004094_,product,product,parent_product_category,powerconnect-5500-series,us,en,10.0
-004145_,product,product,franchise,desktops,us,en,1.0
-004261_,category,category,parent_product_category,all-products,us,en,2.0
-004271_,document, , ,document_, ,en,7.0
-004279_,product,product,franchise,enterprise-products,us,en,4.0
-004401_,product,product,franchise,laptops,us,en,3.0
-004436_,document, , ,document_, ,en,7.0
-004613_,document, , ,document_, ,en,7.0
-004627_,product,product,franchise,enterprise-products,us,en,4.0
-004634_,product,product,franchise,laptops,us,en,3.0
-004638_,product,product,franchise,desktops,us,en,1.0
-004653_,document, , ,document_, ,en,7.0
-004670_,product,product,franchise,desktops,us,en,1.0
-004732_,product,product,franchise,laptops,us,en,3.0
-004812_,category,category,config_category,deals,us,en,0.0
-004842_,product,product,franchise,enterprise-products,us,en,4.0
-004908_,category,category,config_category,deals,us,en,0.0
-004924_,category,category,product_category,laptops,us,en,3.0
-004930_,category,category,franchise,enterprise-products,us,en,4.0
-004965_,product,product,franchise,enterprise-products,us,en,4.0
-004998_,product,product,franchise,enterprise-products,us,en,4.0
-005059_,product,product,franchise,desktops,us,en,1.0
-005381_,document, , ,document_, ,en,7.0
-005692_,product,product,franchise,laptops,us,en,3.0
-005700_,product,product,franchise,cloud-client-computing,us,en,6.0
-005730_,product,product,franchise,laptops,us,en,3.0
-005792_,category,category,product_category,laptops,us,en,3.0
-006063_,category,category,product_category,workstations,us,en,11.0
-006067_,product,product,franchise,enterprise-products,us,en,4.0
-006212_,document, , ,document_, ,en,7.0
-006456_,document, , ,document_, ,en,7.0
-006467_, , , ,othertype_, ,en,12.0
-006572_,product,product,franchise,enterprise-products,us,en,4.0
-006600_, , , ,othertype_, ,en,12.0
-006634_,product,product,franchise,desktops,us,en,1.0
-006635_,category,category,parent_product_category,all-products,us,en,2.0
-006825_,product,product,franchise,laptops,us,en,3.0
-006828_,document, , ,document_, ,en,7.0
-006931_,document, , ,document_, ,en,7.0
-007212_,category,category,config_category,deals,us,en,0.0
-007265_,category,category,parent_product_category,all-products,us,en,2.0
-007350_,document, , ,document_, ,en,7.0
-007407_,product,product,franchise,desktops,us,en,1.0
-007632_,product,product,franchise,laptops,us,en,3.0
-007715_,category,category,parent_product_category,all-products,us,en,2.0
-007716_,document, , ,document_, ,en,7.0
-007884_,product,product,franchise,desktops,us,en,1.0
-007931_,category,category,franchise,enterprise-products,us,en,4.0
-008078_,product,product,franchise,desktops,us,en,1.0
-008324_,category,category,franchise,enterprise-products,us,en,4.0
-008354_,category,category,product_category,enterprise-products,us,en,4.0
-008410_,product,product,franchise,laptops,us,en,3.0
-008490_,category,category,product_category,enterprise-products,us,en,4.0
-008545_,category,category,franchise,enterprise-products,us,en,4.0
-008577_,product,product,franchise,desktops,us,en,1.0
-008735_,document, , ,document_, ,en,7.0
-008911_,product,product,parent_product_category,broadcom-57810s-dual-port,us,en,13.0
-008978_,document, , ,document_, ,en,7.0
-009003_,product,product,franchise,software,us,en,14.0
-009007_,document, , ,document_, ,en,7.0
-009047_,document, , ,document_, ,en,7.0
-009063_,product,product,franchise,laptops,us,en,3.0
-009076_,product,product,franchise,enterprise-products,us,en,4.0
-009258_,document, , ,document_, ,en,7.0
-009265_,document, , ,document_, ,en,7.0
-009326_,document, , ,document_, ,en,7.0
-009363_,document, , ,document_, ,en,7.0
-009368_,document, , ,document_, ,en,7.0
-009449_,category,category,parent_product_category,all-products,us,en,2.0
-009506_,product,product,franchise,laptops,us,en,3.0
-009535_,document, , ,document_, ,en,7.0
-009585_,document, , ,document_, ,en,7.0
-009601_,document, , ,document_, ,en,7.0
-009619_,product,product,franchise,enterprise-products,us,en,4.0
-009769_,document, , ,document_, ,en,7.0
-010020_,product,product,franchise,laptops,us,en,3.0
-010034_,product,product,franchise,laptops,us,en,3.0
-010098_,document, , ,document_, ,en,7.0
-010141_,category,category,parent_product_category,all-products,us,en,2.0
-010192_,document, , ,document_, ,en,7.0
-010241_,product,product,franchise,desktops,us,en,1.0
-010292_,document, , ,document_, ,en,7.0
-010324_, , , ,othertype_, ,en,12.0
-010431_,document, , ,document_, ,en,7.0
-010524_,product,product,franchise,laptops,us,en,3.0
-010595_,product,product,franchise,enterprise-products,us,en,4.0
-010655_,document, , ,document_, ,en,7.0
-010797_,category,category,franchise,enterprise-products,us,en,4.0
-010826_,product,product,franchise,desktops,us,en,1.0
-010865_, , , ,othertype_, ,en,12.0
-010877_,document, , ,document_, ,en,7.0
-010939_,document, , ,document_, ,en,7.0
-010942_,category,category,parent_product_category,all-products,us,en,2.0
-011348_,product,product,franchise,laptops,us,en,3.0
-011369_,product,product,parent_product_category,powerconnect-w-iap-series,us,en,15.0
-011479_,category,category,franchise,cloud-client,us,en,16.0
-011568_,document, , ,document_, ,en,7.0
-011668_,category,category,product_category,enterprise-products,us,en,4.0
-011687_,product,product,franchise,laptops,us,en,3.0
-011688_,product,product,franchise,desktops,us,en,1.0
-011713_,product,product,franchise,cloud-client-computing,us,en,6.0
-011750_,product,product,franchise,desktops,us,en,1.0
-011818_, , , ,othertype_, ,en,12.0
-012031_,document, , ,document_, ,en,7.0
-012199_, , , ,othertype_, ,en,12.0
-012283_, , , ,othertype_, , ,12.0
-012624_,category,category,config_category,deals,us,en,0.0
-012634_,product,product,franchise,desktops,us,en,1.0
-012742_, , , ,othertype_, ,en,12.0
-012745_,category,category,config_category,deals,us,en,0.0
-012759_,document, , ,document_, ,en,7.0
-012790_,product,product,franchise,enterprise-products,us,en,4.0
-012919_,document, , ,document_, ,en,7.0
-012945_,product,product,franchise,desktops,us,en,1.0
-012952_, , , ,othertype_, ,en,12.0
-012965_,product,product,franchise,enterprise-products,us,en,4.0
-012968_,product,product,franchise,enterprise-products,us,en,4.0
-013101_,product,product,franchise,cloud-client-computing,us,en,6.0
-013125_,product,product,franchise,laptops,us,en,3.0
-013156_,category,category,config_category,deals,us,en,0.0
-013202_,product,product,franchise,desktops,us,en,1.0
-013274_,product,product,franchise,desktops,us,en,1.0
-013503_,document, , ,document_, ,en,7.0
-013588_,category,category,parent_product_category,all-products,us,en,2.0
-013607_,product,product,franchise,enterprise-products,us,en,4.0
-013624_,document, , ,document_, ,en,7.0
-013679_,product,product,franchise,laptops,us,en,3.0
-013684_,product,product,franchise,enterprise-products,us,en,4.0
-013776_,document, , ,document_, ,en,7.0
-013803_,category,category,franchise,desktops,us,en,1.0
-013804_,document, , ,document_, ,en,7.0
-013806_,product,product,franchise,desktops,us,en,1.0
-013825_,document, , ,document_, ,en,7.0
-013854_,product,product,franchise,laptops,us,en,3.0
-013862_,product,product,franchise,enterprise-products,us,en,4.0
-014008_,product,product,franchise,laptops,us,en,3.0
-014108_,category,category,product_category,enterprise-products,us,en,4.0
-014332_,product,product,franchise,enterprise-products,us,en,4.0
-014346_,product,product,franchise,desktops,us,en,1.0
-014438_,product,product,franchise,cloud-client-computing,us,en,6.0
-014535_,product,product,franchise,enterprise-products,us,en,4.0
-014578_,product,product,franchise,laptops,us,en,3.0
-014610_,product,product,franchise,enterprise-products,us,en,4.0
-014683_,product,product,franchise,enterprise-products,us,en,4.0
-014846_,document, , ,document_, ,en,7.0
-014964_,product,product,franchise,enterprise-products,us,en,4.0
-015179_,product,product,franchise,cloud-client-computing,us,en,6.0
-015244_,document, , ,document_, ,en,7.0
-015279_,product,product,franchise,enterprise-products,us,en,4.0
-015354_,product,product,franchise,enterprise-products,us,en,4.0
-015405_,product,product,franchise,laptops,us,en,3.0
-015429_,product,product,franchise,laptops,us,en,3.0
-015542_,product,product,franchise,desktops,us,en,1.0
-015655_,document, , ,document_, ,en,7.0
-015660_, , , ,othertype_, ,en,12.0
-015825_,category,category,franchise,laptops,us,en,3.0
-015828_,document, , ,document_, ,en,7.0
-016110_,category,category,parent_product_category,all-products,us,en,2.0
-016111_,product,product,franchise,desktops,us,en,1.0
-016464_,product,product,franchise,laptops,us,en,3.0
-016570_,document, , ,document_, ,en,7.0
-016601_,document, , ,document_, ,en,7.0
-016720_,product,product,franchise,software,us,en,14.0
-016724_,document, , ,document_, ,en,7.0
-016727_,product,product,franchise,desktops,us,en,1.0
-016796_,category,category,product_category,software,us,en,14.0
-016919_,product,product,franchise,enterprise-products,us,en,4.0
-016938_,document, , ,document_, ,en,7.0
-016993_,product,product,franchise,laptops,us,en,3.0
-017044_,document, , ,document_, ,en,7.0
-017078_,product,product,franchise,enterprise-products,us,en,4.0
-017106_,document, , ,document_, ,en,7.0
-017154_,category,category,parent_product_category,all-products,us,en,2.0
-017467_,product,product,franchise,enterprise-products,us,en,4.0
-017523_,product,product,franchise,desktops,us,en,1.0
-017630_,document, , ,document_, ,en,7.0
-017695_,category,category,parent_product_category,all-products,us,en,2.0
-017746_,document, , ,document_, ,en,7.0
-017900_,document, , ,document_, ,en,7.0
-017976_,product,product,franchise,server-storage-solutions,us,en,8.0
-018123_,document, , ,document_, ,en,7.0
-018139_,product,product,franchise,enterprise-products,us,en,4.0
-018284_,document, , ,document_, ,en,7.0
-018287_,document, , ,document_, ,en,7.0
-018350_,document, , ,document_, ,en,7.0
-018358_,product,product,franchise,enterprise-products,us,en,4.0
-018472_,category,category,franchise,desktops,us,en,1.0
-018535_,document, , ,document_, ,en,7.0
-018595_,document, , ,document_, ,en,7.0
-018680_,product,product,franchise,laptops,us,en,3.0
-018691_,document, , ,document_, ,en,7.0
-018876_,product,product,franchise,enterprise-products,us,en,4.0
-019040_,document, , ,document_, ,en,7.0
-019155_,document, , ,document_, ,en,7.0
-019228_,product,product,franchise,desktops,us,en,1.0
-019447_,document, , ,document_, ,en,7.0
-019465_,product,product,franchise,enterprise-products,us,en,4.0
-019602_,product,product,franchise,desktops,us,en,1.0
-019689_,product,product,franchise,enterprise-products,us,en,4.0
-019698_,category,category,franchise,enterprise-products,us,en,4.0
-019706_,product,product,franchise,desktops,us,en,1.0
-019728_,product,product,franchise,laptops,us,en,3.0
-019736_,document, , ,document_, ,en,7.0
-019769_,product,product,franchise,laptops,us,en,3.0
-019995_,document, , ,document_, ,en,7.0
-020059_, , , ,othertype_, ,en,12.0
-020069_,document, , ,document_, ,en,7.0
-020112_,category,category,franchise,desktops,us,en,1.0
-020278_,document, , ,document_, ,en,7.0
-020394_,product,product,franchise,server-storage-solutions,us,en,8.0
-020624_,document, , ,document_, ,en,7.0
-020668_, , , ,othertype_, ,en,12.0
-020686_,document, , ,document_, ,en,7.0
-020695_,document, , ,document_, ,en,7.0
-020703_,document, , ,document_, ,en,7.0
-020818_,product,product,franchise,laptops,us,en,3.0
-020913_,product,product,franchise,laptops,us,en,3.0
-021101_,product,product,franchise,laptops,us,en,3.0
-021273_,document, , ,document_, ,en,7.0
-021385_,product,product,franchise,desktops,us,en,1.0
-021435_,product,product,franchise,desktops,us,en,1.0
-021481_,document, , ,document_, ,en,7.0
-021700_,product,product,franchise,desktops,us,en,1.0
-021915_,product,product,franchise,desktops,us,en,1.0
-021946_,product,product,franchise,desktops,us,en,1.0
-022083_,product,product,franchise,enterprise-products,us,en,4.0
-022090_,product,product,franchise,enterprise-products,us,en,4.0
-022464_,product,product,franchise,desktops,us,en,1.0
-022616_,product,product,franchise,cloud-client-computing,us,en,6.0
-022718_,document, , ,document_, ,ko,7.0
-022875_,category,category,franchise,enterprise-products,us,en,4.0
-022878_,product,product,franchise,enterprise-products,us,en,4.0
-022892_,product,product,franchise,laptops,us,en,3.0
-023104_,product,product,franchise,desktops,us,en,1.0
-023213_,category,category,franchise,enterprise-products,us,en,4.0
-023274_,document, , ,document_, ,en,7.0
-023306_,product,product,franchise,dell-tablets,us,en,17.0
-023480_,product,product,franchise,laptops,us,en,3.0
-023558_,document, , ,document_, ,en,7.0
-023578_,document, , ,document_, ,en,7.0
-023625_,product,product,franchise,desktops,us,en,1.0
-023659_,product,product,franchise,laptops,us,en,3.0
-023688_,document, , ,document_, ,en,7.0
-023799_,document, , ,document_, ,en,7.0
-023872_,product,product,franchise,desktops,us,en,1.0
-023935_,document, , ,document_, ,en,7.0
-024179_,document, , ,document_, ,en,7.0
-024347_,product,product,franchise,enterprise-products,us,en,4.0
-024581_,product,product,franchise,enterprise-products,us,en,4.0
-024670_,category,category,franchise,enterprise-products,us,en,4.0
-024684_,category,category,parent_product_category,all-products,us,en,2.0
-024826_,category,category,parent_product_category,all-products,us,en,2.0
-024885_,document, , ,document_, ,en,7.0
-024887_,document, , ,document_, ,en,7.0
-025041_,document, , ,document_, ,en,7.0
-025485_,product,product,franchise,laptops,us,en,3.0
-025531_,document, , ,document_, ,en,7.0
-025543_,document, , ,document_, ,en,7.0
-025667_,category,category,parent_product_category,all-products,us,en,2.0
-025983_, , , ,othertype_, , ,12.0
-026007_,document, , ,document_, ,en,7.0
-026072_,product,product,franchise,desktops,us,en,1.0
-026262_,product,product,franchise,laptops,us,en,3.0
-026352_,document, , ,document_, ,en,7.0
-026474_,product,product,franchise,laptops,us,en,3.0
-026511_,document, , ,document_, ,en,7.0
-026647_,document, , ,document_, ,en,7.0
-026709_,category,category,franchise,enterprise-products,us,en,4.0
-026716_,product,product,franchise,desktops,us,en,1.0
-026828_,document, , ,document_, ,en,7.0
-026862_, , , ,othertype_, ,en,12.0
-026871_,document, , ,document_, ,en,7.0
-027092_,product,product,franchise,desktops,us,en,1.0
-027168_,product,product,franchise,enterprise-products,us,en,4.0
-027438_,document, , ,document_, ,en,7.0
-027520_,product,product,product_category,dell-tablets,us,en,17.0
-027528_,document, , ,document_, ,en,7.0
-027582_,product,product,franchise,enterprise-products,us,en,4.0
-027603_,category,category,franchise,laptops,us,en,3.0
-027743_,product,product,franchise,software,us,en,14.0
-028101_, , , ,othertype_, ,en,12.0
-028253_,document, , ,document_, ,en,7.0
-028264_,document, , ,document_, ,en,7.0
-028298_,document, , ,document_, ,en,7.0
-028649_,product,product,franchise,enterprise-products,us,en,4.0
-028713_, , , ,othertype_, ,en,12.0
-028837_,product,product,franchise,desktops,us,en,1.0
-029123_,product,product,franchise,laptops,us,en,3.0
-029236_,category,category,product_category,enterprise-products,us,en,4.0
-029395_,category,category,product_category,laptops,us,en,3.0
-029420_,product,product,franchise,laptops,us,en,3.0
-029423_,product,product,franchise,laptops,us,en,3.0
-029882_, , , ,othertype_, ,en,12.0
-029909_,category,category,config_category,deals,us,en,0.0
-029946_,category,category,franchise,enterprise-products,us,en,4.0
-030152_,document, , ,document_, ,en,7.0
-030416_,document, , ,document_, ,en,7.0
-030702_,document, , ,document_, ,en,7.0
-030761_, , , ,othertype_, ,en,12.0
-030824_,category,category,franchise,laptops,us,en,3.0
-030927_,product,product,franchise,laptops,us,en,3.0
-031071_,product,product,franchise,desktops,us,en,1.0
-031157_,product,product,franchise,enterprise-products,us,en,4.0
-031295_,document, , ,document_, ,en,7.0
-031297_,product,product,franchise,laptops,us,en,3.0
-031371_,product,product,franchise,desktops,us,en,1.0
-031584_,document, , ,document_, ,en,7.0
-031588_,product,product,franchise,desktops,us,en,1.0
-031682_,document, , ,document_, ,en,7.0
-031699_,document, , ,document_, ,en,7.0
-031848_,document, , ,document_, ,en,7.0
-031977_,product,product,franchise,laptops,us,en,3.0
-032031_,product,product,franchise,desktops,us,en,1.0
-032054_,document, , ,document_, ,en,7.0
-032143_,category,category,config_category,deals,us,en,0.0
-032187_,document, , ,document_, ,en,7.0
-032199_,document, , ,document_, ,en,7.0
-032313_,product,product,franchise,enterprise-products,us,en,4.0
-032554_,product,product,franchise,desktops,us,en,1.0
-032594_,product,product,franchise,enterprise-products,us,en,4.0
-032706_,document, , ,document_, ,en,7.0
-032759_,product,product,franchise,laptops,us,en,3.0
-032788_,document, , ,document_, ,en,7.0
-032859_,document, , ,document_, ,en,7.0
-032954_,product,product,franchise,dell-tablets,us,en,17.0
-032960_,product,product,franchise,laptops,us,en,3.0
-033004_,product,product,franchise,laptops,us,en,3.0
-033144_,product,product,franchise,enterprise-products,us,en,4.0
-033166_,product,product,parent_product_category,all-products,us,en,2.0
-033177_,document, , ,document_, ,en,7.0
-033267_,category,category,config_category,deals,us,en,0.0
-033276_,document, , ,document_, ,en,7.0
-033291_,category,category,product_category,laptops,us,en,3.0
-033322_,document, , ,document_, ,en,7.0
-033355_,product,product,franchise,laptops,us,en,3.0
-033446_,category,category,franchise,enterprise-products,us,en,4.0
-033479_,product,product,franchise,laptops,us,en,3.0
-033630_,category,category,franchise,software,us,en,14.0
-033932_,product,product,franchise,laptops,us,en,3.0
-034061_,product,product,franchise,laptops,us,en,3.0
-034175_,document, , ,document_, ,en,7.0
-034253_, , , ,othertype_, ,en,12.0
-034500_,document, , ,document_, ,en,7.0
-034568_,product,product,franchise,desktops,us,en,1.0
-034628_,document, , ,document_, ,en,7.0
-034792_, , , ,othertype_, ,en,12.0
-035072_,product,product,franchise,laptops,us,en,3.0
-035102_,category,category,parent_product_category,all-products,us,en,2.0
-035138_,product,product,franchise,laptops,us,en,3.0
-035214_,product,product,franchise,desktops,us,en,1.0
-035503_,document, , ,document_, ,en,7.0
-035717_,document, , ,document_, ,en,7.0
-035775_,category,category,franchise,desktops,us,en,1.0
-035784_,document, , ,document_, ,en,7.0
-035981_,product,product,franchise,software,us,en,14.0
-035984_,document, , ,document_, ,en,7.0
-036028_,document, , ,document_, ,en,7.0
-036040_,product,product,franchise,enterprise-products,us,en,4.0
-036207_,document, , ,document_, ,en,7.0
-036318_,product,product,franchise,laptops,us,en,3.0
-036454_,product,product,franchise,desktops,us,en,1.0
-036842_,document, , ,document_, ,en,7.0
-037077_,document, , ,document_, ,en,7.0
-037090_,document, , ,document_, ,en,7.0
-037212_,product,product,franchise,desktops,us,en,1.0
-037329_,document, , ,document_, ,en,7.0
-037548_,category,category,parent_product_category,all-products,us,en,2.0
-037581_,product,product,franchise,desktops,us,en,1.0
-037705_,product,product,franchise,desktops,us,en,1.0
-037740_, , , ,othertype_, ,en,12.0
-037795_,category,category,product_category,software,us,en,14.0
-037818_,product,product,franchise,enterprise-products,us,en,4.0
-037867_,document, , ,document_, ,en,7.0
-037869_,document, , ,document_, ,en,7.0
-037952_,category,category,product_category,workstations,us,en,11.0
-038000_,product,product,parent_product_category,equallogic-ps4110xv35,us,en,18.0
-038024_,product,product,franchise,laptops,us,en,3.0
-038080_,product,product,franchise,enterprise-products,us,en,4.0
-038138_,category,category,config_category,deals,us,en,0.0
-038149_,category,category,product_category,enterprise-products,us,en,4.0
-038187_, , , ,othertype_, ,en,12.0
-038230_,product,product,franchise,desktops,us,en,1.0
-038251_,document, , ,document_, ,en,7.0
-038286_,product,product,franchise,enterprise-products,us,en,4.0
-038301_,product,product,franchise,desktops,us,en,1.0
-038323_,document, , ,document_, ,en,7.0
-038446_,document, , ,document_, ,en,7.0
-038462_,product,product,franchise,software,us,en,14.0
-038533_,document, , ,document_, ,en,7.0
-038594_,product,product,franchise,cloud-client-computing,us,en,6.0
-038727_, , , ,othertype_, ,en,12.0
-038873_,document, , ,document_, ,en,7.0
-038910_,document, , ,document_, ,en,7.0
-039057_,product,product,franchise,enterprise-products,us,en,4.0
-039267_,category,category,parent_product_category,all-products,us,en,2.0
-039391_,document, , ,document_, ,en,7.0
-039504_,category,category,config_category,deals,us,en,0.0
-039516_,category,category,parent_product_category,all-products,us,en,2.0
-039676_,document, , ,document_, ,en,7.0
-040081_,document, , ,document_, ,en,7.0
-040148_,document, , ,document_, ,en,7.0
-040170_,document, , ,document_, ,en,7.0
-040291_,document, , ,document_, ,en,7.0
-040464_,product,product,franchise,desktops,us,en,1.0
-040472_,category,category,product_category,workstations,us,en,11.0
-040482_,product,product,franchise,laptops,us,en,3.0
-040575_,document, , ,document_, ,en,7.0
-040577_, , , ,othertype_, ,en,12.0
-040925_, , , ,othertype_, ,en,12.0
-041116_, , , ,othertype_, , ,12.0
-041128_,document, , ,document_, ,en,7.0
-041181_,product,product,franchise,desktops,us,en,1.0
-041285_,document, , ,document_, ,en,7.0
-041504_,document, , ,document_, ,en,7.0
-041591_,category,category,config_category,deals,us,en,0.0
-041719_,product,product,franchise,desktops,us,en,1.0
-041736_,category,category,franchise,enterprise-products,us,en,4.0
-041820_,product,product,franchise,laptops,us,en,3.0
-041841_,document, , ,document_, ,en,7.0
-041929_,document, , ,document_, ,en,7.0
-041992_,document, , ,document_, ,en,7.0
-042021_,category,category,parent_product_category,all-products,us,en,2.0
-042049_,product,product,franchise,laptops,us,en,3.0
-042060_,product,product,franchise,laptops,us,en,3.0
-042081_,product,product,franchise,laptops,us,en,3.0
-042124_,document, , ,document_, ,de,7.0
-042217_,documentsearch, , ,document_, ,en,7.0
-042228_,product,product,franchise,laptops,us,en,3.0
-042430_,category,category,parent_product_category,all-products,us,en,2.0
-042432_,document, , ,document_, ,en,7.0
-042453_,product,product,franchise,enterprise-products,us,en,4.0
-042486_,product,product,franchise,desktops,us,en,1.0
-042538_,document, , ,document_, ,en,7.0
-042769_,product,product,franchise,desktops,us,en,1.0
-042797_,document, , ,document_, ,en,7.0
-042810_,document, , ,document_, ,en,7.0
-042891_,product,product,franchise,laptops,us,en,3.0
-042894_,product,product,franchise,laptops,us,en,3.0
-043047_,category,category,config_category,deals,us,en,0.0
-043100_,document, , ,document_, ,en,7.0
-043232_,document, , ,document_, ,en,7.0
-043592_,document, , ,document_, ,en,7.0
-043894_,product,product,franchise,desktops,us,en,1.0
-043972_,category,category,product_category,enterprise-products,us,en,4.0
-044130_,document, , ,document_, ,en,7.0
-044195_,product,product,franchise,laptops,us,en,3.0
-044390_,product,product,franchise,desktops,us,en,1.0
-044414_,product,product,franchise,laptops,us,en,3.0
-044477_,product,product,franchise,enterprise-products,us,en,4.0
-044643_,product,product,franchise,enterprise-products,us,en,4.0
-044679_,category,category,parent_product_category,all-products,us,en,2.0
+webpageID,og:type,salestype,country,language,categorypath
+000004_,category,product_category,us,en,desktops
+000011_,category,product_category,us,en,laptops
+000018_,category,franchise,us,en,laptops
+000024_,category,product_category,us,en,desktops
+000036_,category,parent_product_category,us,en,all-products
+000038_,category,franchise,us,en,laptops
+000046_,product,franchise,us,en,enterprise-products
+000049_,product,franchise,us,en,desktops
+000053_,category,parent_product_category,us,en,all-products
+000054_,document, , ,en,document_
+000065_,document, , ,en,document_
+000071_,product,franchise,us,en,enterprise-products
+000077_,category,product_category,us,en,enterprise-products
+000079_,product,franchise,us,en,laptops
+000081_,category,franchise,us,en,enterprise-products
+000086_,category,product_category,us,en,laptops
+000094_,category,parent_product_category,us,en,all-products
+000099_,category,product_category,us,en,other-product
+000101_,product,franchise,us,en,laptops
+000105_,product,franchise,us,en,enterprise-products
+000107_,category,franchise,us,en,enterprise-products
+000131_,product,franchise,us,en,laptops
+000139_,category,product_category,us,en,enterprise-products
+000141_,product,franchise,us,en,enterprise-products
+000143_,product,franchise,us,en,laptops
+000149_,product,franchise,us,en,laptops
+000152_,product,franchise,us,en,enterprise-products
+000154_,product,franchise,us,en,enterprise-products
+000155_,document, , ,en,document_
+000170_,product,franchise,us,en,enterprise-products
+000200_,category,product_category,us,en,enterprise-products
+000202_,product,franchise,us,en,enterprise-products
+000205_,product,franchise,us,en,enterprise-products
+000206_,category,parent_product_category,us,en,all-products
+000208_,product,franchise,us,en,enterprise-products
+000211_,category,product_category,us,en,enterprise-products
+000219_,category,franchise,us,en,enterprise-products
+000224_,product,franchise,us,en,enterprise-products
+000233_,category,product_category,us,en,laptops
+000234_,product,franchise,us,en,enterprise-products
+000258_,product,franchise,us,en,desktops
+000268_,product,franchise,us,en,enterprise-products
+000280_,product,franchise,us,en,enterprise-products
+000291_,category,product_category,us,en,enterprise-products
+000298_,category,franchise,us,en,laptops
+000299_,product,franchise,us,en,enterprise-products
+000308_,product,franchise,us,en,server-storage-solutions
+000321_,product,franchise,us,en,desktops
+000343_,document, , ,en,document_
+000351_,product,franchise,us,en,desktops
+000359_,category,franchise,us,en,desktops
+000373_,category,franchise,us,en,desktops
+000382_,product,franchise,us,en,laptops
+000383_,category,product_category,us,en,enterprise-products
+000385_,product,franchise,us,en,cloud-client-computing
+000389_,product,franchise,us,en,laptops
+000390_,product,franchise,us,en,enterprise-products
+000407_,product,franchise,us,en,cloud-client-computing
+000409_,category,product_category,us,en,enterprise-products
+000412_,category,franchise,us,en,laptops
+000415_,product,franchise,us,en,laptops
+000442_,product,franchise,us,en,laptops
+000459_,category,product_category,us,en,laptops
+000463_,product,franchise,us,en,cloud-client-computing
+000469_,category,product_category,us,en,desktops
+000473_,category,franchise,us,en,server-storage-solutions
+000503_,product,franchise,us,en,laptops
+000504_,category,config_category,us,en,deals
+000507_,product,franchise,us,en,laptops
+000508_,product,franchise,us,en,software
+000510_,category,product_category,us,en,enterprise-products
+000549_,product,franchise,us,en,enterprise-products
+000564_,product,franchise,us,en,cloud-client-computing
+000566_,product,franchise,us,en,desktops
+000585_,product,franchise,us,en,laptops
+000586_,category,parent_product_category,us,en,all-products
+000609_,category,product_category,us,en,enterprise-products
+000639_,product,franchise,us,en,laptops
+000649_,product,franchise,us,en,laptops
+000657_,category,product_category,us,en,enterprise-products
+000681_,product,franchise,us,en,enterprise-products
+000686_,category,franchise,us,en,enterprise-products
+000687_,product,franchise,us,en,cloud-client-computing
+000699_,product,franchise,us,en,laptops
+000704_,category,product_category,us,en,other-product
+000709_,category,franchise,us,en,enterprise-products
+000720_,product,franchise,us,en,enterprise-products
+000731_,product,franchise,us,en,enterprise-products
+000747_,product,franchise,us,en,laptops
+000758_,category,franchise,us,en,enterprise-products
+000759_,product,franchise,us,en,desktops
+000787_,document, , ,en,document_
+000792_,product,franchise,us,en,desktops
+000817_,product,franchise,us,en,enterprise-products
+000843_,product,franchise,us,en,desktops
+000859_,product,franchise,us,en,enterprise-products
+000862_,category,product_category,us,en,enterprise-products
+000866_,product,franchise,us,en,server-storage-solutions
+000888_,category,franchise,us,en,desktops
+000892_,product,franchise,us,en,desktops
+000905_,product,franchise,us,en,desktops
+000909_,product,franchise,us,en,server-storage-solutions
+000976_,product,franchise,us,en,dell-tablets
+001004_,product,franchise,us,en,laptops
+001061_, , , ,en,unkowntype_
+001066_,product,franchise,us,en,laptops
+001072_,product,franchise,us,en,desktops
+001083_,document, , ,en,document_
+001086_,document, , ,en,document_
+001087_,category,franchise,us,en,enterprise-products
+001103_,product,franchise,us,en,enterprise-products
+001107_,document, , ,en,document_
+001115_,category,config_category,us,en,deals
+001121_,product,franchise,us,en,enterprise-products
+001145_,product,franchise,us,en,desktops
+001150_,product,franchise,us,en,enterprise-products
+001156_,product,franchise,us,en,laptops
+001166_,category,parent_product_category,us,en,all-products
+001182_,product,franchise,us,en,software
+001195_,product,franchise,us,en,desktops
+001210_,product,franchise,us,en,enterprise-products
+001302_,category,parent_product_category,us,en,all-products
+001304_,product,franchise,us,en,server-storage-solutions
+001313_,category,config_category,us,en,deals
+001314_,document, , ,en,document_
+001389_,document, , ,en,document_
+001394_,product,franchise,us,en,enterprise-products
+001420_,category,franchise,us,en,enterprise-products
+001427_,document, , ,en,document_
+001432_,product,franchise,us,en,enterprise-products
+001439_,product,franchise,us,en,enterprise-products
+001443_,product,franchise,us,en,enterprise-products
+001452_,product,franchise,us,en,desktops
+001465_,category,config_category,us,en,deals
+001470_,document, , ,en,document_
+001485_,document, , ,de,document_
+001490_,product,franchise,us,en,enterprise-products
+001491_,document, , ,en,document_
+001496_,product,franchise,us,en,laptops
+001509_,category,product_category,us,en,enterprise-products
+001516_,product,franchise,us,en,laptops
+001533_,category,franchise,us,en,server-storage-solutions
+001534_,product,franchise,us,en,enterprise-products
+001535_,product,franchise,us,en,enterprise-products
+001540_, , , ,en,unkowntype_
+001553_, , , ,en,unkowntype_
+001587_,category,franchise,us,en,enterprise-products
+001589_,product,franchise,us,en,desktops
+001616_,product,franchise,us,en,desktops
+001640_,product,franchise,us,en,desktops
+001643_,product,parent_product_category,us,en,other-product
+001652_,category,franchise,us,en,enterprise-products
+001660_,product,franchise,us,en,desktops
+001666_,category,product_category,us,en,laptops
+001690_,product,franchise,us,en,enterprise-products
+001738_,product,franchise,us,en,laptops
+001743_,category,franchise,us,en,enterprise-products
+001760_,product,franchise,us,en,desktops
+001799_,product,franchise,us,en,enterprise-products
+001804_,category,config_category,us,en,other-product
+001858_,product,franchise,us,en,laptops
+001864_,category,product_category,us,en,enterprise-products
+001875_,product,franchise,us,en,enterprise-products
+001890_,product,product_category,us,en,dell-tablets
+001921_,product,franchise,us,en,enterprise-products
+001922_,product,franchise,us,en,enterprise-products
+001936_,product,franchise,us,en,desktops
+001949_,product,franchise,us,en,laptops
+001951_,category,config_category,us,en,other-product
+001952_,product,franchise,us,en,desktops
+001953_,product,franchise,us,en,laptops
+001968_,product,franchise,us,en,laptops
+001991_,category,parent_product_category,us,en,all-products
+002003_,product,franchise,us,en,laptops
+002014_,product,franchise,us,en,laptops
+002031_,product,franchise,us,en,laptops
+002051_,category,config_category,us,en,deals
+002078_,category,franchise,us,en,enterprise-products
+002085_,category,config_category,us,en,deals
+002109_,product,franchise,us,en,enterprise-products
+002132_,product,franchise,us,en,desktops
+002139_,product,franchise,us,en,enterprise-products
+002148_,product,franchise,us,en,desktops
+002175_,category,franchise,us,en,enterprise-products
+002189_, , , ,en,unkowntype_
+002196_,document, , ,en,document_
+002211_,product,franchise,us,en,enterprise-products
+002218_,category,config_category,us,en,deals
+002231_,product,franchise,us,en,enterprise-products
+002250_,product,franchise,us,en,enterprise-products
+002256_,product,franchise,us,en,laptops
+002283_,product,franchise,us,en,laptops
+002344_,category,franchise,us,en,enterprise-products
+002356_,category,product_category,us,en,enterprise-products
+002368_,product,franchise,us,en,desktops
+002370_,category,franchise,us,en,laptops
+002375_,category,franchise,us,en,enterprise-products
+002383_,product,franchise,us,en,enterprise-products
+002385_,document, , ,fr,document_
+002410_,document, , ,en,document_
+002431_,category,config_category,us,en,deals
+002454_,category,franchise,us,en,enterprise-products
+002474_,document, , ,en,document_
+002476_,product,franchise,us,en,enterprise-products
+002480_,product,franchise,us,en,laptops
+002495_,document, , ,en,document_
+002521_,category,franchise,us,en,enterprise-products
+002524_, , , ,en,unkowntype_
+002535_,product,franchise,us,en,enterprise-products
+002536_,document, , ,en,document_
+002559_,product,franchise,us,en,laptops
+002565_,category,parent_product_category,us,en,all-products
+002595_,category,config_category,us,en,deals
+002606_,category,parent_product_category,us,en,all-products
+002614_,product,franchise,us,en,enterprise-products
+002645_,category,parent_product_category,us,en,all-products
+002650_, , , , ,unkowntype_
+002652_, , , ,en,unkowntype_
+002682_,product,franchise,us,en,enterprise-products
+002689_,product,franchise,us,en,enterprise-products
+002694_,document, , ,en,document_
+002718_,category,franchise,us,en,enterprise-products
+002727_,product,franchise,us,en,laptops
+002748_,document, , ,en,document_
+002759_,product,franchise,us,en,enterprise-products
+002817_,product,franchise,us,en,enterprise-products
+002828_,product,franchise,us,en,laptops
+002841_,document, , ,nl,document_
+002850_,product,product_category,us,en,dell-tablets
+002872_,product,franchise,us,en,laptops
+002880_,product,franchise,us,en,enterprise-products
+002909_,product,franchise,us,en,cloud-client-computing
+002954_,document, , ,en,document_
+002961_,category,franchise,us,en,enterprise-products
+003004_,product,franchise,us,en,desktops
+003011_,document, , ,en,document_
+003036_,product,franchise,us,en,laptops
+003064_,product,franchise,us,en,enterprise-products
+003087_,document, , ,en,document_
+003096_,category,franchise,us,en,desktops
+003099_,document, , ,en,document_
+003121_,product,franchise,us,en,desktops
+003135_,category,product_category,us,en,enterprise-products
+003259_,category,franchise,us,en,enterprise-products
+003261_, , , ,en,unkowntype_
+003273_,category,product_category,us,en,software
+003341_,product,franchise,us,en,laptops
+003362_,product,franchise,us,en,enterprise-products
+003365_,category,parent_product_category,us,en,all-products
+003389_,document, , ,en,document_
+003400_,document, , ,en,document_
+003450_,category,franchise,us,en,enterprise-products
+003474_,document, , ,en,document_
+003489_,product,franchise,us,en,laptops
+003500_,category,franchise,us,en,enterprise-products
+003511_,product,product_category,us,en,dell-tablets
+003515_,product,franchise,us,en,cloud-client-computing
+003519_,product,franchise,us,en,server-storage-solutions
+003539_,product,franchise,us,en,laptops
+003562_,product,franchise,us,en,laptops
+003572_,product,franchise,us,en,enterprise-products
+003578_,product,franchise,us,en,laptops
+003597_,document, , ,en,document_
+003613_,category,product_category,us,en,enterprise-products
+003620_,product,franchise,us,en,enterprise-products
+003650_,product,franchise,us,en,laptops
+003660_,document, , ,en,document_
+003665_,category,parent_product_category,us,en,all-products
+003674_,product,franchise,us,en,desktops
+003707_,document, , ,de,document_
+003722_,product,franchise,us,en,enterprise-products
+003732_, , , , ,unkowntype_
+003765_,category,franchise,us,en,enterprise-products
+003770_,document, , ,en,document_
+003773_,product,franchise,us,en,desktops
+003788_,product,franchise,us,en,laptops
+003798_,product,franchise,us,en,desktops
+003821_,document, , ,en,document_
+003823_,product,franchise,us,en,enterprise-products
+003826_,product,franchise,us,en,desktops
+003840_,category,parent_product_category,us,en,all-products
+003847_,product,franchise,us,en,desktops
+003866_,product,franchise,us,en,desktops
+003889_,product,franchise,us,en,enterprise-products
+003908_,product,franchise,us,en,desktops
+003919_,product,franchise,us,en,laptops
+003930_,product,franchise,us,en,enterprise-products
+003933_,document, , ,en,document_
+003937_,document, , ,en,document_
+003941_,product,franchise,us,en,enterprise-products
+003950_,product,franchise,us,en,enterprise-products
+003952_,category,product_category,us,en,software
+003970_,product,franchise,us,en,enterprise-products
+003998_,category,franchise,us,en,laptops
+004011_,category,franchise,us,en,enterprise-products
+004031_,product,franchise,us,en,desktops
+004058_,product,franchise,us,en,desktops
+004065_,document, , ,en,document_
+004094_,product,parent_product_category,us,en,other-product
+004140_,product,franchise,us,en,enterprise-products
+004145_,product,franchise,us,en,desktops
+004147_,product,franchise,us,en,desktops
+004172_,category,parent_product_category,us,en,all-products
+004182_,product,franchise,us,en,enterprise-products
+004203_,product,franchise,us,en,enterprise-products
+004209_,product,franchise,us,en,desktops
+004220_,product,franchise,us,en,cloud-client-computing
+004261_,category,parent_product_category,us,en,all-products
+004279_,product,franchise,us,en,enterprise-products
+004305_,product,franchise,us,en,enterprise-products
+004317_,product,franchise,us,en,cloud-client-computing
+004320_,product,franchise,us,en,software
+004324_,product,franchise,us,en,laptops
+004391_,category,parent_product_category,us,en,software
+004394_,product,franchise,us,en,desktops
+004401_,product,franchise,us,en,laptops
+004406_,category,config_category,us,en,deals
+004471_,document, , ,en,document_
+004506_,category,config_category,us,en,deals
+004540_,product,parent_product_category,us,en,other-product
+004580_,product,franchise,us,en,desktops
+004601_,category,product_category,us,en,enterprise-products
+004613_,document, , ,en,document_
+004636_,product,franchise,us,en,laptops
+004638_,product,franchise,us,en,desktops
+004641_,document, , ,en,document_
+004644_,product,product_category,us,en,dell-tablets
+004670_,product,franchise,us,en,desktops
+004673_,product,franchise,us,en,enterprise-products
+004692_,product,franchise,us,en,laptops
+004716_,product,franchise,us,en,laptops
+004728_, , , ,en,unkowntype_
+004757_,product,franchise,us,en,enterprise-products
+004797_,category,parent_product_category,us,en,all-products
+004808_,product,franchise,us,en,desktops
+004829_,document, , ,en,document_
+004866_,category,parent_product_category,us,en,all-products
+004868_,product,franchise,us,en,enterprise-products
+004872_,product,franchise,us,en,enterprise-products
+004880_,product,franchise,us,en,laptops
+004887_,product,parent_product_category,us,en,other-product
+004924_,category,product_category,us,en,laptops
+004932_,document, , ,it,document_
+004949_,document, , ,en,document_
+004969_,document, , ,en,document_
+005013_,document, , ,en,document_
+005020_,document, , ,en,document_
+005033_, , , ,en,unkowntype_
+005143_,document, , ,en,document_
+005178_,category,product_category,us,en,software
+005242_,category,franchise,us,en,desktops
+005267_,product,franchise,us,en,software
+005301_,product,franchise,us,en,enterprise-products
+005322_,product,franchise,us,en,desktops
+005324_,document, , ,en,document_
+005386_,product,franchise,us,en,laptops
+005397_,product,parent_product_category,us,en,other-product
+005409_,product,franchise,us,en,dell-tablets
+005445_,product,franchise,us,en,enterprise-products
+005453_,document, , ,en,document_
+005485_,product,parent_product_category,us,en,other-product
+005493_,product,franchise,us,en,enterprise-products
+005494_,document, , ,en,document_
+005499_,product,franchise,us,en,laptops
+005507_,product,franchise,us,en,desktops
+005512_,document, , ,en,document_
+005528_,product,franchise,us,en,desktops
+005549_,product,franchise,us,en,enterprise-products
+005565_,product,franchise,us,en,laptops
+005568_,document, , ,en,document_
+005583_,product,franchise,us,en,desktops
+005584_,document, , ,en,document_
+005617_,product,franchise,us,en,laptops
+005658_,product,franchise,us,en,enterprise-products
+005667_,document, , ,en,document_
+005689_,category,franchise,us,en,laptops
+005735_,product,franchise,us,en,desktops
+005738_,category,product_category,us,en,enterprise-products
+005804_,product,franchise,us,en,laptops
+005819_,product,franchise,us,en,laptops
+005872_,product,product_category,us,en,dell-tablets
+005880_,product,franchise,us,en,enterprise-products
+005898_,product,franchise,us,en,laptops
+005901_,document, , ,en,document_
+005926_,product,franchise,us,en,laptops
+005941_,document, , ,en,document_
+005957_,category,product_category,us,en,software
+005964_,product,parent_product_category,us,en,other-product
+005977_,category,franchise,us,en,desktops
+006037_,document, , ,en,document_
+006062_,product,franchise,us,en,laptops
+006109_,document, , ,en,document_
+006121_,product,franchise,us,en,laptops
+006146_,product,franchise,us,en,laptops
+006153_,product,franchise,us,en,desktops
+006169_,category,product_category,us,en,dell-tablets
+006182_,product,franchise,us,en,desktops
+006194_,document, , ,en,document_
+006219_,product,franchise,us,en,enterprise-products
+006221_,document, , ,en,document_
+006225_,product,franchise,us,en,laptops
+006239_,product,franchise,us,en,enterprise-products
+006250_,category,parent_product_category,us,en,all-products
+006253_,product,franchise,us,en,enterprise-products
+006293_,document, , ,en,document_
+006297_,category,franchise,us,en,laptops
+006299_,document, , ,en,document_
+006337_,product,franchise,us,en,laptops
+006341_,document, , ,en,document_
+006399_,document, , ,en,document_
+006428_,product,franchise,us,en,enterprise-products
+006437_,product,franchise,us,en,enterprise-products
+006449_,category,franchise,us,en,enterprise-products
+006507_,product,franchise,us,en,desktops
+006515_,category,parent_product_category,us,en,all-products
+006541_,product,franchise,us,en,laptops
+006566_,product,franchise,us,en,desktops
+006581_,product,franchise,us,en,desktops
+006596_,product,franchise,us,en,cloud-client-computing
+006600_, , , ,en,unkowntype_
+006625_,document, , ,en,document_
+006635_,category,parent_product_category,us,en,all-products
+006645_,product,franchise,us,en,server-storage-solutions
+006655_,document, , ,en,document_
+006670_,product,franchise,us,en,enterprise-products
+006672_,product,franchise,us,en,enterprise-products
+006688_,category,product_category,us,en,other-product
+006694_,product,franchise,us,en,desktops
+006696_,category,franchise,us,en,software
+006699_,product,franchise,us,en,enterprise-products
+006700_,product,franchise,us,en,server-storage-solutions
+006718_,product,franchise,us,en,enterprise-products
+006735_,product,franchise,us,en,enterprise-products
+006742_,product,franchise,us,en,laptops
+006778_,product,franchise,us,en,dell-tablets
+006786_,product,franchise,us,en,enterprise-products
+006828_,document, , ,en,document_
+006850_,category,parent_product_category,us,en,all-products
+006862_,category,product_category,us,en,enterprise-products
+006863_,product,franchise,us,en,enterprise-products
+006885_,document, , ,en,document_
+006908_,product,franchise,us,en,enterprise-products
+006917_,product,franchise,us,en,desktops
+006918_,category,product_category,us,en,desktops
+006931_,document, , ,en,document_
+006938_, , , , ,unkowntype_
+006959_,product,franchise,us,en,laptops
+006988_,product,franchise,us,en,enterprise-products
+006998_,document, , ,en,document_
+007009_,product,franchise,us,en,laptops
+007040_,product,parent_product_category,us,en,other-product
+007050_,product,franchise,us,en,server-storage-solutions
+007068_,document, , ,en,document_
+007080_,document, , ,en,document_
+007129_,category,config_category,us,en,deals
+007137_,product,franchise,us,en,desktops
+007156_,product,franchise,us,en,enterprise-products
+007212_,category,config_category,us,en,deals
+007234_,product,parent_product_category,us,en,other-product
+007335_,document, , ,nl,document_
+007382_,product,parent_product_category,us,en,all-products
+007392_,product,franchise,us,en,enterprise-products
+007393_,category,franchise,us,en,laptops
+007395_,document, , ,en,document_
+007407_,product,franchise,us,en,desktops
+007408_,category,franchise,us,en,enterprise-products
+007423_,product,franchise,us,en,enterprise-products
+007448_,product,franchise,us,en,laptops
+007451_,product,franchise,us,en,desktops
+007486_,category,parent_product_category,us,en,all-products
+007495_,product,franchise,us,en,desktops
+007524_,product,franchise,us,en,enterprise-products
+007526_,product,franchise,us,en,cloud-client-computing
+007628_,product,product_category,us,en,dell-tablets
+007635_,category,parent_product_category,us,en,all-products
+007646_,product,franchise,us,en,laptops
+007691_,product,franchise,us,en,desktops
+007715_,category,parent_product_category,us,en,all-products
+007716_,document, , ,en,document_
+007725_,category,parent_product_category,us,en,all-products
+007745_,product,franchise,us,en,enterprise-products
+007747_,category,product_category,us,en,enterprise-products
+007765_,category,config_category,us,en,deals
+007782_,product,franchise,us,en,desktops
+007787_,product,franchise,us,en,desktops
+007819_,product,franchise,us,en,enterprise-products
+007821_,category,franchise,us,en,desktops
+007824_,document, , ,en,document_
+007857_,product,franchise,us,en,desktops
+007874_,document, , ,en,document_
+007881_,product,franchise,us,en,desktops
+007935_,category,parent_product_category,us,en,all-products
+007973_,product,franchise,us,en,cloud-client-computing
+007984_,category,franchise,us,en,enterprise-products
+008022_,category,product_category,us,en,software
+008024_,product,franchise,us,en,desktops
+008078_,product,franchise,us,en,desktops
+008089_,product,franchise,us,en,laptops
+008097_,product,franchise,us,en,desktops
+008099_,product,franchise,us,en,desktops
+008124_,product,franchise,us,en,enterprise-products
+008159_, , , ,en,unkowntype_
+008169_,document, , ,en,document_
+008183_,document, , ,en,document_
+008191_,document, , ,en,document_
+008231_,category,parent_product_category,us,en,all-products
+008232_,product,parent_product_category,us,en,other-product
+008261_,category,franchise,us,en,enterprise-products
+008334_,product,franchise,us,en,enterprise-products
+008340_,product,franchise,us,en,enterprise-products
+008377_, , , , ,unkowntype_
+008383_,document, , ,en,document_
+008432_,category,parent_product_category,us,en,all-products
+008455_,product,franchise,us,en,desktops
+008464_,product,franchise,us,en,desktops
+008488_,document, , ,en,document_
+008491_,product,franchise,us,en,enterprise-products
+008496_,product,franchise,us,en,laptops
+008573_,product,parent_product_category,us,en,other-product
+008592_,document, , ,en,document_
+008595_,category,product_category,us,en,desktops
+008687_,document, , ,en,document_
+008689_,document, , ,en,document_
+008695_,product,product_category,us,en,dell-tablets
+008733_,product,franchise,us,en,desktops
+008785_,product,franchise,us,en,laptops
+008856_,document, , ,en,document_
+008871_,document, , ,en,document_
+008881_,product,franchise,us,en,enterprise-products
+009007_,document, , ,en,document_
+009009_,product,franchise,us,en,cloud-client-computing
+009049_,category,parent_product_category,us,en,all-products
+009073_,document, , ,en,document_
+009075_,category,franchise,us,en,enterprise-products
+009076_,product,franchise,us,en,enterprise-products
+009079_,product,franchise,us,en,laptops
+009111_,category,product_category,us,en,laptops
+009117_,product,franchise,us,en,desktops
+009126_,product,franchise,us,en,enterprise-products
+009145_,product,franchise,us,en,laptops
+009162_,document, , ,en,document_
+009209_,product,franchise,us,en,server-storage-solutions
+009213_,product,franchise,us,en,laptops
+009221_,product,franchise,us,en,laptops
+009227_,product,franchise,us,en,laptops
+009230_,product,franchise,us,en,laptops
+009255_,product,franchise,us,en,laptops
+009259_,product,franchise,us,en,enterprise-products
+009275_,product,franchise,us,en,desktops
+009280_,product,franchise,us,en,laptops
+009289_,product,franchise,us,en,enterprise-products
+009301_,product,franchise,us,en,enterprise-products
+009314_,product,parent_product_category,us,en,other-product
+009317_,product,franchise,us,en,software
+009325_,product,franchise,us,en,desktops
+009326_,document, , ,en,document_
+009352_,product,franchise,us,en,laptops
+009363_,document, , ,en,document_
+009372_,document, , ,en,document_
+009454_,product,franchise,us,en,enterprise-products
+009463_,product,franchise,us,en,server-storage-solutions
+009478_,category,product_category,us,en,enterprise-products
+009506_,product,franchise,us,en,laptops
+009521_,product,franchise,us,en,enterprise-products
+009601_,document, , ,en,document_
+009610_,product,franchise,us,en,laptops
+009634_,product,franchise,us,en,software
+009647_,document, , ,en,document_
+009756_,document, , ,en,document_
+009811_,document, , ,en,document_
+009831_,document, , ,en,document_
+009842_,product,franchise,us,en,laptops
+009851_,category,parent_product_category,us,en,all-products
+009860_,category,franchise,us,en,enterprise-products
+009987_,document, , ,en,document_
+009991_,product,franchise,us,en,cloud-client-computing
+010020_,product,franchise,us,en,laptops
+010034_,product,franchise,us,en,laptops
+010054_,product,franchise,us,en,desktops
+010056_,product,franchise,us,en,laptops
+010064_,product,franchise,us,en,desktops
+010085_,product,franchise,us,en,enterprise-products
+010092_,document, , ,en,document_
+010103_,product,franchise,us,en,laptops
+010151_,product,franchise,us,en,enterprise-products
+010165_,product,franchise,us,en,enterprise-products
+010188_,product,product_category,us,en,dell-tablets
+010212_,product,franchise,us,en,laptops
+010241_,product,franchise,us,en,desktops
+010251_,category,franchise,us,en,enterprise-products
+010338_,product,franchise,us,en,enterprise-products
+010342_,product,franchise,us,en,desktops
+010347_,category,product_category,us,en,laptops
+010355_,product,franchise,us,en,laptops
+010365_,product,franchise,us,en,laptops
+010385_,product,franchise,us,en,desktops
+010423_,product,franchise,us,en,software
+010435_,product,franchise,us,en,enterprise-products
+010498_,category,franchise,us,en,laptops
+010524_,product,franchise,us,en,laptops
+010536_, , , ,en,unkowntype_
+010554_,product,franchise,us,en,laptops
+010557_,category,parent_product_category,us,en,all-products
+010575_,category,product_category,us,en,enterprise-products
+010580_,document, , ,en,document_
+010592_,category,franchise,us,en,enterprise-products
+010648_,document, , ,en,document_
+010655_,document, , ,en,document_
+010657_,document, , ,en,document_
+010724_,product,franchise,us,en,desktops
+010768_,document, , ,en,document_
+010776_,product,franchise,us,en,enterprise-products
+010779_,category,parent_product_category,us,en,all-products
+010811_,category,product_category,us,en,enterprise-products
+010903_,document, , ,en,document_
+010909_,product,franchise,us,en,laptops
+010978_,category,config_category,us,en,deals
+010986_,category,franchise,us,en,enterprise-products
+011036_, , , ,en,unkowntype_
+011043_,document, , ,en,document_
+011051_,product,franchise,us,en,laptops
+011082_,document, , ,en,document_
+011093_,document, , ,en,document_
+011098_,product,franchise,us,en,desktops
+011148_,product,franchise,us,en,dell-tablets
+011169_,document, , ,en,document_
+011172_,category,product_category,us,en,enterprise-products
+011182_,product,franchise,us,en,laptops
+011183_,product,franchise,us,en,enterprise-products
+011204_, , , ,en,unkowntype_
+011226_,document, , ,en,document_
+011247_,product,franchise,us,en,enterprise-products
+011250_,product,franchise,us,en,enterprise-products
+011254_,product,franchise,us,en,laptops
+011313_, , , ,en,unkowntype_
+011330_,document, , ,en,document_
+011334_,category,parent_product_category,us,en,all-products
+011369_,product,parent_product_category,us,en,other-product
+011372_,product,franchise,us,en,desktops
+011394_,product,franchise,us,en,laptops
+011404_,product,franchise,us,en,laptops
+011409_,product,franchise,us,en,enterprise-products
+011479_,category,franchise,us,en,other-product
+011489_,category,parent_product_category,us,en,all-products
+011509_,category,franchise,us,en,enterprise-products
+011515_,product,franchise,us,en,laptops
+011541_,document, , ,en,document_
+011543_,product,product_category,us,en,dell-tablets
+011551_,product,franchise,us,en,enterprise-products
+011564_, , , , ,unkowntype_
+011610_,product,franchise,us,en,desktops
+011664_,product,franchise,us,en,laptops
+011668_,category,product_category,us,en,enterprise-products
+011686_,category,config_category,us,en,deals
+011817_,product,franchise,us,en,desktops
+011818_, , , ,en,unkowntype_
+011823_,product,franchise,us,en,enterprise-products
+011827_,product,franchise,us,en,enterprise-products
+011838_,document, , ,en,document_
+011856_,product,franchise,us,en,cloud-client-computing
+011858_,category,franchise,us,en,desktops
+011963_,product,franchise,us,en,laptops
+011986_,document, , ,en,document_
+012040_,product,parent_product_category,us,en,other-product
+012081_,product,franchise,us,en,enterprise-products
+012115_,category,config_category,us,en,deals
+012189_,document, , ,en,document_
+012190_,document, , ,de,document_
+012214_,product,franchise,us,en,enterprise-products
+012249_,product,franchise,us,en,enterprise-products
+012268_,category,parent_product_category,us,en,all-products
+012309_,document, , ,en,document_
+012337_,document, , ,en,document_
+012402_,document, , ,en,document_
+012405_,document, , ,en,document_
+012463_,document, , ,en,document_
+012467_,document, , ,en,document_
+012481_,document, , ,en,document_
+012498_,category,parent_product_category,us,en,all-products
+012505_,document, , ,en,document_
+012536_,document, , ,en,document_
+012561_,document, , ,en,document_
+012600_,document, , ,en,document_
+012624_,category,config_category,us,en,deals
+012646_,product,franchise,us,en,laptops
+012663_,product,franchise,us,en,enterprise-products
+012677_,product,franchise,us,en,laptops
+012684_,product,franchise,us,en,dell-tablets
+012685_,product,franchise,us,en,enterprise-products
+012706_,document, , ,en,document_
+012725_,document, , ,en,document_
+012727_,product,franchise,us,en,desktops
+012746_,product,franchise,us,en,desktops
+012750_,product,franchise,us,en,laptops
+012757_,document, , ,en,document_
+012758_,document, , ,en,document_
+012776_,product,franchise,us,en,desktops
+012793_,document, , ,en,document_
+012807_,category,franchise,us,en,laptops
+012813_, , , ,en,unkowntype_
+012846_,document, , ,en,document_
+012848_,product,franchise,us,en,enterprise-products
+012877_,product,franchise,us,en,desktops
+012899_,document, , ,en,document_
+012914_, , , ,en,unkowntype_
+012922_,product,franchise,us,en,enterprise-products
+012942_,product,franchise,us,en,desktops
+012952_, , , ,en,unkowntype_
+012957_,product,franchise,us,en,enterprise-products
+012975_,category,product_category,us,en,software
+013001_, , , ,en,unkowntype_
+013026_,product,franchise,us,en,enterprise-products
+013034_,product,franchise,us,en,laptops
+013050_,product,franchise,us,en,laptops
+013099_,document, , ,en,document_
+013122_,product,franchise,us,en,desktops
+013125_,product,franchise,us,en,laptops
+013132_,product,franchise,us,en,laptops
+013172_,product,franchise,us,en,laptops
+013202_,product,franchise,us,en,desktops
+013205_,document, , ,en,document_
+013214_,category,parent_product_category,us,en,all-products
+013261_, , , ,en,unkowntype_
+013274_,product,franchise,us,en,desktops
+013317_,product,franchise,us,en,desktops
+013390_, , , ,en,unkowntype_
+013443_,product,product_category,us,en,dell-tablets
+013455_,product,franchise,us,en,server-storage-solutions
+013459_,document, , ,en,document_
+013476_,category,franchise,us,en,laptops
+013499_,product,franchise,us,en,desktops
+013508_,product,franchise,us,en,server-storage-solutions
+013550_,document, , ,en,document_
+013595_,document, , ,en,document_
+013597_,product,franchise,us,en,laptops
+013607_,product,franchise,us,en,enterprise-products
+013608_,product,franchise,us,en,desktops
+013617_,category,franchise,us,en,other-product
+013630_,category,product_category,us,en,laptops
+013636_,category,parent_product_category,us,en,all-products
+013679_,product,franchise,us,en,laptops
+013724_,product,franchise,us,en,laptops
+013725_,document, , ,en,document_
+013752_,document, , ,en,document_
+013806_,product,franchise,us,en,desktops
+013823_,category,product_category,us,en,laptops
+013825_,document, , ,en,document_
+013826_,product,franchise,us,en,laptops
+013835_,product,franchise,us,en,desktops
+013848_, , , , ,unkowntype_
+013885_,product,franchise,us,en,desktops
+013911_,category,parent_product_category,us,en,all-products
+013954_,product,franchise,us,en,laptops
+013981_,document, , ,en,document_
+013996_,document, , ,en,document_
+014006_,product,franchise,us,en,cloud-client-computing
+014082_,product,franchise,us,en,laptops
+014126_,product,franchise,us,en,laptops
+014132_,document, , ,en,document_
+014149_,category,product_category,us,en,desktops
+014256_,product,franchise,us,en,laptops
+014262_,product,franchise,us,en,enterprise-products
+014281_,document, , ,en,document_
+014330_,document, , ,en,document_
+014346_,product,franchise,us,en,desktops
+014387_,document, , ,en,document_
+014388_,product,franchise,us,en,laptops
+014403_,product,franchise,us,en,laptops
+014412_,category,parent_product_category,us,en,all-products
+014429_,category,product_category,us,en,enterprise-products
+014453_, , , ,en,unkowntype_
+014473_,product,parent_product_category,us,en,other-product
+014488_,product,franchise,us,en,desktops
+014504_,category,product_category,us,en,enterprise-products
+014525_, , , ,en,unkowntype_
+014536_,category,product_category,us,en,desktops
+014571_,product,franchise,us,en,cloud-client-computing
+014578_,product,franchise,us,en,laptops
+014579_,category,franchise,us,en,enterprise-products
+014583_,category,parent_product_category,us,en,all-products
+014594_,document, , ,en,document_
+014616_, , , , ,unkowntype_
+014630_,product,franchise,us,en,server-storage-solutions
+014672_,product,franchise,us,en,laptops
+014676_,category,config_category,us,en,deals
+014695_,document, , ,en,document_
+014738_,product,franchise,us,en,desktops
+014750_,document, , ,en,document_
+014788_,product,franchise,us,en,software
+014802_, , , ,en,unkowntype_
+014819_,category,config_category,us,en,deals
+014835_,product,parent_product_category,us,en,other-product
+014842_,document, , ,en,document_
+014843_,product,franchise,us,en,enterprise-products
+014877_,product,franchise,us,en,desktops
+014880_,document, , ,en,document_
+014945_,category,franchise,us,en,laptops
+014964_,product,franchise,us,en,enterprise-products
+014981_,product,franchise,us,en,software
+014982_,product,parent_product_category,us,en,other-product
+015062_,category,config_category,us,en,deals
+015179_,product,franchise,us,en,cloud-client-computing
+015181_,document, , ,fr,document_
+015182_, , , ,en,unkowntype_
+015226_,product,franchise,us,en,enterprise-products
+015258_,product,parent_product_category,us,en,other-product
+015304_,product,franchise,us,en,enterprise-products
+015350_, , , ,en,unkowntype_
+015408_,document, , ,en,document_
+015411_,document, , ,en,document_
+015422_,product,franchise,us,en,desktops
+015424_,product,franchise,us,en,desktops
+015429_,product,franchise,us,en,laptops
+015432_,document, , ,en,document_
+015442_,category,parent_product_category,us,en,all-products
+015480_,document, , ,en,document_
+015520_,product,franchise,us,en,cloud-client-computing
+015537_,product,franchise,us,en,desktops
+015542_,product,franchise,us,en,desktops
+015628_,category,franchise,us,en,desktops
+015659_,product,franchise,us,en,laptops
+015693_,product,franchise,us,en,desktops
+015783_,product,franchise,us,en,desktops
+015825_,category,franchise,us,en,laptops
+015862_,product,franchise,us,en,desktops
+015882_,product,franchise,us,en,enterprise-products
+015890_,category,config_category,us,en,deals
+015893_,document, , ,en,document_
+015916_,product,franchise,us,en,laptops
+015949_,product,franchise,us,en,laptops
+015957_,document, , ,sv,document_
+015966_,document, , ,en,document_
+015977_,document, , ,en,document_
+016041_,product,franchise,us,en,laptops
+016101_,category,product_category,us,en,laptops
+016152_,product,franchise,us,en,enterprise-products
+016154_,document, , ,en,document_
+016172_, , , , ,unkowntype_
+016184_,document, , ,en,document_
+016188_,product,franchise,us,en,laptops
+016192_,product,franchise,us,en,desktops
+016196_,document, , ,en,document_
+016249_,product,franchise,us,en,enterprise-products
+016274_,product,franchise,us,en,enterprise-products
+016320_,product,franchise,us,en,desktops
+016327_,product,franchise,us,en,enterprise-products
+016355_,category,config_category,us,en,deals
+016390_,category,product_category,us,en,enterprise-products
+016402_,product,franchise,us,en,enterprise-products
+016410_,category,parent_product_category,us,en,all-products
+016446_,product,franchise,us,en,laptops
+016447_,document, , ,en,document_
+016498_,product,franchise,us,en,laptops
+016533_,product,franchise,us,en,enterprise-products
+016550_,product,franchise,us,en,desktops
+016572_,product,franchise,us,en,desktops
+016601_,document, , ,en,document_
+016605_,document, , ,en,document_
+016611_,document, , ,en,document_
+016619_,document, , ,en,document_
+016630_,product,franchise,us,en,desktops
+016677_,product,franchise,us,en,laptops
+016689_,product,franchise,us,en,desktops
+016710_,category,parent_product_category,us,en,all-products
+016712_, , , , ,unkowntype_
+016720_,product,franchise,us,en,software
+016721_, , , ,en,unkowntype_
+016724_,document, , ,en,document_
+016756_,category,parent_product_category,us,en,all-products
+016757_,document, , ,en,document_
+016775_,category,franchise,us,en,enterprise-products
+016796_,category,product_category,us,en,software
+016845_,document, , ,en,document_
+016898_,document, , ,en,document_
+016906_,product,franchise,us,en,enterprise-products
+016923_,document, , ,en,document_
+016953_,product,franchise,us,en,laptops
+016964_,product,franchise,us,en,enterprise-products
+016968_,document, , ,en,document_
+016976_,document, , ,en,document_
+016986_,document, , ,en,document_
+016996_,product,product_category,us,en,dell-tablets
+017021_,product,franchise,us,en,laptops
+017059_,product,franchise,us,en,desktops
+017060_, , , ,en,unkowntype_
+017063_,document, , ,en,document_
+017078_,product,franchise,us,en,enterprise-products
+017133_,category,config_category,us,en,deals
+017154_,category,parent_product_category,us,en,all-products
+017171_,category,franchise,us,en,enterprise-products
+017184_,product,franchise,us,en,laptops
+017226_,category,franchise,us,en,enterprise-products
+017240_,product,franchise,us,en,desktops
+017302_,document, , ,en,document_
+017317_,document, , ,en,document_
+017333_,product,franchise,us,en,enterprise-products
+017388_,product,franchise,us,en,enterprise-products
+017425_,product,franchise,us,en,desktops
+017429_,product,franchise,us,en,enterprise-products
+017455_,document, , ,en,document_
+017459_,document, , ,en,document_
+017461_,product,franchise,us,en,desktops
+017485_,product,franchise,us,en,enterprise-products
+017496_,document, , ,en,document_
+017522_,product,franchise,us,en,laptops
+017523_,product,franchise,us,en,desktops
+017551_,product,franchise,us,en,enterprise-products
+017575_,document, , ,en,document_
+017585_,document, , ,en,document_
+017589_,product,parent_product_category,us,en,all-products
+017623_,document, , ,en,document_
+017663_,document, , ,nl,document_
+017695_,category,parent_product_category,us,en,all-products
+017707_,product,franchise,us,en,laptops
+017720_,product,franchise,us,en,laptops
+017732_,document, , ,en,document_
+017739_,document, , ,en,document_
+017873_, , , ,en,unkowntype_
+017878_,document, , ,en,document_
+017896_,document, , ,en,document_
+017945_,document, , ,en,document_
+017953_,document, , ,en,document_
+017970_,document, , ,en,document_
+017982_,product,franchise,us,en,laptops
+018035_,document, , ,en,document_
+018068_,document, , ,en,document_
+018081_,document, , ,en,document_
+018098_,document, , ,en,document_
+018123_,document, , ,en,document_
+018159_,product,franchise,us,en,enterprise-products
+018184_,product,franchise,us,en,enterprise-products
+018229_,document, , ,it,document_
+018278_,category,franchise,us,en,software
+018361_,document, , ,en,document_
+018374_,product,franchise,us,en,server-storage-solutions
+018393_,product,franchise,us,en,laptops
+018417_,product,parent_product_category,us,en,other-product
+018447_,document, , ,en,document_
+018478_, , , , ,unkowntype_
+018521_,product,franchise,us,en,desktops
+018525_,product,franchise,us,en,desktops
+018535_,document, , ,en,document_
+018592_,document, , ,en,document_
+018605_,product,franchise,us,en,other-product
+018639_,product,franchise,us,en,enterprise-products
+018740_,product,franchise,us,en,desktops
+018764_,document, , ,en,document_
+018765_,document, , ,en,document_
+018804_,product,franchise,us,en,desktops
+018830_,product,franchise,us,en,laptops
+018872_,document, , ,en,document_
+018875_,product,franchise,us,en,enterprise-products
+018876_,product,franchise,us,en,enterprise-products
+018895_,product,franchise,us,en,enterprise-products
+018944_,document, , ,en,document_
+018992_,document, , ,en,document_
+019000_,product,franchise,us,en,laptops
+019040_,document, , ,en,document_
+019074_,category,franchise,us,en,other-product
+019120_,document, , ,en,document_
+019243_,document, , ,en,document_
+019270_,product,franchise,us,en,enterprise-products
+019300_,product,franchise,us,en,enterprise-products
+019322_,product,franchise,us,en,desktops
+019334_, , , ,en,unkowntype_
+019340_,product,franchise,us,en,laptops
+019355_,category,product_category,us,en,enterprise-products
+019356_,category,parent_product_category,us,en,all-products
+019368_,document, , ,en,document_
+019398_,document, , ,en,document_
+019403_,document, , ,en,document_
+019413_,category,parent_product_category,us,en,all-products
+019436_,product,franchise,us,en,desktops
+019468_,product,franchise,us,en,desktops
+019506_,document, , ,en,document_
+019531_,document, , ,en,document_
+019556_,category,franchise,us,en,desktops
+019564_,document, , ,en,document_
+019600_,document, , ,en,document_
+019611_,document, , ,en,document_
+019678_,product,franchise,us,en,desktops
+019689_,product,franchise,us,en,enterprise-products
+019698_,category,franchise,us,en,enterprise-products
+019703_,product,parent_product_category,us,en,other-product
+019728_,product,franchise,us,en,laptops
+019752_,product,franchise,us,en,desktops
+019818_,product,franchise,us,en,enterprise-products
+019852_,product,franchise,us,en,enterprise-products
+019864_,category,product_category,us,en,dell-tablets
+019959_,product,franchise,us,en,desktops
+019994_,product,parent_product_category,us,en,other-product
+020000_,product,franchise,us,en,desktops
+020002_, , , , ,unkowntype_
+020015_,product,franchise,us,en,desktops
+020033_,document, , ,en,document_
+020048_,product,franchise,us,en,enterprise-products
+020059_, , , ,en,unkowntype_
+020060_,document, , ,en,document_
+020091_,document, , ,en,document_
+020116_,category,product_category,us,en,enterprise-products
+020118_,document, , ,en,document_
+020170_,product,franchise,us,en,laptops
+020173_,document, , ,en,document_
+020178_,product,franchise,us,en,desktops
+020179_,product,franchise,us,en,software
+020181_,product,franchise,us,en,desktops
+020206_,product,franchise,us,en,software
+020209_,product,franchise,us,en,desktops
+020211_,product,product_category,us,en,dell-tablets
+020216_,product,franchise,us,en,desktops
+020218_,product,franchise,us,en,desktops
+020222_,product,franchise,us,en,server-storage-solutions
+020234_,product,franchise,us,en,server-storage-solutions
+020237_,product,franchise,us,en,desktops
+020248_,product,franchise,us,en,laptops
+020278_,document, , ,en,document_
+020311_,product,franchise,us,en,desktops
+020359_,document, , ,en,document_
+020368_,document, , ,en,document_
+020394_,product,franchise,us,en,server-storage-solutions
+020444_,category,franchise,us,en,enterprise-products
+020453_,category,parent_product_category,us,en,all-products
+020471_,document, , ,en,document_
+020476_,document, , ,en,document_
+020491_,product,franchise,us,en,enterprise-products
+020495_, , , ,en,unkowntype_
+020501_,product,franchise,us,en,laptops
+020516_,document, , ,en,document_
+020526_,document, , ,en,document_
+020535_, , , ,en,unkowntype_
+020552_,document, , ,en,document_
+020556_,product,franchise,us,en,cloud-client-computing
+020576_,category,parent_product_category,us,en,all-products
+020640_,product,franchise,us,en,server-storage-solutions
+020643_,document, , ,en,document_
+020660_,product,franchise,us,en,desktops
+020667_,product,franchise,us,en,enterprise-products
+020683_,product,franchise,us,en,enterprise-products
+020699_,category,parent_product_category,us,en,all-products
+020745_,product,parent_product_category,us,en,other-product
+020774_,document, , ,en,document_
+020782_,product,franchise,us,en,laptops
+020805_,document, , ,en,document_
+020807_,product,franchise,us,en,enterprise-products
+020817_,document, , ,en,document_
+020884_,category,parent_product_category,us,en,all-products
+020907_,category,config_category,us,en,deals
+020909_,product,franchise,us,en,desktops
+020912_, , , ,en,unkowntype_
+020950_,category,config_category,us,en,deals
+020958_,document, , ,en,document_
+020984_,category,config_category,us,en,other-product
+021005_,category,config_category,us,en,deals
+021019_,product,franchise,us,en,enterprise-products
+021024_,product,franchise,us,en,enterprise-products
+021058_, , , ,en,unkowntype_
+021081_,product,franchise,us,en,laptops
+021111_,product,franchise,us,en,enterprise-products
+021118_,category,franchise,us,en,software
+021185_,category,franchise,us,en,software
+021216_,document, , ,en,document_
+021242_,product,franchise,us,en,cloud-client-computing
+021268_,product,franchise,us,en,laptops
+021273_,document, , ,en,document_
+021335_,document, , ,en,document_
+021380_,product,franchise,us,en,laptops
+021385_,product,franchise,us,en,desktops
+021402_,document, , ,en,document_
+021411_,product,franchise,us,en,laptops
+021418_,product,franchise,us,en,software
+021433_, , , , ,unkowntype_
+021448_,product,franchise,us,en,desktops
+021483_,product,franchise,us,en,server-storage-solutions
+021489_, , , , ,unkowntype_
+021496_,product,franchise,us,en,enterprise-products
+021498_,product,franchise,us,en,enterprise-products
+021519_,category,parent_product_category,us,en,all-products
+021619_,document, , ,en,document_
+021636_,product,franchise,us,en,enterprise-products
+021668_,document, , ,en,document_
+021693_,category,config_category,us,en,deals
+021700_,product,franchise,us,en,desktops
+021734_,product,franchise,us,en,enterprise-products
+021777_,category,franchise,us,en,desktops
+021786_,product,product_category,us,en,dell-tablets
+021822_,product,franchise,us,en,software
+021830_,product,franchise,us,en,enterprise-products
+021835_,document, , ,en,document_
+021858_,product,franchise,us,en,desktops
+021945_,product,franchise,us,en,enterprise-products
+021968_,document, , ,en,document_
+021975_,product,franchise,us,en,desktops
+021978_,category,franchise,us,en,enterprise-products
+022097_,product,franchise,us,en,enterprise-products
+022171_,product,franchise,us,en,laptops
+022221_,product,franchise,us,en,desktops
+022277_,product,franchise,us,en,desktops
+022316_,document, , ,en,document_
+022340_,product,franchise,us,en,laptops
+022345_,document, , ,en,document_
+022349_,category,parent_product_category,us,en,all-products
+022377_,product,franchise,us,en,desktops
+022402_,document, , ,en,document_
+022408_,document, , ,en,document_
+022452_, , , ,en,unkowntype_
+022453_,document, , ,en,document_
+022464_,product,franchise,us,en,desktops
+022466_,product,franchise,us,en,laptops
+022476_,product,franchise,us,en,laptops
+022480_,product,franchise,us,en,laptops
+022481_,product,franchise,us,en,desktops
+022522_,product,franchise,us,en,laptops
+022558_,product,parent_product_category,us,en,other-product
+022570_,category,franchise,us,en,laptops
+022606_,product,franchise,us,en,server-storage-solutions
+022615_,document, , ,en,document_
+022618_,category,config_category,us,en,deals
+022622_,category,parent_product_category,us,en,all-products
+022655_,category,product_category,us,en,laptops
+022660_,product,franchise,us,en,laptops
+022667_,product,franchise,us,en,desktops
+022725_,category,parent_product_category,us,en,all-products
+022752_,product,franchise,us,en,desktops
+022759_,category,parent_product_category,us,en,all-products
+022837_,product,franchise,us,en,enterprise-products
+022839_,document, , ,en,document_
+022875_,category,franchise,us,en,enterprise-products
+022878_,product,franchise,us,en,enterprise-products
+022885_,product,franchise,us,en,laptops
+022892_,product,franchise,us,en,laptops
+022970_,product,franchise,us,en,cloud-client-computing
+022971_,product,franchise,us,en,laptops
+022986_,product,franchise,us,en,enterprise-products
+023008_,category,config_category,us,en,deals
+023022_,product,parent_product_category,us,en,other-product
+023031_,product,franchise,us,en,laptops
+023035_,product,franchise,us,en,desktops
+023039_,category,parent_product_category,us,en,all-products
+023058_,category,parent_product_category,us,en,all-products
+023072_,product,franchise,us,en,enterprise-products
+023105_,product,franchise,us,en,desktops
+023155_,document, , ,en,document_
+023177_,product,franchise,us,en,cloud-client-computing
+023194_,document, , ,en,document_
+023199_,document, , ,en,document_
+023244_,category,config_category,us,en,deals
+023249_,product,franchise,us,en,laptops
+023275_,category,franchise,us,en,enterprise-products
+023279_,product,franchise,us,en,enterprise-products
+023285_,category,parent_product_category,us,en,all-products
+023288_,product,franchise,us,en,desktops
+023295_,product,franchise,us,en,laptops
+023370_,category,product_category,us,en,enterprise-products
+023389_,category,franchise,us,en,laptops
+023410_,document, , ,en,document_
+023442_,document, , ,en,document_
+023480_,product,franchise,us,en,laptops
+023512_, , , ,en,unkowntype_
+023525_,category,config_category,us,en,deals
+023557_,document, , ,en,document_
+023558_,document, , ,en,document_
+023571_,category,config_category,us,en,deals
+023575_,product,franchise,us,en,enterprise-products
+023593_,product,parent_product_category,us,en,other-product
+023625_,product,franchise,us,en,desktops
+023633_,product,franchise,us,en,software
+023659_,product,franchise,us,en,laptops
+023739_,product,franchise,us,en,laptops
+023793_,document, , ,en,document_
+023799_,document, , ,en,document_
+023802_,product,franchise,us,en,desktops
+023806_,product,franchise,us,en,enterprise-products
+023811_,product,franchise,us,en,laptops
+023816_,document, , ,en,document_
+023820_,category,franchise,us,en,enterprise-products
+023837_,category,parent_product_category,us,en,all-products
+023872_,product,franchise,us,en,desktops
+023898_,document, , ,en,document_
+023917_,product,franchise,us,en,laptops
+023920_,product,franchise,us,en,laptops
+023927_,category,config_category,us,en,deals
+023939_,document, , ,en,document_
+023975_,category,franchise,us,en,enterprise-products
+023982_,category,product_category,us,en,enterprise-products
+023983_,category,franchise,us,en,laptops
+024053_,document, , ,fr,document_
+024073_,document, , ,en,document_
+024077_,product,franchise,us,en,desktops
+024096_,product,franchise,us,en,laptops
+024097_,document, , ,en,document_
+024132_, , , ,en,unkowntype_
+024142_,product,franchise,us,en,desktops
+024158_,document, , ,en,document_
+024171_,document, , ,en,document_
+024206_,product,franchise,us,en,laptops
+024227_,category,product_category,us,en,laptops
+024229_,product,franchise,us,en,enterprise-products
+024251_,product,franchise,us,en,enterprise-products
+024269_,product,franchise,us,en,server-storage-solutions
+024272_,document, , ,en,document_
+024285_,product,franchise,us,en,desktops
+024300_,document, , ,en,document_
+024347_,product,franchise,us,en,enterprise-products
+024353_,product,franchise,us,en,desktops
+024362_,category,parent_product_category,us,en,all-products
+024445_,product,franchise,us,en,laptops
+024498_,product,franchise,us,en,desktops
+024524_,product,franchise,us,en,laptops
+024525_,product,parent_product_category,us,en,other-product
+024581_,product,franchise,us,en,enterprise-products
+024589_,product,franchise,us,en,desktops
+024684_,category,parent_product_category,us,en,all-products
+024734_,category,product_category,us,en,laptops
+024735_,product,franchise,us,en,enterprise-products
+024753_,product,franchise,us,en,laptops
+024756_,product,franchise,us,en,laptops
+024782_,category,parent_product_category,us,en,all-products
+024830_,product,franchise,us,en,desktops
+024842_,product,franchise,us,en,desktops
+024848_,category,config_category,us,en,deals
+024900_,document, , ,en,document_
+024911_,product,franchise,us,en,laptops
+024941_,document, , ,en,document_
+024945_,product,franchise,us,en,desktops
+024979_,document, , ,en,document_
+025009_,product,franchise,us,en,desktops
+025044_,product,franchise,us,en,cloud-client-computing
+025061_,document, , ,en,document_
+025071_,product,franchise,us,en,laptops
+025086_,document, , ,en,document_
+025112_,product,franchise,us,en,laptops
+025140_,product,parent_product_category,us,en,other-product
+025155_,document, , ,en,document_
+025207_,product,franchise,us,en,desktops
+025246_,product,franchise,us,en,enterprise-products
+025252_,category,parent_product_category,us,en,all-products
+025257_,document, , ,en,document_
+025258_,product,franchise,us,en,laptops
+025288_,document, , ,en,document_
+025305_,document, , ,de,document_
+025336_,category,franchise,us,en,software
+025349_,document, , ,en,document_
+025377_,category,parent_product_category,us,en,all-products
+025410_,document, , ,en,document_
+025421_,document, , ,en,document_
+025458_,product,franchise,us,en,software
+025466_,product,franchise,us,en,dell-tablets
+025477_,product,franchise,us,en,desktops
+025484_,category,config_category,us,en,deals
+025525_,product,franchise,us,en,software
+025531_,document, , ,en,document_
+025545_, , , ,en,unkowntype_
+025557_,category,parent_product_category,us,en,all-products
+025574_,product,franchise,us,en,enterprise-products
+025607_,category,parent_product_category,us,en,all-products
+025611_, , , ,en,unkowntype_
+025676_,category,product_category,us,en,dell-tablets
+025685_,product,franchise,us,en,laptops
+025737_,product,franchise,us,en,enterprise-products
+025760_,document, , ,en,document_
+025769_,product,franchise,us,en,desktops
+025785_,document, , ,en,document_
+025821_,product,franchise,us,en,enterprise-products
+025904_,product,parent_product_category,us,en,other-product
+025916_,product,franchise,us,en,enterprise-products
+025943_,product,parent_product_category,us,en,other-product
+025983_, , , , ,unkowntype_
+025990_,product,franchise,us,en,enterprise-products
+026021_,product,franchise,us,en,desktops
+026041_,product,franchise,us,en,laptops
+026079_,document, , ,en,document_
+026081_,document, , ,en,document_
+026096_,product,franchise,us,en,laptops
+026106_,product,franchise,us,en,desktops
+026136_,category,franchise,us,en,desktops
+026182_, , , ,en,unkowntype_
+026206_,document, , ,en,document_
+026222_,product,franchise,us,en,enterprise-products
+026246_,category,parent_product_category,us,en,all-products
+026260_,document, , ,en,document_
+026262_,product,franchise,us,en,laptops
+026269_,document, , ,en,document_
+026292_,product,franchise,us,en,cloud-client-computing
+026301_,product,franchise,us,en,enterprise-products
+026322_,document, , ,en,document_
+026325_,category,config_category,us,en,deals
+026341_,document, , ,en,document_
+026350_,category,config_category,us,en,other-product
+026391_,product,franchise,us,en,enterprise-products
+026494_,document, , ,en,document_
+026516_,product,franchise,us,en,enterprise-products
+026580_,product,franchise,us,en,enterprise-products
+026581_,product,franchise,us,en,laptops
+026657_,product,franchise,us,en,laptops
+026709_,category,franchise,us,en,enterprise-products
+026715_,product,franchise,us,en,desktops
+026756_,product,franchise,us,en,enterprise-products
+026783_,product,franchise,us,en,enterprise-products
+026787_,document, , ,en,document_
+026805_,product,franchise,us,en,server-storage-solutions
+026840_,category,parent_product_category,us,en,all-products
+026881_,category,parent_product_category,us,en,all-products
+026890_,product,franchise,us,en,desktops
+026907_,product,franchise,us,en,laptops
+026952_,product,franchise,us,en,cloud-client-computing
+026954_,category,product_category,us,en,other-product
+026958_,category,franchise,us,en,software
+026971_,document, , ,en,document_
+026988_,document, , ,en,document_
+026999_,category,parent_product_category,us,en,all-products
+027007_,product,franchise,us,en,enterprise-products
+027024_,product,franchise,us,en,desktops
+027050_, , , ,en,unkowntype_
+027069_,document, , ,en,document_
+027092_,product,franchise,us,en,desktops
+027111_,document, , ,en,document_
+027119_,product,franchise,us,en,software
+027124_,product,franchise,us,en,enterprise-products
+027207_,document, , ,en,document_
+027215_,product,franchise,us,en,desktops
+027251_,category,franchise,us,en,other-product
+027273_,document, , ,en,document_
+027283_,product,franchise,us,en,laptops
+027290_, , , , ,unkowntype_
+027326_,product,franchise,us,en,laptops
+027341_,product,franchise,us,en,desktops
+027360_,product,franchise,us,en,laptops
+027399_,document, , ,en,document_
+027401_,document, , ,en,document_
+027406_,document, , ,en,document_
+027438_,document, , ,en,document_
+027485_,product,product_category,us,en,dell-tablets
+027501_,document, , ,en,document_
+027520_,product,product_category,us,en,dell-tablets
+027537_,product,parent_product_category,us,en,other-product
+027590_,category,config_category,us,en,deals
+027618_,product,franchise,us,en,enterprise-products
+027636_,category,config_category,us,en,deals
+027687_,product,franchise,us,en,laptops
+027704_,category,parent_product_category,us,en,all-products
+027730_,product,franchise,us,en,enterprise-products
+027743_,product,franchise,us,en,software
+027752_,document, , ,en,document_
+027780_, , , ,en,unkowntype_
+027791_,product,franchise,us,en,laptops
+027799_,product,franchise,us,en,enterprise-products
+027811_,document, , ,en,document_
+027813_,document, , ,en,document_
+027875_,document, , ,en,document_
+027930_,product,franchise,us,en,laptops
+027943_,product,franchise,us,en,desktops
+027960_,product,franchise,us,en,software
+027962_,product,franchise,us,en,software
+027978_,document, , ,en,document_
+027993_,product,franchise,us,en,laptops
+028006_,category,product_category,us,en,desktops
+028020_,product,franchise,us,en,desktops
+028057_,product,franchise,us,en,enterprise-products
+028089_,document, , ,en,document_
+028142_,product,franchise,us,en,laptops
+028153_,document, , ,en,document_
+028162_,product,franchise,us,en,other-product
+028218_,category,parent_product_category,us,en,all-products
+028274_,document, , ,en,document_
+028355_,category,product_category,us,en,laptops
+028392_,category,parent_product_category,us,en,all-products
+028425_,product,franchise,us,en,desktops
+028455_,category,product_category,us,en,other-product
+028465_,product,product_category,us,en,dell-tablets
+028467_,product,franchise,us,en,desktops
+028472_,document, , ,en,document_
+028542_,document, , ,nl,document_
+028616_,product,franchise,us,en,desktops
+028622_,category,parent_product_category,us,en,all-products
+028639_,document, , ,en,document_
+028770_,product,franchise,us,en,laptops
+028829_,product,franchise,us,en,laptops
+028839_,product,franchise,us,en,enterprise-products
+028860_,category,product_category,us,en,enterprise-products
+028891_,category,franchise,us,en,other-product
+028938_, , , ,en,unkowntype_
+028944_,category,product_category,us,en,laptops
+028992_,category,franchise,us,en,software
+029027_,product,franchise,us,en,enterprise-products
+029118_,product,franchise,us,en,laptops
+029123_,product,franchise,us,en,laptops
+029137_, , , ,en,unkowntype_
+029152_,product,franchise,us,en,desktops
+029206_,product,franchise,us,en,software
+029234_,category,parent_product_category,us,en,all-products
+029236_,category,product_category,us,en,enterprise-products
+029240_,product,franchise,us,en,desktops
+029244_,document, , ,en,document_
+029257_,document, , ,en,document_
+029267_,product,franchise,us,en,laptops
+029269_,product,product_category,us,en,dell-tablets
+029273_,document, , ,en,document_
+029363_, , , ,en,unkowntype_
+029420_,product,franchise,us,en,laptops
+029423_,product,franchise,us,en,laptops
+029494_,document, , ,en,document_
+029501_,product,franchise,us,en,enterprise-products
+029549_,document, , ,en,document_
+029568_,product,franchise,us,en,desktops
+029570_,document, , ,en,document_
+029575_,document, , ,en,document_
+029582_,product,product_category,us,en,dell-tablets
+029591_,product,franchise,us,en,server-storage-solutions
+029592_,product,franchise,us,en,enterprise-products
+029610_,category,parent_product_category,us,en,all-products
+029645_,product,franchise,us,en,desktops
+029656_,product,franchise,us,en,laptops
+029669_,category,parent_product_category,us,en,all-products
+029683_,category,config_category,us,en,deals
+029697_,product,franchise,us,en,desktops
+029701_,product,franchise,us,en,enterprise-products
+029704_,document, , ,en,document_
+029708_,category,parent_product_category,us,en,all-products
+029744_,category,franchise,us,en,software
+029750_,product,franchise,us,en,laptops
+029753_,product,franchise,us,en,desktops
+029802_,product,franchise,us,en,desktops
+029813_, , , ,en,unkowntype_
+029828_, , , ,en,unkowntype_
+029831_,document, , ,en,document_
+029834_,document, , ,en,document_
+029850_,product,franchise,us,en,laptops
+029855_, , , , ,unkowntype_
+029875_,product,franchise,us,en,enterprise-products
+029906_,product,franchise,us,en,laptops
+029938_,category,franchise,us,en,laptops
+029968_,product,franchise,us,en,laptops
+029973_,document, , ,en,document_
+029996_,product,franchise,us,en,desktops
+029999_,document, , ,en,document_
+030027_,product,franchise,us,en,enterprise-products
+030071_,category,config_category,us,en,deals
+030072_, , , ,en,unkowntype_
+030075_,document, , ,en,document_
+030124_,product,franchise,us,en,laptops
+030149_,category,config_category,us,en,deals
+030152_,document, , ,en,document_
+030163_,document, , ,en,document_
+030210_,product,franchise,us,en,enterprise-products
+030234_, , , ,en,unkowntype_
+030238_,document, , ,en,document_
+030254_,category,parent_product_category,us,en,all-products
+030352_,document, , ,en,document_
+030378_,document, , ,en,document_
+030388_,product,parent_product_category,us,en,all-products
+030414_,product,franchise,us,en,laptops
+030432_,product,franchise,us,en,software
+030457_, , , ,en,unkowntype_
+030645_,product,franchise,us,en,desktops
+030700_,product,franchise,us,en,enterprise-products
+030711_,category,franchise,us,en,laptops
+030721_,product,franchise,us,en,enterprise-products
+030740_,product,franchise,us,en,desktops
+030760_,category,franchise,us,en,enterprise-products
+030761_, , , ,en,unkowntype_
+030763_,product,franchise,us,en,laptops
+030767_,document, , ,en,document_
+030827_,category,product_category,us,en,laptops
+030880_,document, , ,en,document_
+030890_,product,franchise,us,en,laptops
+030925_,document, , ,en,document_
+030943_,product,franchise,us,en,laptops
+030970_,category,franchise,us,en,enterprise-products
+030979_,product,franchise,us,en,laptops
+031009_,document, , ,en,document_
+031031_,document, , ,en,document_
+031035_,product,franchise,us,en,desktops
+031064_,document, , ,en,document_
+031076_,document, , ,en,document_
+031090_,product,franchise,us,en,laptops
+031117_,document, , ,en,document_
+031151_, , , ,en,unkowntype_
+031188_,product,franchise,us,en,desktops
+031193_,document, , ,en,document_
+031204_,product,franchise,us,en,desktops
+031211_,category,parent_product_category,us,en,all-products
+031279_,category,product_category,us,en,laptops
+031293_, , , ,en,unkowntype_
+031333_,product,franchise,us,en,desktops
+031336_,document, , ,en,document_
+031339_,product,franchise,us,en,desktops
+031449_, , , ,en,unkowntype_
+031468_,product,franchise,us,en,enterprise-products
+031473_, , , , ,unkowntype_
+031489_,category,config_category,us,en,deals
+031513_,document, , ,en,document_
+031516_,category,product_category,us,en,laptops
+031521_,category,product_category,us,en,enterprise-products
+031527_,document, , ,en,document_
+031528_, , , , ,unkowntype_
+031538_,category,parent_product_category,us,en,all-products
+031584_,document, , ,en,document_
+031594_,document, , ,en,document_
+031601_,document, , ,en,document_
+031610_,product,franchise,us,en,laptops
+031693_,document, , ,en,document_
+031700_,product,franchise,us,en,enterprise-products
+031716_,category,franchise,us,en,enterprise-products
+031799_,product,franchise,us,en,desktops
+031810_,product,franchise,us,en,software
+031824_,product,franchise,us,en,desktops
+031827_,product,franchise,us,en,desktops
+031829_,product,franchise,us,en,enterprise-products
+031858_,category,parent_product_category,us,en,all-products
+031864_,product,franchise,us,en,desktops
+031898_,document, , ,en,document_
+031905_,document, , ,en,document_
+031965_,product,franchise,us,en,laptops
+032029_,product,parent_product_category,us,en,other-product
+032066_,category,parent_product_category,us,en,all-products
+032069_,product,franchise,us,en,enterprise-products
+032071_,product,parent_product_category,us,en,other-product
+032075_, , , ,en,unkowntype_
+032088_,category,franchise,us,en,laptops
+032115_,product,franchise,us,en,server-storage-solutions
+032143_,category,config_category,us,en,deals
+032146_,product,franchise,us,en,enterprise-products
+032167_,category,parent_product_category,us,en,all-products
+032186_,document, , ,en,document_
+032199_,document, , ,en,document_
+032242_,product,franchise,us,en,desktops
+032256_,product,franchise,us,en,laptops
+032273_,document, , ,en,document_
+032313_,product,franchise,us,en,enterprise-products
+032320_,product,franchise,us,en,desktops
+032356_,document, , ,en,document_
+032423_,category,franchise,us,en,laptops
+032425_,document, , ,en,document_
+032436_,product,franchise,us,en,cloud-client-computing
+032470_,product,franchise,us,en,laptops
+032479_,product,franchise,us,en,enterprise-products
+032498_,document, , ,en,document_
+032528_,product,franchise,us,en,desktops
+032554_,product,franchise,us,en,desktops
+032597_,product,franchise,us,en,desktops
+032632_,document, , ,en,document_
+032638_,document, , ,en,document_
+032739_,category,franchise,us,en,software
+032765_,product,franchise,us,en,desktops
+032778_,product,franchise,us,en,server-storage-solutions
+032783_,product,franchise,us,en,software
+032791_,product,product_category,us,en,dell-tablets
+032806_,product,franchise,us,en,laptops
+032854_,product,franchise,us,en,dell-tablets
+032858_,category,parent_product_category,us,en,all-products
+032954_,product,franchise,us,en,dell-tablets
+032955_,category,franchise,us,en,desktops
+032963_,document, , ,en,document_
+032969_,category,parent_product_category,us,en,all-products
+032973_,document, , ,en,document_
+033002_,product,franchise,us,en,desktops
+033011_,category,parent_product_category,us,en,all-products
+033093_, , , ,en,unkowntype_
+033102_,product,franchise,us,en,dell-tablets
+033144_,product,franchise,us,en,enterprise-products
+033147_,product,franchise,us,en,laptops
+033162_,document, , ,en,document_
+033198_, , , ,en,unkowntype_
+033203_,category,parent_product_category,us,en,all-products
+033230_,product,franchise,us,en,laptops
+033255_,product,franchise,us,en,software
+033265_,category,config_category,us,en,deals
+033267_,category,config_category,us,en,deals
+033307_,document, , ,en,document_
+033322_,document, , ,en,document_
+033328_,document, , ,en,document_
+033355_,product,franchise,us,en,laptops
+033385_,document, , ,en,document_
+033393_,document, , ,en,document_
+033431_,product,franchise,us,en,cloud-client-computing
+033446_,category,franchise,us,en,enterprise-products
+033464_, , , ,en,unkowntype_
+033491_,document, , ,en,document_
+033523_,document, , ,en,document_
+033525_,document, , ,en,document_
+033600_,product,franchise,us,en,cloud-client-computing
+033632_,product,franchise,us,en,desktops
+033719_,product,franchise,us,en,software
+033727_,document, , ,en,document_
+033741_,category,parent_product_category,us,en,all-products
+033753_,product,franchise,us,en,desktops
+033754_,product,parent_product_category,us,en,other-product
+033756_,document, , ,en,document_
+033811_,category,parent_product_category,us,en,all-products
+033812_, , , ,en,unkowntype_
+033885_, , , ,en,unkowntype_
+033932_,product,franchise,us,en,laptops
+033945_,product,franchise,us,en,server-storage-solutions
+033973_,product,franchise,us,en,laptops
+033995_,document, , ,en,document_
+034008_,product,franchise,us,en,laptops
+034026_,product,franchise,us,en,laptops
+034035_,category,parent_product_category,us,en,all-products
+034036_,product,franchise,us,en,laptops
+034042_,document, , ,en,document_
+034050_,product,franchise,us,en,laptops
+034093_,product,franchise,us,en,enterprise-products
+034125_,product,franchise,us,en,enterprise-products
+034170_,document, , ,en,document_
+034175_,document, , ,en,document_
+034177_,product,franchise,us,en,desktops
+034219_,category,parent_product_category,us,en,all-products
+034295_,document, , ,en,document_
+034298_,product,franchise,us,en,cloud-client-computing
+034321_,category,product_category,us,en,software
+034374_, , , ,en,unkowntype_
+034397_,category,franchise,us,en,software
+034409_,document, , ,en,document_
+034502_,product,franchise,us,en,desktops
+034529_,category,product_category,us,en,desktops
+034578_,product,franchise,us,en,enterprise-products
+034580_,document, , ,en,document_
+034679_,document, , ,en,document_
+034680_,document, , ,en,document_
+034706_, , , ,en,unkowntype_
+034767_,category,franchise,us,en,software
+034783_,product,franchise,us,en,desktops
+034790_,category,parent_product_category,us,en,all-products
+034832_, , , , ,unkowntype_
+034877_,category,parent_product_category,us,en,all-products
+034888_,category,parent_product_category,us,en,all-products
+034890_,document, , ,en,document_
+034946_,product,franchise,us,en,enterprise-products
+034951_,product,franchise,us,en,desktops
+035032_,document, , ,en,document_
+035088_, , , , ,unkowntype_
+035111_,category,product_category,us,en,enterprise-products
+035124_,product,franchise,us,en,laptops
+035141_,category,product_category,us,en,other-product
+035148_,document, , ,en,document_
+035151_,product,franchise,us,en,desktops
+035161_,category,config_category,us,en,deals
+035166_,category,config_category,us,en,deals
+035180_,product,franchise,us,en,laptops
+035187_,product,franchise,us,en,enterprise-products
+035214_,product,franchise,us,en,desktops
+035242_,product,franchise,us,en,software
+035288_,product, ,us,en,other-product
+035343_,product,franchise,us,en,desktops
+035397_,document, , ,en,document_
+035419_,product,franchise,us,en,cloud-client-computing
+035434_,category,product_category,us,en,enterprise-products
+035436_,product,franchise,us,en,desktops
+035448_,document, , ,en,document_
+035471_,product,franchise,us,en,laptops
+035477_,product,franchise,us,en,enterprise-products
+035488_,document, , ,en,document_
+035490_,document, , ,en,document_
+035537_,document, , ,en,document_
+035578_,category,parent_product_category,us,en,all-products
+035582_,product,franchise,us,en,cloud-client-computing
+035615_, , , ,en,unkowntype_
+035618_,product,franchise,us,en,laptops
+035705_,document, , ,en,document_
+035717_,document, , ,en,document_
+035721_,document, , ,en,document_
+035775_,category,franchise,us,en,desktops
+035784_,document, , ,en,document_
+035812_,product,franchise,us,en,desktops
+035880_,document, , ,en,document_
+035905_,product,franchise,us,en,laptops
+035932_,category,config_category,us,en,deals
+035964_, , , ,en,unkowntype_
+035979_,document, , ,en,document_
+035981_,product,franchise,us,en,software
+036038_,document, , ,en,document_
+036040_,product,franchise,us,en,enterprise-products
+036049_,category,product_category,us,en,software
+036096_,product,franchise,us,en,enterprise-products
+036103_,document, , ,en,document_
+036144_,product,franchise,us,en,desktops
+036166_,product,franchise,us,en,desktops
+036167_,product,franchise,us,en,enterprise-products
+036180_,product,franchise,us,en,desktops
+036182_,category,config_category,us,en,other-product
+036186_,product,franchise,us,en,enterprise-products
+036220_,category,config_category,us,en,deals
+036266_,product,franchise,us,en,laptops
+036268_,document, , ,en,document_
+036287_, , , ,en,unkowntype_
+036327_,document, , ,en,document_
+036371_,product,franchise,us,en,enterprise-products
+036386_,category,product_category,us,en,dell-tablets
+036444_, , , ,en,unkowntype_
+036493_,document, , ,en,document_
+036509_,document, , ,en,document_
+036512_,product,franchise,us,en,laptops
+036523_,category,config_category,us,en,deals
+036554_,product,franchise,us,en,laptops
+036556_,product,franchise,us,en,enterprise-products
+036582_,product,franchise,us,en,desktops
+036586_,product,franchise,us,en,desktops
+036598_,document, , ,en,document_
+036638_, , , ,en,unkowntype_
+036648_,category,franchise,us,en,enterprise-products
+036700_,document, , ,en,document_
+036813_,document, , ,en,document_
+036823_,product,franchise,us,en,desktops
+036836_,category,config_category,us,en,deals
+036842_,document, , ,en,document_
+036843_,product,franchise,us,en,enterprise-products
+036855_,category,parent_product_category,us,en,all-products
+036858_, , , ,en,unkowntype_
+036880_,document, , ,en,document_
+036932_,product,franchise,us,en,enterprise-products
+036935_,document, , ,en,document_
+036996_,product,franchise,us,en,laptops
+037029_,document, , ,en,document_
+037053_,product,franchise,us,en,laptops
+037067_,document, , ,en,document_
+037080_,category,franchise,us,en,enterprise-products
+037145_, , , ,en,unkowntype_
+037147_,product,franchise,us,en,laptops
+037161_,document, , ,en,document_
+037166_, , , ,en,unkowntype_
+037208_,product,franchise,us,en,desktops
+037212_,product,franchise,us,en,desktops
+037215_,document, , ,en,document_
+037236_,document, , ,en,document_
+037261_,category,parent_product_category,us,en,all-products
+037280_,category,config_category,us,en,deals
+037282_,product,franchise,us,en,desktops
+037302_,product,franchise,us,en,desktops
+037307_,document, , ,en,document_
+037322_,document, , ,en,document_
+037362_,product,franchise,us,en,enterprise-products
+037378_,product,franchise,us,en,enterprise-products
+037381_,product,franchise,us,en,enterprise-products
+037411_,product,franchise,us,en,laptops
+037419_,document, , ,en,document_
+037521_,product,franchise,us,en,cloud-client-computing
+037548_,category,parent_product_category,us,en,all-products
+037555_,document, , ,en,document_
+037577_, , , ,en,unkowntype_
+037591_,document, , ,en,document_
+037599_,document, , ,en,document_
+037652_,product,franchise,us,en,laptops
+037677_,category,franchise,us,en,laptops
+037721_,product,franchise,us,en,desktops
+037729_,document, , ,en,document_
+037737_,product,franchise,us,en,desktops
+037740_, , , ,en,unkowntype_
+037792_, , , ,en,unkowntype_
+037810_,product,franchise,us,en,cloud-client-computing
+037820_,product,franchise,us,en,desktops
+037838_,document, , ,en,document_
+037843_,product,franchise,us,en,desktops
+037869_,document, , ,en,document_
+037874_,product,franchise,us,en,desktops
+037876_,document, , ,en,document_
+037893_,document, , ,en,document_
+037895_,document, , ,en,document_
+037911_,product,franchise,us,en,laptops
+037913_,document, , ,en,document_
+037915_,product,franchise,us,en,laptops
+037936_,category,config_category,us,en,deals
+037969_,document, , ,en,document_
+037977_,document, , ,en,document_
+037980_, , , ,en,unkowntype_
+038000_,product,parent_product_category,us,en,other-product
+038011_,document, , ,en,document_
+038020_,product,product_category,us,en,dell-tablets
+038070_,document, , ,en,document_
+038074_,category,config_category,us,en,deals
+038079_,product,franchise,us,en,laptops
+038095_, , , , ,unkowntype_
+038112_, , , ,en,unkowntype_
+038132_,product,franchise,us,en,laptops
+038151_,product,franchise,us,en,desktops
+038252_,product,franchise,us,en,software
+038277_,document, , ,en,document_
+038301_,product,franchise,us,en,desktops
+038367_,document, , ,en,document_
+038368_,product,parent_product_category,us,en,other-product
+038392_,product,franchise,us,en,enterprise-products
+038398_,document, , ,en,document_
+038411_,product,franchise,us,en,enterprise-products
+038422_,document, , ,en,document_
+038476_, , , ,en,unkowntype_
+038477_,product,franchise,us,en,desktops
+038486_,document, , ,en,document_
+038513_,product,franchise,us,en,laptops
+038572_,product,franchise,us,en,software
+038582_,product,franchise,us,en,enterprise-products
+038610_,category,parent_product_category,us,en,all-products
+038612_,product,franchise,us,en,enterprise-products
+038614_,category,parent_product_category,us,en,all-products
+038623_,product,franchise,us,en,laptops
+038735_,category,parent_product_category,us,en,all-products
+038767_,document, , ,en,document_
+038787_,document, , ,en,document_
+038809_,document, , ,en,document_
+038875_, , , ,en,unkowntype_
+038900_,document, , ,en,document_
+038911_,category,parent_product_category,us,en,all-products
+038937_,document, , ,en,document_
+038939_,document, , ,en,document_
+038999_,product,franchise,us,en,laptops
+039054_,product,franchise,us,en,desktops
+039072_,category,product_category,us,en,enterprise-products
+039167_,product,franchise,us,en,laptops
+039200_, , , ,en,unkowntype_
+039217_,product,franchise,us,en,software
+039254_,category,config_category,us,en,deals
+039287_, , , ,en,unkowntype_
+039291_,product,franchise,us,en,desktops
+039308_,category,config_category,us,en,deals
+039319_,category,product_category,us,en,enterprise-products
+039332_,category,parent_product_category,us,en,all-products
+039335_,product,franchise,us,en,enterprise-products
+039358_,product,franchise,us,en,enterprise-products
+039414_,product,franchise,us,en,server-storage-solutions
+039427_,document, , ,en,document_
+039454_,product,franchise,us,en,enterprise-products
+039473_,document, , ,en,document_
+039504_,category,config_category,us,en,deals
+039530_,product,franchise,us,en,laptops
+039560_,product,franchise,us,en,laptops
+039567_, , , ,en,unkowntype_
+039585_,document, , ,en,document_
+039641_,document, , ,en,document_
+039702_, , , , ,unkowntype_
+039785_,category,parent_product_category,us,en,all-products
+039949_,document, , ,en,document_
+039951_,document, , ,en,document_
+039953_,document, , ,en,document_
+040053_,category,config_category,us,en,deals
+040071_,product,franchise,us,en,desktops
+040081_,document, , ,en,document_
+040167_,document, , ,en,document_
+040170_,document, , ,en,document_
+040185_,product,franchise,us,en,laptops
+040242_,category,parent_product_category,us,en,all-products
+040263_, , , , ,unkowntype_
+040288_,product,franchise,us,en,enterprise-products
+040319_,product,franchise,us,en,desktops
+040394_,product,franchise,us,en,laptops
+040464_,product,franchise,us,en,desktops
+040506_, , , ,en,unkowntype_
+040517_,document, , ,en,document_
+040522_,product,franchise,us,en,desktops
+040570_,document, , ,en,document_
+040618_,product,franchise,us,en,desktops
+040628_,document, , ,en,document_
+040641_,product,franchise,us,en,laptops
+040704_,product,franchise,us,en,desktops
+040715_,product,franchise,us,en,laptops
+040781_,product,franchise,us,en,enterprise-products
+040811_,category,product_category,us,en,enterprise-products
+040832_,product,franchise,us,en,enterprise-products
+040955_,product,franchise,us,en,desktops
+040987_,product,franchise,us,en,enterprise-products
+041011_,category,product_category,us,en,enterprise-products
+041012_,document, , ,en,document_
+041014_,category,config_category,us,en,deals
+041017_,category,parent_product_category,us,en,all-products
+041027_,document, , ,en,document_
+041047_,document, , ,en,document_
+041154_,document, , ,en,document_
+041181_,product,franchise,us,en,desktops
+041184_,product,franchise,us,en,enterprise-products
+041221_,product,franchise,us,en,enterprise-products
+041231_,category,config_category,us,en,deals
+041263_,product,franchise,us,en,laptops
+041268_,product,franchise,us,en,software
+041307_,product,franchise,us,en,enterprise-products
+041325_,document, , ,en,document_
+041326_,document, , ,en,document_
+041351_,document, , ,en,document_
+041370_,product,franchise,us,en,server-storage-solutions
+041389_,product,franchise,us,en,server-storage-solutions
+041444_,document, , ,en,document_
+041455_, , , , ,unkowntype_
+041456_,document, , ,en,document_
+041467_,document, , ,en,document_
+041477_,product,franchise,us,en,software
+041485_,product,franchise,us,en,laptops
+041527_, , , ,en,unkowntype_
+041623_,document, , ,en,document_
+041673_,document, , ,fr,document_
+041690_, , , ,en,unkowntype_
+041698_,category,config_category,us,en,deals
+041701_,category,config_category,us,en,deals
+041736_,category,franchise,us,en,enterprise-products
+041750_,category,parent_product_category,us,en,all-products
+041761_, , , ,en,unkowntype_
+041766_,product,franchise,us,en,laptops
+041774_,document, , ,en,document_
+041786_,category,franchise,us,en,desktops
+041817_, , , ,en,unkowntype_
+041851_,product,franchise,us,en,desktops
+041906_,product,franchise,us,en,laptops
+041921_,product,franchise,us,en,laptops
+041927_,document, , ,en,document_
+041933_,category,parent_product_category,us,en,all-products
+041940_,product,franchise,us,en,desktops
+041964_,product,franchise,us,en,enterprise-products
+042034_,category,parent_product_category,us,en,all-products
+042046_,category,parent_product_category,us,en,all-products
+042049_,product,franchise,us,en,laptops
+042170_,product,franchise,us,en,enterprise-products
+042194_,document, , ,en,document_
+042214_,document, , ,en,document_
+042229_,product,franchise,us,en,desktops
+042239_,product,franchise,us,en,laptops
+042331_,product,franchise,us,en,enterprise-products
+042377_,document, , ,en,document_
+042432_,document, , ,en,document_
+042453_,product,franchise,us,en,enterprise-products
+042473_,document, , ,en,document_
+042517_,category,config_category,us,en,deals
+042524_,category,parent_product_category,us,en,all-products
+042569_,product,franchise,us,en,desktops
+042574_,product,franchise,us,en,laptops
+042627_,product,franchise,us,en,enterprise-products
+042654_,category,parent_product_category,us,en,all-products
+042726_,category,franchise,us,en,enterprise-products
+042764_,category,parent_product_category,us,en,all-products
+042769_,product,franchise,us,en,desktops
+042773_,product,franchise,us,en,desktops
+042810_,document, , ,en,document_
+042811_,product,franchise,us,en,desktops
+042833_,document, , ,en,document_
+042839_,product,franchise,us,en,laptops
+042865_,product,franchise,us,en,enterprise-products
+042867_,product,franchise,us,en,server-storage-solutions
+042882_,product,franchise,us,en,desktops
+042900_,product,franchise,us,en,desktops
+042906_,product,franchise,us,en,laptops
+042923_,product,franchise,us,en,desktops
+042998_,category,parent_product_category,us,en,all-products
+043047_,category,config_category,us,en,deals
+043068_,document, , ,en,document_
+043093_,product,franchise,us,en,laptops
+043200_, , , ,en,unkowntype_
+043237_,product,franchise,us,en,desktops
+043246_,product,franchise,us,en,laptops
+043252_,document, , ,en,document_
+043271_,product,franchise,us,en,desktops
+043305_,product,franchise,us,en,laptops
+043315_,product,franchise,us,en,desktops
+043334_,product,franchise,us,en,laptops
+043351_,document, , ,en,document_
+043427_,product,franchise,us,en,laptops
+043428_,category,parent_product_category,us,en,all-products
+043447_, , , ,en,unkowntype_
+043464_,category,config_category,us,en,deals
+043516_,category,franchise,us,en,desktops
+043520_, , , ,en,unkowntype_
+043521_,product,franchise,us,en,desktops
+043527_,product,franchise,us,en,software
+043713_,document, , ,en,document_
+043720_,document, , ,en,document_
+043762_,product,franchise,us,en,software
+043777_,category,franchise,us,en,software
+043783_,document, , ,en,document_
+043805_,document, , ,en,document_
+043828_,document, , ,en,document_
+043879_,product,parent_product_category,us,en,all-products
+043923_,product,franchise,us,en,laptops
+043935_,product,franchise,us,en,desktops
+043937_, , , ,en,unkowntype_
+043944_,document, , ,en,document_
+043985_, , , ,en,unkowntype_
+044035_,category,config_category,us,en,deals
+044078_,category,product_category,us,en,enterprise-products
+044089_,document, , ,en,document_
+044090_,product,franchise,us,en,software
+044093_,category,parent_product_category,us,en,all-products
+044097_,category,product_category,us,en,enterprise-products
+044130_,document, , ,en,document_
+044179_,product,franchise,us,en,desktops
+044241_,category,parent_product_category,us,en,all-products
+044265_,document, , ,en,document_
+044292_,product,franchise,us,en,desktops
+044344_,document, , ,en,document_
+044346_,product,franchise,us,en,laptops
+044380_,document, , ,en,document_
+044390_,product,franchise,us,en,desktops
+044408_,category,product_category,us,en,desktops
+044414_,product,franchise,us,en,laptops
+044435_,product,franchise,us,en,desktops
+044444_, , , ,en,unkowntype_
+044446_,document, , ,en,document_
+044447_,category,config_category,us,en,deals
+044448_,product,franchise,us,en,desktops
+044456_,category,parent_product_category,us,en,all-products
+044503_,document, , ,en,document_
+044509_,document, , ,en,document_
+044563_,category,parent_product_category,us,en,all-products
+044570_,document, , ,en,document_
+044620_,product,franchise,us,en,laptops
+044663_,category,product_category,us,en,desktops
+044722_,product,franchise,us,en,enterprise-products
+044738_,product,franchise,us,en,laptops
