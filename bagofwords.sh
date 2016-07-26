@@ -12,7 +12,7 @@ do
 	# gets the lines before References (the line number where References is comes from the grep command), 
 	# then converts all whitespace to spaces, removes duplicate spaces, removes everything containing a non-letter, inserts line returns between words, 
 	# lowercases everything, removes stop words, counts words, then saves output as text file
-	head -n $((`grep -nx 'References' ${DIR}${FILEBASE}.txt | grep -Eo '^[^:]+'` -1)) ${DIR}${FILEBASE}.txt | tr '[:space:]' ' ' |tr -c '[:alpha:] ' ' ' | tr -s ' '|  tr ' ' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | grep -vf minimal-stop.txt > ${DIR}${FILEBASE}.w.txt
+	head -n $((`grep -nx 'References' ${DIR}${FILEBASE}.txt | grep -Eo '^[^:]+'` -1)) ${DIR}${FILEBASE}.txt | iconv -f  iso-8859-1 -t ASCII//TRANSLIT | tr '[:space:]' ' ' |tr -c '[:alpha:] ' ' ' | tr -s ' '|  tr ' ' '\n' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | grep -vf minimal-stop.txt > ${DIR}${FILEBASE}.w.txt
 done
 # to avoid argument length issues:
 find $DIR -name *.w.txt -exec cat {}  \; > combined_wordcounts.txt
@@ -20,3 +20,4 @@ find $DIR -name *.w.txt -exec cat {}  \; > combined_wordcounts.txt
 awk '{ count[$2] += $1 } END { for(elem in count) print count[elem], elem }' combined_wordcounts.txt | sort -nr | head -n 1000 | tr -d '[:digit:]' | tr -d ' ' | tr '\n' ' ' > ${DIR}top_words.txt
 # convert wordcounts to single csv with top words
 python process_bagofwords.py $DIR
+
