@@ -58,31 +58,45 @@ for pair in pairs:
 		drop.add(pair[1])
 		keep.add(pair[0])
 
-print list(drop)
+#print list(drop)
 
 # find words that have least difference between min and max variance
 min_words = wc_corr.min(axis=1)
 numpy.fill_diagonal(wc_corr.values, -2) # remove diagonal
 max_words = wc_corr.max(axis=1)
-minmax_words = (max_words-min_words).order(kind="quicksort")[0:100].index
+minmax_words = (max_words-min_words).order(kind="quicksort")[0:50].index
 
 # find words that are equally correlated with everything
-var_words = wc_corr.var(axis=1).order(kind="quicksort")[0:100].index
+var_words = wc_corr.var(axis=1).order(kind="quicksort")[0:50].index
 
 # pick one to plot/print
-even_corrs = wc_corr[var_words]
+#even_corrs = wc_corr[var_words]
 even_corrs = wc_corr[minmax_words]
 overlap_words = list(set(var_words).intersection(minmax_words))
-even_corrs = wc_corr[overlap_words]
+#even_corrs = wc_corr[overlap_words]
 
-print overlap_words
+#plot heatmap
+'''
+cl = sns.clustermap(even_corrs, vmin=-1, vmax=1, yticklabels=False, row_cluster=False)
+for l in cl.ax_row_dendrogram.lines:
+	l.set_linewidth(0)
+for l in cl.ax_col_dendrogram.lines:
+	l.set_linewidth(0)
+
+cl.xaxis.tick_top()
+cl.set_xticklabels(even_corrs.columns, rotation=-90)
+cl.set_xlabel('')
+cl.set_ylabel('')
+'''
+
+# sort columns by average correlation
+avg_corr = even_corrs.mean(axis=0).order(kind='quicksort').index
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-sns.heatmap(even_corrs, vmin=-1, vmax=1, yticklabels=False)
+sns.heatmap(even_corrs[avg_corr], vmin=-1, vmax=1, yticklabels=False)
 ax.xaxis.tick_top()
 ax.set_xticklabels(even_corrs.columns, rotation=-90)
 ax.set_xlabel('')
 ax.set_ylabel('')
-#plt.show()
-
+plt.show()
