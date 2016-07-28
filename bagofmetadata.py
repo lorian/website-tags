@@ -12,12 +12,12 @@ directory = args.directory
 
 webpage_f = [f for f in os.listdir(directory) if f.endswith('.html')]
 meta_tags = ['Keywords','og:title','og:description','og:type','CategoryPath','SalesType','Language']
-
+print "Webpages processed: {}".format(len(webpage_f))
 # get metadata from all pages
 
 metadata = []
 with open(directory.split('/')[-2] +'_meta.csv', 'wb') as csvfile:
-	metawriter = csv.writer(csvfile, delimiter=' ', quoting=csv.QUOTE_MINIMAL)
+	metawriter = csv.writer(csvfile, delimiter=',')
 	metawriter.writerow(['URL'] + meta_tags)
 	
 	for webpage in webpage_f:

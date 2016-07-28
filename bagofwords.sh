@@ -20,4 +20,5 @@ find $DIR -name *.w.txt -exec cat {}  \; > combined_wordcounts.txt
 awk '{ count[$2] += $1 } END { for(elem in count) print count[elem], elem }' combined_wordcounts.txt | sort -nr | head -n 1000 | tr -d '[:digit:]' | tr -d ' ' | tr '\n' ' ' > ${DIR}top_words.txt
 # convert wordcounts to single csv with top words
 python process_bagofwords.py $DIR
-
+# create metadata table 
+python bagofmetadata.py $DIR

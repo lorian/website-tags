@@ -24,5 +24,6 @@ with open(directory.split('/')[-2] +'_wordcounts.csv', 'wb') as csvfile:
 			if count[2] in top_words:
 				countdict[count[2]] = int(count[0])
 		
-		countwriter.writerow([page.partition('_')[0]] + [countdict[word] for word in top_words])
+		#countwriter.writerow([page.partition('_')[0]] + [countdict[word] for word in top_words]) # uses only UID digit for page
+		countwriter.writerow([page.partition('.w.txt')[0]+'.html'] + [countdict[word] for word in top_words]) # uses full page name
 
