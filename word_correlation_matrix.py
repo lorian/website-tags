@@ -3,6 +3,7 @@ import argparse
 import pandas
 import numpy
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 parser = argparse.ArgumentParser(description='Imports wordcounts from csv and determines word correlations')
 parser.add_argument('wordcount_file', help='csv containing table of wordcounts per page')
@@ -28,14 +29,27 @@ correlations = wc_top.corr()
 
 fig = plt.figure()
 ax = fig.add_subplot(111)
-fig.colorbar(ax.matshow(correlations, vmin=-1, vmax=1))
-ax.set_xticks(numpy.arange(correlations.shape[1]))
-ax.set_yticks(numpy.arange(correlations.shape[0]))
-ax.set_xticklabels(wc_top.columns, rotation=90)
-ax.set_yticklabels(wc_top.columns)
-plt.show()
+sns.heatmap(correlations, vmin=-1, vmax=1, square=True)
+ax.xaxis.tick_top()
+ax.set_xticklabels(wc_top.columns, rotation=-90)
+ax.set_yticklabels(reversed(wc_top.columns), rotation=0)
+ax.set_xlabel('')
+ax.set_ylabel('')
+#plt.show()
 
-# order by correlation
+# order by correlation; make list of words to drop
+keep = set()
+drop = set()
 corr = wc_corr.unstack().order(kind="quicksort").to_frame()
 output = corr[corr.index.get_level_values(0) != corr.index.get_level_values(1)][corr[0]>.9]
+pairs = zip(output.index.get_level_values(0),output.index.get_level_values(1))
+for pair in pairs:
+	if pair[0] not in keep:
+		drop.add(pair[0])
+		keep.add(pair[1])
+	elif pair[1] not in keep:
+		drop.add(pair[1])
+		keep.add(pair[0])
 
+for d in drop:
+	print d
