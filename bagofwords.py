@@ -1,16 +1,10 @@
+
+
 import pandas
 import os
 import numpy
 import pprint
 import argparse
-import matplotlib.pylab as pyp
-import matplotlib
-import matplotlib.cm as cm
-import seaborn as sns
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.feature_extraction import DictVectorizer
-from sklearn.cluster import KMeans
-from sklearn import metrics
 import webbrowser
 import subprocess
 import collections
@@ -18,9 +12,16 @@ import string
 import re
 import csv
 import itertools
-from scipy.spatial.distance import cdist
-import matplotlib.pyplot as plt
 import glob
+
+import sklearn
+from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.cluster import KMeans
+from sklearn import metrics
+from scipy.spatial.distance import cdist
+from sklearn import preprocessing
+from sklearn.manifold import TSNE
 
 # Script takes number of pages and number of clusters as arguments, has optional flags for ways to look at clusters
 parser = argparse.ArgumentParser(description='Imports wordcounts from csv and clusters them')
@@ -32,32 +33,40 @@ parser.add_argument('--init', default=10, help='Int that serves as seed for clus
 parser.add_argument('--output', help='Display clusters as [plot], see webpages in [browser], get [sil]houette plot for current cluster number, get [all] silhouette scores and plots for a range of cluster numbers, plot clusters via [tsne] dimensionality reduction, or see [distortion] plot to pick ideal cluster numbers.')
 parser.add_argument('--meta', help="Which meta tag to judge clusters by. Interesting options include og:title, Description, Keywords, og:type, CategoryPath, PageType, SalesType.")
 parser.add_argument('--file-output', action='store_true', help="Will save cluster details to a file.")
+parser.add_argument('--save-plots', action='store_true', help="When run on server, will save plots rather than display them. Note filenames might not be unique.")
+parser.add_argument('--bad-words', default='all', help="Which sets of stop words to remove. Defaults to [all], but can be [redundant],[flat],or [peak], or any pair of the above with no spaces.")
 args = parser.parse_args()
 args.num_clusters = int(args.num_clusters)
 args.init = int(args.init)
 
-'''
-# Convert wordcount files to list of dictionaries for each page
-if args.page_list:
-	wordcounts_f = [f.strip().replace('.html','.w.txt') for f in open(args.page_list,'r')]
-	wordcounts_f = wordcounts_f[0:min(int(args.num_pages),len(wordcounts_f))]
-else:
-	wordcounts_f = [f for f in os.listdir('.') if f.endswith('.w.txt')][0:int(args.num_pages)]
+if args.save_plots:
+	# so it can run on server without display
+	import matplotlib as mpl
+	mpl.use('Agg')
+
+import matplotlib.pylab as pyp
+import matplotlib.pyplot as plt
+import matplotlib
+import matplotlib.cm as cm
+import matplotlib.patches as mpatches
+import seaborn as sns
 	
-wordcounts = []
-for fl in wordcounts_f:
-	wc_dict = dict()
-	for line in open(fl, 'r'):
-		count = line.strip().partition(' ')
-		if count[2]: # drop empty lines
-			wc_dict[count[2]] = int(count[0])
-	wordcounts.append(wc_dict)
-'''
 # stoplist from correlation matrix
-redundant_words = ['rating', 'help', 'contacted', 'certification', 'celeron', 'dbc', 'labels', 'gb', 'tools', 'touch', 'japan', 'label', 'previous', 'fibre', 'ads', 'giftcard', 'ships', 'gen', 'environment', 'battery', 'pci', 'choose', 'th', 'combo', 'covered', 'remaining', 'careers', 'finger', 'non', 'return', 'get', 'read', 'preferred', 'primary', 'band', 'datasheets', 'handling', 'rewardterms', 'half', 'front', 'using', 'now', 'emails', 'determines', 'nfc', 'emc', 'customizable', 'taxes', 'standards', 'specific', 'privacy', 'small', 'drivers', 'sheet', 'www', 'set', 'korea', 'generation', 'spring', 'configured', 'webbank', 'phi', 'arrives', 'bluetooth', 'malware', 'fiber', 'us', 'eu', 'techcenter', 'balance', 'specs', 'separately', 'shown', 'rw', 'dense', 'hdmi', 'fgeneric', 'ddr', 'epeat', 'kensington', 'your', 'hca', 'safety', 'market', 'reader', 'got', 'net', 'integrated', 'rj', 'full', 'terms', 'business', 'eco', 'cart', 'hours', 'qualify', 'computrace', 'china', 'french', 'trademarks', 'bose', 'card', 'box', 'solid', 'unresolved', 'license', 'spill', 'adapter', 'compliance', 'egift', 'credit', 'ltd', 'vault', 'cto', 'processor', 'south', 'wlan', 'smartcard', 'pays', 'wigig', 'height', 'spanish', 'included', 'masthead', 'apply', 'tvs', 'total', 'forums', 'minitower', 'select', 'size', 'blog', 'promoterms', 'usb', 'billing', 'capable', 'encryption', 'engagement', 'seamless', 'width', 'camera', 'refurbished', 'low', 'memory', 'pf', 'assessment', 'feedback', 'asset', 'life', 'rewards', 'form', 'hr', 'registered', 'precision', 'lists', 'wi', 'environmental', 'optical', 'representative', 'atom', 'hd', 'applied', 'financing', 'endpoint', 'fips', 'anything', 'mm', 'double', 'mo', 'widescreen', 'enabled', 'value', 'protected', 'arrive', 'pre', 'purchases', 'register', 'premier', 'drive', 'hardware', 'please', 'home', 'close', 'serial', 'uncheck', 'different', 'btn', 'pcie', 'newsroom', 'mic', 'damage', 'click', 'varies', 'internal', 'pad', 'digital', 'sdhc', 'contactless', 'sim', 'map', 'product', 'used', 'diagnosis', 'separate', 'customize', 'price', 'loyalty', 'weee', 'includes', 'wired', 'whr', 'organization', 'sff', 'fi', 'webcam', 'remote', 'framework', 'charges', 'tpm', 'corea', 'lcd', 'wwan', 'savings', 'workspace', 'professional', 'model', 'typically', 'order', 'sd']
-flat_words = ['hz', 'en', 'better', 'videos', 'testing', 'number', 'analytics', 'businesses', 'want', 'vostro', 'yes', 'open', 'vmware', 'chromebook', 'vrtx', 'console', 'powered', 'quality', 'mib', 'long', 'increase', 'parts', 'cloud', 'innovation', 'red', 'files', 'users', 'big', 'exchange', 'max', 'processing', 'tested', 'web', 'device', 'unique', 'change', 'psu', 'store', 'rugged', 'faster', 'cable', 'platforms', 'fully', 'blade', 'appliance', 'times', 'large', 'length', 'ultrasharp', 'stand', 'cards', 'os', 'view']
-bad_words = redundant_words + flat_words
-#bad_words = []
+redundant_words_2000 = ['rating', 'help', 'contacted', 'certification', 'celeron', 'dbc', 'labels', 'gb', 'tools', 'touch', 'japan', 'label', 'previous', 'fibre', 'ads', 'giftcard', 'ships', 'gen', 'environment', 'battery', 'pci', 'choose', 'th', 'combo', 'covered', 'remaining', 'careers', 'finger', 'non', 'return', 'get', 'read', 'preferred', 'primary', 'band', 'datasheets', 'handling', 'rewardterms', 'half', 'front', 'using', 'now', 'emails', 'determines', 'nfc', 'emc', 'customizable', 'taxes', 'standards', 'specific', 'privacy', 'small', 'drivers', 'sheet', 'www', 'set', 'korea', 'generation', 'spring', 'configured', 'webbank', 'phi', 'arrives', 'bluetooth', 'malware', 'fiber', 'us', 'eu', 'techcenter', 'balance', 'specs', 'separately', 'shown', 'rw', 'dense', 'hdmi', 'fgeneric', 'ddr', 'epeat', 'kensington', 'your', 'hca', 'safety', 'market', 'reader', 'got', 'net', 'integrated', 'rj', 'full', 'terms', 'business', 'eco', 'cart', 'hours', 'qualify', 'computrace', 'china', 'french', 'trademarks', 'bose', 'card', 'box', 'solid', 'unresolved', 'license', 'spill', 'adapter', 'compliance', 'egift', 'credit', 'ltd', 'vault', 'cto', 'processor', 'south', 'wlan', 'smartcard', 'pays', 'wigig', 'height', 'spanish', 'included', 'masthead', 'apply', 'tvs', 'total', 'forums', 'minitower', 'select', 'size', 'blog', 'promoterms', 'usb', 'billing', 'capable', 'encryption', 'engagement', 'seamless', 'width', 'camera', 'refurbished', 'low', 'memory', 'pf', 'assessment', 'feedback', 'asset', 'life', 'rewards', 'form', 'hr', 'registered', 'precision', 'lists', 'wi', 'environmental', 'optical', 'representative', 'atom', 'hd', 'applied', 'financing', 'endpoint', 'fips', 'anything', 'mm', 'double', 'mo', 'widescreen', 'enabled', 'value', 'protected', 'arrive', 'pre', 'purchases', 'register', 'premier', 'drive', 'hardware', 'please', 'home', 'close', 'serial', 'uncheck', 'different', 'btn', 'pcie', 'newsroom', 'mic', 'damage', 'click', 'varies', 'internal', 'pad', 'digital', 'sdhc', 'contactless', 'sim', 'map', 'product', 'used', 'diagnosis', 'separate', 'customize', 'price', 'loyalty', 'weee', 'includes', 'wired', 'whr', 'organization', 'sff', 'fi', 'webcam', 'remote', 'framework', 'charges', 'tpm', 'corea', 'lcd', 'wwan', 'savings', 'workspace', 'professional', 'model', 'typically', 'order', 'sd']
+flat_words_2000 = ['vrtx', 'files', 'innovation', 'stand', 'unique', 'increase', 'appliance', 'faster', 'number', 'exchange', 'vmware', 'ultrasharp', 'cards', 'open', 'red', 'testing', 'want', 'cover', 'functionality', 'cable', 'os', 'device', 'blade', 'vostro', 'run', 'today', 'quality', 'density', 'cloud', 'chromebook', 'phone', 'en', 'videos', 'large', 'processing', 'users', 'enables', 'mobile', 'tested', 'optimized', 'key', 'simple', 'times', 'analytics', 'rugged', 'yes', 'requirements', 'change', 'while', 'hz']
+peak_words_10000 = ['words','access','ads','advantage','ajax','applied','apply','arrive','atom','back','balance','blog','bose','bt','business','call','careers','celeron','charges','chat','click','close','code','com','community','company','compare','conditions','contracts','core','corporate','corporation','countries','coupons','credit','cs','customers','data','date','day','days','discounts','eligible','email','emails','employee','engagement','events','except','expert','expires','extra','features','feedback','financing','find','form','forums','full','get','gif','greater','high','inc','inside','instead','intel','investors','issues','itanium','item','join','law','learn','legal','limited','live','loader','logo','loyalty','make','manage','map','match','medium','minimum','monthly','must','new','newsroom','offered','one','online','order','outlet','page','paid','partnerdirect','payment','payments','pentium','phi','privacy','products','program','prohibited','promotional','provided','purchase','purchases','qualify','read','refurbished','regulatory','responsibility','rewards','rewardterms','sale','search','separate','separately','services','ship','shop','sign','small','social','statement','student','support','system','systems','taxes','techcenter','technology','terms','time','trademarks','typically','ultrabook','unresolved','us','used','using','valid','vary','via','vpro','webbank','work','xeon','yes']
+redundant_words_10000 = ['ck', 'ddp', 'help', 'dbc', 'vary', 'auf', 'prix', 'code', 'personnaliser', 'ga', 'dw', 'go', 'tcg', 'verantwortung', 'ist', 'slot', 'clavier', 'ads', 'la', 'verwalten', 'tzliche', 'smartcard', 'valid', 'choose', 'th', 'factor', 'employee', 'smart', 'ra', 'wirelessa', 'return', 'get', 'ihnen', 'disque', 'da', 'band', 'datasheets', 'peut', 'forums', 'nnen', 'front', 'ma', 'itanium', 'du', 'publicita', 'day', 'sans', 'wenn', 'moire', 'nfc', 'offres', 'emc', 'die', 'vente', 'events', 'french', 'poids', 'payments', 'small', 'commentaires', 'mo', 'timing', 'methods', 'generation', 'spring', 'energy', 'aatre', 'back', 'emails', 'bluetooth', 'ftsbedingungen', 'zahlungsoptionen', 'used', 'ex', 'lieferinformationen', 'zu', 'tva', 'click', 'techniques', 'cliquez', 'disponible', 'livres', 'ddr', 'selected', 'please', 'conomies', 'legal', 'discounts', 'state', 'protected', 'sur', 'gratuite', 'peuvent', 'abbildungen', 'hauteur', 'carte', 'donna', 'emplacement', 'compact', 'korea', 'terms', 'business', 'eco', 'arbeitstagen', 'gif', 'courriers', 'ufe', 'cart', 'wh', 'hours', 'oben', 'les', 'fips', 'free', 'mes', 'qui', 'bose', 'sind', 'pvc', 'certifia', 'zur', 'arrive', 'gescha', 'panier', 'compliance', 'ajax', 'shipping', 'akzeptieren', 'pcie', 'tour', 'chsten', 'hier', 'une', 'lte', 'prohibited', 'konfigurieren', 'verka', 'zum', 'verschickt', 'inta', 'trademarks', 'versand', 'battery', 'rohs', 'zura', 'primary', 'height', 'valables', 'regulatory', 'eine', 'webbank', 'apply', 'total', 'ouvra', 'minitower', 'unit', 'warenkorb', 'usb', 'privacy', 'avec', 'contact', 'width', 'refurbished', 'low', 'statement', 'memory', 'priceagbp', 'zzgl', 'dur', 'vat', 'life', 'rewards', 'lesegera', 'intela', 'offered', 'expresschargea', 'adresse', 'accidental', 'lecteur', 'displaygra', 'environmental', 'part', 'hca', 'produits', 'liste', 'mwst', 'line', 'fil', 'he', 'environnement', 'endpoint', 'conformita', 'bfr', 'gelten', 'produkte', 'des', 'arbeitsspeicher', 'see', 'value', 'angebotspreis', 'careers', 'den', 'adaptateur', 'ber', 'expa', 'balance', 'comparecompare', 'purchases', 'lbs', 'register', 'investors', 'am', 'innerhalb', 'bena', 'gale', 'au', 'vos', 'preise', 'suivant', 'internal', 'unresolved', 'optionen', 'customise', 'jour', 'credit', 'newsroom', 'datenschutz', 'drivers', 'nd', 'rechtliches', 'member', 'juin', 'varier', 'sie', 'gra', 'commande', 'lithium', 'mit', 'erfolgt', 'kunden', 'manuals', 'map', 'product', 'de', 'phi', 'separate', 'may', 'notre', 'price', 'expires', 'includes', 'wired', 'accepting', 'wi', 'times', 'wireless', 'ka', 'modes', 'using', 'tpm', 'zwei', 'drive', 'wwan', 'loader', 'efficient', 'savings', 'optical', 'responsibility', 'south', 'diagnosis', 'basket', 'sa', 'order']
+flat_words_10000 = ['yes', 'vostro', 'change', 'blade', 'inspiron', 'interface', 'mobile', 'gigabit', 'fc', 'partnerdirect', 'web', 'bios', 'alienware', 'rugged', 'amd', 'education', 'premium', 'ideal', 'vmware', 'device', 'connect', 'ultra', 'simple', 'space', 'ultrabook', 'details', 'supportassist', 'sc', 'deals', 'big', 'micro', 'base', 'content', 'tape', 'latitude', 'flexible', 'displays', 'open', 'one', 'xps', 'backup', 'class', 'xeona', 'microsoft', 'application', 'ecc', 'users', 'configuration', 'speed', 'multi']
+
+bad_words = []
+if args.bad_words == 'all':
+	bad_words = redundant_words_10000 + flat_words_10000 + peak_words_10000
+if args.bad_words.startswith('redundant') or args.bad_words.endswith('redundant'):
+	bad_words += redundant_words_10000
+if args.bad_words.startswith('flat') or args.bad_words.endswith('flat'):
+	bad_words += flat_words_10000
+if args.bad_words.startswith('peak') or args.bad_words.endswith('peak'):
+	bad_words += peak_words_10000
 
 wordcounts = []
 wordcounts_f = []
@@ -71,9 +80,10 @@ with open(args.wordcount_file,'r') as wordcount_file:
 		for k in bad_words: # stop list
 			wc_dict.pop(k,None)
 		wordcounts.append(wc_dict)
-		
+
 # Use DictVectorizer to convert the dictionaries to a sparse array for sklearn
 word_features = DictVectorizer().fit_transform(wordcounts).toarray()
+#word_features = sklearn.preprocessing.normalize(features) # remove variation in size of page
 
 # K-means clustering
 raw_clusters = KMeans(n_clusters=int(args.num_clusters), n_init=10, random_state=args.init).fit(word_features)
@@ -92,24 +102,34 @@ if args.file_output:
 	except:
 		f = open('../clusters.txt','w')
 
+def custom_legend(colors,labels, legend_location = 'upper left', legend_boundary = (1,1)):
+	# Create custom legend for colors
+	recs = []
+	for i in range(0,len(colors)):
+		recs.append(mpatches.Rectangle((0,0),1,1,fc=colors[i]))
+	pyp.legend(recs,labels,loc=legend_location, bbox_to_anchor=legend_boundary)
+	
 if args.output == 'tsne':
-	#TSNE visualization
-	from sklearn.manifold import TSNE
+	#tSNE visualization
 	RS = 20150101
 	wc_proj = TSNE(random_state=RS).fit_transform(word_features)
 
 	palette = numpy.array(sns.color_palette("hls", args.num_clusters))
 
-	# We create a scatter plot.
+	# plot it with colors indicating clusters
 	f = plt.figure(figsize=(8, 8))
 	ax = plt.subplot(aspect='equal')
 	sc = ax.scatter(wc_proj[:,0], wc_proj[:,1], lw=0, s=40, c=palette[clusters.astype(numpy.int)])
+	custom_legend(palette,xrange(0,args.num_clusters))
 	plt.xlim(-25, 25)
 	plt.ylim(-25, 25)
 	ax.axis('off')
 	ax.axis('tight')
 
-	plt.show()
+	if args.save_plots:
+		plt.savefig(args.wordcount_file.rpartition('_wordcounts')[0] +"_tsne.png")
+	else:
+		plt.show()
 
 
 # Display cluster information
@@ -236,6 +256,8 @@ if args.output == 'sil':
 		sample_silhouette_values = metrics.silhouette_samples(word_features, clusters)
 
 		y_lower = 10
+		palette = numpy.array(sns.color_palette("hls", args.num_clusters))
+
 		for i in range(args.num_clusters):
 			# Aggregate the silhouette scores for samples belonging to
 			# cluster i, and sort them
@@ -247,7 +269,7 @@ if args.output == 'sil':
 			size_cluster_i = ith_cluster_silhouette_values.shape[0]
 			y_upper = y_lower + size_cluster_i
 
-			color = cm.spectral(float(i) / args.num_clusters)
+			color = palette[i]#cm.spectral(float(i) / args.num_clusters)
 			ax1.fill_betweenx(numpy.arange(y_lower, y_upper),
 							  0, ith_cluster_silhouette_values,
 							  facecolor=color, edgecolor=color, alpha=0.7)
