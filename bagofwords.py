@@ -7,6 +7,7 @@ import matplotlib.pylab as pyp
 import matplotlib
 import matplotlib.cm as cm
 import seaborn as sns
+import sklearn
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction import DictVectorizer
 from sklearn.cluster import KMeans
@@ -21,6 +22,10 @@ import itertools
 from scipy.spatial.distance import cdist
 import matplotlib.pyplot as plt
 import glob
+from sklearn import preprocessing
+from sklearn.manifold import TSNE
+from wordcloud import WordCloud
+import matplotlib.patches as mpatches
 
 # Script takes number of pages and number of clusters as arguments, has optional flags for ways to look at clusters
 parser = argparse.ArgumentParser(description='Imports wordcounts from csv and clusters them')
@@ -56,7 +61,8 @@ for fl in wordcounts_f:
 # stoplist from correlation matrix
 redundant_words = ['rating', 'help', 'contacted', 'certification', 'celeron', 'dbc', 'labels', 'gb', 'tools', 'touch', 'japan', 'label', 'previous', 'fibre', 'ads', 'giftcard', 'ships', 'gen', 'environment', 'battery', 'pci', 'choose', 'th', 'combo', 'covered', 'remaining', 'careers', 'finger', 'non', 'return', 'get', 'read', 'preferred', 'primary', 'band', 'datasheets', 'handling', 'rewardterms', 'half', 'front', 'using', 'now', 'emails', 'determines', 'nfc', 'emc', 'customizable', 'taxes', 'standards', 'specific', 'privacy', 'small', 'drivers', 'sheet', 'www', 'set', 'korea', 'generation', 'spring', 'configured', 'webbank', 'phi', 'arrives', 'bluetooth', 'malware', 'fiber', 'us', 'eu', 'techcenter', 'balance', 'specs', 'separately', 'shown', 'rw', 'dense', 'hdmi', 'fgeneric', 'ddr', 'epeat', 'kensington', 'your', 'hca', 'safety', 'market', 'reader', 'got', 'net', 'integrated', 'rj', 'full', 'terms', 'business', 'eco', 'cart', 'hours', 'qualify', 'computrace', 'china', 'french', 'trademarks', 'bose', 'card', 'box', 'solid', 'unresolved', 'license', 'spill', 'adapter', 'compliance', 'egift', 'credit', 'ltd', 'vault', 'cto', 'processor', 'south', 'wlan', 'smartcard', 'pays', 'wigig', 'height', 'spanish', 'included', 'masthead', 'apply', 'tvs', 'total', 'forums', 'minitower', 'select', 'size', 'blog', 'promoterms', 'usb', 'billing', 'capable', 'encryption', 'engagement', 'seamless', 'width', 'camera', 'refurbished', 'low', 'memory', 'pf', 'assessment', 'feedback', 'asset', 'life', 'rewards', 'form', 'hr', 'registered', 'precision', 'lists', 'wi', 'environmental', 'optical', 'representative', 'atom', 'hd', 'applied', 'financing', 'endpoint', 'fips', 'anything', 'mm', 'double', 'mo', 'widescreen', 'enabled', 'value', 'protected', 'arrive', 'pre', 'purchases', 'register', 'premier', 'drive', 'hardware', 'please', 'home', 'close', 'serial', 'uncheck', 'different', 'btn', 'pcie', 'newsroom', 'mic', 'damage', 'click', 'varies', 'internal', 'pad', 'digital', 'sdhc', 'contactless', 'sim', 'map', 'product', 'used', 'diagnosis', 'separate', 'customize', 'price', 'loyalty', 'weee', 'includes', 'wired', 'whr', 'organization', 'sff', 'fi', 'webcam', 'remote', 'framework', 'charges', 'tpm', 'corea', 'lcd', 'wwan', 'savings', 'workspace', 'professional', 'model', 'typically', 'order', 'sd']
 flat_words = ['hz', 'en', 'better', 'videos', 'testing', 'number', 'analytics', 'businesses', 'want', 'vostro', 'yes', 'open', 'vmware', 'chromebook', 'vrtx', 'console', 'powered', 'quality', 'mib', 'long', 'increase', 'parts', 'cloud', 'innovation', 'red', 'files', 'users', 'big', 'exchange', 'max', 'processing', 'tested', 'web', 'device', 'unique', 'change', 'psu', 'store', 'rugged', 'faster', 'cable', 'platforms', 'fully', 'blade', 'appliance', 'times', 'large', 'length', 'ultrasharp', 'stand', 'cards', 'os', 'view']
-bad_words = redundant_words + flat_words
+#frequent_words = ['access', 'ads', 'advantage', 'apply', 'atom', 'available', 'back', 'business', 'call', 'celeron', 'chat', 'click', 'code', 'com', 'community', 'company', 'conditions', 'core', 'credit', 'data', 'day', 'days', 'emails', 'features', 'feedback', 'financing', 'form', 'free', 'full', 'get', 'gif', 'help', 'high', 'inside', 'intel', 'issues', 'itanium', 'learn', 'legal', 'logo', 'manage', 'new', 'one', 'online', 'order', 'page', 'payment', 'pentium', 'power', 'privacy', 'products', 'purchase', 'purchases', 'read', 'regulatory', 'rewards', 'sale', 'security', 'separately', 'services', 'shop', 'small', 'statement', 'support', 'system', 'systems', 'technology', 'terms', 'time', 'tm', 'trademarks', 'ultrabook', 'us', 'used', 'using', 'valid', 'vpro', 'work', 'xeon']
+bad_words = redundant_words + flat_words# + frequent_words
 #bad_words = []
 
 wordcounts = []
@@ -71,9 +77,10 @@ with open(args.wordcount_file,'r') as wordcount_file:
 		for k in bad_words: # stop list
 			wc_dict.pop(k,None)
 		wordcounts.append(wc_dict)
-		
+
 # Use DictVectorizer to convert the dictionaries to a sparse array for sklearn
 word_features = DictVectorizer().fit_transform(wordcounts).toarray()
+#word_features = sklearn.preprocessing.normalize(features) # remove variation in size of page
 
 # K-means clustering
 raw_clusters = KMeans(n_clusters=int(args.num_clusters), n_init=10, random_state=args.init).fit(word_features)
@@ -92,18 +99,31 @@ if args.file_output:
 	except:
 		f = open('../clusters.txt','w')
 
+'''
+wordcloud = WordCloud(background_color='white',width=1200,height=1000).generate(wordcounts[1].keys())
+plt.imshow(wordcloud)
+plt.axis('off')
+plt.show()
+'''
+def custom_legend(colors,labels, legend_location = 'upper left', legend_boundary = (1,1)):
+	# Create custom legend for colors
+	recs = []
+	for i in range(0,len(colors)):
+		recs.append(mpatches.Rectangle((0,0),1,1,fc=colors[i]))
+	pyp.legend(recs,labels,loc=legend_location, bbox_to_anchor=legend_boundary)
+	
 if args.output == 'tsne':
-	#TSNE visualization
-	from sklearn.manifold import TSNE
+	#tSNE visualization
 	RS = 20150101
 	wc_proj = TSNE(random_state=RS).fit_transform(word_features)
 
 	palette = numpy.array(sns.color_palette("hls", args.num_clusters))
 
-	# We create a scatter plot.
+	# plot it with colors indicating clusters
 	f = plt.figure(figsize=(8, 8))
 	ax = plt.subplot(aspect='equal')
 	sc = ax.scatter(wc_proj[:,0], wc_proj[:,1], lw=0, s=40, c=palette[clusters.astype(numpy.int)])
+	custom_legend(palette,xrange(0,args.num_clusters))
 	plt.xlim(-25, 25)
 	plt.ylim(-25, 25)
 	ax.axis('off')
@@ -236,6 +256,8 @@ if args.output == 'sil':
 		sample_silhouette_values = metrics.silhouette_samples(word_features, clusters)
 
 		y_lower = 10
+		palette = numpy.array(sns.color_palette("hls", args.num_clusters))
+
 		for i in range(args.num_clusters):
 			# Aggregate the silhouette scores for samples belonging to
 			# cluster i, and sort them
@@ -247,7 +269,7 @@ if args.output == 'sil':
 			size_cluster_i = ith_cluster_silhouette_values.shape[0]
 			y_upper = y_lower + size_cluster_i
 
-			color = cm.spectral(float(i) / args.num_clusters)
+			color = palette[i]#cm.spectral(float(i) / args.num_clusters)
 			ax1.fill_betweenx(numpy.arange(y_lower, y_upper),
 							  0, ith_cluster_silhouette_values,
 							  facecolor=color, edgecolor=color, alpha=0.7)
